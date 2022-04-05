@@ -1,0 +1,105 @@
+PL/SQL Variable Declaration | Variable Scope:-
+----------------------------------------------------------------
+PL/SQL variable declaration always specifies the variable name, data type of variable and size. In PL/SQL variable declaration you can also specifies initial value of declared variables.
+
+Variable Declaration Syntax:-
+----------------------------------------
+The general syntax to declare a variable is:
+
+variable_name Datatype[Size] [NOT NULL] := [ value ]; 
+
+Explanation:
+-----------------
+variable_name is the predefined name of the variable.
+
+Data type is a valid PL/SQL data type.
+
+Size is an optional specification of data type size to hold the maximum size value.
+
+NOT NULL is an optional specification of the variable value can't be accept NULL.
+
+value is also an optional specification, where you can initialize the initial value of variable.
+
+Each variable declaration is terminated by a semicolon.
+
+Variable Declaration Example:-
+------------------------------------------
+In this example variable defining employee number (eno) is NOT NULL(compulsory), employee name and initializing initial value to a variable,
+
+Example Code:
+---------------------
+DECLARE
+	eno number(5) NOT NULL := 2; 
+	ename varchar2(15) := 'Branson Devs'; 
+BEGIN
+	dbms_output.put_line('Declared Value:');
+	dbms_output.put_line(' Employee Number: ' || eno || ' Employee Name: ' || ename);
+END;
+/
+
+Backward slash '/' indicates to execute the above PL/SQL Program.
+
+Example Result :
+-----------------------
+Declared Value:
+Employee Number: 2 Employee Name: Branson Devs
+
+Variables Scope:-
+-------------------------
+PL/SQL variable scope is identified the region range which you can reference the variable. PL/SQL have two type scopes local scope and global scope,
+
+Local variables - 
+----------------------
+Variables declared in inner block and can't be referenced by the outside blocks.
+
+Global variables - 
+------------------------
+Where as variables declared in a outer block and can be referencing by itself in inner blocks.
+
+Variable Scope Example:-
+------------------------------------
+In this example declaration two variables (num1 and num2) are in the outer block (Global variable) and another one third variable declared (num_addition) into the inner block (local variable). Variable 'num_addition' declared inner block so can't access in the outer block. But num1 and num2 can be accessed anywhere in the block.
+
+Example Code:
+---------------------
+DECLARE
+	num1 number := 10;
+	num2 number := 20;
+BEGIN
+	DECLARE 
+		num_addition number; 
+	BEGIN 
+		num_addition := num1 + num2; 
+		dbms_output.put_line('Addition is: ' || num_addition);
+	END;  -- End of access num_addition variable
+END;
+/
+
+Example Result :
+-----------------------
+Addition is: 30
+
+Variable Scope Identifier (OUTER keyword):
+-------------------------------------------------------------
+This example is also showing a difference between inner block and outer block variable scope. You can use OUTER keyword to access outer block variable inside the inner block. It's called global qualified name space.
+
+Example Code:
+---------------------
+DECLARE
+	nu number := 10;
+BEGIN
+	DECLARE 
+		num number := 10; 
+	BEGIN 
+		IF nu = num THEN
+	      DBMS_OUTPUT.PUT_LINE('Both are same value');
+	    ELSE
+	      DBMS_OUTPUT.PUT_LINE('Different value');
+	    END IF;
+	END;  -- End of scope to access num variable
+END;
+/
+
+Example Result :
+------------------------
+Both are same value

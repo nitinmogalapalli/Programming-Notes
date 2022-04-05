@@ -1,0 +1,25 @@
+                                     FILE OR FOLDEROPERATIONS
+CREATING:1.
+Go to the desired location right click select option,select desired folder or file.
+2.Go to the file menu in the window,select new option,select desired folder or file.
+
+SELECTING:
+1.Click on the folder or file which you want to select.
+2.Move the cursour,controll keys to the desired file or folder.
+
+OPENING:
+1.To open a file or folder select it by pressing ''ENTER'' from the key board.
+2.Select the file or folder by double clicking on it.
+3.Right click on the folder or file then select the open option.
+
+COPYING:
+1.Select the file or folder ,right click on it select the option ''COPY'' go to the location
+where you want to copy , right click on that location select the ''PASTE'' option.
+2.Drag the desired file or folder by pressing ''Ctrl'' button from the desired location.
+3.Select the file or folder go to the edit menu in that window select the option ''COPY'' go
+to the desired location select edit menu , select the ''PASTE'' option.
+4.Select the desired folder or file , press ''Ctrl+C'' , go to the desired location,press
+''Ctrl+v''.
+
+MOVING:
+1.Select the file or folder ,right click on it select the option ''CUT'' goto the location

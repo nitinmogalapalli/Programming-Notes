@@ -1,0 +1,36 @@
+Python Break:-
+--------------------
+break statement is a jump statement that is used to pass the control to the end of the loop.
+
+When break statement is applied the control points to the line following the body of the loop , hence applying break statement makes the loop to terminate and controls goes to next line pointing after loop body.
+
+Syntax:-
+-----------
+while<condition>:
+
+statement1
+
+statement2
+
+if<condition>:
+
+break
+
+statement3
+
+statement4
+
+
+eg:
+-----
+    for i in [1,2,3,4,5]:  
+        if i==4:  
+            print "Element found"  
+            break  
+        print i,  
+
+Output:
+
+    >>>   
+    1 2 3 Element found  
+    >>>  

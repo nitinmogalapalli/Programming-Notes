@@ -1,0 +1,29 @@
+Javascript - innerHTML:-
+----------------------------------
+The innerHTML property can be used to write the dynamic html on the html document.
+
+It is used mostly in the web pages to generate the dynamic html such as registration form, comment form, links etc.
+
+Example of innerHTML property:-
+---------------------------------------------
+In this example, we are going to create the html form when user clicks on the button.
+
+In this example, we are dynamically writing the html form inside the div name having the id mylocation. We are identifing this position by calling the document.getElementById() method.
+
+<html>
+<body>
+<script type="text/javascript" >  
+function showcommentform() 
+{  
+var data="Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='comment'>";  
+  
+document.getElementById('mylocation').innerHTML=data;  
+ }  
+  
+</script>  
+<form name="myForm">  
+<input type="button" value="comment" onclick="showcommentform()">  
+<div id="mylocation"></div>  
+</form>  
+</body>
+</html>

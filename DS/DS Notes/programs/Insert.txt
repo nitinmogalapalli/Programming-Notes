@@ -1,0 +1,33 @@
+// Insert element into an array
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,n,pos,value,x[10];
+clrscr();
+printf("How many values:\n");
+scanf("%d",&n);
+printf("Enter %d values\n",n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&pos);
+}
+printf("Where to insert a new value:\n");
+scanf("%d",&value);
+printf("Data before Inserting\n");
+for(i=0;i<n;i++)
+{
+printf("%d\t",x[i]);
+}
+for(i=n-1;i>=pos;i--)
+{
+x[i+1]=x[i];
+//moving i th element to (i+1) th location.
+x[pos]=value;
+}
+printf("Data inserting \n");
+for(i=0;i<=n;i++)
+{
+printf("%d\t",x[i]);
+}
+}

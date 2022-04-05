@@ -1,0 +1,150 @@
+Forms:-
+---------
+	Forms are used to add an element of interactivity to a web site. An HTML form is a section of a document containing normal content, markup, special elements called controls (checkboxes, radio buttons, menus etc.), and labels on those controls. Users generally "Complete" a form by modifying its controls (entering text, selecting menu items etc.), before submitting the form to an agent for processing (E.g., to a web server, to a mail server etc.)
+
+Form Tag:-
+-------------
+	This tag is used to create an HTML form to enclose all the html controls.
+
+Syntax:-
+----------
+<form name="form" action="URL" method="Post/get"> 
+-------------------------------------------------------------------
+</form>
+
+Attributes of form are:-
+----------------------------
+1. Action :-
+--------------
+	The Action attribute specifies the name and location of url what will be used to process the data.
+
+2. Method:-
+---------------
+	Data can be sent in one of two ways ie either by GET or POST methods.
+Get:-
+-----
+This Method is used to get or retrieve information from a server.
+Post:-
+-------
+This method is used to send the information from a server.
+
+3. INPUT:-
+-------------
+	This attribute sets an area in a form for user input.
+Syntax:-
+----------
+<input>
+
+4. TYPE:-
+------------
+	This attribute specifies what type of input control such as Text, password, checkbox, radio, image, reset etc.
+Syntax:-
+----------
+<input type="any control">
+
+5. NAME:-
+--------------
+	This specifies the name of the form and also specifies the control type if it is used with the controls for processing the results.
+Syntax:-
+----------
+<input type="any control" name="give own name">
+
+Form name Syntax:-
+------------------------
+<form name="form1">
+
+6. VALUE:-
+---------------
+	This attribute provide the default values.
+Syntax:-
+---------
+<input type="any control type" name="give own name" value="any value/name for control">
+Ex:-
+-----
+<input type="radio" name="breakfast" value="Bread"> Bread.
+
+7. SIZE:-
+-----------
+	This attribute specifies the visible size for text fields.
+Syntax:-
+----------
+<input type="any control type" name="give own name" size="n">
+
+Ex:-
+-----
+<input type="text" name="user name" size="25"> Username
+
+8. MAXLENGTH:-
+-----------------------
+	This attribute specifies the maximum input size for text fields.
+Syntax:-
+----------
+<input type="any control type" name="give own name" size="n" maxlength="n">
+
+Ex:-
+-----
+<input type="text" name="user name" size="25" maxlength="50"> Username
+
+9. SELECTED:-
+--------------------
+	This attribute specifies the default selection when form is initially displayed or reloaded.
+Syntax:-
+----------
+<select name="user defined name">
+<option selected> select default value
+<option> value 1............. </option> 
+Valuen
+</select>
+
+Ex:-
+-----
+<select name="month">
+<option selected> select month
+<option> Jan
+<option> feb
+<option> mar
+<option> apr
+<option> may
+<option> June
+<option> July
+<option> aug
+<option> sep
+<option> oct
+<option> nov
+<option> dec
+</select>
+
+HTML FORM CONTROLS TYPES:-
+---------------------------------------------	
+	In HTML the available form controls types are
+1. Buttons:-
+--------------
+	This control is used to create a button on the form.
+<input type="button">
+
+2. Checkboxes:-
+-------------------
+	Checkboxes (and radio buttons) are on/off switches that may be toggied by in a form may share the same control name.
+<input type="checkbox">
+
+3. File Uploading:-
+-----------------------
+	This control lets the user to upload files.
+<input type="FILE">
+
+4. Hidden Controls:-
+-------------------------
+	It stores the hidden data, i.e data is not visible to users unless they view the source code.
+<input type="HIDDEN">
+
+5. Image Controls:-
+------------------------
+	It indicates an image by which users can click as if there is a submit button.
+<input type="IMAGE">
+
+6. Password controls:-
+---------------------------
+	This control creates a password textfield, which shows asterisks (by default) on the textfield.
+<input type="PASSWORD">
+
+7.  

@@ -1,0 +1,63 @@
+PHP For Loop :
+----------------------
+PHP for loop can be used to traverse set of code for the specified number of times.
+
+It should be used if number of iteration is known otherwise use while loop.
+
+Syntax :
+-----------
+    for(initialization; condition; increment/decrement)
+    {  
+    //code to be executed  
+    }
+
+Example :
+--------------
+    <?php  
+    for($n=1;$n<=10;$n++)
+    {  
+    echo "$n<br/>";  
+    }  
+    ?>  
+
+PHP Nested For Loop :
+---------------------------------
+We can use for loop inside for loop in PHP, it is known as nested for loop.
+
+In case of inner or nested for loop, nested for loop is executed fully for one outer for loop. If outer for loop is to be executed for 3 times and inner for loop for 3 times, inner for loop will be executed 9 times (3 times for 1st outer loop, 3 times for 2nd outer loop and 3 times for 3rd outer loop).
+
+Example
+------------
+    <?php  
+    for($i=1;$i<=3;$i++)
+    {  
+    for($j=1;$j<=3;$j++)
+    {  
+    echo "$i   $j<br/>";  
+    }  
+    }  
+    ?>
+
+PHP For Each Loop :
+------------------------------
+PHP for each loop is used to traverse array elements.
+
+Syntax :
+-----------
+    foreach( $array as $var )
+    {  
+     //code to be executed  
+    }  
+    ?>  
+
+Example
+-------------
+    <?php  
+    $season=array("summer","winter","spring","autumn");  
+    foreach( $season as $arr )
+    {  
+      echo "Season is: $arr<br />";  
+    }  
+    ?> 
+
+   

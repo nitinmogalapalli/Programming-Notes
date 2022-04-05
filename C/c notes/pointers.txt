@@ -1,0 +1,88 @@
+Pointer:-
+-----------
+                 Pointer is a special variable which represent a storage location in memory. A pointer variable is a variable that contain the address of another variable.
+
+	Remember that the Ram has many cells to store value. Each cell in memory is 1byte and has a unique address to identify it. The memory address is always an unsigned integer.
+
+Example :- 
+--------------
+ 	65522,6640 etc.
+
+In pointer use of two types of operator.
+
+1. Indirection operator    
+2. Address operator 
+
+Indirection Operator:-
+----------------------------
+             This operator is denoted by * symbol and this symbol is called asterisk ( * ). Which is use to access the value of a variable through a keyboard.
+
+Address operator (&):-
+-----------------------------
+	The symbol & (ampersand) is an address operator which is used to access the address of a variable and assign it to pointer to initialize it. 
+
+Example:- 
+--------------
+
+Int 	a = 10
+Int	*p	pointer integer 
+p = &a;  // assign the address of a into p variable 
+
+Pointer declaration:-
+--------------------------
+The pointer variable in the declaration is preceded by the asterisk (*) symbol.
+
+Syntax :-
+------------
+	type *v1,*v2…………..*vn.
+
+Here type represent any valid data type in c such as int, float, char etc.
+
+*v1,*v2…………..*vn  represent the pointer value .
+
+Examples:-
+--------------
+1. W.A.P. to print the value and its address of the variable.
+	
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a;
+int *p;
+printf("Enter the value of a=");
+scanf("%d",&a);
+p=&a;
+printf("%d",*p);
+printf("the address of a =%u",&p);
+getch();
+}
+
+Output :-
+------------
+   	Enter the value of a  =  5
+	5
+	The address value of a = 65522.
+
+2. W.A.P. to find the sum of two values using pointer.
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a,b,t;
+int *p1,*p2;
+printf("enter any two values=");
+scanf("%d%d",&a,&b);
+p1=&a;
+p2=&b;
+t=*p1+*p2;
+printf("the total of the two values = %d",t);
+getch();
+}
+
+Output :-
+------------
+            	enter any two values  =  15
+	10
+	Total of two values  =  25.

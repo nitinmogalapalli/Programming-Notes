@@ -1,0 +1,176 @@
+What is Web Designing :-
+------------------------------
+		web designing is all about the planning and creation of websites.A good designer knows html and css as well as design priciples.A great designer knows that planning a website is as critical as putting the pieces together.
+
+What is a Website:-
+------------------------
+	Website is a collection of webpages (or) a central location of various web pages that are all related and can be accessed by visiting the home page using a browser.
+
+What is a Webpage:-
+------------------------- 
+	A web page or webpage is a document commonly written in HyperText Markup Language (HTML) that is accessible through the Internet or other network using a browser. A web page is accessed by entering a URL addresses and may contain text, graphics, and hyperlinks to other web pages and files.
+
+What is a Internet:-
+-----------------------
+	The Internet is a global network connecting millions of computers.
+
+When was the first web page created:-
+----------------------------------------------
+	The first web page was created at CERN by Tim Berners-Lee and put online August 6, 1991.
+
+What is the difference between a website and web page:-
+---------------------------------------------------------------------
+	A website refers to a central location that contains more than one web page. For example, Yahoo is considered a website, which contains thousands of different pages.
+
+
+How to create a website:-
+-------------------------------
+	A website is created using by webpages and webpages are creating using with HTML,CSS and Javascript etc....
+
+What is HTML:-
+--------------------
+HTML is a language for describing web pages.
+
+HTML stands for Hyper Text Markup Language
+HTML is a markup language
+A markup language is a set of markup tags
+The tags describe document content
+HTML documents contain HTML tags and plain text
+HTML documents are also called web pages
+				
+HTML Tags:-
+----------------
+HTML markup tags are usually called HTML tags
+
+HTML tags are keywords (tag names) surrounded by angle brackets like <html>
+HTML tags normally come in pairs like <b> and </b>
+The first tag in a pair is the start tag, the second tag is the end tag
+The end tag is written like the start tag, with a forward slash before the tag name
+Start and end tags are also called opening tags and closing tags
+
+
+ex:-
+----
+ 	<tagname>content</tagname>
+
+HTML Elements:-
+---------------------
+	"HTML tags" and "HTML elements" are often used to describe the same thing.
+
+An HTML element is everything between the start tag and the end tag, including the tags:
+
+HTML Element:-
+---------------------
+	<p>This is a paragraph.</p>
+
+Web Browsers:-
+-------------------
+The purpose of a web browser (such as Google Chrome, Internet Explorer, Firefox, Safari) is to read HTML documents and display them as web pages.
+
+The browser does not display the HTML tags, but uses the tags to determine how the content of the HTML page is to be presented/displayed to the user.
+
+HTML Versions:-
+---------------------
+Since the early days of the web, there have been many versions of HTML:
+
+Version 		Year
+---------		------
+HTML 		1991
+HTML+ 		1993
+HTML 2.0 	1995
+HTML 3.2	
+		1997
+HTML 4.01 	1999
+XHTML 		2000
+HTML5 		2012
+
+The <!DOCTYPE> Declaration:-
+----------------------------------------
+The <!DOCTYPE> declaration helps the browser to display a web page correctly.
+
+There are many different documents on the web, and a browser can only display an HTML page 100% correctly if it knows the HTML type and version used. 
+Common Declarations
+
+HTML5:-
+------------
+	<!DOCTYPE html> 
+
+Writing HTML Using Notepad or TextEdit:-
+-----------------------------------------------------
+HTML can be edited by using a professional HTML editor like:
+
+    Adobe Dreamweaver
+    Microsoft Expression Web
+    CoffeeCup HTML Editor
+
+However, for learning HTML we recommend a text editor like Notepad (PC) or TextEdit (Mac). We believe using a simple text editor is a good way to learn HTML.
+
+Structure of a Html Program:-
+------------------------------------
+A HTML document is basically separated in two parts: the head (HTML head tag) and the body (HTML body tag). We also add a Document type declaration on top of it to get the basic document structure and HTML version.  The structure of a HTML document is shown below.
+
+<! DOCTYPE …>  version information
+<HTML>
+ <HEAD>
+   ...information about document, scripts, styles….
+ </HEAD>
+ <BODY>
+   ...visible content of document….
+ </BODY>
+</HTML>
+
+HTML document begins and ends with HTML tag i.e. <HTML> </HTML>
+Here <HTML> indicates the browser that it is a HTML document and </HTML> tells the browser that HTML document is completed.
+
+• Header Tag i.e. <HEAD></HEAD>
+Header Tag does not contain any text, it only contains the Title Tag in it.
+
+• Title tag i.e. <TITLE></TITLE>
+Anything written between this tag is not displayed on the screen but it is used to identify the Webpage.
+
+• Body tag i.e.<BODY></BODY>
+This is the main part of HTML document. The content which is to be displayed on screen as webpage should be written here. Body Tag contains the text as well as various tags but only the text will be displayed on Webpage.
+
+Ex:-
+-----
+<html>
+<head>
+<title>   My First WEB PAGE </title>
+</head>
+<body>
+HTML is Hyper Text Markup Language
+</body>
+</html>
+
+Start Notepad:-
+-------------------
+To start Notepad go to:
+
+Start
+    All Programs
+        Accessories
+            Notepad
+
+Edit Your HTML with Notepad:-
+----------------------------------------
+Type your HTML code into your Notepad:
+
+<html>
+<head>
+<title>   My First WEB PAGE </title>
+</head>
+<body>
+HTML is Hyper Text Markup Language
+</body>
+</html>
+
+Save Your HTML file:-
+----------------------------
+Select Save as.. in Notepad's file menu.
+
+When you save an HTML file, you can use either the .htm or the .html file extension. There is no difference, it is entirely up to you.
+
+Run the HTML file in Your Browser:-
+----------------------------------------------
+Start your web browser and open your html file from the File, Open menu, or just browse the folder and double-click your HTML file.
+

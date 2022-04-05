@@ -1,0 +1,55 @@
+What is HTML?
+
+HTML stands for Hyper Text Markup Language
+
+What is Hyper Text?
+
+Hyper Text simply means "Text within Text". A text has a link within it, is a hypertext. Every time when you click on a word which brings you to a new webpage, you have clicked on a hypertext.
+
+What is Markup Language?
+
+A markup language is a programming language that is used make text more interactive and dynamic. It can turn a text into images, tables, links etc.
+
+An HTML document is made of many HTML tags and each HTML tag contains different content.
+
+Example:-
+--------------
+<!DOCTYPE>
+<html>  
+<body>  
+<h1>Write Your First Heading</h1>  
+<p>Write Your First Paragraph.</p>  
+</body>  
+</html>  
+
+Description of HTML Example:-
+-------------------------------------------
+DOCTYPE: It defines the document type.
+
+html : Text between html tag describes the web document.
+
+body : Text between body tag describes the body content of the page that is visible to the end user.
+
+h1 : Text between h1 tag describes the heading of the webpage.
+
+p : Text between p tag describes the paragraph of the webpage.
+
+Brief History of HTML:-
+-------------------------------
+In the late 1980's , Tim Berners-Lee who was a contractor at CERN, proposed a system for CERN researchers. In 1989, he wrote a memo proposing an internet based hypertext system.
+
+Tim Berners-Lee is known as father of HTML. The first available description of HTML was a document called "HTML Tags" proposed by Tim in late 1991. 
+
+Features of HTML:-
+---------------------------
+1) It is a very easy and simple language. It can be easily understood and modified.
+
+2) It is very easy to make effective presentation with HTML because it has a lot of formatting tags.
+
+3) It is a markup language so it provides a flexible way to design web pages along with the text.
+
+4) It facilitates programmers to add link on the web pages (by html anchor tag) , so it enhances the interest of browsing of the user.
+
+5) It is platform-independent because it can be displayed on any platform like Windows, Linux and Macintosh etc.
+
+6) It facilitates the programmer to add Graphics, Videos, and Sound to the web pages which makes it more attractive and interactive. 

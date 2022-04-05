@@ -1,0 +1,49 @@
+Playing Videos in HTML:-
+--------------------------------
+Before HTML5, there was no standard for showing videos on a web page.
+
+Before HTML5, videos could only be played with a plug-in (like flash).
+
+The HTML5 <video> element specifies a standard way to embed a video in a web page.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
+
+How it Works
+
+The controls attribute adds video controls, like play, pause, and volume.
+
+It is a good idea to always include width and height attributes.
+
+If height and width are not set, the browser does not know the size of the video. The effect will be that the page will change (or flicker) while the video loads.
+
+Text between the <video> and </video> tags will only display in browsers that do not support the <video> element.
+
+Multiple <source> elements can link to different video files. The browser will use the first recognized format.
+
+HTML <video> Autoplay:-
+--------------------------------
+To start a video automatically use the autoplay attribute:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>

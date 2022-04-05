@@ -1,0 +1,42 @@
+JavaScript String:-
+-------------------------
+The JavaScript string is an object that represents a sequence of characters.
+
+There are 2 ways to create string in JavaScript
+
+    By string literal
+    By string object (using new keyword)
+
+1) By string literal:-
+--------------------------
+The string literal is created using double quotes. The syntax of creating string using string literal is given below:
+
+    var stringname="string value";  
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var str="This is string literal";  
+document.write(str);  
+</script>
+</body>
+</html>
+
+2) By string object (using new keyword):-
+--------------------------------------------------------
+The syntax of creating string object using new keyword is given below:
+
+    var stringname=new String("string literal");  
+
+Here, new keyword is used to create instance of string.
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+var stringname=new String("hello javascript string");  
+document.write(stringname);  
+</script> 
+</body>
+</html>

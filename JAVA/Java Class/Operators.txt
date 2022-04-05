@@ -1,0 +1,25 @@
+Operators:
+	The Operator is a symbol to represent the operation. The Operators used on some variables/values to get some result, those variables/values called as Operands.
+
+Unary
+	The operators applied to only one operand
+Binary
+	The operator applied to two operands
+Ternary
+	Here the operator reqire three operands
+
+
+1. Arithmetic :	+ - * / %
+2. Relational:	<, <=, >, >=, ==, !=
+3. Logical:		&&,||, !
+4. Assignment:	=, short hand: +=, -=, *=, /=, %=
+5. Bitwise:		&,|,~,^,>>,<<,>>>,>>=,<<=...
+6. Increment/Decrement:	++,-- (Unary operators)
+7. Conditional	?: (Ternary Operatory)
+6. Special Operators:	',' (comma), . (dot), new, instanceOf
+    a. new
+	It is an operator used to assign memory to the variable dynamically.
+	ex: Box b = new Box();
+   b. instanceOf
+	It is used to check(Boolean) whether the object is an instance of the particular class or not.
+	Boolean bl = Obj.instanceOf(ClassName);

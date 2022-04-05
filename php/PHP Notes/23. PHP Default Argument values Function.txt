@@ -1,0 +1,43 @@
+PHP Default Argument Values Function :
+--------------------------------------------------------
+PHP allows you to define C++ style default argument values. In such case, if you don't pass any value to the function, it will use default argument value.
+
+Let' see the simple example of using PHP default arguments in function.
+
+Example 1 :
+-----------------
+    <?php  
+    function sayHello($name="Ram")
+    {  
+    echo "Hello $name<br/>";  
+    }  
+    sayHello("Sonoo");  
+    sayHello(); 
+    sayHello("Vimal");  
+    ?>  
+
+Example 2 :
+-----------------
+    <?php    
+    function greeting($first="Sonoo",$last="Jaiswal")
+    {    
+    echo "Greeting: $first $last<br/>";    
+    }    
+    greeting();  
+    greeting("Rahul");  
+    greeting("Michael","Clark");  
+    ?> 
+
+Example 3 :
+-----------------
+    <?php  
+    function add($n1=10,$n2=10)
+    {  
+    $n3=$n1+$n2;  
+    echo "Addition is: $n3<br/>";  
+    }  
+    add();  
+    add(20);  
+    add(40,40);  
+    ?>
+     

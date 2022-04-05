@@ -1,0 +1,17 @@
+MySQL DELETE Statement:-
+----------------------------------------
+MySQL DELETE statement is used to delete data from the MySQL table within the database. By using delete statement, we can delete records on the basis of conditions.
+
+Syntax:
+----------
+DELETE FROM table_name   
+WHERE  
+(Condition specified);  
+
+
+Example:
+-------------
+DELETE FROM cus_tbl  
+WHERE cus_id = 6;
+
+  

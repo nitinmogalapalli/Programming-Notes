@@ -1,0 +1,279 @@
+CSS3 Multi-column Layout:-
+-------------------------------------
+The CSS3 multi-column layout allows easy definition of multiple columns of text - just like in newspapers
+
+CSS3 Multi-column Properties:-
+------------------------------------------
+In this chapter you will learn about the following multi-column properties:
+
+    column-count
+    column-gap
+    column-rule-style
+    column-rule-width
+    column-rule-color
+    column-rule
+    column-span
+    column-width
+
+CSS3 Create Multiple Columns:-
+-------------------------------------------
+The column-count property specifies the number of columns an element should be divided into.
+
+The following example will divide the text in the <div> element into 3 columns: 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-count property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>
+
+CSS3 Specify the Gap Between Columns:-
+-------------------------------------------------------
+The column-gap property specifies the gap between the columns.
+
+The following example specifies a 40 pixels gap between the columns:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-gap property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. 
+</div>
+
+</body>
+</html>
+
+CSS3 Column Rules:-
+-----------------------------
+The column-rule-style property specifies the style of the rule between columns:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule-style property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>
+
+The column-rule-width property specifies the width of the rule between columns:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule-width property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>
+
+The column-rule-color property specifies the color of the rule between columns:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+    -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: lightblue; /* Firefox */
+    column-rule-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule-color property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>
+
+The column-rule property is a shorthand property for setting all the column-rule-* properties above.
+
+The following example sets the width, style, and color of the rule between columns:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>
+
+Specify How Many Columns an Element Should Span:-
+------------------------------------------------------------------------
+The column-span property specifies how many columns an element should span across.
+
+The following example specifies that the <h2> element should span across all columns:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue;
+}
+
+h2 {
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Firefox and Internet Explorer 9 (and earlier versions) do not support the column-span property.</p>
+
+<div class="newspaper">
+<h2>Lorem Ipsum Dolor Sit Amet</h2>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>
+
+Specify The Column Width:-
+-------------------------------------
+The column-width property specifies a suggested, optimal width for the columns.
+
+The following example specifies that the suggested, optimal width for the columns should be 100px:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-width property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>

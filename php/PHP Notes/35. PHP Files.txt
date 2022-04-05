@@ -1,0 +1,86 @@
+PHP File Handling:
+---------------------------
+PHP File System allows us to create file, read file line by line, read file character by character, write file, append file, delete file and close file.
+
+PHP Open File - fopen() :
+------------------------------------
+The PHP fopen() function is used to open a file.
+
+Syntax:
+-----------
+    resource fopen ( string $filename , string $mode [, bool $use_include_path = false [, resource $context ]] )  
+
+Example:
+-------------
+    <?php  
+    $handle = fopen("c:\\folder\\file.txt", "r");  
+    ?>  
+
+PHP Close File - fclose():
+-----------------------------------
+The PHP fclose() function is used to close an open file pointer.
+
+Syntax:
+----------
+    ool fclose ( resource $handle )  
+
+Example:
+-------------
+    <?php  
+    fclose($handle);  
+    ?>  
+
+PHP Read File - fread():
+---------------------------------
+The PHP fread() function is used to read the content of the file. It accepts two arguments: resource and file size.
+
+Syntax:
+----------
+    string fread ( resource $handle , int $length )  
+
+Example:
+-------------
+    <?php    
+    $filename = "c:\\myfile.txt";    
+    $handle = fopen($filename, "r");//open file in read mode    
+      
+    $contents = fread($handle, filesize($filename));//read file    
+      
+    echo $contents;//printing data of file  
+    fclose($handle);//close file    
+    ?>
+
+PHP Write File - fwrite():
+---------------------------------
+The PHP fwrite() function is used to write content of the string into file.
+
+Syntax:
+-----------
+    int fwrite ( resource $handle , string $string [, int $length ] )  
+
+Example:
+-------------
+    <?php  
+    $fp = fopen('data.txt', 'w');//open file in write mode  
+    fwrite($fp, 'hello ');  
+    fwrite($fp, 'php file');  
+    fclose($fp);  
+      
+    echo "File written successfully";  
+    ?>
+
+PHP Delete File - unlink() :
+-------------------------------------
+The PHP unlink() function is used to delete file.
+
+Syntax:
+-----------
+    bool unlink ( string $filename [, resource $context ] )  
+
+Example:
+-------------
+    <?php    
+    unlink('data.txt');  
+       
+    echo "File deleted successfully";  
+    ?>        

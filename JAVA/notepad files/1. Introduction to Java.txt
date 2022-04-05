@@ -1,0 +1,106 @@
+INTRODUCTION TO JAVA:-
+---------------------------------------
+What is Java?
+--------------------
+1.Java is a programming language and a platform.
+2.Java is a high level, robust, secured and object-oriented programming language.
+3.Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has its own runtime environment (JRE) and API, it is called platform.
+
+Where it is used?
+------------------------
+According to Sun, 3 billion devices run java. There are many devices where java is currently used. Some of them are as follows:-
+
+1.Desktop Applications such as acrobat reader, media player, antivirus etc.
+Web Applications such as irctc.co.in, javatpoint.com etc.
+2.Enterprise Applications such as banking applications.
+3.Mobile
+4.Embedded System
+5.Smart Card
+6.Robotics
+7.Games etc.
+
+Types of Java Applications:-
+--------------------------------------
+There are mainly 4 type of applications that can be created using java programming:
+
+1.Standalone Application
+2.Web Application
+3.Enterprise Application
+4.Mobile Application
+
+1) Standalone Application:-
+-------------------------------------
+It is also known as desktop application or window-based application. An application that we need to install on every machine such as media player, antivirus etc. AWT and Swing are used in java for creating standalone applications.
+
+2) Web Application:-
+----------------------------
+An application that runs on the server side and creates dynamic page, is called web application. Currently, servlet, jsp, struts, jsf etc. technologies are used for creating web applications in java.
+
+3) Enterprise Application:-
+------------------------------------
+An application that is distributed in nature, such as banking applications etc. It has the advantage of high level security, load balancing and clustering. In java, EJB is used for creating enterprise applications.
+
+4) Mobile Application:-
+------------------------------
+An application that is created for mobile devices. Currently Android and Java ME are used for creating mobile applications.
+
+History of Java:-
+----------------------
+1.The history of java starts from Green Team. Java team members (also known as Green Team), initiated a revolutionary task to develop a language for digital devices such as set-top boxes, televisions etc.
+2.For the green team members, it was an advance concept at that time. But, it was suited for internet programming. Later, Java technology as incorporated by Netscape.
+3.Currently, Java is used in internet programming, mobile devices, games, e-business solutions etc. 
+4. James Gosling initiated the Java language project in June 1991.
+5. Originally designed for small, embedded systems in electronic appliances like set-top boxes.
+6. Firstly, it was called "Green talk" by James Gosling and file extension was .gt.
+7. After that, it was called Oak and was developed as a part of the Green project.
+
+Why Oak name for java language?
+-----------------------------------------------
+1) Why Oak? Oak is a symbol of strength and chosen as a national tree of many countries like U.S.A., France, Germany, Romania etc.
+2) In 1995, Oak was renamed as "Java" because it was already a trademark by Oak Technologies.
+3) Originally developed by James Gosling at Sun Microsystems (which is now a subsidiary of Oracle Corporation) and released in 1995.
+
+Java Version History:-
+------------------------------
+There are many java versions that has been released. Current stable release of Java is Java SE 8.
+
+1.JDK Alpha and Beta (1995)
+2.JDK 1.0 (23rd Jan, 1996)
+3.JDK 1.1 (19th Feb, 1997)
+4.J2SE 1.2 (8th Dec, 1998)
+5.J2SE 1.3 (8th May, 2000)
+6.J2SE 1.4 (6th Feb, 2002)
+7.J2SE 5.0 (30th Sep, 2004)
+8.Java SE 6 (11th Dec, 2006)
+9.Java SE 7 (28th July, 2011)
+10.Java SE 8 (18th March, 2014)
+
+Features of Java:-
+-------------------------
+1. Compiled and Interpreted:-
+-----------------------------------------
+
+
+Basically languages either compile or interpret the program, Java has fusion of both the features, 
+it first compiles the program to byte code & then interprets it to machine code.
+
+2. Platform independence & portability:-
+------------------------------------------------------
+Java has no restriction of OS and Hardware so it is portable & machine code.
+
+3. Object Oriented:-
+---------------------------
+It is object oriented and everything in it is an object. It comes with extensive set of classes arranged in packages that we can use in our program by inheritance.
+
+4. Robust and secure:-
+--------------------------------
+Java does not support pointers and memory is managed dynamically at compile time & run time so it is robust and because it has internet use so it needs to be secure, no pointer system provides it security.
+
+5. Distributed:-
+--------------------
+Java provides access to other programs on remote easily, hence facilitates multiple users to work on single objective.
+
+6.  Simple:-
+----------------
+It is very simple & easy to use and java removes unneccessary features of C++ like multiple Inheritance, goto statement, pointers, pre-processor header files, operator overloading etc.,
+

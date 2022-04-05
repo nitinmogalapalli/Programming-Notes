@@ -1,0 +1,63 @@
+PHP Break :
+-----------------
+PHP break statement breaks the execution of current for, while, do-while, switch and for-each loop. If you use break inside inner loop, it breaks the execution of inner loop only.
+
+Syntax :
+------------
+    jump statement;  
+    break; 
+
+PHP Break: inside loop :
+----------------------------------
+Let's see a simple example to break the execution of for loop if value of i is equal to 5.
+
+    <?php  
+    for($i=1;$i<=10;$i++)
+    {  
+    echo "$i <br/>";  
+    if($i==5)
+   {  
+    break;  
+    }  
+    }  
+    ?>
+
+PHP Break: inside inner loop :
+-----------------------------------------
+The PHP break statement breaks the execution of inner loop only.
+
+    <?php  
+    for($i=1;$i<=3;$i++)
+     {  
+     for($j=1;$j<=3;$j++)
+      {  
+      echo "$i   $j<br/>";  
+      if($i==2 && $j==2)
+      {  
+       break;  
+      }  
+     }  
+    }  
+    ?> 
+
+PHP Break: inside switch statement
+-------------------------------------------------
+The PHP break statement breaks the flow of switch case also.
+
+    <?php      
+    $num=200;      
+    switch($num)
+   {      
+    case 100:      
+    echo("number is equals to 100");      
+    break;      
+    case 200:      
+    echo("number is equal to 200");      
+    break;      
+    case 50:      
+    echo("number is equal to 300");      
+    break;      
+    default:      
+    echo("number is not equal to 100, 200 or 500");      
+    }     
+    ?>        

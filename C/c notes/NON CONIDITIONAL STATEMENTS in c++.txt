@@ -1,0 +1,155 @@
+BREAK Statement:-
+---------------------------
+	The break statement is used to terminate loops or to exit from a switch. It can be used within a for, while, do-while, or switch statement.
+
+Syntax:-
+-----------
+	break;
+
+Ex:-
+-----
+/* program to understand break statement */
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int i;
+	clrscr();
+	cout<<"the values from 1 to 10:\n";
+	for(i=1;i<=10;i++)
+	{
+		if( i == 5 )
+		{
+		break;
+		}	
+		cout<<i;
+	}
+	getch();
+}
+
+CONTINUE Statement:-
+--------------------------------
+	The Continue Statement is used to bypass the remainder of the current pass through a loop. The loop does not terminate when a continue statement is encountered.
+
+Syntax:-
+-----------
+	continue;
+
+Ex:-
+-----
+/* program to understand the Continue statement */
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int i;
+	clrscr();
+	cout<<"Numbers from 10 to 1:\n";
+	for(i=10;i>=1;i--)
+	{
+		if(i==4 || i==7)
+		{
+			continue;
+		}
+		cout<<i;
+	}
+	getch();
+}
+
+GOTO Statement:-
+-----------------------
+                                   The Goto Statement is an unconditional branching statement. It is used to transfer the control from one part of the program.
+
+Syntax:-
+------------
+	labelname: statement
+
+	goto label;
+
+Example:-
+-------------
+      W.A.P to find the day of week following number of day.
+                         
+Number of Day        Number of Week Day
+1.		Sunday
+2.		Monday
+3.		Tuesday	
+4.		Wednesday
+5.		Thursday
+6.		Friday
+7.		Saturday
+More than 7	Invalid entry
+
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int a;
+clrscr();
+K:
+cout<<"enter the value of a=";
+cin>>a;
+switch(a)
+{
+case 1:
+cout<<"Sunday";
+goto K;
+case 2:
+cout<<"Monday";
+goto K;
+case 3:
+cout<<"Tuesday";
+goto K;
+case 4:
+cout<<"Wednesday";
+goto K;
+case 5:
+cout<<"Thursday";
+goto K;
+case 6:
+cout<<"Friday";
+goto K;
+case 7:
+cout<<"Saturday";
+goto K;
+default:
+cout<<"Invalid entry";
+break;
+}
+getch();
+}
+
+Output:-
+                               Enter the value of a = 2
+                               Monday
+                               Enter the value of a =5
+                               Thursday
+                               Enter the value of a = 1
+                               Sunday
+                               Enter the value of a =12
+                               Invalid entry
+
+Solution:-
+                                    Here K is represent the Goto statement. In above example the first time Enter the value of a= 2 then output show Monday and press enter then renter the value of a = 5 then output is shows  Thursday and when all case are not run then not goto the outside of the program. If we are going to outside the execute part then  the value enter of a is press more than 7 then we are go to the outside the execute part..
+
+Example:-
+-------------
+1. W.A.P to find the month of the year following given format with using GOTO Statement.
+
+No. of Month        Name of Month         
+1		January
+2		February
+3		March
+4		April
+5		May
+6		June
+7		July
+8		August
+9		September
+10		October
+11		November
+12		December
+more than 13	Invaild Month.
+
+

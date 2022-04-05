@@ -1,0 +1,24 @@
+Python Constructors
+-----------------------------
+A constructor is a special type of method (function) that is called when it instantiates an object using the definition found in your class. The constructors are normally used to initialize (assign values) to the instance variables. Constructors also verify that there are enough resources for the object to perform any start-up task.
+
+Creating a constructor:
+-------------------------------
+A constructor is a class function that begins with double underscore (_). The name of the constructor is always the same __init__().
+
+While creating an object, a constructor can accept arguments if necessary. When you create a class without a constructor, Python automatically creates a default constructor that doesn't do anything.
+
+Every class must have a constructor, even if it simply relies on the default constructor.
+
+Example:-
+--------------
+class test:
+    def __init__(self):
+        print "init 1"
+    def __init__(self):
+        print "init 2"
+
+output:-
+------------
+>>> s=test()
+init 2

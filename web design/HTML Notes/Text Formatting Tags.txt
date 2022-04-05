@@ -1,0 +1,145 @@
+Text Formatting Tags:-
+-----------------------------
+Bold Tag:-
+------------
+	it sets the text style to bold.
+Syntax:-
+---------
+	<b> --------------- </b>
+Ex:-
+----
+	<b> Prince </b>
+
+Italic Tag:-
+-------------
+	it displays the text in the italic form.
+Syntax:-
+---------
+	<i> --------------- </i>
+Ex:-
+----
+	<i> Prince </i>
+
+Underline:-
+--------------
+	underlines the enclosed text.
+Syntax:-
+---------
+	<u> --------------- </u>
+Ex:-
+----
+	<u> Prince </u>
+
+Break:-
+---------
+	It inserts a line break into a page. This tag not have the Closing tag.
+
+Syntax:-
+-----------
+	<br>
+
+Strikeout:-
+-------------
+	This tag cause a line to be drawn through the text.
+Syntax:-
+---------
+	<s> --------------- </s>
+Ex:-
+----
+	<s> Prince </s>
+
+Big:-
+------
+	This tag makes the text to look bigger
+Syntax:-
+---------
+	<big> --------------- </big>
+Ex:-
+----
+	<big> Prince </big>
+
+Small:-
+--------
+	This tag makes the text to look smaller
+Syntax:-
+---------
+	<small> --------------- </small>
+Ex:-
+----
+	<small> Prince </small>
+
+Subscript:-
+-------------
+	Sets the text as subscripts. This puts the characters lower down than regular text.
+
+Syntax:-
+---------
+	<sub> --------------- </sub>
+Ex:-
+----
+	H <sub> 2 </sub> O
+
+Superscript:-
+---------------
+	Sets the text as superscripts. This puts the characters higher up than regular text.
+
+Syntax:-
+---------
+	<sup> --------------- </sup>
+Ex:-
+----
+	a <sup> 2 </sup> 
+
+Strong:-
+----------
+	This tag usually displays the text in bold which emphasizes the text strongly.
+
+Syntax:-
+---------
+	<strong> --------------- </strong>
+Ex:-
+----
+	<strong> Prince </strong>
+
+Deleted Text:-
+-----------------
+	Marks text as deleted and displays as strikethrough text in browser.
+
+Syntax:-
+---------
+	<del> --------------- </del>
+Ex:-
+----
+	<del> Prince </del>
+
+Center:-
+----------
+	This tag helps to align text which it contented in the center of web page.
+
+Syntax:-
+---------
+	<center> --------------- </center>
+Ex:-
+----
+	<center> Prince </center>
+
+Columns:-
+------------
+	It breaks the text into columns.
+Syntax:-
+---------
+	<multicol> --------------- </multicol>
+Ex:-
+----
+	<multicol> Prince </multicol>
+
+Insert:-
+---------
+	It defines to inserted text.
+Syntax:-
+---------
+	<ins> --------------- </ins>
+Ex:-
+----
+	<ins> Prince </ins>
+

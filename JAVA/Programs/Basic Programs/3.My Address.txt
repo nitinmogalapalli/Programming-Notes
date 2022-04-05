@@ -1,0 +1,10 @@
+class MyAddress
+{
+public static void main(String args[])
+{
+System.out.println("K.Abhi Ram");
+System.out.println("S/o K.Raghu Ram");
+System.out.println("Gundala Street");
+System.out.println("Anakapalli");
+}
+}

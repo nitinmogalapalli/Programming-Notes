@@ -1,0 +1,80 @@
+PL/SQL Case Statement:-
+------------------------------------
+PL/SQL CASE statement comparing one by one sequencing conditions. CASE statement attempt to match expression that is specified in one or more WHEN condition. CASE statement are following two forms,
+
+1. Simple CASE Statement
+2. Searched CASE Statement
+
+Simple CASE Statement:-
+------------------------------------
+PL/SQL simple CASE statement evaluates selector and attempt to match one or more WHEN condition.
+
+Syntax
+----------
+CASE selector
+	WHEN value-1 
+		THEN statement-1;
+	WHEN value-2
+		THEN statement-2;
+	ELSE
+		statement-3;
+END CASE
+
+Example Code
+---------------------
+SQL>DECLARE
+	a number := 7;
+BEGIN
+	CASE a	
+		WHEN 1 THEN
+			DBMS_OUTPUT.PUT_LINE('value 1');	
+		WHEN 2 THEN
+			DBMS_OUTPUT.PUT_LINE('value 2');	
+		WHEN 3 THEN
+			DBMS_OUTPUT.PUT_LINE('value 3');		
+		ELSE
+			DBMS_OUTPUT.PUT_LINE('no matching CASE found');	
+	END CASE;	
+END;
+/
+
+Example Result
+-----------------------
+no matching CASE found
+
+Searched CASE Statement:-
+---------------------------------------
+PL/SQL searched CASE statement has not selector and attempt to match one or more WHEN clauses condition.
+
+Syntax
+---------
+CASE
+	WHEN condition-1 THEN 
+		statement-1;
+	WHEN condition-2 THEN 
+		statement-2;
+	ELSE
+		statement-3;
+END CASE;
+
+Example Code
+--------------------
+SQL>DECLARE
+	a number := 3;
+BEGIN
+	CASE	
+		WHEN a = 1 THEN
+			DBMS_OUTPUT.PUT_LINE('value 1');	
+		WHEN a = 2 THEN
+			DBMS_OUTPUT.PUT_LINE('value 2');	
+		WHEN a = 3 THEN
+			DBMS_OUTPUT.PUT_LINE('value 3');		
+		ELSE
+			DBMS_OUTPUT.PUT_LINE('no matching CASE found');	
+	END CASE;	
+END;
+/
+
+Example Result
+----------------------
+value 3

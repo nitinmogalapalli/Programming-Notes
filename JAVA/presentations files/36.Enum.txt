@@ -1,0 +1,86 @@
+Java Enum:-
+------------------
+1. Enumertions helps to relate the variables with related constants so that it will be flexible to work.
+2. To represent we use "enum" keyword.
+3. It can be used in drop down boxes.
+
+Why we need to use Enum?
+---------------------------------------
+1. Enum is type-safe is i.e any constants cannot be assigned to that variables outside the enum definition.
+2. Adding new constants will be easy with disturbing already present code.
+3. You can also assign different constants to variables other than default values.
+
+Demo Example Program:-
+------------------------------------
+public enum Season 
+{
+WINTER,SPRING,SUMMER,FALL
+}
+public class EnumDemo 
+{
+public static void main(String args[])
+
+{
+	Season s=Season.WINTER;
+	System.out.println(s);
+	
+}
+}
+
+Example Demo Program 2:-
+-----------------------------------------
+public enum Season 
+{
+WINTER,SPRING,SUMMER,FALL
+}
+public class EnumDemo1 
+{
+public static void main(String args[])
+{
+	Season w=Season.WINTER;
+	Season s=Season.SPRING;
+	Season f=Season.FALL;
+	Season s1=Season.SUMMER;
+	System.out.println("The Value of W is "+w);
+	System.out.println("The Value of S is "+s);
+	System.out.println("The Value of F is "+f);
+	System.out.println("The Value of S1 is "+s1);
+}
+}
+
+Class inside Enum Example Program:-
+------------------------------------------------------
+public class ClassinsideEnum 
+{
+enum Season
+{
+	WINTER,SPRING,SUMMER,FALL;
+}
+public static void main(String args[])
+{
+	Season s=Season.WINTER;
+	System.out.println(s);
+}
+}
+
+Example 2:-
+-----------------
+public class ClassinsideEnum1 
+{
+	enum Season
+	{
+		WINTER,SPRING,SUMMER,FALL;
+	}
+	public static void main(String args[])
+	{
+		Season w=Season.WINTER;
+		Season s=Season.SPRING;
+		Season f=Season.FALL;
+		Season s1=Season.SUMMER;
+		System.out.println("The Value of W is "+w);
+		System.out.println("The Value of S is "+s);
+		System.out.println("The Value of F is "+f);
+		System.out.println("The Value of s1 is "+s1);
+	}
+
+}

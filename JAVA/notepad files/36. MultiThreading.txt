@@ -1,0 +1,320 @@
+Multi Threading:-
+------------------------
+One of the main advantage in java programming is, it supports multithreaded programs. A multi threated program is program that contain 2 or more parts that run concurrently. Each part of a program is called a thread. Multithreading enables us to run multiple parts of a program at the same time.
+
+Multi Tasking:-
+--------------------
+Multitasking allows to execute more than one tasks at the same time, a task being a program. In multitasking only one CPU is involved but it can switches from one program to another program so quickly. That's why it gives the appearance of executing all of the programs at the same time.
+
+Advantages of multithreading:-
+------------------------------------------
+1. Multithreading is useful in animations and networking and etc.
+2. Reduces the computation time.
+3. Resource sharing.
+4. Economy.
+5. Improves performance of an application.
+
+Definition:-
+---------------
+A thread is a single sequential flow of control within a program (also called lightweight process).
+
+As thread is a light weight process, we can direct its work in any of the desired direction. we can give name to thread and joins a thread into a group.
+
+Creating a Thread:-
+---------------------------
+in java a thread can be created in 2 ways.
+
+1. Using the Thread Class.
+2. Using Runnable Interface.
+
+Life Cycle:-
+---------------
+Every thread may go through the below states. Here I am showing only the main states of a thread.
+
+New:-
+-------
+The thread is ready to run and waiting for the CPU. After the creations of Thread instance the thread is in this state but start() method invocation. At this point, the thread is considered not alive.
+
+Runnable:-
+---------------
+The thread is waiting for some event to happen. Every thread first enters runnable state after the invoking of start() method but a thread can return to this state after either running, waiting, sleeping or coming back from blocked state also. On this state a thread is waiting for a turn on the processor.
+
+Running:-
+-------------
+The thread is executing on the CPU. Here the thread is in running state that means the thread is currently executing. There are several ways to enter in runnable state but there is only one way to enter in running state: the scheduler select a thread from runnable pool.
+
+Blocked:-
+-------------
+The thread is waiting for I/O to finish (or) The thread has been told to sleep for a time. A thread can enter in this state because of waiting the resources that are hold by another thread.
+
+Dead:-
+----------
+The thread is terminated.
+
+Thread Class:-
+--------------------
+Thread Class is the main class to manage all the threads in a java program. i.e., threads that are created either by the thread class or with help of Runnable interface can only be controlled by the Thread class. All thread life cycle methods are available in thread class except nofity(), nofityall() and wait() which are from object class. Some of other important methods in java.lang.Thread are shown below.
+
+1. currentThread() :-
+----------------------------
+Returns an object reference to the thread in which it is invoked.
+
+2. getName() :-
+---------------------
+Retrieve the name of the thread object or instance.
+
+3. start() :-
+--------------
+Start the thread by calling its run method.
+
+4. run() :-
+-------------
+This method is the entry point to excute thread, like the main method for applications.
+
+5. sleep() :-
+----------------
+This static method asks the system to put the current thread to sleep for (approximately) the specified amount of time, effectively allowing us to implement a "pause".
+
+6. isAlive() :-
+-----------------
+This method is used to determine the thread is running or not.
+
+7. activeCount() :-
+-------------------------
+This method returns the number of active threads in a particular thread group and all its subgroups.
+
+8. interrrupt() :-
+---------------------
+The method interrupt the threads on which it is invoked. Means thread that is waiting (or sleeping) can be made to untimely stop waiting. The interruption mechanism can therefore be used as a way to cancel tasks.
+
+9. yield() :-
+---------------
+By invoking this method the current thread pause its execution temporarily and allow other threads to execute.
+
+10. join() :-
+---------------
+It tells the current thread to wait for the other thread to complete. This method and join(long millisec) Throws interrupted Exception. These two methods are invoked on a thread. These are not returned until either the thread has completed or it is timed out respectively.
+
+Thread using Thread Class:-
+--------------------------------------
+The first way of creating a thread, is to creating a class that extends the Thread class. Whenever a class extends and the following function should be overridden.
+
+public void run() :-
+------------------------
+Whenever we start the thread using the start method the thread will be added to the thread queue and the thread calls the run() function. i.e, all the statements in the run() function will be executed in a separate process.
+
+Example1:-
+----------------
+Demo of creating a thread using Thread class:-
+----------------------------------------------------------------
+public class ThreadMessage
+{
+public static void main(String args[]) throws Exception
+{
+tha aa=new tha();
+aa.start();
+thb bb=new thb();
+bb.start();
+}
+}
+class tha extends Thread
+{
+public void run()
+{
+int i=0;
+while(i<=10)
+{
+System.out.println("A"+i);
+i++;
+}
+}
+}
+class thb extends Thread
+{
+public void run()
+{
+int i=0;
+while(i<=10)
+{
+System.out.println("B"+i);
+i++;
+}
+}
+}
+
+Example 2:-
+-----------------
+Program that creates three threads. First thread displays "Good Morning" every one second, the second thread displays "Hello" every two seconds and the third thread displays "Welcome" every three seconds.
+
+public class ThreadSleep
+{
+public static void main(String args[]) throws Exception
+{
+tha aa=new tha();
+aa.start();
+thb bb=new thb();
+bb.start();
+thc cc=new thc();
+cc.start();
+}
+}
+class tha extends Thread
+{
+public void run()
+{
+try
+{
+while(true)
+{
+Thread.sleep(1000);
+System.out.println("Good Morning");
+}
+}
+catch(Exception ex)
+{
+}
+}
+}
+class thb extends Thread
+{
+public void run()
+{
+try
+{
+while(true)
+{
+Thread.sleep(2000);
+System.out.println("Hello");
+}
+}
+catch(Exception ex)
+{
+}
+}
+}
+class thc extends Thread
+{
+public void run()
+{
+try
+{
+while(true)
+{
+Thread.sleep(3000);
+System.out.println("Welcome");
+}
+}
+catch(Exception ex)
+{
+}
+}
+}
+
+Example 3:-
+-----------------
+Demo of thread life cycle:-
+------------------------------------
+public class ThreadLc
+{
+public static void main(String args[])
+{
+Tha aa=new Tha();
+aa.start();
+Thb bb=new Thb();
+bb.start();
+}
+}
+class Tha extends Thread
+{
+public void run()
+{
+try
+{
+for(int i=1;i<=10;i++)
+{
+if(i==2)
+{
+Thread.sleep(2000);
+System.out.println("Thread Sleep at A2");
+}
+System.out.println("A"+i);
+}
+}
+catch(Exception ex)
+{
+}
+}
+}
+class Thb extends Thread
+{
+public void run()
+{
+try
+{
+for(int i=0;i<=10;i++)
+{
+if(i==8)
+{
+System.out.println("Thread Stopped at B8");
+stop();
+}
+System.out.println("B"+i);
+}
+}
+catch(Exception ex)
+{
+}
+}
+}
+
+Thread using Runnable interface:-
+----------------------------------------------
+The second method for creating a Thread is to create a class that implements the runnable interface. Whenever a class implements the runnable interface the class should override the following function public void run().
+Because Java doesn't support multiple inheritence for classes we can use the runnable interface for creating a thread in the following condition. When we want a class to extend another class and we want this class to work as a Thread then runnable interface should be used.
+
+The procedure for creating threads based on the Runnable interface is as follows:
+1. A Class implements the runnable interface, providing the run() method that will be executed by the thread. An object of this class is a runnable object.
+2. An object of Thread class is created by passing a Runnable object as argument to the Thread constructor. The thread object now has a Runnable object that implements the run() method.
+3. The start() method is invoked on the Thread object created in the previous step. The start() method will call run().
+4. The thread ends when the run() method ends.
+
+Example:-
+--------------
+Demo of creating a thread using runnable interface:-
+-----------------------------------------------------------------------
+public class RunnableMessage
+{
+public static void main(String args[]) throws Exception
+{
+tha aa=new tha();
+Thread t1=new Thread(aa);
+t1.start();
+thb bb=new thb();
+Thread t2=new Thread(bb);
+t2.start();
+}
+}
+class tha implements Runnable
+{
+public void run()
+{
+int i=0;
+while(i<=10)
+{
+System.out.println("A"+i);
+i++;
+}
+}
+}
+class tha implements Runnable
+{
+public void run()
+{
+int i=0;
+while(i<=10)
+{
+System.out.println("B"+i);
+i++;
+}
+}
+}

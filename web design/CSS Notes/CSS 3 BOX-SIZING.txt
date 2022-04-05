@@ -1,0 +1,120 @@
+CSS3 Box Sizing:-
+------------------------
+The CSS3 box-sizing property allows us to include the padding and border in an element's total width and height.
+
+Without the CSS3 box-sizing Property:-
+---------------------------------------------------
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+This means: When you set the width/height of an element, the element often appear bigger than you have set (because the element's border and padding are added to the element's specified width/height).
+
+The two <div> elements above end up with different sizes in the result (because div2 has a padding specified):
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.div2 {
+    width: 300px;
+    height: 100px;    
+    padding: 50px;
+    border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+<br>
+<div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+
+</body>
+</html>
+
+So, for a long time web developers have specified a smaller width value than they wanted, because they had to subtract out the padding and borders.
+
+With CSS3, the box-sizing property solves this problem.
+
+With the CSS3 box-sizing Property:-
+-----------------------------------------------
+The CSS3 box-sizing property allows us to include the padding and border in an element's total width and height.
+
+If you set box-sizing: border-box; on an element padding and border are included in the width and height:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.div2 {
+    width: 300px;
+    height: 100px;    
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<div class="div1">Both divs are the same size now!</div>
+<br>
+<div class="div2">Hooray!</div>
+
+</body>
+</html>
+
+Since the result of using the box-sizing: border-box; is so much better, many developers want all elements on their pages to work this way.
+
+The code below ensures that all elements are sized in this more intuitive way. Many browsers already use box-sizing: border-box; for many form elements (but not all - which is why inputs and textareas look different at width: 100%;).
+
+Applying this to all elements is safe and wise:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+} 
+
+input, textarea {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<form action="action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey"><br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse"><br>
+Comments:<br>
+<textarea name="message" rows="5" cols="30">
+</textarea>
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+
+<p><strong>Tip:</strong> Try to remove the box-sizing property from the style element and look what happens.
+Notice that the input, textarea, and submit button will no longer have equal widths.</p>
+
+</body>
+</html>
+

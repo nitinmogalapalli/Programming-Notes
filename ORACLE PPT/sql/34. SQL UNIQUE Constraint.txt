@@ -1,0 +1,122 @@
+SQL UNIQUE Constraint:-
+------------------------------------
+SQL UNIQUE constraint check column value must be unique across the given field in table.
+
+Primary key characteristics automatic include UNIQUE key constraint that can not store duplicated by any other row.
+
+Note : You can set many UNIQUE constraints per table.
+
+Defined at Column level:-
+-----------------------------------
+Define unique key at column level with other column attributes.
+
+Syntax :
+-----------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ] UNIQUE,
+	column_name datatype[(size)] [ NULL | NOT NULL ] UNIQUE,
+	....
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE stu_info(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	name VARCHAR(30) UNIQUE,
+	address VARCHAR(70),
+	contact_no VARCHAR(12)
+);
+
+Table created.
+
+Defined at Table level
+-----------------------------
+Unique key apply in table level. Table level you can define multiple column separated by comma (,).
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	...,
+	UNIQUE ( column_name, ... ),
+	...
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE stu_info(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	name VARCHAR(30),
+	address VARCHAR(70),
+	contact_no VARCHAR(12),
+	UNIQUE(name)
+);
+
+Table created. 
+ 
+You can also specifies CONSTRAINT keyword to specify the constraint name.
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	...,
+	CONSTRAINT uk_constraint_name UNIQUE ( column_name, ... ),
+	...
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE stu_info1(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	name VARCHAR(30),
+	address VARCHAR(70),
+	contact_no VARCHAR(12),
+	CONSTRAINT uk_name UNIQUE(name)
+);
+
+Table created. 
+ 
+Now we are inserting record into this table to check unique key how to work for example try to insert same name as soon as fire error for unique constraint violated.
+
+SQL> INSERT INTO stu_info(no,name) VALUES(1,'Opal');
+
+1 row created.
+
+SQL> INSERT INTO stu_info(no,name) VALUES(2,'Opal');
+INSERT INTO stu_info(no,name) VALUES(2,'Opal')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSTEM.SYS_C004081) violated. 
+ 
+ADD UNIQUE constraint (ALTER TABLE):-
+-----------------------------------------------------------
+ALTER TABLE statement to add UNIQUE constraint in existing table column.
+
+Syntax :
+-----------
+ALTER TABLE table_name
+	ADD CONSTRAINT uk_constraint_name UNIQUE (column_name, ...);
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE stu_info1 ADD CONSTRAINT uk_name UNIQUE(name);
+
+Table altered. 
+
+DROP UNIQUE constraint (ALTER TABLE)
+------------------------------------------------------------
+ALTER TABLE statement to drop UNIQUE constraint in existing table column.
+
+Syntax :
+-----------
+ALTER TABLE table_name
+	DROP CONSTRAINT uk_constraint_name;
+
+Example Statement :
+----------------------------
+SQL> ALTER TABLE stu_info1 DROP CONSTRAINT uk_name;
+
+Table altered.

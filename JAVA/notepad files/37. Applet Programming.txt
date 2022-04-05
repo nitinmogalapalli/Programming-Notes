@@ -1,0 +1,53 @@
+Applet Programming:-
+------------------------------
+Applets are small java programs that are primarily used in internet computing. They can be transported over the internet from one computer to another and run using the applet viewer or any web browser that supports java.
+
+Write an applet:-
+-----------------------
+The steps to involved in developing and testing an applet are:
+
+1.Building an applet code (.java file)
+2.Creating an executable applet (.class file)
+3.Designing a webpage using Html Tags
+4.Preparing <APPLET> tag
+5.Incorporating <APPLET> tag into the web page.
+6.Creating HTML page.
+7.Testing an Applet code.
+
+Building Applet Code:-
+-------------------------------
+It is essential that our applet code using the services of two classes namely Applet and Graphics from java class library. The applet class which is contained in the java. Applet package provides life and behaviour to the applet through its method such as init(),start() and paint().
+The paint method which requires Graphics object as an argument is defined as follows:
+
+public void paint(Graphics g)
+
+Syn:-
+-------
+import java.awt.*;
+import java.applet.*;
+------------
+------------
+public class appletclassname extends Applet
+{
+-------------
+-------------
+public void paint(Graphics g)
+{
+-------------
+-------------
+}
+-------------
+-------------
+}
+
+Ex:-
+------
+import java.awt.*;
+import java.applet.*;
+public class Helljava extends Applet
+{
+public void paint(Graphics g)
+{
+g.drawString("Hello Java",10,100);
+}
+}

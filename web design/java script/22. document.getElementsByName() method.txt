@@ -1,0 +1,27 @@
+Javascript - document.getElementsByName() method:-
+--------------------------------------------------------------------------
+The document.getElementsByName() method returns all the element of specified name.
+
+The syntax of the getElementsByName() method is given below:
+
+document.getElementsByName("name")  
+
+Here, name is required.
+
+Example of document.getElementsByName() method:-
+--------------------------------------------------------------------------
+In this example, we going to count total number of genders. Here, we are using getElementsByName() method to get all the genders.
+
+<script type="text/javascript">  
+function totalelements()  
+{  
+var allgenders=document.getElementsByName("gender");  
+alert("Total Genders:"+allgenders.length);  
+}  
+</script>  
+<form>  
+Male:<input type="radio" name="gender" value="male">  
+Female:<input type="radio" name="gender" value="female">  
+  
+<input type="button" onclick="totalelements()" value="Total Genders">  
+</form>  

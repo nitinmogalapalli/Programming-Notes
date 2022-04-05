@@ -1,0 +1,37 @@
+HTML Script Tag:-
+-------------------------
+HTML script tag is used to specify client-side script such as JavaScript. It facilitate you to place a script within your HTML document.
+
+JavaScript is used for image manipulation, form validation, and dynamic content.
+
+The syntax of script tag is given below:
+
+    <script>  
+      //code to be executed  
+    </script>  
+
+Usage of script tag:-
+----------------------------
+There can be two usage of HTML script tag:
+
+    to embed script code
+    to link script file
+
+Embed script code:-
+----------------------------
+The script tag can be used within <body> or <head> tag to embed the scripting code. Let's see the example to have script tag within HTML body.
+
+<html>  
+<body>  
+<script type="text/javascript">  
+document.write("JavaScript is a simple language for learners");  
+</script>  
+</body>  
+</html>  
+
+Link script file:-
+---------------------
+The script tag can be used to link external script file by src attribute. It must be used within the <head> tag only.
+
+    <script type="text/javascript" src="message.js" />  
+

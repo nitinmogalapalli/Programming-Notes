@@ -1,0 +1,63 @@
+HTML 5 Tags:-
+--------------------
+There is a list of newly included tags in HTML 5. These HTML 5 tags (elements) provide a better document structure. This list shows all HTML 5 tags in alphabetical order with description.
+
+List of HTML 5 Tags
+
+Tag		Description
+
+<article>		This element is used to define an independent piece of 			content in a document, that may be a blog, a magazine or a 		newspaper article.
+
+<aside>		It specifies that article is slightly related to the rest of the 			whole page.
+
+<audio>		It is used to play audio file in HTML.
+
+<bdi>		The bdi stands for bi-directional isolation. It isolates a part of 		text that is formatted in other direction from the outside text 			document.
+
+<canvas>		It is used to draw canvas.
+
+<data>		It provides machine readable version of its data.
+
+<datalist>		It provides auto complete feature for textfield.
+
+<details>		It specifies the additional information or controls required by 		user.
+
+<dialog>		It defines a window or a dialog box.
+
+<figcaption>	It is used to define a caption for a <figure> element.
+
+<figure>		It defines a self-contained content like photos, diagrams etc.
+
+<footer>		It defines a footer for a section.
+
+<header>		It defines a header for a section.
+
+<main>		It defines the main content of a document.
+
+<mark>		It specifies the marked or highlighted content.
+
+<menuitem>	It defines a command that the user can invoke from a 		popup menu.
+
+<meter>		It is used to measure the scalar value within a given range.
+
+<nav>		It is used to define the navigation link in the document.
+
+<progress>	It specifies the progress of the task.
+
+<rp>		It defines what to show in browser that don't support ruby 			annotation.
+
+<rt>		It defines an explanation/pronunciation of characters.
+
+<ruby>		It defines ruby annotation along with <rp> and <rt>.
+
+<section>		It defines a section in the document.
+
+<summary>	It specifies a visible heading for <detailed> element.
+
+<svg>		It is used to display shapes.
+
+<time>		It is used to define a date/time.
+
+<video>		It is used to play video file in HTML.
+
+<wbr>		It defines a possible line break.

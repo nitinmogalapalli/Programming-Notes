@@ -1,0 +1,133 @@
+CSS BACKGROUND PROPERTIES:-
+---------------------------------------------------
+
+CSS background properties are used to define the background effects of an element.
+
+CSS properties used for background effects:
+
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+
+Background Color:-
+--------------------------
+
+The background-color property specifies the background color of an element.
+
+The background color of a page is defined in the body selector:
+
+Example:-
+-------------
+body
+ {
+    background-color: #b0c4de;
+ } 
+
+With CSS, a color is most often specified by:
+
+    a HEX value - like "#ff0000"
+    an RGB value - like "rgb(255,0,0)"
+    a color name - like "red"
+
+In the example below, the h1, p, and div elements have different background colors:
+
+Example:-
+-------------
+h1
+ {
+    background-color: #6495ed;
+ }
+
+p 
+{
+    background-color: #e0ffff;
+}
+
+div 
+{
+    background-color: #b0c4de;
+}
+
+Background Image:-
+---------------------------
+The background-image property specifies an image to use as the background of an element.
+
+By default, the image is repeated so it covers the entire element.
+
+The background image for a page can be set like this:
+
+Example:-
+--------------
+body 
+{
+    background-image: url("paper.gif");
+}
+
+Background Image - Repeat Horizontally or Vertically:-
+-------------------------------------------------------------------------
+
+By default, the background-image property repeats an image both horizontally and vertically.
+
+Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+
+Example:-
+-------------
+body 
+{
+    background-image: url("gradient_bg.png");
+} 
+
+If the image is repeated only horizontally (repeat-x), the background will look better:
+
+Example:-
+-------------
+body 
+{
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+}
+
+Background Image - Set position and no-repeat:-
+------------------------------------------------------------------
+Note: When using a background image, use an image that does not disturb the text.
+
+Showing the image only once is specified by the background-repeat property:
+
+Example:-
+--------------
+body 
+{
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+}  
+
+In the example above, the background image is shown in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.
+
+The position of the image is specified by the background-position property:
+
+Example:-
+-------------
+body 
+{
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+} 
+
+Background - Shorthand property:-
+-----------------------------------------------
+
+As you can see from the examples above, there are many properties to consider when dealing with backgrounds.
+
+To shorten the code, it is also possible to specify all the properties in one single property. This is called a shorthand property.
+
+The shorthand property for background is simply "background":
+
+Example:-
+--------------
+body 
+{
+    background: #ffffff url("img_tree.png") no-repeat right top;
+}

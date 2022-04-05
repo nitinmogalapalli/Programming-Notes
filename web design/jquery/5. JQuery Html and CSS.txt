@@ -1,0 +1,730 @@
+jQuery html():-
+--------------------
+jQuery html() method is used to change the entire content of the selected elements. It replaces the selected element content with new contents.
+
+Note: It is a very useful function but works in a limited area because of its API documentation. The API documentation of the jQuery html function consists of three method signatures.
+
+The first method signature has no argument, so it just returns the HTML within that element. The remaining two signatures take a single argument: i.e. a string or a function that returns a string.
+
+Syntax:
+-----------
+$(selector).html()
+  
+It is used to return content.
+
+$(selector).html(content)  
+
+Example of jQuery html() method:-
+-----------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("p").html("Hello <b>JQuery</b>");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<button>Click here to change the content of all p elements</button>  
+<p>This is a paragraph.</p>  
+<p>This is another paragraph.</p>  
+</body>  
+</html>  
+
+jQuery html() example 2:-
+-----------------------------------
+Let's see another example of jQuery html() method that returns HTML content. It returns the content of first paragraph only.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert($("p").html());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+  
+<button>Return the content of p element</button>  
+  
+<p>This is first <b>paragraph</b>.</p>  
+<p>This is another <b>paragraph</b>.</p>  
+</body>  
+</html>  
+
+jQuery text():-
+--------------------
+The jQuery text() method is used to set or return the text content of the selected elements.
+
+To return content: When this method is used to return content, it returns the combined text content of all matched elements without the HTML markup.
+
+To set content: When this method is used to set content, it overwrites the content of all matched elements.
+
+Syntax:
+----------
+To return text content:
+
+$(selector).text()  
+ 
+To set text content:
+--------------------------
+$(selector).text(content)   
+
+Example of jQuery text() method:-
+----------------------------------------------
+<!doctype html>  
+<html>  
+<head>  
+  <title>text demo</title>  
+  <style>  
+  p {  
+    color: blue;  
+    margin: 8px;  
+  }  
+  b {  
+    color: red;  
+  }  
+  </style>  
+  <script src=""></script>  
+</head>  
+<body>  
+<p><b>Hello! </b>JQuery</p>  
+<p></p>  
+<script>  
+var str = $( "p:first" ).text();  
+$( "p:last" ).html( str );  
+</script>  
+</body>  
+</html>  
+
+jQuery val():-
+------------------
+There are two usage of jQuery val() method.
+
+It is used to get current value of the first element in the set of matched elements.
+It is used to set the value of every matched element.
+
+Syntax:
+------------
+$(selector).val()  
+
+It is used to get value.
+
+$(selector).val(value)  
+
+It is used to set value.
+
+jQuery val() example:-
+------------------------------
+The val() method is primarily used to get the values of form elements. This method doesn't accept any arguments. This method returns a NULL when no option is selected and it returns an array containing the value of each selected options in the case of one or more selection.
+
+Let's see the example of val() method.
+
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+  <meta charset="utf-8">    
+  <title>val demo</title>    
+  <style>    
+  p {    
+    color: red;    
+    margin: 4px;    
+  }    
+  b {    
+    color: blue;    
+  }    
+  </style>    
+  <script src=""></script>    
+</head>    
+<body>    
+<p></p>    
+<select id="single">    
+  <option>Single</option>    
+  <option>Double</option>    
+ <option>Triple</option>    
+</select>    
+<script>    
+function displayVals() 
+{    
+  var singleValues = $( "#single" ).val();    
+  $( "p" ).html( "<b>Value:</b> " + singleValues);    
+}    
+$( "select" ).change( displayVals );    
+displayVals();    
+</script>    
+</body>    
+</html>   
+
+jQuery css():-
+--------------------
+The jQuery CSS() method is used to get (return)or set style properties or values for selected elements. It facilitates you to get one or more style properties.
+
+jQuery CSS() method provides two ways:
+
+1) Return a CSS property:-
+-------------------------------------
+It is used to get the value of a specified CSS property.
+
+Syntax:
+-----------
+css("propertyname");  
+
+Let's take an example to demonstrate this property.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Background color = " + $("p").css("background-color"));  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<h2>This is a heading</h2>  
+<p style="background-color:#ff0000">The background-color of this paragraph is red.</p>  
+<p style="background-color:#00ff00">The background-color of this paragraph is green.</p>  
+<p style="background-color:#0000ff">The background-color of this paragraph is blue.</p>  
+<button>Click here to get the background-color of first matched element.</button>  
+</body>  
+</html>   
+
+2) Set a CSS property:-
+---------------------------------
+This property is used to set a specific value for all matched element.
+
+Syntax:
+----------
+css("propertyname","value");    
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=" "></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("p").css("background-color", "violet");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p style="background-color:#ff0000">The background-color of this paragraph is red.</</p>  
+<p style="background-color:#00ff00">The background-color of this paragraph is green.</</p>  
+<p style="background-color:#0000ff">The background-color of this paragraph is blue.</</p>  
+<p>This paragraph has no background-color. </p>  
+<button>Click here to set a specific background-color of all matched element</button>  
+</body>  
+</html>  
+ 
+3) Set multiple CSS properties:-
+---------------------------------------------
+It is just an extension of Set CSS property. It facilitates you to add multiple property values together.
+
+Syntax:
+-----------
+css({"propertyname":"value","propertyname":"value",...});    
+
+Let's take an example to demonstrate this property. In this example we add two properties background-color and font-size for all element.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("p").css({"background-color": "yellow", "font-size": "200%"});  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<h2>This is a heading</h2>  
+<p style="background-color:#ff0000">The background-color of this paragraph is red.</p>  
+<p style="background-color:#00ff00">The background-color of this paragraph is green.</p>  
+<p style="background-color:#0000ff">The background-color of this paragraph is blue.</p>  
+<p>This paragraph has no background-color.</p>  
+<button>Click here to set multiple styles for all selected elements.</button>  
+</body>  
+</html>  
+
+jQuery before():-
+-----------------------
+The jQuery before() method is used to insert the specified content before the selected elements. It adds the content specified by the parameter, before each element in the set of matched elements.
+
+Syntax:
+------------
+$(selector).before(content, function(index))
+
+Example of jQuery before() method:-
+--------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("p").before("<p><b>Hello JQuery</b></p>");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<button>Insert content before each p element</button>  
+<p>This is a tutorial website.</</p>  
+<p>This is a training institute.</</p>  
+</body>  
+</html>  
+
+jQuery prepend():-
+--------------------------
+The jQuery prepend() method is used to insert the specified content at the beginning (as a first child) of the selected elements. It is just the opposite of the jQuery append() method.
+
+If you want to insert the content at the end of the selected elements, you should use the append method.
+
+Syntax:
+------------
+$(selector).prepend(content,function(index,html))  
+
+Example of jQuery prepend() method:-
+----------------------------------------------------
+<!DOCTYPE html>    
+<html>    
+<head>    
+<script src=""></script>    
+<script>    
+$(document).ready(function(){    
+    $("#btn1").click(function(){    
+        $("p").prepend("<b>Hello Text</b>. ");    
+    });    
+});    
+</script>    
+</head>    
+<body>    
+<p>This is the first paragraph.</p>    
+<p>This is the second paragraph.</p>    
+<button id="btn1">Prepend text</button>    
+</body>    
+</html>    
+
+jQuery after():-
+---------------------
+The jQuery after() method is used to insert specified content after the selected element. It is just like jQuery append() method.
+
+If you want to insert content before the selected element, you should use jQuery before() method.
+
+Syntax:
+-----------
+$(selector).after(content,function(index))   
+
+Example of jQuery after() method:-
+-----------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function()
+{  
+    $("button").click(function()
+    {  
+        $("p").after("<p><b>Hello JQuery</b></p>");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<button>Insert content after each p element</button>  
+<p>This is a tutorial website.</p>  
+<p>This is a training institute.</p>  
+</body>  
+</html>  
+
+jQuery append():-
+------------------------
+The jQuery append() method is used to insert specified content as the last child (at the end of) the selected elements in the jQuery collection.
+
+The append () and appendTo () methods are used to perform the same task. The only difference between them is in the syntax.
+
+Syntax:
+-----------
+$(selector).append(content, function(index, html))  
+
+Example of jQuery append() method:-
+---------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("#btn1").click(function(){  
+        $("p").append(" <b>Newly added appended text</b>.");  
+    });  
+    $("#btn2").click(function(){  
+        $("ol").append("<li><b>Newly added appended item</b></li>");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>This is a paragraph.</p>  
+<p>This is another paragraph.</p>  
+<ol>  
+  <li>Item no.1</li>  
+  <li>Item no.2</li>  
+  <li>Item no.3</li>  
+</ol>  
+<button id="btn1">Append text</button>  
+<button id="btn2">Append item</button>  
+</body>  
+</html>  
+
+jQuery appendTo():-
+----------------------------
+The appendTo() method is used to add additional content at the end of the selected elements. It is same as jQuery append() method. There is only syntactical difference between append() and appendTo() methods.
+
+Syntax:
+-----------
+$(content).appendTo(selector)   
+
+Example of jQuery appendTo() method:-
+------------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("<span><b>Hello JQuery</b></span>").appendTo("p");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<button>Add new content at the end of each p element</button>  
+<p>I am a new reader.</p>  
+<p>I am also a new reader.</p>  
+</body>  
+</html>  
+
+jQuery remove():-
+------------------------
+The jQuery remove() method is used to remove the selected elements out of the DOM. It removes the selected element itself, as well as everything inside it (including all texts and child nodes). This method also removes the data and the events of the selected elements.
+
+Syntax:
+-----------
+$(selector).remove(selector)  
+
+Example of jQuery remove() method:-
+---------------------------------------------------
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <title>remove demo</title>  
+  <style>  
+  p {  
+    background: pink;  
+    margin: 6px 0;  
+  }  
+  </style>  
+  <script src=""></script>  
+</head>  
+<body>  
+ <p>Hello Guys!</p>  
+This is JQuery<br/>  
+<p>A place for all technology.</p>  
+<button>Execute remove() method on paragraphs</button>  
+ <script>  
+$( "button" ).click(function() 
+{  
+  $( "p" ).remove();  
+});  
+</script>  
+</body>  
+</html>  
+
+jQuery empty():-
+------------------------
+The jQuery empty() method is used to remove all child nodes and content from the selected elements. This method doesn't remove the element itself.
+
+Syntax:
+-----------
+$(selector).empty()  
+
+Example of jQuery empty() method:-
+-------------------------------------------------
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <script src=""></script>  
+    <script>  
+    $(document).ready(function(){  
+        $("button").click(function(){  
+            $("div").empty();  
+        });  
+    });  
+    </script>  
+    </head>  
+    <body>  
+    <div style="height:150px;background-color:yellow">  
+    Twinkle, twinkle, little star,<br/>  
+    How I wonder what you are!</br>  
+    Up above the world so high,<br/>  
+    Like a diamond in the sky.<br/>  
+    Twinkle, twinkle, little star,<br/>  
+    How I wonder what you are!<br/>  
+    <p><b>This poem is written inside the div.</b></p>  
+    </div>  
+    <p>This paragraph is written outside the div.</p>  
+    <button>Execute empty() method to remove the content of div element.</button>  
+    </body>  
+    </html>  
+
+jQuery addClass():-
+---------------------------
+The addclass() method is used to add one or more class name to the selected element. This method is used only to add one or more class names to the class attributes not to remove the existing class attributes.
+
+If you want to add more than one class separate the class names with spaces.
+
+Syntax:
+----------
+$(selector).addClass(classname,function(index,oldclass))  
+
+Example of jQuery addClass() method:-
+-----------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("p:first").addClass("intro");  
+    });  
+});  
+</script>  
+<style>  
+.intro {  
+    font-size: 200%;  
+    color: red;  
+}  
+</style>  
+</head>  
+<body>  
+<h1>This is a heading</h1>  
+<p>This is a paragraph.</p>  
+<p>This is another paragraph.</p>  
+<button>Add a class name to the first p element</button>  
+</body>  
+</html>  
+ 
+jQuery width():-
+---------------------
+jQuery width() method is used to return or set the width of matched element.
+
+Syntax:
+-----------
+To return the width:
+
+$(selector).width()  
+
+To set the width:
+
+$(selector).width(value)   
+
+Example of jQuery width() method:-
+------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Width of div: " + $("div").width());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<div style="height:100px;width:200px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"></div><br>  
+<button>Execute the jQuery width() method to return width</button>  
+</body>  
+</html>  
+
+jQuery height():-
+-----------------------
+The jQuery height() method is used to return the current computed height for the first element or set the height of every matched element.
+
+Syntax:
+------------
+To return the height:
+
+$(selector).height() 
+  
+To set the height:
+
+$(selector).height(value)  
+
+Example of jQuery height() method:-
+-------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Height of div: " + $("div").height());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<div style="height:100px;width:200px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"><div class="div">Hello Guys!<br/> This is JQuery</div></div><br>  
+<button>Display the height of div</button>  
+</body>  
+</html> 
+
+jQuery innerWidth():-
+-----------------------------
+jQuery innerWidth() method is used to return the inner width of the first matched
+
+element without including border and margin.
+
+This method includes padding but excludes border and margin.
+
+This image explains that jQuery innerWidth () method includes padding but not border and margin.
+
+Syntax:
+-----------
+$(selector).innerWidth()  
+
+Example of jQuery innerWidth() method:-
+--------------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Inner width of div is: " + $("div").innerWidth());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<div style="height:100px;width:500px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"></div><br>  
+<button>Click here to get the inner width of the div</button>  
+</body>  
+</html>  
+
+jQuery innerHeight():-
+-----------------------------
+The jQuery innerHeight () method is used to return the inner height of first matched element. It includes padding but not border and margin.
+
+In the above image, you can see that innerHeight () method includes padding but not border and margin.
+
+Syntax:
+-----------
+$(selector).innerHeight() 
+
+Example of jQuery innerHeight() method:-
+--------------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Inner height of the div is: " + $("div").innerHeight());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<div style="height:100px;width:500px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"></div><br>  
+<button>Click here to get the inner height of the div</button>  
+</body>  
+</html> 
+
+jQuery outerWidth():-
+------------------------------
+jQuery outerWidth() method is used to return the outer width of the first matched element with padding and border.
+
+The jQuery outerWidth () method works for both visible and hidden elements.
+
+In the above image, you can see that jQuery outerWidth() method includes border and padding both.
+
+Syntax:
+-----------
+$(selector).outerWidth(includeMargin) 
+
+Example of jQuery outerWidth() method:-
+--------------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Outer width of div is: " + $("div").outerWidth());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<div style="height:100px;width:500px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"></div><br>  
+<button>Click here to get the outer width of the div</button>  
+</body>  
+</html>  
+
+jQuery outerHeight():-
+-------------------------------
+The jQuery outerHeight () method is used to return the outer height of first matched element. This method includes padding and border both.
+
+In the above example, you can see that border and padding both are included in the outerHeight() method.
+
+Syntax:
+-----------
+$(selector).outerHeight(includeMargin)  
+
+Example of jQuery outerHeight() method:-
+---------------------------------------------------------
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src=""></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        alert("Outer height of the div is: " + $("div").outerHeight());  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<div style="height:100px;width:500px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"></div><br>  
+<button>Click here to get the outer height of the div</button>  
+</body>  
+</html>  

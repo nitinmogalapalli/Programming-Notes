@@ -1,0 +1,22 @@
+HTML5 <footer> Element:-
+----------------------------------
+The <footer> element specifies a footer for a document or section.
+
+A <footer> element should contain information about its containing element.
+
+A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.
+
+You can have several <footer> elements in one document.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<footer>
+  <p>Posted by: Hege Refsnes</p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Swapping
+{
+public static void main(String args[])
+{
+int a,b,c;
+Scanner obj=new Scanner(System.in);
+System.out.println("enter a value");
+a=obj.nextInt();
+Scanner obj1=new Scanner(System.in);
+System.out.println("enter b value");
+b=obj1.nextInt();
+System.out.println("before swap a and b values are"+a+b);
+a=a+b;
+b=a-b;
+a=a-b;
+System.out.println("After swap a and b values are"+a+b);
+}
+}

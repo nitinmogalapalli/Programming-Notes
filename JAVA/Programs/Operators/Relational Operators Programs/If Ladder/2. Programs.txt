@@ -1,0 +1,5 @@
+Example Programs:-
+-------------------------
+/* W.A.P to accept age and print it according to age group */
+
+/* W.A.P to accept day and print it according to day wise */

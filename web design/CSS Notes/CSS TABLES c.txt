@@ -1,0 +1,342 @@
+Table Borders
+
+To specify table borders in CSS, use the border property.
+
+The example below specifies a black border for table, th, and td elements:
+
+<html>
+<head>
+<style>
+table, th, td 
+{
+    border: 2px solid black;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>ABHI</td>
+    <td>RAM</td>
+  </tr>
+  <tr>
+    <td>KARTHIK</td>
+    <td>KISHORE</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+Notice that the table in the example above has double borders. This is because both the table and the th/td elements have separate borders.
+
+To display a single border for the table, use the border-collapse property.
+
+Collapse Borders:-
+-------------------------
+The border-collapse property sets whether the table borders are collapsed into a single border or separated:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table 
+{
+    border-collapse: collapse;
+}
+
+table, td, th 
+{
+    border: 2px solid black;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>ABHI</td>
+    <td>RAM</td>
+  </tr>
+  <tr>
+    <td>KARTHIK</td>
+    <td>KISHORE</td>
+  </tr>
+</table>
+
+<p><b>Note:</b> If a !DOCTYPE is not specified, the border-collapse property can produce unexpected results 
+in IE8 and earlier versions.</p>
+
+</body>
+</html>
+
+Table Width and Height:-
+----------------------------------
+Width and height of a table is defined by the width and height properties.
+
+The example below sets the width of the table to 100%, and the height of the th elements to 50px:
+
+<html>
+<head>
+<style>
+table, td, th 
+{
+    border: 1px solid black;
+}
+
+table 
+{
+    width: 100%;
+}
+
+th 
+{
+    height: 50px;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+Table Text Alignment:-
+------------------------------
+The text in a table is aligned with the text-align and vertical-align properties.
+
+The text-align property sets the horizontal alignment, like left, right, or center:
+
+<html>
+<head>
+<style>
+table, td, th {
+    border: 1px solid black;
+}
+
+td {
+    text-align: right;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+The vertical-align property sets the vertical alignment, like top, bottom, or middle:
+
+<html>
+<head>
+<style>
+table, td, th 
+{
+    border: 1px solid black;
+}
+
+td 
+{
+    height: 50px;
+    vertical-align: bottom;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+Table Padding:-
+---------------------
+To control the space between the border and content in a table, use the padding property on td and th elements:
+
+<html>
+<head>
+<style>
+table, td, th 
+{
+    border: 1px solid black;
+}
+
+td 
+{
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+Table Color:-
+------------------
+The example below specifies the color of the borders, and the text and background color of th elements:
+
+<html>
+<head>
+<style>
+table, td, th 
+{
+    border: 1px solid green;
+}
+
+th
+{
+    background-color: green;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table>
+
+</body>
+</html>

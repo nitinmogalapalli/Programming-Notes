@@ -1,0 +1,43 @@
+SQL GROUP BY Clause Statement:-
+--------------------------------------------------
+SQL GROUP BY clause use with SELECT statement for fetching data (result groups) according to a matching values for one or more columns.
+
+SELECT statement fetching all of the rows together that have specific data in specific columns for applying GROUP BY clause on one or more columns.
+
+SQL GROUP BY Clause Syntax
+---------------------------------------------
+Considering following syntax that help you to understanding GROUP BY clause,
+
+SELECT 
+	column_name1, column_name2, aggregate_function(column_name), ....
+	FROM table_name
+    [ WHERE condition ]
+    GROUP BY column_name1, ...;
+
+SQL GROUP BY Clause Example Statement
+-------------------------------------------------------------
+We have following employee_hour table that store weekday hours for each employee:
+
+SQL> SELECT * FROM employee_hour;
+
+Example Statement :
+------------------------------
+SQL> SELECT name 
+	FROM employee_hour 
+	GROUP BY name;
+
+GROUP By clause apply only single column that return group of employee name.
+
+Example Statement :
+----------------------------
+SQL> SELECT name,SUM(hours) 
+	FROM employee_hour 
+	GROUP BY name;
+
+GROUP By clause apply on name column with use SUM aggregate function to summation the total working hours.
+
+Example Statement :
+-----------------------------
+SQL> SELECT name,AVG(hours) 
+	FROM employee_hour 
+	GROUP BY name;

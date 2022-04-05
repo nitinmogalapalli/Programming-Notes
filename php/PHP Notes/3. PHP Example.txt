@@ -1,0 +1,22 @@
+PHP Example:-
+---------------------
+It is very easy to create a simple PHP example. To do so, create a file and write HTML tags + PHP code and save this file with .php extension.
+
+All PHP code goes between php tag. A syntax of PHP tag is given below:
+
+    <?php   
+    //your code here  
+    ?>  
+
+Let's see a simple PHP example where we are writing some text using PHP echo command.
+
+File: first.php
+-----------------
+    <!DOCTYPE>  
+    <html>  
+    <body>  
+    <?php  
+    echo "<h2>Hello First PHP</h2>";  
+    ?>  
+    </body>  
+    </html>  

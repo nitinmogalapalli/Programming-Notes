@@ -1,0 +1,52 @@
+PHP Form Handling :
+------------------------------
+We can create and use forms in PHP. To get form data, we need to use PHP superglobals $_GET and $_POST.
+
+The form request may be get or post. To retrieve data from get request, we need to use $_GET, for post request $_POST.
+
+PHP Get Form :
+-----------------------
+Get request is the default form request. The data passed through get request is visible on the URL browser so it is not secured. You can send limited amount of data through get request.
+
+Let's see a simple example to receive data from get request in PHP.
+
+File: form1.html
+
+    <form action="welcome.php" method="get">  
+    Name: <input type="text" name="name"/>  
+    <input type="submit" value="visit"/>  
+    </form>  
+
+File: welcome.php
+
+    <?php  
+    $name=$_GET["name"];//receiving name field value in $name variable  
+    echo "Welcome, $name";  
+    ?>  
+
+PHP Post Form:
+-----------------------
+Post request is widely used to submit form that have large amount of data such as file upload, image upload, login form, registration form etc.
+
+The data passed through post request is not visible on the URL browser so it is secured. You can send large amount of data through post request.
+
+Let's see a simple example to receive data from post request in PHP.
+
+File: form1.html
+
+    <form action="login.php" method="post">   
+    <table>   
+    <tr><td>Name:</td><td> <input type="text" name="name"/></td></tr>  
+    <tr><td>Password:</td><td> <input type="password" name="password"/></td></tr>   
+    <tr><td colspan="2"><input type="submit" value="login"/>  </td></tr>  
+    </table>  
+    </form>   
+
+File: login.php
+
+    <?php  
+    $name=$_POST["name"];//receiving name field value in $name variable  
+    $password=$_POST["password"];//receiving password field value in $password variable  
+      
+    echo "Welcome: $name, your password is: $password";  
+    ?>  

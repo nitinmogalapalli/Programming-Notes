@@ -1,0 +1,35 @@
+HTML Datalist Tag:-
+---------------------------
+The HTML <datalist> tag is is used to provide an auto complete feature on form element. It provides a list of predefined options to the users to select data.
+
+The datalist tag is introduced in HTML5.
+
+The <datalist> tag should be used with an <input< element that contains a "list" attribute. The value of "list" attribute is linked with the datalist id.
+
+HTML datalist tag example:-
+---------------------------------------
+Let's see the simple example of HTML5 datalist tag. If you press A, it will show a list of cricketers starting with A letter.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<label>  
+ Enter your favorite cricket player: Press any character<br />  
+ <input type="text" id="favCktPlayer" list="CktPlayers">  
+ <datalist id="CktPlayers">  
+ <option value="Sachin Tendulkar">  
+ <option value="Brian Lara">  
+ <option value="Jacques Kallis">   
+ <option value="Ricky Ponting">   
+ <option value="Rahul Dravid">   
+ <option value="Shane Warne">   
+ <option value="Rohit Sharma">   
+ <option value="Donald Bradman">   
+ <option value="Saurav Ganguly ">   
+ <option value="AB diVilliers">   
+ <option value="Mahendra Singh Dhoni">   
+ <option value="Adam Gilchrist">  
+ </datalist>  
+</label>  
+</body>  
+</html>  

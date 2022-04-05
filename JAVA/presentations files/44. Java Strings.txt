@@ -1,0 +1,243 @@
+What is String in java:-
+-------------------------------
+Generally, string is a sequence of characters. But in java, string is an object that represents a sequence of characters. The java.lang.String class is used to create string object.
+
+How to create String object?
+
+There are two ways to create String object:
+
+    By string literal
+    By new keyword
+
+1) String Literal:-
+------------------------
+Java String literal is created by using double quotes. 
+
+For Example:
+
+    String s="welcome";  
+
+2) By new keyword:-
+----------------------------
+    String s=new String("Welcome");
+//creates two objects and one reference variable 
+
+Java String Example:-
+------------------------------
+public class StringExample
+{  
+    public static void main(String args[])
+    {  
+    //creating string by java string literal
+    String s1="java";  
+
+    char ch[]={'s','t','r','i','n','g','s'};  
+
+    //converting char array to string
+    String s2=new String(ch);  
+
+    //creating java string by new keyword
+    String s3=new String("example");  
+
+    System.out.println(s1);  
+    System.out.println(s2);  
+    System.out.println(s3);  
+    }
+}   
+ 
+Java String Methods:-
+-------------------------------
+1. Java String charAt():-
+---------------------------------
+The java string charAt() method returns a char value at the given index number. The index number starts from 0. It returns StringIndexOutOfBoundsException if given index number is greater than this string or negative index number.
+
+Signature:-
+---------------
+The signature of string charAt() method is given below:
+
+    public char charAt(int index)  
+
+Parameter:-
+----------------
+index : 
+----------
+index number, starts with 0
+
+Java String charAt() method example:-
+----------------------------------------------------
+    public class CharAtExample
+    {  
+    public static void main(String args[])
+    {  
+    String name="zameer";  
+
+    //returns the char value at the 4th index
+
+    char ch=name.charAt(4);  
+    System.out.println(ch);  
+    }
+    }  
+
+Output:-
+-----------
+e
+
+2. Java String compareTo():-
+---------------------------------------
+The java string compareTo() method compares the given string with current string. It returns positive number, negative number or 0.
+
+It compares strings on the basis of Unicode value of each character in the strings.
+
+    if s1 > s2, it returns positive number  
+    if s1 < s2, it returns negative number  
+    if s1 == s2, it returns 0  
+
+Signature:-
+---------------
+    public int compareTo(String anotherString)  
+
+Parameters:-
+------------------
+anotherString: 
+-------------------
+represents string that is to be compared with current string
+
+Java String compareTo() method example:-
+-----------------------------------------------------------
+    public class CompareToExample
+    {  
+    public static void main(String args[])
+    {  
+    String s1="hello";  
+    String s2="hello";  
+    String s3="meklo";  
+    String s4="hemlo";  
+    String s5="flag";  
+    
+    //0 because both are equal
+    System.out.println(s1.compareTo(s2));  
+
+    //-5 because "h" is 5 times lower than "m"  
+    System.out.println(s1.compareTo(s3));
+
+    //-1 because "l" is 1 times lower than "m" 
+    System.out.println(s1.compareTo(s4)); 
+
+    //2 because "h" is 2 times greater than "f"  
+    System.out.println(s1.compareTo(s5));
+    }
+    }  
+
+Output:-
+-----------
+0
+-5
+-1
+2
+
+3.Java String concat:-
+-------------------------------
+The java string concat() method combines specified string at the end of this string. It returns combined string. It is like appending another string.
+
+Signature:-
+----------------
+The signature of string concat() method is given below:
+
+    public String concat(String anotherString)  
+
+Parameter:-
+------------------
+anotherString : 
+---------------------
+another string i.e. to be combined at the end of this string.
+
+Ex:-
+------
+    public class ConcatExample
+    {  
+    public static void main(String args[])
+    {  
+     String s="Sachin";  
+     s=s.concat(" Tendulkar");  
+    System.out.println(s);  
+    }
+     }  
+
+Output:-
+-----------
+SachinTendulkar
+
+4. Java String endsWith:-
+-----------------------------------
+The java string endsWith() method checks if this string ends with given suffix. It returns true if this string ends with given suffix else returns false.
+
+Signature:-
+----------------
+The syntax or signature of endsWith() method is given below.
+
+    public boolean endsWith(String suffix)  
+
+Parameter:-
+----------------
+suffix : Sequence of character
+
+Ex:-
+------
+    public class EndsWithExample 
+    {  
+    public static void main(String args[])
+    {  
+    String s1="Zameer";  
+    System.out.println(s1.endsWith("r"));  
+    System.out.println(s1.endsWith("eer"));  
+    } 
+    }  
+
+Output:-
+-----------
+true
+true
+
+5. Java String equals:-
+------------------------------
+The java string equals() method compares the two given strings based on the content of the string. If any character is not matched, it returns false. If all characters are matched, it returns true.
+
+Signature:-
+----------------
+    public boolean equals(Object anotherObject)  
+
+Parameter:-
+-----------------
+anotherObject : 
+----------------------
+another object i.e. compared with this string.
+
+Ex:-
+------
+    public class EqualsExample
+    {  
+    public static void main(String args[])
+    {  
+    String s1="zameer";  
+    String s2="zameer";  
+    String s3="ZAMEER";  
+    String s4="prince";  
+
+    //true because content and case is same 
+    System.out.println(s1.equals(s2));
+ 
+    //false because case is not same  
+    System.out.println(s1.equals(s3));
+
+    //false because content is not same  
+    System.out.println(s1.equals(s4));
+    }
+    }  
+
+Output:-
+------------
+true
+false
+false
+
+

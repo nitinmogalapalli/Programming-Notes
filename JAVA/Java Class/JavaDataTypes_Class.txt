@@ -1,0 +1,57 @@
+Data Types
+
+integer	values
+
+byte	1 byte
+short	2 bytes
+int	4 bytes
+long	8 bytes
+
+Floating Point values
+
+float	4 bytes
+double	8 bytes
+
+in java Default Floating point data value is Double
+	
+	float f = 23.98;
+it gene rates an error. to overcome you should use the statement,
+	float f = 23.98f;
+
+Character 
+
+char	2 bytes
+
+Boolean
+
+boolean	false
+	true
+
+
+Variables & Identifiers
+
+variable is a name given to store data on to the computer.
+name given to something to identify it uniquely.
+
+<DataType> Identifier/Variable name
+
+Naming Conventions
+
+1.Name can be of any number of characters
+2.Name should be defined with meaning
+3.spaces won't be allowed in the name
+4.names should start with either characters,underscore(_), or a dollor symbol($),should not insert any operators like +,-,*,&,^,%,#,@...
+
+Variable Names & Menthod names:
+each word should be capitalized except first word.
+
+example:
+
+variables---
+	add,sub,mul,addSecond,matrixOne
+Methods---
+	add(),matrixAddition(),additionOfTwoNumbers()
+
+class name:
+each word should be capitalized.
+	HelloWorld,Shape,Box,ShapeTriangle...

@@ -1,0 +1,174 @@
+jQuery Selectors:-
+-------------------------
+jQuery Selectors are used to select and manipulate HTML elements. They are very important part of jQuery library.
+
+With jQuery selectors, you can find or select HTML elements based on their id, classes, attributes, types and much more from a DOM.
+
+In simple words, you can say that selectors are used to select one or more HTML elements using jQuery and once the element is selected then you can perform various operation on that.
+
+All jQuery selectors start with a dollor sign and parenthesis e.g. $(). It is known as the factory function.
+
+The $() factory function:-
+-----------------------------------
+Every jQuery selector start with thiis sign $(). This sign is known as the factory function. It uses the three basic building blocks while selecting an element in a given document.
+
+S.No.	Selector		Description
+--------	------------		-----------------
+1)	Tag Name:	It represents a tag name available in the DOM.
+
+For example: $('p') selects all paragraphs'p'in the document.
+
+2)	Tag ID:		It represents a tag available with a specific ID in the DOM.
+
+For example: $('#real-id') selects a specific element in the document that has an ID of real-id.
+
+3)	Tag Class:	It represents a tag available with a specific class in the DOM.
+
+For example: $('real-class') selects all elements in the document that have a class of real-class.
+
+Let's take a simple example to see the use of Tag selector. This would select all the elements with a tag name
+and the background color is set to "pink".
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <title>First jQuery Example</title>  
+<script src="">  
+ </script>  
+ <script type="text/javascript" language="javascript">  
+ $(document).ready(function() 
+ {  
+ $("p").css("background-color", "pink");  
+ });  
+ </script>  
+ </head>  
+<body>  
+<p>This is first paragraph.</p>  
+<p>This is second paragraph.</p>  
+<p>This is third paragraph.</p>  
+</body>  
+</html>
+
+How to use Selectors:-
+--------------------------------
+The jQuery selectors can be used single or with the combination of other selectors. They are required at every steps while using jQuery. They are used to select the exact element that you want from your HTML document.
+
+S.No.	Selector		Description
+-------	-----------		----------------
+1)	Name:		It selects all elements that match with the given element name.
+
+2)	#ID:		It selects a single element that matches with the given id.
+
+3)	.Class:		It selects all elements that matches with the given class.
+
+4)	Universal(*)	It selects all elements available in a DOM.
+
+5)	Multiple Elements A,B,C	It selects the combined results of all the specified selectors A,B and C.
+
+Different jQuery Selectors:-
+--------------------------------------
+Selector		Example		Description
+-----------		------------		-----------------
+*		$("*")		It is used to select all elements.
+
+#id		$("#firstname")	It will select the element with id="firstname"
+
+.class		$(".primary")	It will select all elements with class="primary"
+
+class,.class	$(".primary,.secondary")	It will select all elements with the class "primary" or "secondary"
+
+element		$("p")		It will select all p elements.
+
+el1,el2,el3		$("h1,div,p")	It will select all h1, div, and p elements.
+
+:first		$("p:first")		This will select the first p element
+
+:last		$("p:last")		This will select he last p element
+
+:even		$("tr:even")	This will select all even tr elements
+
+:odd		$("tr:odd")		This will select all odd tr elements
+
+:first-child		$("p:first-child")	It will select all p elements that are the first child of their parent
+
+:first-of-type	$("p:first-of-type")	It will select all p elements that are the first p element of their parent
+
+:last-child		$("p:last-child")	It will select all p elements that are the last child of their parent
+
+:last-of-type	$("p:last-of-type")	It will select all p elements that are the last p element of their parent
+
+:nth-child(n)	$("p:nth-child(2)")	This will select all p elements that are the 2nd child of their parent
+
+:nth-last-child(n)	$("p:nth-last-child(2)")	This will select all p elements that are the 2nd child of their parent, counting from the last child
+
+:nth-of-type(n)	$("p:nth-of-type(2)")	It will select all p elements that are the 2nd p element of their parent
+
+:nth-last-of-type(n)	$("p:nth-last-of-type(2)")	This will select all p elements that are the 2nd p element of their parent, counting from the last child
+
+:only-child		$("p:only-child")	It will select all p elements that are the only child of their parent
+
+:only-of-type	$("p:only-of-type")	It will select all p elements that are the only child, of its type, of their parent
+
+parent > child	$("div > p")	It will select all p elements that are a direct child of a div element
+
+parent descendant	$("div p")		It will select all p elements that are descendants of a div element
+
+element + next	$("div + p")	It selects the p element that are next to each div elements
+
+element ~ siblings	$("div ~ p")	It selects all p elements that are siblings of a div element
+
+:eq(index)		$("ul li:eq(3)")	It will select the fourth element in a list (index starts at 0)
+
+:gt(no)		$("ul li:gt(3)")	Select the list elements with an index greater than 3
+
+:lt(no)		$("ul li:lt(3)")	Select the list elements with an index less than 3
+
+:not(selector)	$("input:not(:empty)")	Select all input elements that are not empty
+
+:header		$(":header")	Select all header elements h1, h2 ...
+
+:animated		$(":animated")	Select all animated elements
+
+:focus		$(":focus")		Select the element that currently has focus
+
+:contains(text)	$(":contains('Hello')")		Select all elements which contains the text "Hello"
+
+:has(selector)	$("div:has(p)")	Select all div elements that have a p element
+
+:empty		$(":empty")	Select all elements that are empty
+
+:parent		$(":parent")	Select all elements that are a parent of another element
+
+:hidden		$("p:hidden")	Select all hidden p elements
+
+:visible		$("table:visible")	Select all visible tables
+
+:root		$(":root")		It will select the document's root element
+
+:input		$(":input")		It will select all input elements
+
+:text		$(":text")		It will select all input elements with type="text"
+
+:password		$(":password")	It will select all input elements with type="password"
+
+:radio		$(":radio")		It will select all input elements with type="radio"
+
+:checkbox		$(":checkbox")	Itwill select all input elements with type="checkbox"
+
+:submit		$(":submit")	It will select all input elements with type="submit"
+
+:reset		$(":reset")		It will select all input elements with type="reset"
+
+:button		$(":button")	It will select all input elements with type="button"
+
+:image		$(":image")	It will select all input elements with type="image"
+
+:file		$(":file")		It will select all input elements with type="file"
+
+:enabled		$(":enabled")	Select all enabled input elements
+
+:disabled		$(":disabled")	It will select all disabled input elements
+
+:selected		$(":selected")	It will select all selected input elements
+
+:checked		$(":checked")	It will select all checked input elements

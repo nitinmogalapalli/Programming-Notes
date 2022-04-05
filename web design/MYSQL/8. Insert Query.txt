@@ -1,0 +1,45 @@
+MySQL INSERT Statement:-
+---------------------------------------
+MySQL INSERT statement is used to insert data in MySQL table within the database. We can insert single or multiple records using a single query in MySQL.
+
+Syntax:
+----------
+The SQL INSERT INTO command is used to insert data in MySQL table. Following is a generic syntax:
+
+INSERT INTO table_name ( field1, field2,...fieldN )  
+VALUES  
+( value1, value2,...valueN ); 
+
+Syntax for all fields:
+---------------------------
+INSERT INTO table_name VALUES ( value1, value2,...valueN );   
+
+MySQL INSERT Example 1: for all fields
+--------------------------------------------------------
+If you have to store all the field values, either specify all field name or don't specify any field.
+
+Example:
+---------------------------
+INSERT INTO emp VALUES (7, 'Sonoo', 40000);  
+
+Or,
+
+INSERT INTO emp(id,name,salary) VALUES (7, 'Sonoo', 40000);  
+
+MySQL INSERT Example 2: for partial fields
+------------------------------------------------------------
+In such case, it is mandatory to specify field names.
+
+INSERT INTO emp(id,name) VALUES (7, 'Sonoo');  
+
+MySQL INSERT Example 3: inserting multiple records
+------------------------------------------------------------------------
+Here, we are going to insert record in the "cus_tbl" table of "customers" database.
+
+ INSERT INTO cus_tbl  
+(cus_id, cus_firstname, cus_surname)  
+VALUES  
+(5, 'Ajeet', 'Maurya'),  
+(6, 'Deepika', 'Chopra'),  
+(7, 'Vimal', 'Jaiswal');  
+

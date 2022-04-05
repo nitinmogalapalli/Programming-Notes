@@ -1,0 +1,188 @@
+CSS Layout - The position Property:-
+----------------------------------------------
+The position property specifies the type of positioning method used for an element (static, relative, fixed or absolute).
+The position Property
+
+The position property specifies the type of positioning method used for an element.
+
+There are four different position values:
+
+    static
+    relative
+    fixed
+    absolute
+
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+position: static;
+-------------------
+
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+EX:-
+-----
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is 
+always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+This div element has position: static;
+</div>
+
+</body>
+</html>
+
+position: relative;
+---------------------
+
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+EX:-
+----
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: relative;</h2>
+
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+<div class="relative">
+This div element has position: relative;
+</div>
+
+</body>
+</html>
+
+position: fixed;
+------------------
+
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+EX:-
+------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: fixed;</h2>
+
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+</body>
+</html>
+
+position: absolute;
+-----------------------
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+EX:-
+-----
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+} 
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+</body>
+</html>
+
+Overlapping Elements
+----------------------------
+
+When elements are positioned, they can overlap other elements.
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+EX:-
+------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<img src="w3css.gif" width="100" height="140">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+</body>
+</html>

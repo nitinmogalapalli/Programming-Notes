@@ -1,0 +1,25 @@
+Javascript - document.getElementsByTagName() method:-
+-------------------------------------------------------------------------------
+The document.getElementsByTagName() method returns all the element of specified tag name.
+
+The syntax of the getElementsByTagName() method is given below:
+
+document.getElementsByTagName("name")  
+
+Here, name is required.
+
+Example of document.getElementsByTagName() method:-
+-------------------------------------------------------------------------------
+In this example, we going to count total number of paragraphs used in the document. To do this, we have called the document.getElementsByTagName("p") method that returns the total paragraphs.
+
+<script type="text/javascript">  
+function countpara()
+{  
+var totalpara=document.getElementsByTagName("p");  
+alert("total p tags are: "+totalpara.length);  
+}  
+</script>  
+<p>This is a pragraph</p>  
+<p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>  
+<p>Let's see the simple example</p>  
+<button onclick="countpara()">count paragraph</button>

@@ -1,0 +1,9 @@
+SQL FULL Outer Join - SQL FULL Join:-
+-------------------------------------------------------
+SQL Full Join (Full Outer Join) always contains all records of left table (Table A) and right table (Table B) even of join condition does not find any matching record in both left or right table. Returned result contains set NULL value for all column that are lack of value in matching rows.
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+    FROM product FULL OUTER JOIN category
+    ON product.category_id = category.category_id;

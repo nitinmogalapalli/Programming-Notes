@@ -1,0 +1,9 @@
+SQL Right Outer Join - SQL Right Join:-
+-------------------------------------------------------
+SQL Right Join (Right Outer Join) always contains all records of right table (Table B) even of join condition does not find any matching record in left table (Table A).
+
+Example Statement :
+-----------------------------
+SQL> SELECT * 
+    FROM product RIGHT OUTER JOIN category 
+    ON product.category_id = category.category_id;

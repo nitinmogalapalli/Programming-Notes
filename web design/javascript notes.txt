@@ -1,0 +1,22 @@
+Alert Box:-
+--------------
+This command will make a popup box appear. This can be useful for warning users about things or (in some cases) giving them instructions.
+Ex:-
+-----
+alert('Text for Alert Box');
+
+Prompt Box:-
+-----------------
+This command is quite useful to get some information from the user. you can do this as 
+
+var firstname=prompt('Please enter your name','firstname');
+
+Confirm Box:-
+------------------
+A confirm box is often used if you want the user to verify or accept something.
+When a confirm box pops up, the user will have to click either "ok" or "cancel" to proceed.
+
+confirm("sometext");
+
+
+

@@ -1,0 +1,63 @@
+Multiple Inheritance in Python
+----------------------------------------
+Python supports multiple inheritance also. You can derive a child class from more than one base (parent) class. 
+
+The multiderived class inherits the properties of both class base1 and base2.
+
+Let's see the syntax of multiple inheritance in Python.
+
+Syntax:
+
+    class DerivedClassName(Base1, Base2, Base3):  
+        <statement-1>  
+        .  
+        .  
+        .  
+        <statement-N>   
+
+Or
+
+    class Base1:  
+        pass  
+      
+    class Base2:  
+        pass  
+      
+    class MultiDerived(Base1, Base2):  
+        pass   
+
+Example:
+
+    class First(object):  
+      def __init__(self):  
+        super(First, self).__init__()  
+        print("first")  
+      
+    class Second(object):  
+      def __init__(self):  
+        super(Second, self).__init__()  
+        print("second")  
+      
+    class Third(Second, First):  
+      def __init__(self):  
+        super(Third, self).__init__()  
+        print("third")  
+      
+    Third();  
+
+Output:
+
+    first  
+    second  
+    third  
+
+Why super () keyword
+------------------------------
+The most commonly super() is used with __init__ function in base classes. This is usually the only place where you need to do some things in a child then complete the initialization in the parent.
+
+See this example:
+
+    class Child(Parent):  
+        def __init__(self, stuff):  
+            self.stuff = stuff  
+            super(Child, self).__init__()  

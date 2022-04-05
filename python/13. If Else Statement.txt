@@ -1,0 +1,20 @@
+Python If Else Statements:-
+-------------------------------------
+Syntax:
+-----------
+    if(condition):  True  
+                 statements  
+        else:   False  
+                  statements  
+
+Example-
+--------------
+    year=2000  
+    if year%4==0:  
+        print  "Year is Leap"  
+    else:  
+        print "Year is not Leap"  
+
+Output:
+-----------
+Year is Leap 

@@ -1,0 +1,22 @@
+SQL DESCRIBE Table Column - SQL DESCRIBE Statement / DESC Statement:-
+
+SQL DESCRIBE statement use for describe the List of column definitions for specified TABLE. You can use either DESC or DESCRIBE statement. both are return same result.
+
+DESCRIBE statement to get following information:
+--------------------------------------------------------------------
+    Column Name
+    Column allow NULL or NOT NULL
+    Datatype of the Column
+    With database size precision and If NUMERIC datatype scale.
+
+
+SQL DESC Syntax
+--------------------------
+SQL DESCRIBE Table Column use following syntax,
+
+DESC table_name;
+
+SQL DESC Example
+-----------------------------
+SQL> DESC users_info;
+

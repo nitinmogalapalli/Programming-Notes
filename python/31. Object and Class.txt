@@ -1,0 +1,46 @@
+Python Object
+--------------------
+Python is an object oriented programming language. So its main focus is on objects unlike procedure oriented programming languages which mainly focuses on functions.
+
+In object oriented programming language, object is simply a collection of data (variables) and methods (functions) that act on those data.
+
+Python Class
+
+A class is a blueprint for the object. Let's understand it by an example:
+
+Suppose a class is a prototype of a building. A building contains all the details about the floor, doors, windows, etc. we can make another buildings (as many as we want) based on these details. So building is a class and we can create many objects from a class.
+
+An object is also called an instance of a class and the process of creating this object is known as instantiation.
+
+Python classes contain all the standard features of Object Oriented Programming. A python class is a mixture of class mechanism of C++ and Modula-3.
+
+Define a class in Python
+---------------------------------
+In Python, a class is defined by using a keyword class like a function definition begins with the keyword def.
+
+Syntax of a class definition:
+-------------------------------------
+    class ClassName:  
+        <statement-1>  
+        .  
+        .  
+        .  
+        <statement-N>  
+
+Python Object Class Example
+-----------------------------------------
+    class Student:  
+       def __init__(self, rollno, name):  
+          self.rollno = rollno  
+          self.name = name  
+       def displayStudent(self):  
+          print "rollno : ", self.rollno,  ", name: ", self.name  
+    emp1 = Student(121, "Ajeet")  
+    emp2 = Student(122, "Sonoo")  
+    emp1.displayStudent()  
+    emp2.displayStudent()  
+
+Output:
+
+    rollno :  121 , name:  Ajeet  
+    rollno :  122 , name:  Sonoo  

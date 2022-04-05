@@ -1,0 +1,87 @@
+SQL FOREIGN KEY Constraint:-
+---------------------------------------------
+SQL FOREIGN KEY apply on column(s) for whose value must have reference in another table column (that existing column must be primary key or unique key constraint).
+
+SQL FOREIGN KEY constraints also known as relationship (referential) constraints.
+
+SQL FOREIGN KEY constraints reference in another table within the same database. Using PL/SQL Trigger you can implement to cross database referencing.
+
+FOREIGN KEY constraint applied column must have same data type as the reference on another table column.
+
+FOREIGN KEY Constraint Rules
+---------------------------------------------
+SQL Foreign key constraint valid only if following any one condition true,
+
+1. Value must have exist in parent column (referenced another table column).
+2. Value may be store in NULL.
+
+Define on Column level:-
+----------------------------------
+A FOREIGN KEY constraint specify at column level,
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ] REFERENCES another_table_name(column_name) 
+		[ ON UPDATE | ON DELETE 
+				[ NO ACTION | SET NULL | SET DEFAULT | CASCADE ] 
+		],
+	....
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE emp_info(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	name VARCHAR(30),
+	address VARCHAR(70),
+	contact_no NUMBER(12,0)
+);
+
+Table created.
+
+SQL> CREATE TABLE emp_salary(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	users_no NUMBER(3,0) REFERENCES emp_info(no),
+ 	salary NUMBER(12)
+);
+
+Table created.
+
+Composite FOREIGN KEY Constraint:-
+-----------------------------------------------------
+Composite FOREIGN KEY constraint specified one or more columns reference in another table columns separated by comma (,).
+
+Syntax :
+------------
+REFERENCES another_table_name(column_name1, column_name2) 
+
+ADD FOREIGN KEY (ALTER TABLE)
+----------------------------------------------------
+ALTER TABLE statement to add foreign key in existing table. But in this way when you adding foreign key constraint, SQL check any existing data violate the foreign key constraint or not. If not violate constraint added successfully otherwise you have to update invalid data to prevent foreign key constraint violating.
+
+Syntax :
+------------
+ALTER TABLE table_name
+	ADD FOREIGN KEY (column_name, ...) REFERENCES another_table_name(column_name, ...);
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE emp_salary ADD FOREIGN KEY (users_no) REFERENCES emp_info(no);
+
+Table altered. 
+
+DROP FOREIGN KEY (ALTER TABLE)
+-------------------------------------------------------
+ALTER TABLE statement to drop foreign key in existing table.
+
+Syntax :
+-----------
+ALTER TABLE table_name
+	DROP CONSTRAINT fk_constraint_name;
+
+Example Statement :
+----------------------------
+SQL> ALTER TABLE emp_salary DROP CONSTRAINT fk_userno;
+
+Table altered. 

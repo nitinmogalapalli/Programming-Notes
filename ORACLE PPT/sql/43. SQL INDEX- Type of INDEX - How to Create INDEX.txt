@@ -1,0 +1,85 @@
+SQL INDEX- Type of INDEX - How to Create INDEX:-
+--------------------------------------------------------------------------
+SQL INDEX are used to quickly find data without searching every rows in a database table.
+
+SQL INDEX is improve the speed of search operation on a database table. But additional you need more storage space to maintain duplicate copy of the database.
+
+INDEX is a copy of the selected column of the database table to store additionally duplicate copy of the data.
+
+End users does not know for indexes is created on table, only they are searching data more quickly and efficiently.
+
+SQL INDEX Types
+--------------------------
+CREATE INDEX statement to create indexes on a table. following 3 type indexes you are create on a table.
+
+1. Simple INDEX : Create INDEX on one column.
+2. Composite INDEX : Create INDEX on multiple columns.
+3. Unique INDEX : Create INDEX on column for restrict duplicate values on INDEX column.
+
+1. Simple INDEX:-
+-------------------------
+Simple INDEX create only one selected column of the database table.
+
+Syntax :
+------------
+CREATE INDEX index_name 
+    ON table_name (column_name)
+    [ storage_setting ];
+
+Storage setting specifies the table space explicitly. This are the optional storage setting if you are not specifies automatically default storage setting used.
+
+Example Statement :
+-----------------------------
+SQL> CREATE INDEX index_user_name
+    ON userinfo (name); 
+2. Composite INDEX:-
+-------------------------------
+Composite INDEX create on multiple selected column of the database table.
+
+Syntax :
+------------
+CREATE INDEX index_name 
+    ON table_name (column_name, column_name)
+    [ storage_setting ];
+
+Example Statement :
+-----------------------------
+SQL> CREATE INDEX index_userinfo
+    ON userinfo (no, name);
+
+3. Unique INDEX:-
+-------------------------
+Unique INDEX create on selected column of the database table and does not allow duplicate values of that indexes column.
+
+Syntax :
+------------
+CREATE UNIQUE INDEX index_name 
+    ON table_name (column_name)
+    [ storage_setting ];
+
+Example Statement :
+-----------------------------
+SQL> CREATE UNIQUE INDEX index_user_name
+    ON userinfo (name);
+
+RENAME INDEX:-
+--------------------------
+Syntax :
+------------
+ALTER INDEX index_name 
+    RENAME TO new_index_name;
+
+Example Statement :
+------------------------------
+SQL> ALTER INDEX user_name
+    RENAME TO index_username;
+
+DROP INDEX
+--------------------
+Syntax :
+------------
+DROP INDEX index_name;
+
+Example Statement :
+-----------------------------
+SQL> DROP INDEX index_username;

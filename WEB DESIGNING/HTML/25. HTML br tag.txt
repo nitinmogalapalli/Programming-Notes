@@ -1,0 +1,16 @@
+HTML br tag:-
+-------------------
+HTML <br> tag or element is used to break line in a paragraph.
+
+It is generally used in poem or address where the division of line is necessary.
+
+It is an empty tag, means it does not need a company of end tag.
+
+HTML br tag example:-
+--------------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<p>If you want to break line<br>in a paragraph,<br>use the br element.</p>  
+</body>
+</html>  

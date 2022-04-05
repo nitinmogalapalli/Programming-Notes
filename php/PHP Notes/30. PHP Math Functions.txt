@@ -1,0 +1,146 @@
+PHP Math:
+----------------
+PHP provides many predefined math constants and functions that can be used to perform mathematical operations.
+
+PHP Math: abs() function :
+-------------------------------------
+The abs() function returns absolute value of given number. It returns an integer value but if you pass floating point value, it returns a float value.
+
+Syntax:
+----------
+    number abs ( mixed $number )  
+
+Example:
+-------------
+    <?php  
+    echo (abs(-7)."<br/>"); // 7 (integer)  
+    echo (abs(7)."<br/>"); //7 (integer)  
+    echo (abs(-7.2)."<br/>"); //7.2 (float/double)  
+    ?>  
+
+PHP Math: ceil() function :
+------------------------------------
+The ceil() function rounds fractions up.
+
+Syntax :
+------------
+    float ceil ( float $value )  
+
+Example:
+-------------
+    <?php  
+    echo (ceil(3.3)."<br/>");// 4  
+    echo (ceil(7.333)."<br/>");// 8  
+    echo (ceil(-4.8)."<br/>");// -4  
+    ?>  
+
+PHP Math: floor() function :
+--------------------------------------
+The floor() function rounds fractions down.
+
+Syntax :
+-----------
+    float floor ( float $value )  
+
+Example:
+-------------
+    <?php  
+    echo (floor(3.3)."<br/>");// 3  
+    echo (floor(7.333)."<br/>");// 7  
+    echo (floor(-4.8)."<br/>");// -5  
+    ?>  
+
+PHP Math: sqrt() function:
+------------------------------------
+The sqrt() function returns square root of given argument.
+
+Syntax:
+----------
+    float sqrt ( float $arg )  
+
+Example:
+-------------
+    <?php  
+    echo (sqrt(16)."<br/>");// 4  
+    echo (sqrt(25)."<br/>");// 5  
+    echo (sqrt(7)."<br/>");// 2.6457513110646  
+    ?>  
+
+PHP Math: decbin() function:
+----------------------------------------
+The decbin() function converts decimal number into binary. It returns binary number as a string.
+
+Syntax:
+-----------
+    string decbin ( int $number )  
+
+Example:
+-------------
+    <?php  
+    echo (decbin(2)."<br/>");// 10  
+    echo (decbin(10)."<br/>");// 1010  
+    echo (decbin(22)."<br/>");// 10110  
+    ?>  
+
+PHP Math: dechex() function:
+-----------------------------------------
+The dechex() function converts decimal number into hexadecimal. It returns hexadecimal representation of given number as a string.
+
+Syntax :
+-----------
+    string dechex ( int $number )  
+
+Example:
+-------------
+    <?php  
+    echo (dechex(2)."<br/>");// 2  
+    echo (dechex(10)."<br/>");// a  
+    echo (dechex(22)."<br/>");// 16  
+    ?>  
+
+PHP Math: decoct() function:
+----------------------------------------
+The decoct() function converts decimal number into octal. It returns octal representation of given number as a string.
+
+Syntax:
+-----------
+    string decoct ( int $number )  
+
+Example:
+-------------
+    <?php  
+    echo (decoct(2)."<br/>");// 2  
+    echo (decoct(10)."<br/>");// 12  
+    echo (decoct(22)."<br/>");// 26  
+    ?>  
+
+PHP Math: base_convert() function :
+--------------------------------------------------
+The base_convert() function allows you to convert any base number to any base number. For example, you can convert hexadecimal number to binary, hexadecimal to octal, binary to octal, octal to hexadecimal, binary to decimal etc.
+
+Syntax :
+------------
+    string base_convert ( string $number , int $frombase , int $tobase )  
+
+Example :
+--------------
+    <?php  
+    $n1=10;  
+    echo (base_convert($n1,10,2)."<br/>");// 1010  
+    ?>  
+
+PHP Math: bindec() function :
+-----------------------------------------
+The bindec() function converts binary number into decimal.
+
+Syntax :
+-----------
+    number bindec ( string $binary_string )  
+
+Example:
+--------------
+    <?php  
+    echo (bindec(10)."<br/>");// 2  
+    echo (bindec(1010)."<br/>");// 10  
+    echo (bindec(1011)."<br/>");// 11  
+    ?>  

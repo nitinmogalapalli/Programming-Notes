@@ -1,0 +1,62 @@
+HTML Iframes:-
+---------------------
+An iframe is used to display a web page within a web page.
+
+Iframe Syntax:-
+-------------------
+The syntax for adding an iframe is:
+
+<iframe src="URL"> </iframe>
+
+The src attribute specifies the URL (web address) of the iframe page.
+
+Iframe - Set Height and Width:-
+----------------------------------------
+
+Use the height and width attributes to specify the size.
+
+The attribute values are specified in pixels by default, but they can also be in percent (like "80%").
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe src="demo_iframe.htm" width="200" height="200"> </iframe>
+
+</body>
+</html>
+
+Iframe - Remove the Border:-
+----------------------------------------
+The frameborder attribute specifies whether or not to display a border around the iframe.
+
+Set the attribute value to "0" to remove the border:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>
+
+</body>
+</html>
+
+Use iframe as a Target for a Link:-
+---------------------------------------------
+An iframe can be used as the target frame for a link.
+
+The target attribute of the link must refer to the name attribute of the iframe:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="100%" height="300px" src="demo_iframe.htm" name="iframe_a">
+</iframe>
+<p>
+<a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a>
+</p>
+<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+</body>
+</html>

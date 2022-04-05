@@ -1,0 +1,38 @@
+Continue Statement:-
+-----------------------------
+continue Statement is a jump statement that is used to skip the present iteration and forces next iteration of loop to take place. It can be used in while as well as for loop statements.
+
+Syntax:-
+-----------
+while <condition>:
+
+statement1
+
+statement2
+
+if<condition>:
+
+continue
+
+statement3
+
+statement4
+
+eg:
+------
+    a=0  
+    while a<=5:  
+        a=a+1  
+        if a%2==0:  
+            continue  
+        print a  
+    print "End of Loop"  
+
+Output:
+----------
+    >>>   
+    1  
+    3  
+    5  
+    End of Loop  
+    >>>  

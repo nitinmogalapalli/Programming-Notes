@@ -1,0 +1,26 @@
+PHP do while loop:
+--------------------------
+PHP do while loop can be used to traverse set of code like php while loop. The PHP do-while loop is guaranteed to run at least once.
+
+It executes the code at least one time always because condition is checked after executing the code.
+
+Syntax :
+-----------
+    do
+    {  
+    //code to be executed  
+    }
+    while(condition);  
+
+Example :
+--------------
+    <?php  
+    $n=1;  
+    do
+    {  
+    echo "$n<br/>";  
+    $n++;  
+    }
+   while($n<=10);  
+    ?>  
+

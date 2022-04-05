@@ -1,0 +1,81 @@
+SQL Join - SQL Join Types
+--------------------------------------
+SQL Join clause use when select records rows from two or more tables from the database. It's depend on certain columns from two table. Matching columns are evaluate and if predicated TRUE return a records set data in specified format.
+
+SQL Join four different types: Inner Join, Outer Join, Self Join, Cross Join.
+
+1. Inner Join:-
+--------------------
+Inner join check join condition (allow other comparison operator such as <, > etc) and create record set result that are combining columns value from the tables(two or more table).
+
+
+Equi Join : -
+-----------------
+Equiv join is a same as inner join but different is check condition only specific type comparison (not allowing comparison operator such as <, > etc).
+
+Natural Join : -
+--------------------
+Natural join is a same as Equi join but different is resulting contains allow only one column for each pair of same columns named. Record set contains haven't same name columns are found.
+
+2. Outer Join : -
+----------------------
+Outer Join is a join two table involving common attributes from two tables. But tables (Table A) does not require to have a matching value to other table (Table B).
+
+Left Join/Left Outer Join :
+-----------------------------------
+ Left Outer Join always contains all records of left table (Table A) even of join condition does not find any matching record in right table (Table B).
+
+Right Join/Right Outer Join : 
+---------------------------------------
+Right Outer Join always contains all records of right table (Table B) even of join condition does not find any matching record in left table (Table A).
+
+Full Join/Full Outer Join : 
+----------------------------------
+Full Outer Join always contains all records of left table (Table A) and right table (Table B) even of join condition does not find any matching record in both left or right table. Returned result contains set NULL value for all column that are lack of value in matching rows.
+
+
+3. SELF Join : 
+--------------------
+Self Join joining table to itself.
+
+4. Cross Join : 
+---------------------
+Cross Join joining tables rows and return Cartesian product(each row from Table A with each row of Table B) record set result.
+
+Example Table
+---------------------
+Considering following category, product is our example table. In this following tables category_id column of category table is primary key and product table category_id foreign key.
+
+CREATE TABLE category(
+  category_id number(3) PRIMARY KEY,
+  category_name VARCHAR(25)
+);
+
+INSERT INTO category VALUES (1,'Mobiles');
+
+INSERT INTO category VALUES (2,'Laptops');
+
+INSERT INTO category VALUES (3,'Tablet');
+
+INSERT INTO category VALUES (4,'Cameras');
+
+INSERT INTO category VALUES (5,'Gaming');
+
+CREATE TABLE product(
+  category_id number(3) REFERENCES category(category_id),
+  product_name VARCHAR(25)
+);
+
+INSERT INTO product VALUES (1,'Nokia');
+
+INSERT INTO product VALUES (1,'Samsung');
+
+INSERT INTO product VALUES (2,'HP');
+
+INSERT INTO product VALUES (2,'Dell');
+
+INSERT INTO product VALUES (3,'Apple');
+
+INSERT INTO product VALUES (4,'Nikon');
+
+INSERT INTO product VALUES (NULL,'Playstation');

@@ -1,0 +1,19 @@
+SQL CREATE Database:-
+------------------------------------
+The SQL CREATE DATABASE statement is used by a developer to create a database.
+
+Let's see the syntax of SQL CREATE DATABASE:
+--------------------------------------------------------------------
+    CREATE DATABASE database_name;  
+
+If you want to add tables in that database, you can use CREATE TABLE statement.
+
+Create Database in MySQL
+-------------------------------------
+In MySQL, same command is used to create a database.
+
+    CREATE DATABASE database_name;  
+
+Create Database in Oracle
+------------------------------------
+You don't need to create database in Oracle. In Oracle database, you can create tables directly.

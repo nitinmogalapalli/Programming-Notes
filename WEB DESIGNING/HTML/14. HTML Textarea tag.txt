@@ -1,0 +1,18 @@
+HTML Textarea:-
+-----------------------
+The HTML <textarea> tag is used to define a multi-line text input control.
+
+It can hold unlimited number of characters and the texts are displayed in a fixed-width font (usually courier).
+
+The size of the HTML textarea is defined by <cols> and <rows> attribute, or it can also be defined through CSS height and width properties.
+
+HTML Textarea Example:-
+-----------------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<textarea rows="9" cols="70">  
+textarea tag example with rows and columns.
+</textarea>
+</body>
+</html>

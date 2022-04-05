@@ -1,0 +1,39 @@
+SQL HAVING Clause Statement:-
+---------------------------------------------
+SQL HAVING Clause statement used with GROUP BY clause for filtering the GROUP BY clause result set data allow only group of result whose HAVING clause condition TRUE.
+
+SQL HAVING clause use with GROUP BY clause. without GROUP BY clause you can't use HAVING clause.
+
+SQL HAVING Clause Syntax
+---------------------------------------
+Considering following syntax that help you to understanding HAVING clause,
+
+SELECT 
+	column_name1, column_name2, aggregate_function(column_name), ....
+	FROM table_name
+    [ WHERE condition ]
+    GROUP BY column_name1, ...
+    HAVING condition;
+
+SQL HAVING Clause Example Statement
+---------------------------------------------------------
+We have following employee_hour table that store weekday hours for each employee:
+
+SQL> SELECT * FROM employee_hour;
+
+Example Statement :
+-----------------------------
+SQL> SELECT name,SUM(hours) 
+	FROM employee_hour 
+	GROUP BY name 
+	HAVING SUM(hours) > 25;
+
+Example Statement :
+-----------------------------
+SQL> SELECT name,AVG(hours) 
+	FROM employee_hour 
+	GROUP BY name 
+	HAVING AVG(hours) > 8;
+
+
+

@@ -1,0 +1,27 @@
+HTML Input Tag:-
+------------------------
+The HTML <input> tag is used to represent a form input control in HTML document. This form input control facilitate user to input data and communicate with a website or application. Let's take an example of an HTML form with three input fields, two text fields and one button for submission.
+
+HTML Input Tag Example:-
+-------------------------------------
+Let's see the example of HTML input tag
+
+<!DOCTYPE>
+<html>  
+<body>  
+<form action="#">  
+First name: <input type="text" name="FirstName"  placeholder="enter firstname..."><br>  
+Last name: <input type="text" name="LastName" placeholder="enter lastname..."><br>  
+<input type="submit" value="Submit">  
+</form>  
+</body>
+</html>  
+
+Points to remember:-
+-----------------------------
+1) Use the input element within the form element to declare input control that allow user to enter data.
+
+2) The input element is empty. It contains attributes only. There is no need of an end tag in HTML.
+
+3) If you want to define labels for input element, use the label element with each input tag.
+

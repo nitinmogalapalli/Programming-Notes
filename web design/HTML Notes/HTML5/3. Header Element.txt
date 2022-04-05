@@ -1,0 +1,24 @@
+HTML5 <header> Element:-
+------------------------------------
+The <header> element specifies a header for a document or section.
+
+The <header> element should be used as a container for introductory content.
+
+You can have several <header> elements in one document.
+
+The following example defines a header for an article:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+</article>
+
+</body>
+</html>

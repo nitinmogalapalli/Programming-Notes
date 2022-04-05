@@ -1,0 +1,150 @@
+CSS Layout - Horizontal Align:-
+----------------------------------------
+Center Align - Using margin:-
+-------------------------------------
+
+Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Use margin: auto;, to horizontally center an element within its container.
+
+The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="center">
+  <p><b>Note: </b>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</p>
+</div>
+
+</body>
+</html>
+
+Left and Right Align - Using position:-
+-----------------------------------------------
+
+One method for aligning elements is to use position: absolute;:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="right">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+
+</body>
+</html>
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+Tip: When aligning elements with position, always define margin and padding for the <body> element. This is to avoid visual differences in different browsers.
+
+There is also a problem with IE8 and earlier, when using position. If a container element (in our case <div class="container">) has a specified width, and the !DOCTYPE declaration is missing, IE8 and earlier versions will add a 17px margin on the right side. This seems to be space reserved for a scrollbar. So, always set the !DOCTYPE declaration when using position:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    background-color: #b0e0e6;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="right">
+    <p><b>Note: </b>When aligning using the position property, always include the !DOCTYPE declaration! If missing, it can produce strange results in IE browsers.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+Left and Right Align - Using float:-
+------------------------------------------
+Another method for aligning elements is to use the float property:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.right {
+    float: right;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="right">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+
+</body>
+</html>
+
+Tip: When aligning elements with float, always define margin and padding for the <body> element. This is to avoid visual differences in different browsers.
+
+There is also a problem with IE8 and earlier, when using float. If the !DOCTYPE declaration is missing, IE8 and earlier versions will add a 17px margin on the right side. This seems to be space reserved for a scrollbar. So, always set the !DOCTYPE declaration when using float:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    background-color: #b0e0e6;
+}
+</style>
+</head>
+<body>
+
+<div class="right">
+  <p><b>Note: </b>When aligning using the float property, always include the !DOCTYPE declaration! If missing, it can produce strange results in IE browsers.</p>
+</div>
+
+</body>
+</html>
+

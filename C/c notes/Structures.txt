@@ -1,0 +1,111 @@
+Structures:
+---------------
+	collection of values of the different data types.
+	It is a user defined data type by which you can declare variable of its type.
+
+syntax:
+----------
+	struct struct_name
+	{
+		data_type var1,var2,...;
+		data_type var1,var2,...;
+	} struct_var1,struct_var2,....;
+
+Eg:
+	struct Student
+	{
+		int roll_no;
+		char name[24];
+		float height,percentage;
+		int total,marks[6];
+	};
+
+Structure variable declaration:
+----------------------------------------
+1. one way of declarating structure variable is,
+
+	struct struct_name st_var1,st_var2,...;
+
+2. We can declare a structure variable at the time structure definition.
+	
+	example:
+		struct Student
+		{
+		.......
+		......
+		}std1,std2,st3,.....;
+
+Member Accessing using dot operator:
+----------------------------------------------------
+	In order to access the members in structure we use a dot(.) operator with the structure variable.
+
+Syntax:
+----------
+	struct_var.member = value;
+	printf("format",struct_var.member);
+
+Eg:
+----
+	std1.name = "Sateesh";
+	std2.roll_no = 23;
+
+/*program for declaring a structure*/
+
+struct sample_data
+{
+	char name[10];
+	int id;
+	float avg;
+};
+struct date
+{
+	int day;
+	int month;
+	int year;
+};
+main()
+{
+struct sample_data student;
+struct date today;
+clrscr();
+printf("enter data into the student structure:\n");
+printf("enter name:");
+scanf("%s",&student.name);
+printf("enter id:");
+scanf("%d",&student.id);
+printf("enter average:");
+scanf("%f",&student.avg);
+printf("enter today's date(day/month/year):");
+scanf("%d%d%d",&today.day,&today.month,&today.year);
+printf("the values in the student structure are:\n");
+printf("%s%d%f",student.name,student.id,student.avg);
+printf("\n todays date is:\"%d-%d-%d\"",today.day,today.month,today.year);
+getch();
+}
+
+/* program to define a structure and access members using dot operator */
+
+struct student
+{
+	int rollno;
+	char name[24];
+	float average;
+};
+
+main()
+{
+struct student std1,std2;
+clrscr();
+std1.rollno = 123;
+std2.rollno = 234;
+printf("Enter name of the two students:\n");
+gets(std1.name);
+gets(std2.name);
+printf("Enter averages of the two students:\n");
+scanf("%f%f",&std1.average,&std2.average);
+
+printf("The Details of the two students:\n");
+printf("Student 1:\nrollno: %d\nname: %s\naverage%f",std1.rollno,std1.name,std1.average);
+printf("\n\nStudent 2:\nrollno: %d\nname: %s\naverage:%f",std2.rollno,std2.name,std2.average);
+getch();
+}

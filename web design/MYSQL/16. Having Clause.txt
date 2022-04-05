@@ -1,0 +1,22 @@
+MySQL HAVING Clause:-
+-----------------------------------
+MySQL HAVING Clause is used with GROUP BY clause. It always returns the rows where condition is TRUE.
+
+Syntax:
+----------
+SELECT expression1, expression2, ... expression_n,   
+aggregate_function (expression)  
+FROM tables  
+[WHERE conditions]  
+GROUP BY expression1, expression2, ... expression_n  
+HAVING condition;  
+
+Parameters:-
+------------------
+aggregate_function: It specifies any one of the aggregate function such as SUM, COUNT, MIN, MAX, or AVG.
+
+expression1, expression2, ... expression_n: It specifies the expressions that are not encapsulated within an aggregate function and must be included in the GROUP BY clause.
+
+WHERE conditions: It is optional. It specifies the conditions for the records to be selected.
+
+HAVING condition: It is used to restrict the groups of returned rows. It shows only those groups in result set whose conditions are TRUE.

@@ -1,0 +1,27 @@
+MySQL UPDATE Query:-
+----------------------------------
+MySQL UPDATE statement is used to update data of the MySQL table within the database. It is used when you need to modify the table.
+
+Syntax:
+-----------
+Following is a generic syntax of UPDATE command to modify data into the MySQL table:
+
+UPDATE table_name SET field1=new-value1, field2=new-value2  
+[WHERE Clause]  
+
+Note:
+---------
+One or more field can be updated altogether.
+Any condition can be specified by using WHERE clause.
+You can update values in a single table at a time.
+WHERE clause is used to update selected rows in a table.
+
+Example:
+------------
+Here, we have a table "cus_tbl" within the database "customers". We are going to update the data within the table "cus_tbl".
+
+This query will update cus_surname field for a record having cus_id as 5.
+
+UPDATE cus_tbl  
+SET cus_surname = 'Ambani'  
+WHERE cus_id = 5;  

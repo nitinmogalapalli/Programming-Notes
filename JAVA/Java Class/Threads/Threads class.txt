@@ -1,0 +1,127 @@
+Threads:-
+	Threads allow you to perform multiple tasks at the same time.
+	
+Overview of Threads:
+	A thread is defined as a path of execution, a collection of statements that execute in a specific order. The programs we have written until now had a single path of execution: the main() method. When a java application is executed, the main() method runs in its own thread. Within the path of execution of main(), you can start new threads to perform different tasks.
+
+	From a programming point of view, creating multiple threads is equivalent to being able to invoke multiple methods at the same time. You can have a thread that is displaying a GUI on the screen, a second thread in the background that is downloading a file from the Internet, and a third thread that is waiting for the user to interact with the GUI.
+
+	The thread is the smallest unit of dispatchable code. This means that a single program can perform two or more tasks simultaneously.
+
+	There is a term related to threads: process. A process consists of the memory space allocated by the operating system that can contain one or more threads. A thread cannot exist on its own; it must be a part of a process. A process remains running until all of the non-daemon threads are done executing.
+
+	You can run multiple processes at the sametime. Today’s operating systems are multiprocessing (often called multitasking).
+
+	A daemon thread, by definition, is a thread that does not keep the process executing. Use a daemon thread for a task that you want to run in the background only while the program is still running. 
+
+	The garbage collector of the JVM process is a good example of a daemon thread. The JVM wants the garbage collector to always be running in the background, freeing memory of unused objects.
+
+
+Life Cycle of a Thread:
+
+A thread goes through various stages in its life cycle. For example, a thread is born, started, runs, and then dies.
+
+Born:
+	 When a thread is first created, it is referred to as a born thread. Every thread has a priority, with a new thread inheriting the priority of the thread that created it. This priority can be changed at any time in the thread’s life cycle. Thread priority is an int value, and your Java threads can have any priority between 1 to 10. A born thread does not run until it is started.
+
+Runnable: After a newly born thread is started, the thread becomes runnable. For each of the 10 priorities, there is a corresponding priority queue (the first thread in is the first thread out).
+
+Running: The thread scheduler determines when a runnable thread gets to actually run. In fact, the only way a thread is running is if the thread scheduler grants it permison. 
+
+Blocked: A thread can become blocked, which occurs when multiple threads are synchronizing on the same data and need to take turns. A blocked thread is not running, nor is it runnable. It waits until the synchronization monitor allows it to continue, at which point it becomes runnable again and enters its appropriate priority queue.
+
+	A thread can become blocked for other reasons besides synchronization. For example, a thread can invoke the wait() method on an object, which blocks the thread until notify() is invoked on the same object. A thread can sleep for a certain number of milliseconds, or a thread can call the join() method and wait for another thread to finish. As is always the case, when a thread is no longer blocked and becomes runnable again, the thread is placed in its corresponding priority queue and gets to run again when the thread scheduler schedules it.
+
+Dead: A thread that runs to completion is referred to as a dead thread. The term dead is used because it cannot be started again. If you need to repeat the task of the thread, you need to instantiate a new thread object.
+
+Creating a Thread:
+
+	There are three common ways to write a thread in Java:
+
+ > You can write a class that implements the Runnable interface, then associate an instance of your class with a java.lang.Thread object.
+
+ > You can write a class that extends the Thread class.
+
+ > You can write a class that extends the java.util.TimerTask class, and then schedule an instance of your class with a java.util.Timer object
+
+	you define the one method in Runnable:
+		public void run()
+	The body of the run() method is the path of execution for your thread. When the thread starts running, the run() method is invoked, and the thread becomes dead when the run() method runs to completion.
+
+The Thread class defines several methods that help manage threads. We need to know atleast these:
+
+   Method 		Meaning
+getName 		Obtain a thread’s name.
+getPriority 	Obtain a thread’s priority.
+isAlive 		Determine if a thread is still running.
+join 		Wait for a thread to terminate.
+run 		Entry point for the thread.
+setName		Set a string as thread name.
+sleep 		Suspend a thread for a period of time.
+start 		Start a thread by calling its run method.
+
+The one thread that all Java programs have: the main thread.
+
+The main Thread:
+	When a Java program starts up, thread that begins running immediately is usually the main thread of your program.
+	The main thread is important for two reasons:
+• It is the thread from which other “child” threads will be spawned.
+• Often, it must be the last thread to finish execution because it performs various shutdown actions.
+
+
+The main thread can be controlled by the programmer by obtaining a reference to that thread. To do so we need to call a Thread class method:
+	static Thread currentThread()
+This method returns a reference to the thread in which it is called. Once you have a reference to the main thread, you can control it just like any other thread.
+
+
+
+Synchronization:
+	When two or more threads need access to a shared resource, they need some way to ensure that the resource will be used by only one thread at a time. The process by which this is achieved is called synchronization.
+
+	Key to synchronization is the concept of the monitor (also called a semaphore). A monitor is an object that is used as a mutually exclusive lock, or mutex. Only one thread can own a monitor at a given time. When a thread acquires a lock, it is said to have entered the monitor. All other threads attempting to enter the locked monitor will be suspended until the first thread exits the monitor. These other threads are said to be waiting for the monitor. 
+
+Using Synchronized Methods:
+
+	Synchronization is easy in Java, because all objects have their own implicit monitor associated with them. To enter an object’s monitor, just call a method that has been modified with the synchronized keyword. While a thread is inside a synchronized method, all other threads that try to call it (or any other synchronized method) on the same instance have to wait. To exit the monitor and relinquish control of the object to the next waiting thread, the owner of the monitor simply returns from the synchronized method.
+
+The synchronized Statement:
+
+	While creating synchronized methods within classes that you create is an easy and effective means of achieving synchronization, it will not work in all cases. To understand why, consider the following. Imagine that you want to synchronize access to objects of a class that was not designed for multithreaded access. That is, the class does not use synchronized methods. 
+
+	Further, this class was not created by you, but by a third party, and you do not have access to the source code. Thus, you can’t add synchronized to the appropriate methods within the class. How can access to an object of this class be synchronized? Fortunately, the solution to this problem is quite easy: 
+
+You simply put calls to the methods defined by this class inside a synchronized block.
+This is the general form of the synchronized statement:
+
+	synchronized(object) 
+	{
+		// statements to be synchronized
+	}
+
+	Here, object is a reference to the object being synchronized. A synchronized block ensures that a call to a method that is a member of object occurs only after the current thread has successfully entered object’s monitor.
+
+Interthread Communication:
+
+	The preceding examples unconditionally blocked other threads from asynchronous access to certain methods. This use of the implicit monitors in Java objects is powerful, but you can achieve a more subtle level of control through interprocess communication.
+
+	Java includes an elegant interprocess communication mechanism via the wait( ), notify( ), and notifyAll( ) methods. These methods are implemented as final methods in Object, so all classes have them. All three methods can be called only from within a synchronized context. 
+
+the rules for using these methods are actually quite simple:
+• wait( ) tells the calling thread to give up the monitor and go to sleep until some other thread enters the same monitor and calls notify( ).
+• notify( ) wakes up a thread that called wait( ) on the same object. 
+• notifyAll( ) wakes up all the threads that called wait( ) on the same object. One of the threads will be granted access.
+
+These methods are declared within Object, as shown here:
+
+final void wait( ) throws InterruptedException
+final void notify( )
+final void notifyAll( )
+
+Deadlock:
+
+	A special type of error that you need to avoid that relates specifically to multitasking is deadlock, which occurs when two threads have a circular dependency on a pair of synchronized objects.
+
+Deadlock is a difficult error to debug for two reasons:
+
+• In general, it occurs rarely, when the two threads time-slice in just the right way.
+• It may involve more than two threads and two synchronized objects. 

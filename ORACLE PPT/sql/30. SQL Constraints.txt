@@ -1,0 +1,106 @@
+What is SQL constraints?
+Constraints are the rules which are apply to table columns to store valid data and prevents the user to storing/entering invalid data into table columns.
+
+Constraints are part of a database schema definition.
+
+We can create/define constraints on single or multiple columns of any table. It maintain the data integrity of the table.
+SQL Constraints are help us to enter limited fixed size data. For example postal code India country size six digit no below or no more then six digit.
+
+Type of Data constraints:-
+-----------------------------------
+Input/Output constraints : 
+----------------------------------
+This constraints determines the speed of which data are inserted or extracted from database table. For example Primary key, Foreign key constraints.
+
+Business Rule constraints : 
+-------------------------------------
+This rules are applied to data prior(first) the data being inserted into the table columns. For example Unique, Not NULL, Default constraints.
+
+Define Constraints:-
+----------------------------
+Oracle SQL allows programmers to define constraints at:
+1. Column level
+2. Table level
+
+Column level constraints : 
+-----------------------------------
+Column level constraint define on column level (single column) along with other column attributes.
+
+Syntax:
+----------
+Considering following SQL column level syntax,
+...
+column_name datatype[(size)] [ NULL | NOT NULL ] [constraint_name],
+....
+
+Table level constraints : 
+--------------------------------
+Table level constraint defining after the all table columns define.
+
+Syntax:
+----------
+Considering following SQL table level syntax,
+
+...
+column_name datatype[(size)] [ NULL | NOT NULL ],
+column_name datatype[(size)] [ NULL | NOT NULL ],
+[ CONSTRAINT constraint_name 
+	PRIMARY KEY ( col1, col2, ... ) |
+	FOREIGN KEY ( col1, col2, ... ) REFERENCES table_2 [ ( col1, col2, ... ) 
+		[ ON UPDATE | ON DELETE 
+			[ NO ACTION | SET NULL | SET DEFAULT | CASCADE ] 
+		] 
+	] |
+	UNIQUE ( col1, col2, ... ) |
+	CHECK ( expression )
+],
+...
+
+ADD CONSTRAINT (ALTER TABLE):-
+------------------------------------------------------
+Yes you can add constraint in existing table. But in this way when you adding new constraint, oracle check any existing data violate the constraint rules or not. If not violate constraint added successfully otherwise you have to manually update data to prevent constraint violating.
+
+Syntax:
+----------
+Considering following general add constraint syntax,
+
+ALTER TABLE table_name
+	ADD CONSTRAINT_NAME (column_name);
+
+DROP CONSTRAINT (ALTER TABLE):-
+-------------------------------------------------------
+You can drop the existing table constraint using ALTER TABLE statement.
+
+Syntax:
+----------
+Considering following general drop constraint syntax,
+
+ALTER TABLE table_name
+	DROP constraint_name column_name;
+
+
+Type of SQL Constraints:-
+------------------------------------
+PRIMARY KEY : 
+-----------------------
+value in specified column must be unique for each row in a table and not a NULL. Primary key used to identify individual records.
+
+FOREIGN KEY : 
+-----------------------
+value in specified column must have reference in another table (That existing record have primary key or any other constraint).
+
+NOT NULL : 
+-----------------
+Column value must not be a NULL.
+
+UNIQUE : 
+--------------
+Check column value must be unique across the given field in table.
+
+CHECK : 
+-------------
+Specific condition is specified, which must evaluate to true for constraint to be satisfied.
+
+DEFAULT : 
+----------------
+Default value assign if none of the value specified of given field.

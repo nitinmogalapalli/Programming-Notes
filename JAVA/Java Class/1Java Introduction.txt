@@ -1,0 +1,97 @@
+Concepts to be discussed in JAVA:
+	History of java
+	Java Architecture
+	OOP
+	Data types
+	Control Statements
+	Arrays
+	Classes and Objects
+	Introduction to Methods
+	Method OverLoading
+	Inheritance
+	Method Overriding
+	Interfaces
+	String Handling
+	Packages
+	Exception Handling
+	Multi Threading
+	Introduction to Aplets
+
+Software:
+
+  >Instruction:
+	It is a collection/set of Commands.
+  >Program:
+	It is a collection/set of Instructions that are used to perform a task.
+  >Software:
+	It is a set of integrated programs that are used to solve a problem.
+
+Types of software:
+	1. System
+	  >Operating System
+	  >Utilities
+	2. Application 
+	  >General Purpose
+	  >Compiler/linkers for Languages
+
+Basic computer language is:
+	Binary language
+	> Alphabet (0's and 1's) Bits
+	Assembly Language
+	> Mnumonic Codes(AND,OR, ADD, MUL, DIV...)
+Translators:
+	Assembler
+	Compilers
+	Interpreters
+
+
+Java is related to C++, which is a direct descendant of C.
+ From C, Java derives its syntax. Many of Java’s
+object-oriented features were influenced by C++.
+
+
+The C language:
+
+	It shook the computer world. It fundamentally changed the way programming was approached and thought about. The creation of C was a direct result of the need for a structured, efficient, high-level language that could replace assembly code when creating systems programs. 
+
+Prior to C, FORTRAN could be used to write fairly efficient programs for scientific applications, it was not very good for system code. While BASIC was easy to learn, it wasn’t very powerful, and its lack of structure made its usefulness questionable for large programs.
+
+Another compounding problem was that early computer languages such as BASIC, COBOL, and FORTRAN were not designed around structured principles. 
+
+Invention:
+	Invented and first implemented by Dennis Ritchie on a DEC PDP-11 running the UNIX operating system, C was the result of a development process that started with an older language called BCPL, developed by Martin Richards. BCPL influenced a language called B, invented by Ken Thompson, which led to the development of C in the early 1970s.
+
+"The C Programming Language" by Brian Kernighan and Dennis Ritchie
+(Prentice-Hall, 1978).
+
+C was formally standardized in December 1989, when the American
+National Standards Institute (ANSI) standard for C was adopted (C89).
+
+
+C++: The Next Step
+
+	During the late 1970s and early 1980s, C became the dominant computer programming language, and it is still widely used today. Since C is a successful and useful language, you
+might ask why a need for something else existed. The answer is complexity.
+
+The 1960s gave birth to structured programming. This is the method of programming championed by languages such as C.
+
+However, even with structured programming methods, once a project reaches a certain size, its complexity exceeds what a programmer can manage.
+
+To solve this problem, a new way to program was invented, called
+object-oriented programming (OOP).  OOP is a programming methodology that helps organize complex programs through the use of inheritance, encapsulation, and polymorphism.
+
+Invention:
+	C++ was invented by Bjarne Stroustrup in 1979, while he was working at Bell Laboratories in Murray Hill, New Jersey. Stroustrup initially called the new language “C with Classes.”
+However, in 1983, the name was changed to C++. C++ extends C by adding object-oriented features.
+
+By the end of the 1980s and the early 1990s, object-oriented programming using C++ took hold.
+
+
+The Creation of Java::
+
+	Java was conceived by James Gosling, Patrick Naughton, Chris Warth, Ed Frank, and Mike Sheridan at Sun Microsystems, Inc. in 1991. It took 18 months to develop the first working version. This language was initially called “Oak,” but was renamed “Java” in 1995.
+
+The original impetus for Java was not the Internet! Instead, the primary motivation was the need for a platform-independent (that is, architecture-neutral) language that could be used to create software to be embedded in various consumer electronic devices, such as microwave ovens and remote controls. 
+
+Had the Web not taken shape at about the same time that Java was being implemented, Java might have remained a useful but obscure language for programming consumer electronics. However, with the emergence of the World Wide Web, Java was propelled to the forefront of computer language design, because the Web, too, demanded portable programs.
+

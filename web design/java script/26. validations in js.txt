@@ -1,0 +1,145 @@
+JavaScript Form Validation:-
+--------------------------------------
+It is important to validate the form submitted by the user because it can have inappropriate values. So validation is must.
+
+The JavaScript provides you the facility the validate the form on the client side so processing will be fast than server-side validation. So, most of the web developers prefer JavaScript form validation.
+
+Through JavaScript, we can validate name, password, email, date, mobile number etc fields.
+
+JavaScript form validation example:-
+-------------------------------------------------
+In this example, we are going to validate the name and password. The name can’t be empty and password can’t be less than 6 characters long.
+
+Here, we are validating the form on form submit. The user will not be forwarded to the next page until given values are correct.
+
+<html>
+<body>
+<script>  
+function validateform()
+{  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name=="")
+{  
+  alert("Name can't be blank");  
+  return false;  
+}
+else if(password.length<6)
+{  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>
+
+JavaScript Retype Password Validation:-
+------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function matchpass()
+{
+var firstpassword=document.f1.password.value;
+var secondpassword=document.f1.password2.value;
+
+if(firstpassword==secondpassword)
+{
+return true;
+}
+else
+{
+alert("password must be same!");
+return false;
+}
+}
+</script>
+</head>
+<body>
+
+<form name="f1" action="hello.html" onsubmit="return matchpass()">
+Password:<input type="password" name="password" /><br/>
+Re-enter Password:<input type="password" name="password2"/><br/>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+JavaScript Number Validation:-
+-----------------------------------------
+Let's validate the textfield for numeric value only. Here, we are using isNaN() function.
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate()
+{
+var num=document.myform.num.value;
+if (isNaN(num))
+{
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";
+  return false;
+}
+else
+{
+  return true;
+  }
+}
+</script>
+</head>
+
+<body>
+<form name="myform" action="hai.html" onsubmit="return validate()" >
+Number: <input type="text" name="num"><span id="numloc"></span><br/>
+<input type="submit" value="submit">
+</form>
+
+</body>
+</html>
+
+JavaScript email validation:-
+--------------------------------------
+We can validate the email by the help of JavaScript.
+
+There are many criteria that need to be follow to validate the email id such as:
+
+email id must contain the @ and . character
+There must be at least one character before and after the @.
+There must be at least two characters after . (dot).
+
+Let's see the simple example to validate the email field.
+
+<html>
+<body>
+<script>  
+function validateemail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+{  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform"  method="post" action="hai.html" onsubmit="return validateemail();">  
+Email: <input type="text" name="email"><br/>  
+  
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>

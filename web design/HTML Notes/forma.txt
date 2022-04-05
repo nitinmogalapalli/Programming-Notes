@@ -1,0 +1,56 @@
+Forms:-
+---------
+	Forms are used to add an element of interactivity to a web site. An HTML form is a section of a document containing normal content, markup, special elements called controls (checkboxes, radio buttons, menus etc.), and labels on those controls. Users generally "Complete" a form by modifying its controls (entering text, selecting menu items etc.), before submitting the form to an agent for processing (E.g., to a web server, to a mail server etc.)
+
+Form Tag:-
+-------------
+	This tag is used to create an HTML form to enclose all the html controls.
+
+Syntax:-
+----------
+<form name="form" action="URL" method="Post/get"> 
+-------------------------------------------------------------------
+</form>
+
+Attributes of form are:-
+----------------------------
+1. Action :-
+--------------
+	The Action attribute specifies the name and location of url what will be used to process the data.
+
+2. Method:-
+---------------
+	Data can be sent in one of two ways ie either by GET or POST methods.
+Get:-
+-----
+This Method is used to get or retrieve information from a server.
+Post:-
+-------
+This method is used to send the information from a server.
+
+3. INPUT:-
+-------------
+	This attribute sets an area in a form for user input.
+Syntax:-
+----------
+<input>
+
+4. TYPE:-
+------------
+	This attribute specifies what type of input control such as Text, password, checkbox, radio, image, reset etc.
+Syntax:-
+----------
+<input type="any control">
+
+5. NAME:-
+--------------
+	This specifies the name of the form and also specifies the control type if it is used with the controls for processing the results.
+Syntax:-
+----------
+<input type="any control" name="give own name">
+
+Form name Syntax:-
+------------------------
+<form name="form1">
+
+6. 

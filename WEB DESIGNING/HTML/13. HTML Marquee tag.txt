@@ -1,0 +1,117 @@
+Marquee HTML:-
+------------------------
+The Marquee HTML tag is a non-standard HTML element which is used to scroll a image or text horizontally or vertically.
+
+In simple words, you can say that it scrolls the image or text up, down, left or right automatically.
+
+Marquee tag was first introduced in early versions of Microsoft's Internet Explorer. It is compared with Netscape's blink element.
+
+Marquee HTML Example:-
+------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+<marquee>This is an example of html marquee </marquee>
+</body>
+</html>
+
+HTML Marquee Attributes:-
+-------------------------------------
+Marquee's element contains several attributes that are used to control and adjust the appearance of the marquee.
+
+Attribute	Description
+
+behavior	It facilitates user to set the behavior of the marquee to one of the three 	different types: scroll, slide and alternate.
+
+direction	defines direction for scrolling content. It may be left, right, up and 	down.
+
+width	defines width of marquee in pixels or %.
+
+height	defines height of marquee in pixels or %.
+
+hspace	defines horizontal space in pixels around the marquee.
+
+vspace	defines vertical space in pixels around the marquee.
+
+scrolldelay		defines scroll delay in seconds.
+
+scrollamount	defines scroll amount in number.
+
+loop		defines loop for marquee content in number.
+
+bgcolor		defines background color. It is now deprecated.
+
+HTML Scroll Marquee:-
+--------------------------------
+It is a by default property. It is used to scroll the text from right to left, and restarts at the right side of the marquee when it is reached to the end of left side. After the completion of loop text disappears.
+
+<!DOCTYPE html>
+<html>
+<body>
+<marquee width="100%" behavior="scroll" bgcolor="pink">  
+This is an example of a scroll marquee...  
+</marquee>  
+</body>
+</html>
+
+HTML Slide Marquee:-
+-------------------------------
+In slide marquee, all the contents to be scrolled will slide the entire length of marquee but stops at the end to display the content permanently.
+
+<!DOCTYPE html>
+<html>
+<body>
+<marquee width="100%" behavior="slide" bgcolor="pink">  
+This is an example of a slide marquee...  
+</marquee>  
+</body>
+</html>
+
+HTML Alternate Marquee:-
+------------------------------------
+It scrolls the text from right to left and goes back left to right.
+
+<!DOCTYPE html>
+<html>
+<body>
+<marquee width="100%" behavior="alternate" bgcolor="pink">  
+This is an example of a alternate marquee...  
+</marquee>    
+</body>
+</html>
+
+Direction in HTML marquee:-
+----------------------------------------
+This is used to change the direction of scrolling text. Let's take an example of marquee scrolling to the right. The direction can be left, right, up and down.
+
+<!DOCTYPE html>
+<html>
+<body>
+<marquee width="100%" direction="right">  
+ This is an example of a right direction marquee...  
+</marquee>    
+</body>
+</html>
+
+Nested marquee example:-
+-------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+<marquee width="400px" height="100px" behavior="alternate" style="border:2px solid red">  
+<marquee behavior="alternate">  
+Nested marquee...  
+</marquee>  
+</marquee>  
+</body>
+</html>
+
+Disadvantages HTML marquee:-
+--------------------------------------------
+1) Marquee may be distracting because human eyes are attracted towards movement and marquee text constantly.
+
+2) Since Marquee text moves, so it is more difficult to click static text, depending on the scrolling speed.
+
+3) It is a non-standard HTML element.
+
+4) It draws user's attention needlessly and makes the text harder to read.

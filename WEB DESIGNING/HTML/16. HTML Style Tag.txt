@@ -1,0 +1,79 @@
+HTML Style:-
+------------------
+HTML Style is used to change or add the style on existing HTML elements. There is a default style for every HTML element e.g. background color is white, text color is black etc.
+
+The style attribute can by used with any HTML tag. To apply style on HTML tag, you should have the basic knowledge of css properties e.g. color, background-color, text-align, font-family, font-size etc.
+
+The syntax of style attribute is given below:
+
+    style= "property:value"  
+
+HTML Style color:-
+-------------------------
+The color property is used to define the text color.
+
+Let's see a simple example of styling html tags by color property of css.
+
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h3 style="color:green">This is Green Color</h3>  
+<h3 style="color:red">This is Red Color</h3>     
+</body>  
+</html>  
+
+HTML Style background-color:-
+-------------------------------------------
+The background-color property is used to define background color for the HTML tag.
+
+Let's see an example of styling html tag by of css background-color property
+
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h3 style="background-color:yellow;">This is yellow background</h3>  
+<h3 style="background-color:red;color:white">This is red background</h3>   
+</body>  
+</html>  
+
+HTML Style font-family:-
+---------------------------------
+The font-family property specifies the font family of the HTML tag.
+
+Let's see an example of styling html tag by css font-family property
+
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h3 style="font-family:times new roman">This is times new roman font family</h3>  
+<p style="font-family:arial">This is arial font family</p>  
+</body>  
+</html>  
+
+HTML Style font-size:-
+------------------------------
+The font-size property is used to define the text size of the HTML tag.
+
+Let's see an example of font-size property
+
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h3 style="font-size:200%">This is 200% h3 tag</h3>  
+<p style="font-size:400%">This is 200% p tag</p>  
+</body>  
+</html>  
+
+HTML Style text-align:-
+-------------------------------
+The text-align property is used to define the horizontal text alignment for the HTML element.
+
+Let's see an example of styling html tag by css text-align property
+
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h3 style="text-align:right;background-color:pink;">This tag is located at right side</h3>  
+<p style="text-align:center;background-color:pink;">This tag is located at center side</p>
+</body>  
+</html>  

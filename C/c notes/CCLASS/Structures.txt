@@ -1,0 +1,72 @@
+Structures:
+	collection of vlaues of the different data types.
+	It is a user defined data type by which you can declare variable of its type.
+
+syntax:
+	struct struct_name
+	{
+		data_type var1,var2,...;
+		data_type var1,var2,...;
+	}struct_var1,struct_var2,....;
+
+Eg:	struct Student
+	{
+		int roll_no;
+		char name[24];
+		float height,percentage;
+		int total,marks[6];
+	};
+
+Structure variable declaration:
+1. one way of declarating structure variable is,
+	struct struct_name st_var1,st_var2,...;
+2. We can declare a structure variable at the time structure definition.
+	example:
+C		struct Student
+		{
+		.......
+		......
+		}std1,std2,st3,.....;
+Member Accessing using dot operator:
+	In order to access the members in structure we use a dot(.) operator with the structure variable.
+
+Syntax:
+	struct_var.member = value;
+	printf("format",struct_var.member);
+Eg:
+	std1.name = "Sateesh";
+	std2.rool_no = 23;
+
+Arrays to Structure:
+	The structure variable may be an array, which can be used to declare array of structures.
+Syntax:
+	struct student std[25];
+	std[0].name = "raga";
+
+pointer to a Structure:
+	Here we assign a pointer to a structure inorder to store the address of the structure variable.
+Syntax:
+	struct student std[20],std3,*ssp;
+
+	ssp = &std3;
+
+Accessing members using pointer to a structure:
+	Syntax:
+		ssp->name = "something";
+
+Strucutes insde a structure:
+	
+	we can declare a structure inside another structure.
+Syntax:
+	struct Student
+	{
+		int no;
+		struct DateOfBirth
+		{
+			int day,month,year;
+		}dob;
+	}std;
+Accessing a member whcih is inside another structre:
+	std.dob.day = 24;
+	std.dob.month = 5;
+	std.dob.year = 1996;

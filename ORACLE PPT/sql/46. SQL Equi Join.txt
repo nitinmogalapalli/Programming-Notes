@@ -1,0 +1,27 @@
+SQL Equi Join:-
+----------------------
+SQL Equi join is a specific type comparison base join (equally comparison) not allowing other comparison operator such as <, > <= etc. And create record set result that are combining columns value from the tables (two or more table).
+
+SQL Equi join use JOIN keyword specify table name and ON keyword specify the join predicate condition.
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+    FROM product JOIN category
+    ON product.category_id = category.category_id;
+
+You can also write Equi join as following way.
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+	FROM product, category
+	WHERE product.category_id = category.category_id;
+
+If join predicate condition both table column name are same, then you can write this query shorthand way by using USING Keyword.
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+	FROM product 
+	INNER JOIN category USING (category_id);

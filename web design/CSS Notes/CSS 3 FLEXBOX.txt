@@ -1,0 +1,473 @@
+CSS3 Flexbox:-
+--------------------
+Flexible boxes, or flexbox, is a new layout mode in CSS3.
+
+Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
+
+For many applications, the flexible box model provides an improvement over the block model in that it does not use floats, nor do the flex container's margins collapse with the margins of its contents.
+
+CSS3 Flexbox Concepts:-
+---------------------------------
+Flexbox consists of flex containers and flex items.
+
+A flex container is declared by setting the display property of an element to either flex (rendered as a block) or inline-flex (rendered as inline).
+
+Inside a flex container there is one or more flex items.
+
+Note: Everything outside a flex container and inside a flex item is rendered as usual. Flexbox defines how flex items are laid out inside a flex container.
+
+Flex items are positioned inside a flex container along a flex line. By default there is only one flex line per flex container.
+
+The following example shows three flex items. They are positioned by default: along the horizontal flex line, from left to right:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+It is also possible to change the direction of the flex line.
+
+If we set the direction property to rtl (right-to-left), the text is drawn right to left, and also the flex line changes direction, which will change the page layout:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    direction: rtl;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+Flex Direction:-
+-------------------
+The flex-direction property specifies the direction of the flexible items inside the flex container. The default value of flex-direction is row (left-to-right, top-to-bottom).
+
+The other values are as follows:
+
+    row-reverse - If the writing-mode (direction) is left to right, the flex items will be laid out right to left
+    column - If the writing system is horizontal, the flex items will be laid out vertically
+    column-reverse - Same as column, but reversed
+
+The following example shows the result of using the row-reverse value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The following example shows the result of using the column value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The following example shows the result of using the column-reverse value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The justify-content Property:-
+-------------------------------------
+The justify-content property horizontally aligns the flexible container's items when the items do not use all available space on the main-axis.
+
+The possible values are as follows:
+
+    flex-start - Default value. Items are positioned at the beginning of the container
+    flex-end - Items are positioned at the end of the container
+    center - Items are positioned at the center of the container
+    space-between - Items are positioned with space between the lines
+    space-around - Items are positioned with space before, between, and after the lines
+
+The following example shows the result of using the flex-end value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The following example shows the result of using the center value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The following example shows the result of using the space-between value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The following example shows the result of using the space-around value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The align-items Property:-
+----------------------------------
+The align-items property vertically aligns the flexible container's items when the items do not use all available space on the cross-axis.
+
+The possible values are as follows:
+
+    stretch - Default value. Items are stretched to fit the container
+    flex-start - Items are positioned at the top of the container
+    flex-end - Items are positioned at the bottom of the container
+    center - Items are positioned at the center of the container (vertically)
+    baseline - Items are positioned at the baseline of the container
+
+The following example shows the result of using the stretch value (this is the default value):
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The following example shows the result of using the flex-start value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+
+The following example shows the result of using the flex-end value:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>  
+</div>
+
+</body>
+</html>
+

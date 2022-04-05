@@ -1,0 +1,54 @@
+SQL IN / NOT IN Condition Statement:-
+-----------------------------------------------------
+SQL IN Condition:-
+--------------------------
+SQL IN condition used to allow multiple value in a WHERE clause condition. SQL IN condition you can use when you need to use multiple OR condition.
+
+SQL IN condition allow only specific value in INSERT, UPDATE, DELETE, SELECT statement.
+
+Syntax:-
+-----------
+WHERE column_name IN (value1, value2, ...);
+
+Example:-
+--------------
+Ex:-
+------
+SELECT * FROM users_info WHERE no IN (1,5,10);
+
+SQL NOT IN Condition:-
+----------------------------------
+SQL NOT IN condition used to exclude the defined multiple value in a WHERE clause condition. SQL NOT IN condition also identify by NOT operator.
+
+Syntax:-
+------------
+NOT IN condition use with WHERE clause to exclude defined multiple values from record data.
+
+WHERE column_name NOT IN (value1, value2, ...);
+
+SQL NOT condition used with BETWEEN condition or LIKE condition.
+
+NOT BETWEEN condition;
+NOT LIKE condition
+
+WHERE clause with NOT IN Example:-
+------------------------------------------------------
+Ex:-
+------
+SELECT * FROM users_info WHERE no NOT IN (1,3,5,7,9);
+
+BETWEEN with NOT condition Example:-
+---------------------------------------------------------
+Our users_info table we have to select all rows with add condition exclude no column range from 6 to 10.
+
+Ex:-
+-----
+SELECT * FROM users_info WHERE no NOT BETWEEN 6 AND 10;
+
+LIKE with NOT condition Example:-
+------------------------------------------------
+In our users_info table not select whose name column starting with 'Be' character.
+
+Ex:-
+------
+SELECT * FROM users_info WHERE name NOT LIKE 'Be%';

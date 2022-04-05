@@ -1,0 +1,61 @@
+PL/SQL Block Structure
+---------------------------------
+PL/SQL is block structured language divided into three logical blocks.
+
+BEGIN block and END; keyword are compulsory, and other two block DECLARE and EXCEPTION are optional block. END; is not a block only keyword to end of PL/SQL program.
+
+PL/SQL block structure follows divide-and-conquer approach to solve the problem stepwise.
+
+DECLARE (Optional)
+
+	Declaration of Variable, Constants.
+
+BEGIN
+
+	PL/SQL Executable Statements.
+
+EXCEPTION (Optional)
+
+	PL/SQL Exceptional Handler Block.
+
+END;
+
+DECLARE:-
+-----------------
+Variables and constants are declared, initialized within this section.
+
+Variables and Constants : 
+-----------------------------------
+In this block, declare and initialize variables (and constants). You must have to declare variables and constants in declarative block before referencing them in procedural statement.
+
+Declare Variables and Assigning values : 
+-------------------------------------------------------
+You can define variable name, data type of a variable and its size. Date type can be: CHAR, VARCHAR2, DATE, NUMBER, INT or any other.
+
+Ex:-
+------
+DECLARE  
+	designation VARCHAR2(30);
+	eno number(5) := 5;
+	id BOOLEAN;
+    inter INTERVAL YEAR(2) TO MONTH;
+BEGIN  			  
+	designation := UPPER('Web Developer');
+	id := TRUE;
+	inter := INTERVAL '45' YEAR; 
+END;
+/
+
+Declare Constants and Assigning values : 
+--------------------------------------------------------
+Constants are declared same as variable but you have to add the CONSTANT keyword before defining data type. Once you define a constant value you can't change the value.
+
+designation CONSTANT VARCHAR2(30) := 'Web Developer';
+
+BEGIN:-
+------------
+BEGIN block is procedural statement block which will implement the actual programming logic. This section contains conditional statements (if...else), looping statements (for, while) and Branching Statements (goto) etc.
+
+EXCEPTION:-
+---------------------
+PL/SQL easily detects user defined or predefined error condition. PL/SQL is famous for handling errors in smart way by giving suitable user friendly messages. Errors can be rise due to wrong syntax, bad logical or not passing a validation rules.

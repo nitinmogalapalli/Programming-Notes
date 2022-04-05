@@ -1,0 +1,34 @@
+PHP Write File:
+----------------------
+PHP fwrite() and fputs() functions are used to write data into file. To write data into file, you need to use w, r+, w+, x, x+, c or c+ mode.
+
+PHP Write File - fwrite():
+---------------------------------
+The PHP fwrite() function is used to write content of the string into file.
+
+Syntax:
+----------
+    int fwrite ( resource $handle , string $string [, int $length ] )  
+
+Example:
+-------------
+    <?php  
+    $fp = fopen('data.txt', 'w');//opens file in write-only mode  
+    fwrite($fp, 'welcome ');  
+    fwrite($fp, 'to php file write');  
+    fclose($fp);  
+      
+    echo "File written successfully";  
+    ?>
+
+PHP Overwriting File:
+------------------------------
+If you run the above code again, it will erase the previous data of the file and writes the new data. Let's see the code that writes only new data into data.txt file.
+
+    <?php  
+    $fp = fopen('data.txt', 'w');//opens file in write-only mode  
+    fwrite($fp, 'hello');  
+    fclose($fp);  
+      
+    echo "File written successfully";  
+    ?>    

@@ -1,0 +1,53 @@
+HTML Audio Tag:-
+-------------------------
+HTML audio tag is used to define sounds such as music and other audio clips. Currently there are three supported file format for HTML 5 audio tag.
+
+    mp3
+    wav
+    ogg
+
+HTML5 supports <video> and <audio> controls. The Flash, Silverlight and similar technologies are used to play the multimedia items. 
+
+HTML Audio Tag Example:-
+--------------------------------------
+Let's see the code to play mp3 file using HTML audio tag.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<audio controls>  
+  <source src="koyal.mp3" type="audio/mpeg">  
+Your browser does not support the html audio tag.  
+</audio>  
+</body>
+</html>  
+
+Attributes of HTML Audio Tag:-
+-------------------------------------------
+There is given a list of HTML audio tag.
+
+Attribute	Description
+
+controls	It defines the audio controls which is displayed with play/pause 	buttons.
+
+autoplay	It specifies that the audio will start playing as soon as it is ready.
+
+loop	It specifies that the audio file will start over again, every time when it is 	completed.
+
+muted	It is used to mute the audio output.
+
+preload	It specifies the author view to upload audio file when the page loads.
+
+src	It specifies the source URL of the audio file.
+
+HTML Audio Tag Attribute Example:-
+--------------------------------------------------
+Here we are going to use controls, autoplay, loop and src attributes of HTML audio tag.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<audio controls autoplay loop>  
+  <source src="koyal.mp3" type="audio/mpeg"></audio>  
+</body>
+</html>  

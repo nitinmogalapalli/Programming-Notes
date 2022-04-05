@@ -1,0 +1,39 @@
+PL/SQL SET Serveroutput ON:-
+--------------------------------------------
+Whenever you start Oracle SQL (PL/SQL) at that time you must have to write the "SET Serveroutput ON" command.
+
+PL/SQL program execution into Oracle engine so we always required to get serveroutput result and display into the screen otherwise result can't be display.
+
+Set PL/SQL serveroutput Result ON:-
+---------------------------------------------------
+SQL> set serveroutput on 
+
+Set serveroutput on Example:-
+------------------------------------------
+In this example showing you how to turn on serveroutput result, Here first line turn on serveroutput. After define variables and constants to print defined variable value using dbms_output.put_line command.
+
+Example Code :
+----------------------
+SQL> set serveroutput on
+SQL> DECLARE
+	eno number(5) NOT NULL := 2
+	ename varchar2(15) := 'Branson Devs';
+	edept CONSTANT varchar2(15) := 'Web Developer';
+BEGIN
+	dbms_output.put_line('Declared Value:');
+	dbms_output.put_line(' Employee Number: ' || eno || ' Employee Name: ' || ename);
+	dbms_output.put_line('Constant Declared:');
+	dbms_output.put_line(' Employee Department: ' || edept);
+END;
+/
+
+
+Result display only if you execute "set serveroutput on" command.
+
+
+Example Result :
+-----------------------
+Declared Value:
+Employee number: 2 Employee Name: Branson Devs
+Constant Declared:
+Employee Department: Web Developer

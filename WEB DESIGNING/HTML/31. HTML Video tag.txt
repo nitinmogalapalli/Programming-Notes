@@ -1,0 +1,61 @@
+HTML Video Tag:-
+-------------------------
+HTML 5 supports <video> tag also. The HTML video tag is used for streaming video files such as a movie clip, song clip on the web page.
+
+Currently, there are three video formats supported for HTML video tag:
+
+    mp4
+    webM
+    ogg
+
+HTML Video Tag Example:-
+--------------------------------------
+Let's see the code to play mp4 file using HTML video tag.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<video controls>  
+  <source src="movie.mp4" type="video/mp4">  
+  Your browser does not support the html video tag.  
+</video>  
+</body>
+</html>  
+
+Attributes of HTML Video Tag:-
+------------------------------------------
+Let's see the list of HTML 5 video tag attributes.
+
+Attribute	Description
+
+controls	It defines the video controls which is displayed with play/pause 	buttons.
+
+height	It is used to set the height of the video player.
+
+width	It is used to set the width of the video player.
+
+poster	It specifies the image which is displayed on the screen when the video 	is not played.
+
+autoplay	It specifies that the video will start playing as soon as it is ready.
+
+loop	It specifies that the video file will start over again, every time when it is 	completed.
+
+muted	It is used to mute the video output.
+
+preload	It specifies the author view to upload video file when the page loads.
+
+src	It specifies the source URL of the video file.
+
+HTML Video Tag Attribute Example:-
+--------------------------------------------------
+Let's see the example of video tag in HTML where are using height, width, autoplay, controls and loop attributes.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<video width="320" height="240" controls autoplay loop>  
+  <source src="movie.mp4" type="video/mp4">  
+  Your browser does not support the html video tag.  
+</video>  
+</body>
+</html>  

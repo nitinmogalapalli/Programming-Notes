@@ -1,0 +1,37 @@
+SQL DELETE Statement:-
+------------------------------------
+SQL DELETE Statement is used to delete one or more then one row removed from table.
+
+SQL DELETE Statement use following two way,
+
+    Remove all TABLE rows
+    Remove only specific TABLE row
+
+
+Remove only specific TABLE row
+---------------------------------------------
+Syntax :
+-----------
+DELETE FROM table_name 
+	[ WHERE condition ]
+	[ LIMIT number ];
+
+Example Statement :
+-----------------------------
+DELETE FROM demo1 WHERE NO = 10;
+
+1 row deleted.
+
+Remove all TABLE rows
+---------------------------------
+Remove the all table row use this simple delete statement to delete all table data. after execute delete statement SELECT statement to check table is empty or not.
+
+Syntax :
+-----------
+DELETE FROM table_name;
+
+Example Statement :
+-----------------------------
+DELETE FROM demo1;
+
+9 rows deleted.

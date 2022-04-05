@@ -1,0 +1,34 @@
+PHP Call By Reference :
+----------------------------------
+In case of PHP call by reference, actual value is modified if it is modified inside the function. In such case, you need to use & (ampersand) symbol with formal arguments. The & represents reference of the variable.
+
+Let's understand the concept of call by reference by the help of examples.
+
+Example 1 :
+-----------------
+In this example, variable $str is passed to the adder function where it is concatenated with 'Call By Reference' string. Here, printing $str variable results 'This is Call By Reference'. It is because changes are done in the actual variable $str.
+
+    <?php  
+    function adder(&$str2)  
+    {  
+        $str2 .= 'Call By Reference';  
+    }  
+    $str = 'This is ';  
+    adder($str);  
+    echo $str;  
+    ?>
+
+Example 2:
+---------------
+Let's understand PHP call by reference concept through another example.
+
+    <?php  
+    function increment(&$i)  
+    {  
+        $i++;  
+    }  
+    $i = 10;  
+    increment($i);  
+    echo $i;  
+    ?>
+    

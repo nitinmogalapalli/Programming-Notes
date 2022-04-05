@@ -1,0 +1,28 @@
+SQL TRUNCATE TABLE 
+-----------------------------------
+SQL TRUNCATE TABLE statement used to completely remove all table records. Not supporting to a WHERE clause.
+
+SQL TRUNCATE statement is faster and use some transaction log resources.
+
+SQL TRUNCATE statement logically equivalent to a DELETE statement that deletes all rows, but they are practically different under some rules.
+
+SQL TRUNCATE Statement Rules
+------------------------------------------------
+TRUNCATE operation use for dropping or re-create table, which is much faster than deleting rows one by one.
+
+TRUNCATE operation not rollback, It means truncated can not be returned.
+
+TRUNCATE operation is not a safe.
+
+Syntax :
+------------
+Considering following syntax that help you to understanding TRUNCATE,
+
+TRUNCATE TABLE table_name;
+
+Example Statement :
+-----------------------------
+SQL> TRUNCATE TABLE emp_data;
+
+Table Truncated.
+

@@ -1,0 +1,39 @@
+
+Introduction to Unions:
+
+	Unions are C variables whose syntax look similar to structures, but act in a completely different manner. A union is a variable that can take on different 
+data types in different situations. The union syntax is:
+	union tag_name 
+	{
+		type1 member1;
+		type2 member2;
+		…
+	};
+
+For example, the following code declares a union data type called intfloat
+and a union variable called Useit:
+
+	union intfloat 
+	{
+	float f;
+	int i;
+	};
+
+	union intfloat Useit;
+
+Unions and Memory:
+
+• Once a union variable has been declared, the amount of memory reserved is 
+just enough to be able to represent the largest member. (Unlike a structure 
+where memory is reserved for all members). 
+
+• In the previous example, 4 bytes are set aside for the variable proteus since 
+a float will take up 4 bytes and an int only 2 (on some machines).
+
+• Data actually stored in a union’s memory can be the data associated with any
+of its members. But only one member of a union can contain valid data at a 
+given point in the program. 
+
+• It is the user’s responsibility to keep track of which type of data has most 
+recently been stored in the union variable.
+

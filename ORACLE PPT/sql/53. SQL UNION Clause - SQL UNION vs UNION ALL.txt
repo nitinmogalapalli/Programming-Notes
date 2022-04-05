@@ -1,0 +1,81 @@
+SQL UNION Clause - SQL UNION vs UNION ALL:-
+----------------------------------------------------------------------
+SQL UNION clause combines same column(s) name values from two or more table and eliminates duplicate value.
+
+SQL UNION clause is useful when you want to select distinct values (in selected columns) from the tables.
+
+SQL UNION vs UNION ALL:-
+----------------------------------------
+SQL UNION clause used to select distinct values from the tables..
+
+SQL UNION ALL clause used to select all values including duplicates from the tables.
+
+Performance difference between UNION vs UNION ALL - SQL engine do some additional work for removing do additional work to eliminates the duplicated rows.
+
+UNION clause does not support BLOB or CLOB data type columns where as the UNION ALL support this data types.
+
+Examples
+--------------
+Considering following product, out_of_stock_product is our example table. Both table have same column name product_name. Execute this for creating table.
+
+Creating example table :
+----------------------------------
+CREATE TABLE product(
+  category_id number(3),
+  product_name VARCHAR(25)
+);
+
+INSERT INTO product VALUES (1,'Nokia');
+
+INSERT INTO product VALUES (2,'Samsung');
+
+INSERT INTO product VALUES (3,'HP');
+
+INSERT INTO product VALUES (4,'Dell');
+
+INSERT INTO product VALUES (5,'Apple');
+
+INSERT INTO product VALUES (6,'Nikon');
+
+INSERT INTO product VALUES (7,'Playstation');
+
+CREATE TABLE out_of_stock_product(
+  category_id number(3),
+  product_name VARCHAR(25)
+);
+
+INSERT INTO out_of_stock_product VALUES (1,'Samsung');
+
+INSERT INTO out_of_stock_product VALUES (2,'LG');
+
+INSERT INTO out_of_stock_product VALUES (3,'HTC');
+
+INSERT INTO out_of_stock_product VALUES (4,'HP');
+
+INSERT INTO out_of_stock_product VALUES (5,'Dell');
+
+INSERT INTO out_of_stock_product VALUES (6,'Apple');
+
+INSERT INTO out_of_stock_product VALUES (7,'Canon');
+
+INSERT INTO out_of_stock_product VALUES (8,'Nikon');
+
+INSERT INTO out_of_stock_product VALUES (9,'Xbox');
+
+INSERT INTO out_of_stock_product VALUES (10,'Playstation');
+
+SQL> SELECT * FROM product;
+
+SQL> SELECT * FROM out_of_stock_product;
+
+SQL UNION Example Statement :
+-----------------------------------------------
+SQL> SELECT product_name FROM product
+UNION
+SELECT product_name FROM out_of_stock_product;
+
+SQL UNION ALL Example Statement :
+-----------------------------------------------------
+SQL> SELECT product_name FROM product
+UNION ALL
+SELECT product_name FROM out_of_stock_product;

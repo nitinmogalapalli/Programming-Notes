@@ -1,0 +1,9 @@
+/* W.A.P to enter two numbers and find which is Small */
+
+/* W.A.P to enter two numbers and find which is Biggest */
+
+/* W.A.P to enter two numbers and Check whether it is equal or not */
+
+/* W.A.P to enter a number and Check whether it is Positive or Negative */
+
+/* W.A.P to enter a number and Check whether it is Leap year or not */

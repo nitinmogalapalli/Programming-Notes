@@ -1,0 +1,17 @@
+          		ACCESS specifiers
+
+	Encapsulation is achieved by creating objects of the class inorder to access the members of the that class. Encapsulation is also achieved by specifying Access specifiers that make the members to ristrict accessing/misusing of the data in the class.
+
+	Using the access specifiers to the members of the class, we can restrict accessing data only through the methods that provide accessing to those data.
+
+
+private	: The members can be accessed by its(class) members
+public	: Can be accessed by all members
+protected	: It is just like a public specifier in the same file(for a single file it acts as a public specifier, but the usage can be understood in inheritance concept)
+Default mode: without any specifiers can be treated as Default specifier
+	These can be specified infront of the members like 
+	variables:	specifier datatype variableName;
+	methods:	specifier returntype methodName()
+		{
+			//body of the method
+		}

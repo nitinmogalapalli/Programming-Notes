@@ -1,0 +1,13 @@
+Sizeof Keyword:
+
+Declaration: 
+	size_t sizeof expression 
+	or 
+	size_t sizeof (type) 
+
+The sizeof keyword returns the number of bytes of the given expression or type.
+
+size_t is an unsigned integer result. 
+
+Example: 
+printf("The number of bytes in an int is %d.\n",sizeof(int));

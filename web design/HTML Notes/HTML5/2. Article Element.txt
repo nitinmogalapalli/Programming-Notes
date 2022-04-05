@@ -1,0 +1,25 @@
+HTML5 <article> Element:-
+-----------------------------------
+The <article> element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+
+Examples of where an <article> element can be used:
+
+Forum post
+Blog post
+Newspaper article
+
+Example:-
+-------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<article>
+  <h1>What Does WWF Do?</h1>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+</article>
+
+</body>
+</html>

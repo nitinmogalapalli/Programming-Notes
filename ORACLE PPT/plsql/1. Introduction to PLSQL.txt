@@ -1,0 +1,45 @@
+Introduction PL/SQL:-
+-------------------------------
+PL/SQL (Procedural Language/Structured Query Language) program executes on Oracle database.
+
+PL/SQL includes procedural language elements (like declaration, conditions, looping), also, you can able to handle a runtime exception.
+
+PL/SQL is a Procedural Language extension of Structured Query Language (SQL). 
+
+PL/SQL is specially designed for Database oriented activities. Oracle PL/SQL allows you to perform data manipulation operation those are safe and flexible.
+
+PL/SQL is a very secure functionality tool for manipulating, controlling, validating, and restricting unauthorized access data from the SQL database.
+
+Using PL/SQL we can improve application performance. It also allows to deal with errors so we can provide user friendly error messages.
+
+PL/SQL have a great functionality to display multiple records from the multiple tables at the same time.
+
+PL/SQL is capable to send entire block of statements and execute it in the Oracle engine at once.
+
+Advantages PL/SQL:-
+------------------------------
+Procedural language support : 
+------------------------------------------
+PL/SQL is a development tools not only for data manipulation futures but also provide the conditional checking, looping or branching operations same as like other programming language.
+
+Reduces network traffic : 
+----------------------------------
+This one is great advantages of PL/SQL. Because PL/SQL nature is entire block of SQL statements execute into oracle engine all at once so it's main benefit is reducing the network traffic.
+
+Error handling : 
+----------------------
+PL/SQL is dealing with error handling, It's permits the smart way handling the errors and giving user friendly error messages, when the errors are encountered.
+
+Declare variable : 
+-------------------------
+PL/SQL gives you control to declare variables and access them within the block. The declared variables can be used at the time of query processing.
+
+Intermediate Calculation : 
+-----------------------------------
+Calculations in PL/SQL done quickly and efficiently without using Oracle engines. This improves the transaction performance.
+
+Portable application : 
+-----------------------------
+Applications are written in PL/SQL are portable in any Operating system. PL/SQL applications are independence program to run any computer.
+
+

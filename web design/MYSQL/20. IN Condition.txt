@@ -1,0 +1,21 @@
+MySQL IN Condition:-
+-------------------------------
+The MySQL IN condition is used to reduce the use of multiple OR conditions in a SELECT, INSERT, UPDATE and DELETE statement.
+
+Syntax:
+----------
+expression IN (value1, value2, .... value_n);  
+
+Parameters
+----------------
+expression: It specifies a value to test.
+
+value1, value2, ... or value_n: These are the values to test against expression. If any of these values matches expression, then the IN condition will evaluate to true. This is a quick method to test if any one of the values matches expression.
+
+MySQL IN Example:-
+------------------------------
+Consider a table "officers", having the following data.
+
+SELECT *  
+FROM officers  
+WHERE officer_name IN ('Ajeet', 'Vimal', 'Deepika');

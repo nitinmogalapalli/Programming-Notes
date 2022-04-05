@@ -1,0 +1,42 @@
+PHP Include File :
+-------------------------
+PHP allows you to include file so that a page content can be reused many times. There are two ways to include file in PHP.
+
+    include
+    require
+
+Advantage :
+-----------------
+Code Reusability: By the help of include and require construct, we can reuse HTML code or PHP script in many PHP scripts.
+
+PHP include example:
+-------------------------------
+PHP include is used to include file on the basis of given path. You may use relative or absolute path of the file. Let's see a simple PHP include example.
+
+File: menu.html
+
+    <a href="http://Home">Home</a> |   
+    <a href="http://PHP">PHP</a> |   
+    <a href="http://java">Java</a> |    
+    <a href="http://Html">HTML</a>  
+
+File: include1.php
+
+    <?php include("menu.html"); ?>  
+    <h1>This is Main Page</h1>  
+
+PHP require example :
+-------------------------------
+PHP require is similar to include. Let's see a simple PHP require example.
+
+File: menu.html
+
+    <a href="http://Home">Home</a> |   
+    <a href="http://PHP">PHP</a> |   
+    <a href="http://java">Java</a> |    
+    <a href="http://HTML">HTML</a>  
+
+File: require1.php
+
+    <?php require("menu.html"); ?>  
+    <h1>This is Main Page</h1>  

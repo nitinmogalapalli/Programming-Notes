@@ -1,0 +1,31 @@
+HTML Quotes:-
+---------------------
+HTML quotes are used to put a short quotation on your website. To do so, you need to use HTML q tag and HTML blockquote tag.
+HTML q tag
+
+HTML q tag is used to put small quotation. To do so, write your text within <q>.............</q> tag.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p> Great quote on love and life.</p>  
+<p> Dr. Seuss once said : <q>Reality is finally better than your dreams.</q></p>  
+</body>
+</html>
+
+HTML blockquote tag:-
+-------------------------------
+HTML blockquote tag is used to define a large quoted section. If you have a large quotation then put the entire text within <blockquote>.............</blockquote> tag.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p> Read this inspirational story.</p>  
+<blockquote> According to scientists, the bumblebee's body is too heavy and its wing span too   
+small. Aerodynamically, the bumblebee cannot fly. But the bumblebee doesn't know that and it   
+keeps flying. When you don't know your limitations, you go out and surprise yourself. In hindsight, you   
+wonder if you had any limitations. The only limitations a person has are those that are self-  
+imposed. Don't let education put limitations on you.</blockquote>  
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+MySQL NOT Condition:-
+---------------------------------
+The MySQL NOT condition is opposite of MySQL IN condition. It is used to negate a condition in a SELECT, INSERT, UPDATE or DELETE statement.
+
+Syntax:
+-----------
+NOT condition  
+
+Parameter:-
+----------------
+condition: It specifies the conditions that you want to negate.
+
+MySQL NOT Operator with IN condition
+
+Consider a table "officers", having the following data.
+
+SELECT *  
+FROM officers  
+WHERE officer_name NOT IN ('Ajeet','Vimal','Deepika'); 

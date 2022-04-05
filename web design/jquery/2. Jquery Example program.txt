@@ -1,0 +1,67 @@
+jQuery Example:-
+------------------------
+jQuery is developed by Google. To create the first jQuery example, you need to use JavaScript file for jQuery. You can download the jQuery file from jquery.com or use the absolute URL of jQuery file.
+
+In this jQuery example, we are using the absolute URL of jQuery file. The jQuery example is written inside the script tag.
+
+Let's see a simple example of jQuery.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <title>First jQuery Example</title>  
+ <script src="">  
+ </script>  
+ <script type="text/javascript" language="javascript">  
+ $(document).ready(function() 
+ {  
+ $("p").css("background-color", "pink");  
+ });
+ </script>  
+ </head>  
+<body>  
+<p>The first paragraph is selected.</p>  
+<p>The second paragraph is selected.</p>  
+<p>The third paragraph is selected.</p>  
+</body>  
+</html>  
+
+$(document).ready() and $():-
+-----------------------------------------
+The code inserted between $(document).ready() is executed only once when page is ready for JavaScript code to execute.
+
+In place of $(document).ready(), you can use shorthand notation $() only.
+
+$(document).ready(function() 
+{  
+$("p").css("color", "red");  
+});  
+
+The above code is equivalent to this code.
+
+$(function() 
+{  
+$("p").css("color", "red");  
+});
+
+Let's see the full example of jQuery using shorthand notation $().
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <title>Second jQuery Example</title>  
+ <script src="">  
+ </script>  
+ <script type="text/javascript" language="javascript">  
+ $(function() 
+ {  
+ $("p").css("color", "red");  
+ });  
+ </script>  
+ </head>  
+<body>  
+<p>The first paragraph is selected.</p>  
+<p>The second paragraph is selected.</p>  
+<p>The third paragraph is selected.</p>  
+</body>  
+</html> 

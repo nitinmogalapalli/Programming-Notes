@@ -1,0 +1,79 @@
+SQL Wildcards Characters:-
+---------------------------------------
+SQL Wildcards characters used for searching string pattern. SQL Wildcard character use with LIKE condition for searching pattern string from database table.
+
+SQL Wildcards Character:-
+-------------------------------------
+Following Wildcard characters pattern use for certain type expression,
+
+Wildcard	Description
+------------   ----------------
+_ 	(underscore sign)	
+
+Underscore sign matches any exactly single character with in string.
+
+Example. 'Op_l Kole', '_pal Kole', 'Opal Kol_'
+
+
+%               (Percentage sign)	
+
+Percentage sign matches any number of characters (0 or more characters).
+
+Example. 'Op%', '%Kole', 'Opal%'
+
+SQL LIKE Condition:-
+------------------------------
+SQL LIKE Condition used with WHERE clause to matches specific pattern. SQL LIKE condition apply on table column data.
+
+Syntax:-
+-----------
+Considering following SQL LIKE condition syntax,
+
+SELECT * FROM table_name
+	WHERE column_name LIKE 'pattern';
+
+Pattern write inside opening or closing single delimit characters (''). Do not use double delimit characters ("") because double delimit use as delimiter identifier.
+
+...WHERE column_name LIKE 'pattern';   -- Correct way
+
+...WHERE column_name LIKE "pattern";   -- Incorrect way 
+ 
+SQL LIKE Example (with WILDCARD):-
+------------------------------------------------------
+Considering following user_info table is our example table.
+
+Ex:-
+-----
+SELECT * FROM users_info;
+
+EXAMPLE - LIKE with _ WILDCARD Character:-
+-------------------------------------------------------------------
+SQL LIKE condition with _ (underscore) WILDCARD character to matches any exactly single character with in string.
+
+Ex:-
+-----
+SELECT * FROM users_info WHERE name LIKE 'Pa_l S__gh';
+
+EXAMPLE - LIKE with % WILDCARD Character:-
+--------------------------------------------------------------------
+SQL LIKE condition with % (percentage) WILDCARD character to matches any number of characters.
+
+Ex:-
+------
+SELECT * FROM users_info WHERE name LIKE 'Paul%';
+
+EXAMPLE - LIKE (_ WILDCARD Character) with NOT condition:-
+------------------------------------------------------------------------------------------
+SQL LIKE (_ WILDCARD character) with NOT condition to return all record only exclude pattern result.
+
+Ex:-
+-----
+SELECT * FROM users_info WHERE name NOT LIKE 'Pa_l S__gh';
+
+EXAMPLE - LIKE (% WILDCARD Character) with NOT condition:-
+-------------------------------------------------------------------------------------------
+SQL LIKE (% WILDCARD character) with NOT condition to return all record only exclude pattern result.
+
+Ex:-
+------
+SELECT * FROM users_info WHERE name NOT LIKE 'Paul%';

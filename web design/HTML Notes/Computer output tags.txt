@@ -1,0 +1,85 @@
+HTML Computer Output tags:-
+--------------------------------------
+Code:-
+--------
+	It defines computer code text.
+Syntax:-
+----------
+	<code> ----------------- </code>
+Ex:-
+-----
+	<code> Prince </code>
+
+Keyboard:-
+--------------
+	It defines Keyboard text.
+Syntax:-
+----------
+	<kbd> ----------------- </kbd>
+Ex:-
+-----
+	<kbd> Prince </kbd>
+
+Sample:-
+-----------
+	It defines sample computer code.
+Syntax:-
+----------
+	<samp> ----------------- </samp>
+Ex:-
+-----
+	<samp> Prince </samp>
+
+Preformatted:-
+------------------
+	It defines preformatted text.
+Syntax:-
+----------
+	<pre> ----------------- </pre>
+Ex:-
+-----
+	<pre> Prince </pre>
+
+Ex:-
+-----
+<html>
+<head>
+<title> Computer Code Tags </title>
+</head>
+<body>
+<code>Computer code</code>
+<br>
+<kbd>Keyboard input</kbd>
+<br>
+<samp>Sample text</samp>
+<br>
+<p><b>Note:</b> These tags are often used to display computer/programming code.</p>
+</body>
+</html>
+
+Preformatting tag ex:-
+--------------------------
+<html>
+<head>
+<title> Preformatting tag </title>
+</head>
+<body>
+
+<pre>
+This is
+preformatted text.
+It preserves      both spaces
+and line breaks.
+</pre>
+
+<p>The pre tag is good for displaying computer code:</p>
+
+<pre>
+for i = 1 to 10
+     print i
+next i
+</pre>
+
+</body>
+</html>
+

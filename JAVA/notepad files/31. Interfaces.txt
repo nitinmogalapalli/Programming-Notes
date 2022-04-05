@@ -1,0 +1,86 @@
+Interface:-
+--------------
+In the Java programming language, an Interface is a reference type, similar to a class that can contain only constants, abstract methods. There are no method bodies. interfaces cannot be instantiated. They can only be implemented by classes or extended by other interfaces. Multiple Inheritance is allowed, when extending interfaces i.e. one interface can extend none, one or more interfaces.
+
+An abstract class can contain abstract as well as non-abstract methods. However an interface contains only the signatures of the functions. A class can extends only one class. However a class can implement any number of interfaces.
+
+Example 8 : Demo of Interface:-
+--------------------------------------------
+interface Common
+{
+void accept();
+void display();
+}
+class student implements common
+{
+int sno;
+string sname;
+int tfee;
+void accept()
+{
+sno=10;
+sname="Rahul";
+tfee=1500;
+}
+void display()
+{
+System.out.println("Student Details :"+sno+" "+sname+" "+tfee);
+}
+}
+class Interface1
+{
+public static void main(String args[])
+{
+student r=new Student();
+r.accept();
+r.display();
+}
+}
+
+Multiple Implements:-
+-----------------------------
+A class can implement any number of interfaces such class should override all the methods in all the interfaces.
+
+Example : Demo of multiple implementations:-
+---------------------------------------------------------------
+interface A
+{
+void f1();
+}
+interface B
+{
+void f2();
+}
+class C implements A,B
+{
+void f1()
+{
+}
+void f2()
+{
+}
+}
+
+Extending Interfaces:-
+------------------------------
+An interface can extended another interface using the key word "extends". Whenever a class implements the last interface the class should override all the methods in the interface chain.
+
+Example : Demo of multiple interfaces:-
+-----------------------------------------------------
+interface A
+{
+void f1();
+}
+interface B extends A
+{
+void f2();
+}
+class C implements B
+{
+void f1()
+{
+}
+void f2()
+{
+}
+}

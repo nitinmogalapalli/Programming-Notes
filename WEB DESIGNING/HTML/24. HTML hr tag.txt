@@ -1,0 +1,16 @@
+HTML hr tag:-
+-------------------
+HTML <hr> tag is used to specify a paragraph-level thematic break in HTML document. It is used when you abruptly change your topic in your HTML document. It draw a horizontal line between them. It is also called a Horizontal Rule in HTML.
+
+HTML hr tag:-
+-------------------
+<!DOCTYPE html>
+<html>
+<body>
+<h2>HTML</h2>  
+<p>HTML is a language for describing web pages.</p>  
+<hr/>  
+<h2>HR Tag </h2>  
+<p> HR tag is used to draw a horizontal line within the texts to sepate content.<p>  
+</body>
+</html>

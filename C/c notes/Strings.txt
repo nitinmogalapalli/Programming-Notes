@@ -1,0 +1,370 @@
+String:-
+----------
+                     A string is a group of characters of any length. A string enclosed with double quotation marks is known as a literal.
+
+Example:-
+--------------
+                           “Hello “is a literal. The String can be stored the data in the form of array of character in C language. The last character in a string is always ‘\o’, a Null character with ASCII value equal to zero.
+
+ The string “computer” can store in an array as shown below.
+    
+                                                                                 
+C	O	M	P	U	T	E	R	\O
+
+
+Declaration and Initialization of String:-
+----------------------------------------------------
+	                                  C does not support string as a data type however it allows to represent string as character array.
+
+ Initialization of a string is divide into two parts:-
+----------------------------------------------------------------
+
+1. Compile time initialization
+2. Run time initialization
+
+Compile Time Initialization:-
+-------------------------------------
+                                   
+Syntax:-
+-----------
+                     char n[] = {“computer”};
+
+char:-      It is a data type.
+n   :-        It is a name of   variable.
+[ ] :-         IT is represent to the size of string.
+
+/*W.A.P to print your name with the help of  String*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char n[] = {“Pawan”};
+clrscr();
+printf(“your name is = %s”, n);
+getch();
+}	
+
+Output:-
+                             Your name is = Pawan.
+
+Run Time Initialization:-
+-------------------------------
+ In this initialization the value are enter through the keyboard at run time.
+
+Syntax:-
+------------
+             char String name[ Size]
+Example:-     
+--------------
+             char    n[10];
+
+Char:- It is a data type and in String only support the character data type .
+ n    :-   It is the name of the String.
+[10] :-:  The size of the string is 10  
+
+
+/*W.A.P to enter your name through the keyboard using String*/
+
+ #include<stdio.h>
+ #include<conio.h>
+ void main()
+ {
+ char n[10] ;
+ clrscr();
+ printf("Enter your name=");
+ scanf("%s",&n);
+ printf("your name is = %s", n);
+ getch();
+ }
+        
+Output:-
+                                      Enter your name = Pawan
+                                      Your name is      = Pawan
+
+String Handling Function in C:-
+------------------------------------------
+	                 There are seven important string handling function in C language. Which is Strlen(), Strcpy(), Strcat(), Strrev(), Strcmp(), Strupr(), Strlwr().
+
+Note:-        When we use a string function then we used a suitable Header file which name is #include<string .h>
+                                                        
+Strlen():-
+------------
+                    This function is used to find the length of character String.
+
+Syntax:-
+-----------
+                            L = strlen(s);
+
+Where L is a integer data type which is find the length of the String.
+ Where S represent String constant or String Variable. String Variable is also called Character Array.
+
+/*W.A.P in C to find the length of a String*/
+
+#include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char n[10] ;
+ clrscr();
+ int L;
+ printf("Enter your String=");
+ scanf("%s",&n);
+ L=strlen(n);
+ printf("The length of String= %d", L);
+ getch();
+ }
+
+Output:-
+                         Enter your string = Computer
+                          Length of your string = 8.
+
+Strcpy():-
+-------------
+                     This function is used to copy a string to another String variable.
+
+Syntax:-
+-----------
+                       strcpy(S2,S1);
+
+Where S1 represent source String variable.
+Where S2 represent target string variable.
+
+/*W.A.P to copy a string from another string*/
+
+#include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S1[] = {"Computer"};
+ char S2[10];
+ clrscr();
+ strcpy(S2,S1);
+ printf("%s",S2);
+ getch();
+ }
+
+Output:-
+                    Computer
+
+Strcmp():-
+--------------
+                       This function is used to compare two character Strings. It returns a zero when two strings are equal otherwise it returns a numerical value which is the difference in the ASCII value of the first mismatching of the string being compared.
+
+Syntax:-
+-----------
+                     strcmp(S1,S2);
+
+Where S1 and S2 are two Strings.
+
+/*W.A.P in C to compare any two given String*/
+
+#include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S1[] = {"Computer"};
+ char S2[] = {"computer"};
+ clrscr();
+ if(strcmp(S1,S2)==0)
+ {
+ printf("Both Strings are equal");
+ }
+ else
+ {
+ printf("Both Strings are not equal");
+ }
+ getch();
+ }
+
+Output:-
+                     Both Strings are not equal.
+
+Solution:-
+                           The value of C in ASCII code is = 67.
+                           The value of c in ACII code is = 97
+                            So both string are not equal..
+
+/*W.A.P ito compare any two given String and show output Both Sting are equal*/
+
+ #include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S1[] = {"Computer"};
+ char S2[] = {"Computer"};
+ clrscr();
+ if(strcmp(S1,S2)==0)
+ {
+ printf("Both Strings are equal");
+ }
+ else
+ {
+ printf("Both Strings are not equal");
+ }
+ getch();
+ }
+
+Output:-
+                          Both Strings are equal.
+
+ Solution:-
+                           The value of C in ASCII code is = 67.
+                           The value of C in ASCII code is = 67.
+The first letter of the both string is equal in ASCII code. So the both Strings are equal.
+
+/*W.A.P to swap any two given Strings*/
+
+#include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S1[] = {"Software"};
+ char S2[] = {"Hardware"};
+ char temp[10];
+ clrscr();
+ printf("The value of strings s1 and S2= %s\n%s\n",S1,S2);
+ strcpy(temp,S1);
+ strcpy(S1,S2);
+ strcpy(S2,temp);
+ printf("After swapping the value of strings S1 and S2=%s\n %s",S1,S2);
+ getch();
+ }
+
+Output:-
+                  The value of string S1 and S2 = Software
+                   Hardware
+                  After swapping the value of string S1 and S2 = Hardware
+                  Software
+Strcat():-
+------------
+                     This function is used to add of two strings.
+
+Syntax:-
+-----------
+                      strcat(S1,S2);
+Where S1 and S2 are two Strings.
+
+/*W.A.P in C to add of two Strings*/
+
+#include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S1[] = {"New"};
+ char S2[] = {"Delhi"};
+ clrscr();
+ strcat(S1,S2);
+ printf("The addition of two Strings= %s",S1);
+ getch();
+ }
+
+Output:-
+                            The addition of two strings= NewDelhi.
+
+/*W.A.P in C to add of two strings in reverse order*/
+(Hints:-The last digit is first and first digit is add on last position.)   
+
+ #include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S1[] = {"New"};
+ char S2[] = {"Delhi"};
+ clrscr();
+ strcat(S2,S1);
+ printf("The addition of two Strings in reverse order= %s",S2);
+ getch();
+ }
+
+Output:-
+                     The addition of two Strings in reverse order = DelhiNew
+
+Strupr():-
+-------------
+         	This function is used to convert the lower case letter into the upper case letter.
+
+Syntax:-
+-----------
+                           strupr(S);
+
+Where S is represent the String.
+
+/*W.A.P to convert all alphabets in a string to upper case letter*/
+                                                    
+  #include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S[] = {"rewari"};
+ clrscr();
+ strupr(S);
+ printf("String after convert in upper case letter=%s",S);
+ getch();
+ }
+  
+
+Output:-
+                            String after convert in upper case letter = Rewari
+
+Strlwr():-
+------------
+             This function is used to convert all alphabets in a string to lower case letters.
+
+Syntax:-
+------------
+                                              strlwr(S);
+
+Where S is represent the String.
+
+/*W.A.P to convert all alphabets into lowercase letter*/
+
+  #include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S[] = {"REWARI"};
+ clrscr();
+ strlwr(S);
+ printf("String after convert in lower case letter=%s",S);
+ getch();
+ }
+
+Output:-
+                    Sting after convert in lower case letter = rewari
+
+Strrev():-
+------------
+              This function is used to reverse the string
+
+Syntax:-
+-----------
+                                strrev(S);
+
+Where S is represent the String.
+
+/*W.A.P to print the reveres of the String*/
+
+ #include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ void main()
+ {
+ char S[] = {"Rewari"};
+ clrscr();
+ strrev(S);
+ printf("After reverse the String is=%s",S);
+ getch();
+ }
+
+Output:-
+                               After reverse the String is = iraweR

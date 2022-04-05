@@ -1,0 +1,36 @@
+PHP Open File:
+----------------------
+PHP fopen() function is used to open file or URL and returns resource. The fopen() function accepts two arguments: $filename and $mode. The $filename represents the file to be opended and $mode represents the file mode for example read-only, read-write, write-only etc.
+
+Syntax:
+-----------
+    resource fopen ( string $filename , string $mode [, bool $use_include_path = false [, resource $context ]] )  
+
+PHP Open File Mode:
+------------------------------
+Mode	Description
+--------	----------------
+r	Opens file in read-only mode. It places the file pointer at the beginning 	of the file.
+
+r+	Opens file in read-write mode. It places the file pointer at the beginning 	of the file.
+
+w	Opens file in write-only mode. It places the file pointer to the beginning 	of the file and truncates the file to zero length. If file is not found, it 	creates a new file.
+
+w+	Opens file in read-write mode. It places the file pointer to the beginning 	of the file and truncates the file to zero length. If file is not found, it 	creates a new file.
+
+a	Opens file in write-only mode. It places the file pointer to the end of the 	file. If file is not found, it creates a new file.
+
+a+	Opens file in read-write mode. It places the file pointer to the end of the 	file. If file is not found, it creates a new file.
+
+x	Creates and opens file in write-only mode. It places the file pointer at 	the beginning of the file. If file is found, fopen() function returns 	FALSE.
+x+	It is same as x but it creates and opens file in read-write mode.
+
+c	Opens file in write-only mode. If the file does not exist, it is created. If it 	exists, it is neither truncated (as opposed to 'w'), nor the call to this 	function fails (as is the case with 'x'). The file pointer is positioned on 	the beginning of the file
+
+c+	It is same as c but it opens file in read-write mode.
+
+PHP Open File Example
+----------------------------------
+    <?php  
+    $handle = fopen("c:\\folder\\file.txt", "r");  
+    ?>  

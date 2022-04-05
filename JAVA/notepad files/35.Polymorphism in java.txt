@@ -1,0 +1,140 @@
+Polymorphism in Java:-
+--------------------------------
+Polymorphism in java is a concept by which we can perform a single action by different ways. Polymorphism is derived from 2 greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means many forms.
+
+There are two types of polymorphism in java: compile time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.
+
+If you overload static method in java, it is the example of compile time polymorphism. Here, we will focus on runtime polymorphism in java.
+
+Runtime Polymorphism in Java:-
+--------------------------------------------
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time.
+
+In this process, an overridden method is called through the reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+Example of Java Runtime Polymorphism:-
+---------------------------------------------------------
+In this example, we are creating two classes Bike and Splendar. Splendar class extends Bike class and overrides its run() method. We are calling the run method by the reference variable of Parent class. Since it refers to the subclass object and subclass method overrides the Parent class method, subclass method is invoked at runtime.
+
+class Bike
+{  
+  void run()
+  {
+  System.out.println("running");
+  }  
+}  
+class Splender extends Bike
+{  
+  void run()
+  {
+  System.out.println("running safely with 60km");
+  }  
+public static void main(String args[])
+{  
+    Bike b = new Splender(); 
+    b.run();  
+}  
+}
+
+Real example of Java Runtime Polymorphism:-
+---------------------------------------------------------------
+Consider a scenario, Bank is a class that provides method to get the rate of interest. But, rate of interest may differ according to banks. For example, SBI, ICICI and AXIS banks could provide 8%, 7% and 9% rate of interest.
+
+class Bank
+{  
+int getRateOfInterest()
+{
+return 0;
+}  
+}  
+  
+class SBI extends Bank
+{  
+int getRateOfInterest()
+{
+return 8;
+}  
+}  
+  
+class ICICI extends Bank
+{  
+int getRateOfInterest()
+{
+return 7;
+}  
+}  
+
+class AXIS extends Bank
+{  
+int getRateOfInterest()
+{
+return 9;
+}  
+}  
+  
+class Test3
+{  
+public static void main(String args[])
+{  
+Bank b1=new SBI();  
+Bank b2=new ICICI();  
+Bank b3=new AXIS();  
+System.out.println("SBI Rate of Interest: "+b1.getRateOfInterest());  
+System.out.println("ICICI Rate of Interest: "+b2.getRateOfInterest());  
+System.out.println("AXIS Rate of Interest: "+b3.getRateOfInterest());  
+}  
+}
+
+Java Runtime Polymorphism with data member:-
+-------------------------------------------------------------------
+class Bike
+{  
+ int speedlimit=90;  
+}  
+class Honda3 extends Bike
+{  
+ int speedlimit=150;    
+ public static void main(String args[])
+{  
+  Bike obj=new Honda3();  
+  System.out.println(obj.speedlimit);  
+}
+}
+
+Java Runtime Polymorphism with Multilevel Inheritance:-
+-----------------------------------------------------------------------------
+class Animal
+{  
+void eat()
+{
+System.out.println("eating");
+}  
+}  
+  
+class Dog extends Animal
+{  
+void eat()
+{
+System.out.println("eating fruits");
+}  
+}  
+  
+class BabyDog extends Dog
+{  
+void eat()
+{
+System.out.println("drinking milk");
+}  
+  
+public static void main(String args[])
+{  
+Animal a1,a2,a3;  
+a1=new Animal();  
+a2=new Dog();  
+a3=new BabyDog();  
+  
+a1.eat();  
+a2.eat();  
+a3.eat();  
+}  
+}      

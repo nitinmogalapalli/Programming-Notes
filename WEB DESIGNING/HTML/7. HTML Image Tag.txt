@@ -1,0 +1,35 @@
+HTML Image:-
+--------------------
+HTML img tag is used to display image on the web page. HTML img tag is an empty tag that contains attributes only, closing tags are not used in HTML image element.
+
+Let's see an example of HTML image.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<h2>HTML Image Example</h2>  
+<img src="good-morning.jpg" alt="Good Morning Friends"/> 
+</body>  
+</html>  
+
+Attributes of HTML img tag:-
+---------------------------------------
+The src and alt are important attributes of HTML img tag. All attributes of HTML image tag are given below.
+
+1) src:-
+----------
+It is a necessary attribute that describes the source or path of the image. It instructs the browser where to look for the image on the server.
+
+The location of image may be on the same directory or another server.
+
+2) alt:-
+---------
+The alt attribute defines an alternate text for the image, if it can't be displayed. The value of the alt attribute describe the image in words. The alt attribute is considered good for SEO prospective.
+
+3) width:-
+-------------
+It is an optional attribute which is used to specify the width to display the image. It is not recommended now. You should apply CSS in place of width attribute.
+
+4) height:-
+---------------
+It specifies the height of the image. The HTML height attribute also supports iframe, image and object elements. It is not recommended now. You should apply CSS in place of height attribute.

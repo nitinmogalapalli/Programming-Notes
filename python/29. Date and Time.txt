@@ -1,0 +1,336 @@
+Date and Time
+-------------------
+Python is very useful in case of Date and Time. We can easily retrieve current date and time using Python.
+
+Retrieve Time
+------------------
+To retrieve current time a predefined function localtime() is used. localtime() receives a parameter time.time() . Here, time is a module,
+
+time() is a function that returns the current system time in number of ticks since 12:00 am , January 1,1970. It is known as epoch.
+
+Tick is simply a floating point number in seconds since epoch.
+
+eg:
+----
+    import time;  
+    localtime = time.localtime(time.time())  
+    print "Current Time is :", localtime  
+
+Output:
+----------
+    >>>  
+    Current Time is :time.struct_time(tm_year=2014, tm_mon=6, tm_mday=18, tm_hour=12,   
+    tm_min=35, tm_sec=44, tm_wday=2, tm_yday=169, tm_isdst=0)  
+    >>>  
+
+Explanation:
+----------------
+The time returned is a time structure which includes 9 attributes. These are summoned in the table given below.
+
+Attribute	Description
+
+tm_year	Returns the current year
+
+tm_mon	Returns the current month
+
+tm_mday	Returns the current month day
+
+tm_hour	Returns the current hour.
+
+tm_min	Returns the current minute
+
+tm_sec	Returns current seconds
+
+tm_wday	Returns the week day
+
+tm_yday	Returns the year day.
+
+tm_isdst	It returns -1,0 or 1.
+
+Formatted Time
+---------------------
+Python also support formatted time. Proceed as follows:
+
+    Pass the time structure in a predefined function asctime(). It is a function defined in time module.
+    
+It returns a formatted time which includes Day ,month, date, time and year.
+
+    Print the formatted time.
+
+eg:
+----
+    import time;  
+      
+    localtime = time.asctime( time.localtime(time.time()) )  
+    print "Formatted time :", localtime  
+
+Output:
+----------
+    >>>  
+    Formatted time : Sun Jun 22 18:54:20 2014  
+    >>>  
+
+time module:
+-----------------
+There are many built in functions defined in time module which are used to work with time.
+
+Methods	Description
+
+time()	Returns floating point value in seconds since epoch i.e.,12:00am, January 1, 1970
+
+asctime(time)	It takes the tuple returned by localtime() as parameter. It returns a 24 character string.
+
+sleep(time)	The execution will be stopped for the given interval of time.
+
+strptime(String,format)	It returns an tuple with 9 time attributes. It receives an String of date and a format.
+
+gmtime()/gmtime(sec)	It returns struct_time which contains 9 time attributes. In case seconds are not specified it takes current second from epoch.
+
+mktime()	Returns second in floating point since epoch.
+
+strftime(format)/strftime(format,time)	Returns time in particular format. If time is not given, current time in seconds is fetched.
+
+time()
+
+eg:
+----
+    import time  
+    printtime.time()  
+
+Output:
+
+    >>>  
+    1403700740.39  
+    >>>  
+
+asctime(time)
+
+    import time  
+    t = time.localtime()  
+    printtime.asctime(t)  
+
+Output:
+
+    >>>  
+    Wed Jun 25 18:30:25 2014  
+    >>>  
+
+sleep(time)
+
+Eg:
+
+    import time  
+      
+    localtime = time.asctime( time.localtime(time.time()) )  
+    printlocaltime  
+    time.sleep( 10 )  
+    localtime = time.asctime( time.localtime(time.time()) )  
+    printlocaltime  
+
+Output:
+
+    >>>  
+    Wed Jun 25 18:15:30 2014  
+    Wed Jun 25 18:15:40 2014  
+    >>>  
+
+strptime(String str,format f)
+
+Eg:
+
+    import time  
+      
+    timerequired = time.strptime("26 Jun 14", "%d %b %y")  
+    print timerequired  
+
+Output:
+
+    >>>  
+    time.struct_time(tm_year=2014, tm_mon=6, tm_mday=26, tm_hour=0, tm_min=0,   
+    tm_sec=0, tm_wday=3, tm_yday=177, tm_isdst=-1)  
+    >>>  
+
+Explanation:
+
+The strptime() takes a String and format as argument. The format refers to String passed as an argument. "%a %b %d %H:%M:%S %Y" are the default directives. There are many other directives which can be used. In the given example we have used three directives: %d%b%y which specifies day of the month, month in abbreviated form and year without century respectively. Some of them are given as:
+
+%a	weekday name.
+
+%b	month name
+
+%c	date and time
+
+%e	day of a month
+
+%m	month in digit.
+
+%n	new line character.
+
+%S	second
+
+%t	tab character
+
+etc...
+
+gtime()
+
+Eg:
+
+    import time  
+    print time.gmtime()  
+
+Output:
+
+    >>>  
+    time.struct_time(tm_year=2014, tm_mon=6, tm_mday=28, tm_hour=9, tm_min=38, tm_sec=0,  
+     tm_wday=5, tm_yday=179, tm_isdst=0)  
+    >>>  
+
+mktime()
+
+Eg:
+
+    import time  
+    t = (2014, 2, 17, 17, 3, 38, 1, 48, 0)  
+    second = time.mktime( t )  
+    print second  
+
+Output:
+
+    >>>  
+    1392636818.0  
+    >>>  
+
+strftime()
+
+Eg:
+
+    import time  
+    t = (2014, 6, 26, 17, 3, 38, 1, 48, 0)  
+    t = time.mktime(t)  
+    printtime.strftime("%b %d %Y %H:%M:%S", time.gmtime(t))  
+
+Output:
+
+    >>>  
+    Jun 26 2014 11:33:38  
+    >>>  
+
+Calendar
+
+Python provides calendar module to display Calendar.
+
+Eg:
+
+    import calendar  
+    print "Current month is:"  
+    cal = calendar.month(2014, 6)  
+    print cal  
+
+Output:
+
+    >>>  
+    Current month is:  
+     June 2014  
+    Mo TuWe ThFr Sa Su  
+    1  
+     2  3  4  5  6  7  8  
+     9 10 11 12 1314 15  
+    16 1718 19 2021 22  
+    2324 25 26 27 28 29  
+    30  
+    >>>  
+
+Calendar module:
+
+Python provides calendar module which provides many functions and methods to work on calendar. A list of methods and function used is given below:
+
+Methods	Description
+
+prcal(year)	Prints the whole calendar of the year.
+
+firstweekday()	Returns the first week day. It is by default 0 which specifies Monday
+
+isleap(year)	Returns a Boolean value i.e., true or false. True in case given year is leap else false.
+
+monthcalendar(year,month)	Returns the given month with each week as one list.
+
+leapdays(year1,year2)	Return number of leap days from year1 to year2
+
+prmonth(year,month)	Print the given month of the given year
+
+prcal(year)
+
+Eg:
+
+    import calendar  
+    calendar.prcal(2014)  
+
+Output:
+
+    >>> ================================ RESTART ================================  
+    >>>  
+
+calendar calendar
+
+firstweekday()
+
+Eg:
+
+    import calendar  
+    printcalendar.firstweekday()  
+
+Output:
+
+    >>>  
+    0  
+    >>>  
+
+isleap(year)
+
+Eg:
+
+    import calendar  
+    printcalendar.isleap(2000)  
+
+Output:
+
+    >>>  
+    True  
+    >>>  
+
+monthcalendar(year,month)
+
+Eg:
+
+    import calendar  
+    printcalendar.monthcalendar(2014,6)  
+
+Output:
+
+    >>>  
+    [[0, 0, 0, 0, 0, 0, 1], [2, 3, 4, 5, 6, 7, 8], [9, 10, 11, 12, 13, 14, 15],   
+    [16, 17, 18, 19, 20, 21, 22],   
+    [23, 24, 25, 26, 27, 28, 29], [30, 0, 0, 0, 0, 0, 0]]  
+    >>>  
+
+prmonth(year,month)
+
+Eg:
+
+    import calendar  
+    printcalendar.prmonth(2014,6)  
+
+Output:
+
+    >>>  
+         June 2014  
+    Mo Tu We ThFrSa Su  
+                       1  
+    2  3  4  5  6  7  8  
+     9 10 11 12 13 14 15  
+    16 17 18 19 20 21 22  
+    23 24 25 26 27 28 29  
+    30  
+    None  
+    >>>  

@@ -1,0 +1,49 @@
+PL/SQL Comments:-
+-----------------------------
+PL/SQL Comments you can write single line comments or either multiple line comments,
+
+Multi-line comments and Single line comments
+
+Multi-line comments are delimited with /*..COMMENT TEXT..*/ and
+
+single line comments starts with two dashes --.
+
+PL/SQL Comments can begin in any column on any line. If you are embedding comments in SQL that will be embedded in PL/SQL you need to be careful for writing a column.
+
+PL/SQL Comments Syntax:-
+--------------------------------------
+SQL>-- Single Line Comment
+
+SQL>/*  Multiline Comment line 1
+		Multiline Comment line2    */
+
+Comments Example
+----------------------------
+This example is nothing any new same as last lesson only new for showing a how to write single line comment or multi line comment in PL/SQL program,
+
+Example Code :
+----------------------
+SQL> set serveroutput on
+SQL> DECLARE
+	
+	eno number(5) NOT NULL := 2; --assign value into eno variable
+	
+	ename varchar2(15) := 'Branson Devs';
+	
+	/* Constant value is fixed for edept value is "Web Deloper" 
+	is fixed all program not required declare all times. */
+	edept CONSTANT varchar2(15) := 'Web Developer';
+BEGIN
+	dbms_output.put_line('Declared Value:');
+	dbms_output.put_line(' Employee Number: ' || eno || ' Employee Name: ' || ename);
+	dbms_output.put_line('Constant Declared:');
+	dbms_output.put_line(' Employee Department: ' || edept);
+END;
+/
+
+Example Result :
+-----------------------
+Declared Value:
+Employee number: 2 Employee Name: Branson Devs
+Constant Declared:
+Employee Department: Web Developer

@@ -1,0 +1,22 @@
+Inheritance Introduction:
+
+	Inheritance is one of the principle of object-oriented programming because it allows the creation of hierarchical classifications.
+
+	The idea behind inheritance is that you can create new classes that are built upon existing classes.
+
+	In the terminology of Java, a class that is inherited is called a superclass (base,parent). The class that does the inheriting is called a subclass (derived, child). The Inheritance tells the relationship between the Super class and sub class. The relation ship is called as "is-a" relationship. Therefore, a subclass is a specialized version of a  superclass. It inherits all of the instance variables and methods defined by the superclass and adds its own, unique elements.
+The general form of a class declaration that inherits a superclass is shown here:
+
+	class subclass-name extends superclass-name 
+	{
+		// body of class
+	}
+
+
+1: Being a superclass for a subclass does not mean that the superclass cannot be used by itself. Further, a subclass can be a superclass for another subclass.
+	
+2: Member Access and Inheritance:
+	Although a subclass includes all of the members of its superclass, it cannot access those members of the superclass that have been declared as private. (In a class hierarchy, private members remain private to their class.)
+
+3: A Superclass Object Variable Can Refer a Subclass Object:
+	A reference variable of a superclass can be assigned a reference to any subclass derived from that superclass. You will find this aspect of inheritance quite useful in a variety of situations.

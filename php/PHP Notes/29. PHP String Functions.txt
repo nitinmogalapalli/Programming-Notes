@@ -1,0 +1,115 @@
+PHP String Functions :
+--------------------------------
+PHP provides various string functions to access and manipulate strings. A list of important PHP string functions are given below.
+
+1) PHP strtolower() function :
+----------------------------------------
+The strtolower() function returns string in lowercase letter.
+
+Syntax :
+------------
+    string strtolower ( string $string )  
+
+Example :
+--------------
+    <?php  
+    $str="My name is KHAN";  
+    $str=strtolower($str);  
+    echo $str;  
+    ?>  
+
+2) PHP strtoupper() function :
+-----------------------------------------
+The strtoupper() function returns string in uppercase letter.
+
+Syntax :-
+------------
+    string strtoupper ( string $string )  
+
+Example :
+--------------
+    <?php  
+    $str="My name is KHAN";  
+    $str=strtoupper($str);  
+    echo $str;  
+    ?>  
+
+3) PHP ucfirst() function :
+-----------------------------------
+The ucfirst() function returns string converting first character into uppercase. It doesn't change the case of other characters.
+
+Syntax :
+------------
+    string ucfirst ( string $str )  
+
+Example :
+--------------
+    <?php  
+    $str="my name is KHAN";  
+    $str=ucfirst($str);  
+    echo $str;  
+    ?>  
+
+4) PHP lcfirst() function :
+----------------------------------
+The lcfirst() function returns string converting first character into lowercase. It doesn't change the case of other characters.
+
+Syntax :
+-----------
+    string lcfirst ( string $str )  
+
+Example :
+--------------
+    <?php  
+    $str="MY name IS KHAN";  
+    $str=lcfirst($str);  
+    echo $str;  
+    ?>  
+
+5) PHP ucwords() function :
+---------------------------------------
+The ucwords() function returns string converting first character of each word into uppercase.
+
+Syntax :
+------------
+    string ucwords ( string $str )  
+
+Example :
+--------------
+    <?php  
+    $str="my name is Sonoo jaiswal";  
+    $str=ucwords($str);  
+    echo $str;  
+    ?>  
+
+6) PHP strrev() function :
+----------------------------------
+The strrev() function returns reversed string.
+
+Syntax :
+-----------
+    string strrev ( string $string )  
+
+Example :
+--------------
+    <?php  
+    $str="my name is Sonoo jaiswal";  
+    $str=strrev($str);  
+    echo $str;  
+    ?>  
+
+7) PHP strlen() function :
+----------------------------------
+The strlen() function returns length of the string.
+
+Syntax :
+-----------
+    int strlen ( string $string )  
+
+Example :
+--------------
+    <?php  
+    $str="my name is Sonoo jaiswal";  
+    $str=strlen($str);  
+    echo $str;  
+    ?>  

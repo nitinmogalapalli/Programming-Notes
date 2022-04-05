@@ -1,0 +1,40 @@
+Abstract:-
+-------------
+An Abstract class is a class that is declared as abstract - it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be used for inheritance only.
+
+When to use:-
+--------------------
+Any class that extends the abstract class has to provide the implementation to the abstract methods. Hence these classes can be used as a skeleton to similar classes where some common functionality may be required. Such functionality can also be embedded into these classes. Unlike interfaces, abstract classes can have method code also. so they are very useful.
+
+Abstract Method:-
+-------------------------
+Abstract method is a method that is declared without an implementation (without braces and followed by a semicolon).
+Whenever a class extends an abstract class then the class should compulsorily override all the abstract methods of the super class.
+
+Example 5 Demo of abstract class :-
+--------------------------------------------------
+abstract class common
+{
+	abstract void accept();
+	abstract void display();
+}
+class student extends common
+{
+	void accept()
+	{
+	}
+}
+
+The above example generates error in complete overriding.
+
+class student extends common
+{
+	void accept()
+	{
+	}
+	void display()
+	{
+	}
+}
+
+The above example does not generate any errors, because all the functions of class common are overriding in class student.

@@ -1,0 +1,11 @@
+Thread class :
+
+	You must create an object of the type "Thread".
+	
+Runnable Interface:
+
+	here you must create the object for the class that implementing Runnable,
+if you want to concider the new object as a Thread that object must pass to the Thread class Costructor.
+
+Thread(Runnable obre)
+Thread(Runnable obre,String TName)

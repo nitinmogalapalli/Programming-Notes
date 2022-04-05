@@ -1,0 +1,61 @@
+List of programs:
+
+1. Write a program to print a character for given ASCII code and vice-versa
+2. Write a program to take input to the short and long integers and print output
+3. Write a program to print the size of the short int, int, and long int data types using "sizeof" operator
+4. Write a program to find the given two numbers are equal or not
+5. Write a program to find the maximum using conditional operator (?:)
+6. Write a program to find simple interest (ptr/100)
+7. Write a program to Convert temparature in centigrade to fahrenheit and vice-versa
+8. Write a program to find the area of a triangle when given base and height (or for given three sides)
+9. Write a program to read and print a character using getchar and putchar
+10. Write a program to read and print a string using gets and puts
+11. Write a program to read and print data of int and float type values using scanf and printf
+12. Write a program to read a string using scanf
+13. 
+14. Write a program to read three variables and output their sum, average
+15. Write a program that accepts four integers and print the 4-digit number formed by concatenating them
+16. Write a program to find whether the given number is divisible by 3 or not
+17. Write a program to find the entered number is a floating point number or not
+18. Write a program to find the largest among the three numbers
+19. Write a program to print numbers multiples of 5 using for, while, and do-while loops
+20. Write a program to to print a triangle of stars(*), eg:
+         *
+        ***
+       *****
+22. Write a program to print sum of squares of first 15 even numbers
+23. Write a program to find the given number is pallindrome or not
+24. Write a program to find the given number is amstrong number or not
+25. Write a program to find the roots of the Quadratic equation using switch
+26. Write a program to find the factorial of the given number
+27. Write a program to construct phyramid of digits like,
+				  1
+		               2  3  2
+		            3  4  5  4  3
+		         4  5  6  7  6  5  4
+		      5  6  7  8  9  8  7  6  5
+28. Write a program to print fibonacci series <100
+	fibonacci series: 0 1 1 2 3 5 8 13 21 .....
+29. Write a program to check whether the given integer is possitive or negative
+30. Write a program to find the smallest of three numbers
+40. Write a program to find largest of four numbers
+41. Write a program to convert the given angle in degrees to angle in radians
+	formula:
+		angle in radians = (angle in degrees* pi)/180
+42. Write a program to check the given number is prime or not
+43. Write a program to print prime numbers till N
+44. Write a program to find the some of squares of digits of a number.
+	number = 123, than you need to find the sum = 1squre + 2sqare + 3sqare
+45. Write a program that reads three sides of a triangle and determine its type
+46. Write a program that takes a character and checks whether it is vowel or consonent
+47. Write a program to find the factors of a given number
+
+Functions
+48. Write a function other than main that prints a message
+49. write a function to find the cube of the given number
+50. Write a function to find the minimum among the two numbers
+51. write a function to swap the two numbers
+52. write functions that prints the sum of two numbers and sum of three numbers
+53. Write a function that find the addition and subtraction of two numbers
+54. Write a function to swap two numbers without using the temprorary variable
+

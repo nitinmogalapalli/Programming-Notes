@@ -1,0 +1,30 @@
+HTML code tag:-
+-----------------------
+HTML <code> tag is used to represent computer code. It is a phrase tag which defines a piece of computer code. By default, it is displayed in the browser's default monospace font (also known as fixed-width font).
+
+List of HTML phrase tags
+
+Tag	Description
+
+<em>	displays emphasized text
+<strong>	displays important text
+<dfn>	defines a definition term
+<code>	defines a piece of computer code
+<samp>	specifies a sample output from a computer program
+<kbd>	defines keyboard input
+<var>	defines a variable
+
+HTML phrase tags example including code tag:-
+-----------------------------------------------------------------
+<!doctype html>
+<html>
+<body>
+<em>It is inside em tag.</em><br>  
+<strong>It is inside strong tag.</strong><br>  
+<dfn>It is inside dfn tag.</dfn><br>  
+<code>It is inside code tag.</code><br>  
+<samp>It is inside samp tag.</samp><br>  
+<kbd>It is inside kbd tag.</kbd><br>  
+<var>It is inside var tag.</var> 
+</body>
+</html>

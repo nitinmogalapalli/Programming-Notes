@@ -1,0 +1,25 @@
+Multilevel Inheritance in Python
+------------------------------------------
+Multilevel inheritance is also possible in Python unlike other programming languages. You can inherit a derived class from another derived class. This is known as multilevel inheritance. In Python, multilevel inheritance can be done at any depth.
+
+Python Multilevel Inheritance Example
+---------------------------------------------------
+    class Animal:   
+        def eat(self):  
+          print 'Eating...'  
+    class Dog(Animal):  
+       def bark(self):  
+          print 'Barking...'  
+    class BabyDog(Dog):  
+        def weep(self):  
+            print 'Weeping...'  
+    d=BabyDog()  
+    d.eat()  
+    d.bark()  
+    d.weep()  
+
+Output:
+
+    Eating...  
+    Barking...  
+    Weeping  

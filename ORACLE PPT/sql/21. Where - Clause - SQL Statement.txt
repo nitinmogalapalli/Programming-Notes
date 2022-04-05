@@ -1,0 +1,149 @@
+SQL WHERE Clause Statement
+--------------------------------------------
+SQL WHERE clause is basically use for fetching specific criteria matched data only return. SQL WHERE clause is optionally clause in DML statement.
+
+SQL WHERE clause we can use with SELECT, UPDATE, DELETE statements. SELECT statement with WHERE clause execute, fetching all table rows and apply WHERE clause filtering and finally return the result data.
+
+Notes : You can't use INSERT statement with WHERE clause. But you can use INSERT Statement with WHERE cause only when you get the filter data from another TABLE.
+
+WHERE clause use with SELECT Statement
+-------------------------------------------------------------
+When you get table data with specific filtered data, you should use where clause,
+
+Syntax
+----------
+Considering following syntax that help you to understanding WHERE clause,
+
+SELECT * FROM table_name WHERE condition;
+
+Example
+------------
+SQL> SELECT * FROM users_info WHERE name = 'Opal Kole';
+
+ NO NAME                ADDRESS                     CONTACT_NO
+--- ------------------- --------------------------- --------------
+  1 Opal Kole           63 street Ct.               000-444-7847
+ 
+WHERE clause use with UPDATE Statement
+--------------------------------------------------------------
+When you want to update specific table data you should use UPDATE statement with where clause. You can update/set more than one columns value.
+
+Syntax
+---------
+Considering following syntax that help you to understanding WHERE clause,
+
+UPDATE table_name SET column_name=value1, ... WHERE condition;
+
+Example
+------------
+SQL> UPDATE users_info SET address = '145 Taxo court.' WHERE no = 10;
+
+1 row updated.
+ 
+WHERE clause use with DELETE Statement
+--------------------------------------------------------------
+When you want to delete specific table row(s) you should use DELETE statement with WHERE clause,
+
+Syntax
+---------
+Considering following syntax that help you to understanding WHERE clause,
+
+DELETE FROM table_name WHERE condition;
+
+Example
+------------
+SQL> DELETE FROM users_info WHERE no = 10;
+
+1 row deleted.
+ 
+WHERE clause use with INSERT Statement
+-------------------------------------------------------------
+When you want to insert filter data from another table, you should use INSERT statement with WHERE clause,
+
+Syntax
+---------
+Considering following syntax that help you to understanding WHERE clause,
+
+INSERT INTO table_name (column_name1, column_name2, ...) 
+    SELECT column_name1, column_name2, ...
+    FROM another_table_name 
+    WHERE condition;
+
+Example
+------------
+SQL> INSERT INTO userinfo (no, name, address) 
+    SELECT no, name, address
+    FROM users_info
+    WHERE no = 1;
+
+1 row inserted.
+ 
+WHERE clause Operators
+------------------------------------
+You can use WHERE clause with following operators.
+
+Operator 	Description 	Example
+= 	Equal to 	
+
+SQL> SELECT * FROM users_info WHERE no = 5;
+
+<> 	Not equal 	
+
+SQL> SELECT * FROM users_info WHERE no <> 5;
+
+> 	Greater than 	
+
+SQL> SELECT * FROM users_info WHERE no > 5;
+
+< 	Less than 	
+
+SQL> SELECT * FROM users_info WHERE no < 5;
+
+>= 	Greater than or equal 	
+
+SQL> SELECT * FROM users_info WHERE no >= 5;
+
+<= 	Less than or equal 	
+
+SQL> SELECT * FROM users_info WHERE no <= 5;
+
+BETWEEN 	Fetching within range data 	
+
+SQL> SELECT * FROM users_info WHERE no BETWEEN 1 AND 5;
+
+LIKE 	Search for a pattern 	
+
+SQL> SELECT * FROM users_info WHERE name LIKE 'Be%';
+
+NO NAME              ADDRESS             CONTACT_NO
+-- ----------------- ------------------- --------------
+ 3 Beccaa Moss       2500 green city.    000-444-7586
+ 9 Ben Mares         101 Candy Road      000-444-5928
+
+ 2 rows selected.
+
+IN 	Allows only specified values 	
+
+SQL> SELECT * FROM users_info WHERE no IN (1,5,10);
+
+NO NAME              ADDRESS             CONTACT_NO
+-- ----------------- ------------------- --------------
+ 1 Opal Kole         63 street Ct.       000-444-7847
+ 5 Ken Myer          137 Clay Road 		 000-444-7528 
+10 Sariya Vargas     145 Taxo court.	 000-444-5927 
+
+3 rows selected.
+
+NOT IN 	Not allows specified values 	
+
+SQL> SELECT * FROM users_info WHERE no NOT IN (1,3,5,7,9);
+
+NO NAME              ADDRESS             CONTACT_NO
+-- ----------------- ------------------- --------------
+ 2 Max Miller        41 NEW ROAD.        000-444-8292
+ 4 Paul Singh        1343 Prospect St    000-444-7585
+ 6 Jack Evans        1365 Grove Way      000-444-8401
+ 8 Gabe Hee          1220 Dallas Drive   000-444-5028
+10 Sariya Vargas     145 Taxo court.	 000-444-5927 
+
+5 rows selected.

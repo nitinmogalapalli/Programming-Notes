@@ -1,0 +1,135 @@
+CSS3 Text:-
+-----------------
+CSS3 contains several new text features.
+
+In this chapter you will learn about the following text properties:
+
+    text-overflow
+    word-wrap
+    word-break
+
+CSS3 Text Overflow
+
+The CSS3 text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.
+
+The CSS code is as follows:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test1 {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.test2 {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+</style>
+</head>
+<body>
+
+<p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+<p>text-overflow: clip:</p>
+<p class="test1">This is some long text that will not fit in the box</p>
+
+<p>text-overflow: ellipsis:</p>
+<p class="test2">This is some long text that will not fit in the box</p>
+
+</body>
+</html>
+
+The following example shows how you can display the overflowed content when hovering over the element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.test {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+}
+
+div.test:hover {
+    text-overflow: inherit;
+    overflow: visible;
+}
+</style>
+</head>
+<body>
+
+<p>Hover over the two divs below, to see the entire text.</p>
+<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+<br>
+<div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+</body>
+</html>
+
+CSS3 Word Wrapping:-
+------------------------------
+The CSS3 word-wrap property allows long words to be able to be broken and wrap onto the next line. 
+
+If a word is too long to fit within an area, it expands outside:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test {
+    width: 11em; 
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+
+<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+</body>
+</html>
+
+CSS3 Word Breaking:-
+------------------------------
+The CSS3 word-break property specifies line breaking rules.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test1 {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+p.test2 {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+</style>
+</head>
+<body>
+
+<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+
+<p><b>Note:</b> The word-break property is not supported in Opera 12 and earlier versions.</p>
+
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+PHP Call By Value :
+---------------------------
+PHP allows you to call function by value and reference both. In case of PHP call by value, actual value is not modified if it is modified inside the function.
+
+Let's understand the concept of call by value by the help of examples.
+
+Example 1 :
+-----------------
+In this example, variable $str is passed to the adder function where it is concatenated with 'Call By Value' string. But, printing $str variable results 'Hello' only. It is because changes are done in the local variable $str2 only. It doesn't reflect to $str variable.
+
+    <?php  
+    function adder($str2)  
+    {  
+        $str2 .= 'Call By Value';  
+    }  
+    $str = 'Hello ';  
+    adder($str);  
+    echo $str;  
+    ?>  
+
+Example 2
+---------------
+Let's understand PHP call by value concept through another example.
+
+    <?php  
+    function increment($i)  
+    {  
+        $i++;  
+    }  
+    $i = 10;  
+    increment($i);  
+    echo $i;  
+    ?>
+
+  

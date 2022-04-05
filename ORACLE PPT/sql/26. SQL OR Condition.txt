@@ -1,0 +1,56 @@
+SQL OR Condition:-
+----------------------------
+SQL OR Condition use to test more then one conditions in INSERT, UPDATE, DELETE, SELECT statement. OR operator test all condition even if condition TRUE or FALSE. And return data when any one of the condition TRUE.
+
+SQL OR Operator same as AND operator, return the record base filtered data. INSERT, UPDATE, DELETE, SELECT statement perform only one of the specified condition TRUE.
+
+OR Condition Syntax:-
+-------------------------------
+Considering following general syntax,
+
+WHERE condition_1 
+OR condition_2
+OR condition_3
+...
+OR condtion_N;
+
+OR Condition Example:-
+---------------------------------
+SELECT Statement : 
+-----------------------------
+Select table data if any one of the condition true. In this example select all table data, whose name 'Max Miller' and no is 3. Both are different condition and found in table so return both satisfied condition data.
+
+Ex:-
+------
+SELECT * FROM users_info WHERE name = 'Max Miller' OR no = 3;
+
+INSERT Statement : 
+---------------------------
+OR operator use in INSERT statement, INSERT when any one of the condition TRUE, In this example new record inserted from another table only those rows whose no column value is 1 OR name value 'Max Miller'.
+
+Ex:-
+------
+INSERT INTO userinfo (no, name, address) 
+     SELECT no, name, address FROM users_info WHERE no = 1 OR name = 'Max Miller';
+
+2 row inserted. 
+
+UPDATE Statement : 
+-----------------------------
+OR operator use in UPDATE statement, Update when any one if the condition TRUE, In this example address update only those rows whose no column value is 10 OR name value 'Sariya'.
+
+Ex:-
+------
+UPDATE users_info SET address = '145 Taxo court.' WHERE no = 10 OR name = 'Sariya';
+
+1 row updated. 
+
+DELETE Statement : 
+-----------------------------
+AND operator use in DELETE statement, DELETE only condition matched rows but in this example no is find but name 'Sariya' not exist in table so 0 row deleted.
+
+Ex:-
+------
+DELETE FROM users_info WHERE no = 10 AND name = 'Sariya';
+
+0 row deleted.

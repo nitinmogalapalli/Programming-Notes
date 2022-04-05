@@ -1,0 +1,22 @@
+SQL AND Condition:-
+-----------------------------
+SQL AND Condition use to test more then one conditions in INSERT, UPDATE, DELETE, SELECT statement. AND operator work is test first condition if true come to a second and so forth, otherwise not check next condition.
+
+SQL AND Operator filter the record based table data. INSERT, UPDATE, DELETE, SELECT statement perform only when all specified condition TRUE.
+
+AND Condition Syntax:-
+---------------------------------
+Considering following general syntax,
+WHERE condition_1 
+AND condition_2
+AND condition_3
+...
+AND condtion_N;
+
+AND Condition Example:-
+-----------------------------------
+SELECT Statement : 
+-----------------------------
+Select table data only condition matched data,
+
+SELECT * FROM users_info WHERE name = 'Max Miller' AND no = 2;

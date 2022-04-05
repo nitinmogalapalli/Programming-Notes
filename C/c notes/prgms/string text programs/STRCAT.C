@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+char name1[20],name2[20];
+clrscr();
+printf("Enter the first name :");
+gets(name1);
+printf("\n Enter the second name :");
+gets(name2);
+printf("\n The first name is %s",name1);
+printf("\n The second name is %s",name2);
+strcat(name1,name2);
+printf("\n The added name is %s",name1);
+getch();
+}

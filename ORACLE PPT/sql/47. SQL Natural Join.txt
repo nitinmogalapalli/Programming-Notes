@@ -1,0 +1,10 @@
+SQL Natural Join:-
+--------------------------
+Natural join is a same as Equi join but different is resulting contains allow only one column for each pair of same columns named. Record set contains haven't same name columns are found.
+
+SQL Natural join query use NATURAL JOIN keyword to specify table name.
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+	FROM product NATURAL JOIN category;

@@ -1,0 +1,97 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+int stack[5];
+void push();
+int pop();
+void traverse();
+int top=0;
+void is_empty();
+void peek();
+int main()
+{
+int element, ch;
+clrscr();
+for(; ;)
+{
+printf("Stack operations.\n1.Push\n2.Pop\n3.Traverse\n4.Peek\n5.Check stack is empty\n6.Exit\n");
+printf("Enter your choice");
+scanf("%d", &ch);
+switch(ch)
+{
+case 1: if(top==5)
+	{
+	printf("Stack is overflow\n");
+	}
+	else
+	{
+	printf("Enter the value into stack");
+	scanf("%d", &element);
+	push(element);
+	}
+	break;
+case 2: if(top==0)
+	{
+	printf("Stack is underflow:\n");
+	}
+	else
+	{
+	element=pop();
+	printf("Element remove from stack is %d",element);
+	}
+	break;
+case 3: traverse(); break;
+case 4: if(top==0)
+	{
+	 printf("Stack is underflow\n");
+	 }
+	 else
+	 {
+	peek();
+	}
+	break;
+case 5: if(top==0)
+	{
+	printf("Stack is in Empty\n");
+	}
+	else
+	{
+	printf("Stack is not empty\n");
+	}
+	break;
+case 6:exit(0);
+}
+}
+}
+void push(int value)
+{
+stack[top]=value;
+top++;
+}
+int pop()
+{
+top--;
+return stack[top];
+}
+void traverse()
+{
+int d;
+if(top==0)
+{
+printf("Stack is empty\n");
+}
+else
+{
+printf("There are element in stack %d\n", top);
+stack[5]=0;
+for (d=top-1;d>=0;d--)
+{
+printf("%d\t", stack[d]);
+}
+printf("\n");
+}
+}
+void peek()
+{
+printf("Top element is %d\n",top+1);
+}

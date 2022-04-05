@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Time
+{
+public static void main(String args[])
+{
+int time;
+Scanner obj=new Scanner(System.in);
+System.out.println("enter the time");
+time=obj.nextInt();
+if(time<4)
+{
+System.out.println("MID NIGHT");
+}
+else if(time<7)
+{
+System.out.println("EARLY MORNING");
+}
+else if(time<12)
+{
+System.out.println("MORNING");
+}
+else if(time<16)
+{
+System.out.println("AFTERNOON");
+}
+else if(time<20)
+{
+System.out.println("EVENING");
+}
+else if(time<=24)
+{
+System.out.println("NIGHT");
+}
+else
+{
+System.out.println("INVALID TIME");
+}
+}
+}

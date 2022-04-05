@@ -1,0 +1,11 @@
+Here are the steps we will follow in writing our first Java program:
+1. Write the source code.
+2. Compile the source code.
+3. Run the program.
+
+One of the rules that must be followed is that the name of a source code file must match the name of the public class defined in that file, and the file extension must be .java.
+
+The main() method is declared as public, static, and void, which are Java keywords. The main() method is unique because it is the method invoked by the JVM when this program is executed. 
+
+The main() method must look like:
+public static void main(String [] args)

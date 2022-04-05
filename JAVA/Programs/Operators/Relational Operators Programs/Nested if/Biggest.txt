@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class Biggest
+{
+public static void main(String args[])
+{
+int a,b,c;
+Scanner obj=new Scanner(System.in);
+System.out.println("enter the A value");
+a=obj.nextInt();
+Scanner obj1=new Scanner(System.in);
+System.out.println("enter the B value");
+b=obj1.nextInt();
+Scanner obj2=new Scanner(System.in);
+System.out.println("enter the C value");
+c=obj2.nextInt();
+if(a>b)
+{
+	if(a>c)
+	{
+	System.out.println("A is Biggest");	
+	}
+	else
+	{
+	System.out.println("C is Biggest");
+	}
+}
+else if(b>c)
+{
+System.out.println("B is Biggest");
+}
+else
+{
+System.out.println("C is Biggest");
+}
+}
+}

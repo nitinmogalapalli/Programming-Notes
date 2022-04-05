@@ -1,0 +1,80 @@
+HTML Styling:-
+--------------------
+Every HTML element has a default style (background color is white and text color is black).
+
+Changing the default style of an HTML element, can be done with the style attribute.
+
+This example changes the default background color from white to lightgrey:
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightgrey">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+The HTML Style Attribute:-
+-------------------------------------
+The HTML style attribute has the following syntax:
+
+style="property:value"
+The property is a CSS property. The value is a CSS value.
+
+HTML Text Color:-
+-------------------------
+The color property defines the text color to be used for an HTML element:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue">This is a heading</h1>
+<p style="color:red">This is a paragraph.</p>
+
+</body>
+</html>
+
+HTML Fonts:-
+--------------------
+The font-family property defines the font to be used for an HTML element:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-family:verdana">This is a heading</h1>
+<p style="font-family:courier">This is a paragraph.</p>
+
+</body>
+</html>
+
+HTML Text Size:-
+------------------------
+The font-size property defines the text size to be used for an HTML element:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-size:300%">This is a heading</h1>
+<p style="font-size:160%">This is a paragraph.</p>
+
+</body>
+</html>
+
+HTML Text Alignment:-
+-------------------------------
+The text-align property defines the horizontal text alignment for an HTML element:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="text-align:center">Centered heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>

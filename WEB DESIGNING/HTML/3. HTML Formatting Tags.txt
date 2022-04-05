@@ -1,0 +1,163 @@
+HTML Formatting:-
+--------------------------
+HTML Formatting is a process of formatting text for better look and feel. There are many formatting tags in HTML. These tags are used to make text bold, italicized, or underlined. There are almost 12 options available that how text appears in HTML and XHTML.
+
+Here, we are going to learn 12 HTML formatting tags.
+
+1) Bold Text:-
+-------------------
+If you write anything within <b>............</b> element, is shown in bold letters.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p> <b>Write Your First Paragraph in bold text.</b></p> 
+</body>  
+</html>  
+
+2) Italic Text:-
+------------------
+If you write anything within <i>............</i> element, is shown in italic letters.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p> <i>Write Your First Paragraph in italic text.</i></p>  
+</body>  
+</html>  
+
+ 3) HTML Marked formatting:-
+-----------------------------------------
+If you want to mark or highlight a text, you should write the content within <mark>.........</mark>.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p> Write Your First <mark> Paragraph </mark> in mark text.</p>  
+</body>  
+</html>
+
+4) Underlined Text:-
+--------------------------
+If you write anything within <u>.........</u> element, is shown in underlined text.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p> Write Your First <u> Paragraph </u> in underline text.</p>  
+</body>  
+</html>
+
+5) Strike Text:-
+--------------------
+Anything written within <strike>.......................</strike> element is displayed with strikethrough. It is a thin line which cross the statement.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p> <strike>Write Your First Paragraph with strikethrough</strike>.</p>   
+</body>  
+</html>  
+
+6) Monospaced Font:-
+-------------------------------
+If you want that each letter has the same width then you should write the content within <tt>.............</tt> element.
+
+Note: We know that most of the fonts are known as variable-width fonts because different letters have different width. (for example: 'w' is wider than 'i'). Monospaced Font provides similar space among every letter.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p>Hello <tt>Write Your First Paragraph in monospaced font.</tt></p>  
+</body>  
+</html>  
+
+7) Superscript Text:-
+----------------------------
+If you put the content within <sup>..............</sup> element, is shown in superscript ; means it is displayed half a character's height above the other characters.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p>Hello <sup>Write Your First Paragraph in superscript.</sup></p>    
+</body>  
+</html>  
+
+8) Subscript Text:-
+-------------------------
+If you put the content within <sub>..............</sub> element, is shown in subscript ; means it is displayed half a character's height below the other characters.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p>Hello <sub>Write Your First Paragraph in subscript.</sub></p>
+</body>  
+</html>  
+
+9) Deleted Text:-
+----------------------
+Anything that puts within <del>..........</del> is displayed as deleted text.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p>Hello <del>Delete your first paragraph.</del></p>   
+</body>  
+</html>  
+
+10) Inserted Text:-
+-------------------------
+Anything that puts within <ins>..........</ins> is displayed as inserted text.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p> <del>Delete your first paragraph.</del><ins>Write another paragraph.</ins></p>   
+</body>  
+</html>  
+
+11) Larger Text:-
+----------------------
+If you want to put your font size larger than the rest of the text then put the content within <big>.........</big>. It increase one font size larger than the previous one.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p>Hello <big>Write the paragraph in larger font.</big></p>   
+</body>  
+</html>  
+
+12) Smaller Text:-
+------------------------
+If you want to put your font size smaller than the rest of the text then put the content within <small>.........</small>tag. It reduces one font size than the previous one.
+
+See this example:
+
+<!DOCTYPE>
+<html>  
+<body>  
+<p>Hello <small>Write the paragraph in smaller font.</small></p>   
+</body>  
+</html>  

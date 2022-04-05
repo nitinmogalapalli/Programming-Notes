@@ -1,0 +1,17 @@
+MySQL IS NULL Condition:-
+--------------------------------------
+MySQL IS NULL condition is used to check if there is a NULL value in the expression. It is used with SELECT, INSERT, UPDATE and DELETE statement.
+
+Syntax:
+-----------
+expression IS NULL  
+
+Parameter:-
+----------------
+expression: It specifies a value to test if it is NULL value.
+
+Consider a table "officers" having the following data.
+
+SELECT *  
+FROM officers  
+WHERE officer_name IS NULL;  

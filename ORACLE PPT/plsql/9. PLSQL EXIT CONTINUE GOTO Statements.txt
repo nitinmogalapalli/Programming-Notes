@@ -1,0 +1,117 @@
+PL/SQL EXIT CONTINUE GOTO Statements:-
+----------------------------------------------------------------
+PL/SQL EXIT, CONTINUE, GOTO Statements (Sequential Control Statements) are control your iteration loop, This three statement are sequential control statement,
+
+EXIT Statement : 
+-----------------------
+This statement to exit the loop.
+
+CONTINUE Statement : 
+----------------------------------
+to skip the current iteration with in loop.
+
+GOTO Statement : 
+--------------------------
+Transfers the program execution flow unconditionally.
+
+EXIT Statement:-
+------------------------
+EXIT statement unconditionally exit the current loop iteration and transfer control to end of current loop. EXIT statement writing syntax,
+
+Syntax:-
+------------
+[ label_name ] LOOP 
+   statement(s);
+   EXIT; 
+END LOOP [ label_name ];
+
+Example Code
+---------------------
+DECLARE
+   no NUMBER := 5;
+BEGIN
+	LOOP
+		DBMS_OUTPUT.PUT_LINE ('Inside value:  no = ' || no);
+    	no := no -1;
+    	IF no = 0 THEN
+      		EXIT;
+    	END IF;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE('Outside loop end');   -- After EXIT control transfer this statement
+END;
+/
+
+Example Result
+----------------------
+Inside value: no = 5
+Inside value: no = 4
+Inside value: no = 3
+Inside value: no = 2
+Inside value: no = 1
+Outside loop end
+
+CONTINUE Statement:-
+---------------------------------
+CONTINUE Statement unconditionally skip the current loop iteration and next iteration iterate as normal, only skip matched condition.
+
+Syntax
+----------
+IF condition THEN
+	CONTINUE;
+END IF;
+
+Example Code
+--------------------
+DECLARE
+   no NUMBER := 0;
+BEGIN
+	FOR no IN 1 .. 5 LOOP
+	    IF no = 4 THEN
+	       CONTINUE;
+	    END IF;
+	    DBMS_OUTPUT.PUT_LINE('Iteration : ' || no);
+  	END LOOP;
+	END;
+/
+
+Example Result
+---------------------
+Iteration # 1
+Iteration # 2
+Iteration # 3
+Iteration # 5
+
+GOTO Statement:-
+--------------------------
+GOTO statement unconditionally transfer program control. GOTO statement writing syntax,
+
+Syntax
+----------
+GOTO code_name
+	-----------
+	-----------
+<<code_name>>
+-----------
+-----------
+
+Example Code
+--------------------
+SQL>BEGIN
+FOR i IN 1..5 LOOP
+	dbms_output.put_line(i);
+	IF i=4 THEN
+		GOTO label1;
+	END IF;	
+END LOOP; 
+<<label1>>
+DBMS_OUTPUT.PUT_LINE('Row Filled');
+END;
+/
+
+Example Result
+---------------------
+1
+2
+3
+4
+Row Filled

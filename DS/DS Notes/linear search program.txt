@@ -1,0 +1,26 @@
+main()
+{
+int a[10],i,j,n,x;
+clrscr();
+printf("Enter no of elements in array");
+scanf("%d", &n);
+for(j=0;j<n;j++)
+{
+printf("Enter element");
+scanf("%d", &a[j]);
+}
+printf("Enter element to be searched");
+scanf("%d", &x);
+for(i=0;i<n;i++)
+{
+    if(a[i]>=n)
+    {
+    printf("Element not found");
+    }
+    else if(a[i]==x)
+    {
+    printf("Element %d found at index %d", x,i);break;
+    }
+}
+    getch();
+}

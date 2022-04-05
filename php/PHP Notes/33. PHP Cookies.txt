@@ -1,0 +1,62 @@
+PHP Cookie :
+-------------------
+PHP cookie is a small piece of information which is stored at client browser. It is used to recognize the user.
+
+Cookie is created at server side and saved to client browser. Each time when client sends request to the server, cookie is embedded with request. Such way, cookie can be received at the server side.
+
+PHP setcookie() function:
+-----------------------------------
+PHP setcookie() function is used to set cookie with HTTP response. Once cookie is set, you can access it by $_COOKIE superglobal variable.
+
+Syntax:
+-----------
+    bool setcookie ( string $name [, string $value [, int $expire = 0 [, string $path   
+    [, string $domain [, bool $secure = false [, bool $httponly = false ]]]]]] )  
+
+Example
+-------------
+    setcookie("CookieName", "CookieValue");/* defining name and value only*/  
+    setcookie("CookieName", "CookieValue", time()+1*60*60);//using expiry in 1 hour(1*60*60 seconds or 3600 seconds)  
+    setcookie("CookieName", "CookieValue", time()+1*60*60, "/mypath/", "mydomain.com", 1);  
+
+PHP $_COOKIE:
+------------------------
+PHP $_COOKIE superglobal variable is used to get cookie.
+
+Example
+------------
+    $value=$_COOKIE["CookieName"];//returns cookie value  
+
+PHP Cookie Example:
+-------------------------------
+File: cookie1.php
+
+    <?php  
+    setcookie("user", "Sonoo");  
+    ?>  
+    <html>  
+    <body>  
+    <?php  
+    if(!isset($_COOKIE["user"])) 
+    {  
+        echo "Sorry, cookie is not found!";  
+    } 
+   else 
+    {  
+        echo "<br/>Cookie Value: " . $_COOKIE["user"];  
+    }  
+    ?>  
+    </body>  
+    </html>  
+
+Firstly cookie is not set. But, if you refresh the page, you will see cookie is set now.
+
+PHP Delete Cookie :
+-----------------------------
+If you set the expiration date in past, cookie will be deleted.
+
+File: cookie1.php
+
+    <?php  
+    setcookie ("CookieName", "", time() - 3600);// set the expiration date to one hour ago  
+    ?>  

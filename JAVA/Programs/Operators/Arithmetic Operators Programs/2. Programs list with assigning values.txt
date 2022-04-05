@@ -1,0 +1,14 @@
+/* w.a.p to assign  two values into two variables and print product of it*/
+
+/* w.a.p to assign  two float values into two variables and print difference of it*/
+
+/* w.a.p to assign  two values into two variables and print Remainder of it*/
+
+/* w.a.p to assign  two float values into two variables and print Quotient of it*/
+
+/* w.a.p to assign  two values into two variables and Apply all Arithmetic operators and print it*/
+
+/* w.a.p to assign no. of books, cost and calculate bill of it */
+
+/* w.a.p to assign  no. of days and calculate no. of months and no. of remaining days */
+

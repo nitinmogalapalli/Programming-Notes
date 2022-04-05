@@ -1,0 +1,369 @@
+HTML Forms:-
+--------------------
+The <form> Element
+
+HTML forms are used to collect user input.
+
+The <form> element defines an HTML form:
+
+Example:-
+--------------
+<form>
+.
+form elements
+.
+</form>
+
+HTML forms contain form elements.
+
+Form elements are different types of input elements, checkboxes, radio buttons, submit buttons, and more.
+The <input> Element
+
+The <input> element is the most important form element.
+
+The <input> element has many variations, depending on the type attribute.
+
+Here are the types used in this chapter:
+
+Type 	Description
+-------        ---------------
+text 	Defines normal text input
+radio 	Defines radio button input (for selecting one of many choices)
+submit 	Defines a submit button (for submitting the form)
+
+Text Input:-
+----------------
+<input type="text"> defines a one-line input field for text input:
+
+Example:-
+--------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of a text field is 20 characters.</p>
+
+</body>
+</html>
+
+Radio Button Input:-
+----------------------------
+<input type="radio"> defines a radio button.
+
+Radio buttons let a user select ONE of a limited number of choices:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+<input type="radio" name="sex" value="male" checked>Male
+<br>
+<input type="radio" name="sex" value="female">Female
+</form> 
+
+</body>
+</html>
+
+The Submit Button:-
+----------------------------
+<input type="submit"> defines a button for submitting a form to a form-handler.
+
+The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+
+<p>If you click "Submit", the form-data will be sent to a page called "action_page.php".</p>
+
+</body>
+</html>
+
+The Action Attribute:-
+----------------------------
+The action attribute defines the action to be performed when the form is submitted.
+
+The common way to submit a form to a server, is by using a submit button.
+
+Normally, the form is submitted to a web page on a web server.
+
+In the example above, a server-side script is specified to handle the submitted form:
+<form action="action_page.php">
+
+If the action attribute is omitted, the action is set to the current page.
+
+The Method Attribute
+
+The method attribute specifies the HTTP method (GET or POST) to be used when submitting the forms:
+<form action="action_page.php" method="GET">
+
+or:
+<form action="action_page.php" method="POST">
+
+When to Use GET?
+
+You can use GET (the default method):
+
+If the form submission is passive (like a search engine query), and without sensitive information.
+
+When you use GET, the form data will be visible in the page address:
+action_page.php?firstname=Mickey&lastname=Mouse
+
+When to Use POST?
+
+You should use POST:
+
+If the form is updating data, or includes sensitive information (password).
+
+POST offers better security because the submitted data is not visible in the page address.
+
+The Name Attribute:-
+----------------------------
+To be submitted correctly, each input field must have a name attribute.
+
+This example will only submit the "Last name" input field: 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="action_page.php">
+First name:<br>
+<input type="text" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+
+<p>If you click "Submit", the form-data will be sent to a page called "action_page.php".</p>
+
+<p>The first name will not be submitted, because the input element does not have a name attribute.</p>
+
+</body>
+</html>
+
+Grouping Form Data with <fieldset>:-
+--------------------------------------------------
+The <fieldset> element groups related data in a form.
+
+The <legend> element defines a caption for the <fieldset> element.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="action_page.php">
+<fieldset>
+<legend>Personal information:</legend>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+
+</body>
+</html>
+
+The <select> Element (Drop-Down List)
+
+The <select> element defines a drop-down list:
+
+The <option> elements defines the options to select.
+
+The list will normally show the first item as selected.
+
+You can add a selected attribute to define a predefined option. 
+
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<p>You can preselect an option with the selected attribute.</p>
+
+<form action="action_page.php">
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat" selected>Fiat</option>
+<option value="audi">Audi</option>
+</select>
+<br><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+The <textarea> Element:-
+-----------------------------------
+The <textarea> element defines a multi-line input field (a text area):
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="action_page.php">
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<br><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+The <button> Element:-
+---------------------------------
+The <button> element defines a a clickable button:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+</body>
+</html>
+
+HTML5 Form Elements:-
+---------------------------------
+HTML5 added the following form elements:
+
+     <datalist>
+    <keygen>
+    
+
+HTML5 <datalist> Element:-
+--------------------------------------
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+Users will see a drop-down list of pre-defined options as they input data.
+  
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+</body>
+</html>
+
+HTML5 <keygen> Element:-
+-------------------------------------
+The purpose of the <keygen> element is to provide a secure way to authenticate users.
+
+The <keygen> element specifies a key-pair generator field in a form.
+
+When the form is submitted, two keys are generated, one private and one public.
+
+The private key is stored locally, and the public key is sent to the server.
+
+The public key could be used to generate a client certificate to authenticate the user in the future.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="action_page.php">
+Username:
+<br>
+<input type="text" name="user">
+<br><br>
+Encryption:
+<br>
+<keygen name="security">
+<br><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+
+Input Type: password:-
+-------------------------------
+<input type="password"> defines a password field:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="">
+User name:<br>
+<input type="text" name="userid">
+<br>
+User password:<br>
+<input type="password" name="psw">
+</form>
+
+<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+</body>
+</html>
+
+Input Type: checkbox:-
+-------------------------------
+<input type="checkbox"> defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="action_page.php">
+<input type="checkbox" name="vehicle" value="Bike">I have a bike
+<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car 
+<br><br>
+<input type="submit">
+</form> 
+
+</body>
+</html>
+

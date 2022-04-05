@@ -1,0 +1,17 @@
+MySQL DROP Table:-
+------------------------------
+MYSQL DROP table statement removes the complete data with structure.
+
+Syntax:
+----------
+DROP TABLE  table_name;  
+
+Example:
+-------------
+This example specifies how to drop a table. In this example, we are dropping the table "cus_tbl".
+
+DROP TABLE  cus_tbl;  
+
+MySQL TRUNCATE Table vs DROP Table:-
+-----------------------------------------------------------
+You can also use DROP TABLE command to delete complete table but it will remove complete table data and structure both. You need to re-create the table again if you have to store some data. But in the case of TRUNCATE TABLE, it removes only table data not structure. You don't need to re-create the table again because the table structure already exists.

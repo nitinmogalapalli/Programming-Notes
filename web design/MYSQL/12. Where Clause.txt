@@ -1,0 +1,39 @@
+MySQL WHERE Clause:-
+-----------------------------------
+MySQL WHERE Clause is used with SELECT, INSERT, UPDATE and DELETE clause to filter the results. It specifies a specific position where you have to do the operation.
+
+Syntax:
+-----------
+WHERE conditions;  
+
+Parameter:
+----------------
+conditions: It specifies the conditions that must be fulfilled for records to be selected.
+
+MySQL WHERE Clause with single condition
+
+Let's take an example to retrieve data from a table "officers".
+
+SELECT *  
+FROM officers  
+WHERE address = 'Mau';  
+
+MySQL WHERE Clause with AND condition:-
+-------------------------------------------------------------
+In this example, we are retrieving data from the table "officers" with AND condition.
+
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE address = 'Lucknow'  
+AND officer_id < 5;
+
+WHERE Clause with OR condition:-
+-------------------------------------------------
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE address = 'Lucknow'  
+OR address = 'Mau';    

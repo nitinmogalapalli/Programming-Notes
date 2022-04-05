@@ -1,0 +1,11 @@
+/* W.A.P to accept a no and print according month of year */
+
+/* W.A.P to accept a Character and print Vowel or consonant */
+
+/* W.A.P to accept a no and print according to table codes.
+Caste Code   	City
+
+1		SC
+2		ST
+3		OBC
+Morethan 4	Others */

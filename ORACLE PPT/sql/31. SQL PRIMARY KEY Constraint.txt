@@ -1,0 +1,142 @@
+SQL PRIMARY KEY Constraint:-
+---------------------------------------------
+SQL PRIMARY KEY apply on column(s) for a uniquely identifies each record in the table. unique identify each row in the table.
+
+SQL Primary Key constraint has been specified for certain column. we cannot enter duplicate data in this column.
+
+SQL Primary Key in a table have following three special attributes,
+-----------------------------------------------------------------------------------------
+1.The NOT NULL attribute is automatic active.
+2.The data across the column must be unique.
+3.Defines column as a mandatory column.
+
+Simple Key vs Composite Key:-
+-------------------------------------------
+Simple key : 
+-----------------
+In table only one column (single column) apply primary key is known as simple primary key.
+
+Composite key : 
+-----------------------
+Where as composite primary key is opposite apply primary key in multicolumn called a composite primary key.
+
+Defined at Column level:-
+----------------------------------
+Define primary key at column level with other column attributes.
+
+Syntax :
+-----------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ] PRIMARY KEY,
+	column_name datatype[(size)] [ NULL | NOT NULL ] PRIMARY KEY,
+	....
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE emp_info(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	name VARCHAR(30),
+	address VARCHAR(70),
+	contact_no VARCHAR(12)
+);
+
+Table created. 
+
+Defined at Table level:-
+--------------------------------
+Same thing primary key apply in table level. Table level you can define multiple column separated by comma (,).
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	...,
+	PRIMARY KEY ( column_name, ... ),
+	...
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE emp_info(
+ 	no NUMBER(3,0),
+ 	name VARCHAR(30),
+	address VARCHAR(70),
+	contact_no VARCHAR(12),
+	PRIMARY KEY(no)
+);
+
+Table created. 
+
+You can also specifies CONSTRAINT keyword to specify the constraint name.
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	...,
+	CONSTRAINT pk_constraint_name PRIMARY KEY ( column_name, ... ),
+	...
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE emp_info(
+ 	no NUMBER(3,0),
+ 	name VARCHAR(30),
+	address VARCHAR(70),
+	contact_no VARCHAR(12),
+	CONSTRAINT pk_no PRIMARY KEY(no)
+);
+
+Table created. 
+
+ADD PRIMARY KEY (ALTER TABLE):-
+-----------------------------------------------------
+ALTER TABLE statement to add primary key in existing table. But in this way when you adding new constraint, oracle check any existing data violate the primary key constraint or not. If not violate constraint added successfully otherwise you have to manually update data to prevent primary key constraint violating.
+
+Syntax :
+-----------
+ALTER TABLE table_name
+	ADD PRIMARY KEY (column_name, ...);
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE emp_info ADD PRIMARY KEY (no);
+
+Table altered. 
+
+DROP PRIMARY KEY (ALTER TABLE)
+------------------------------------------------------
+ALTER TABLE statement to drop primary key in existing table.
+
+Syntax :
+------------
+ALTER TABLE table_name
+	DROP PRIMARY KEY;
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE emp_info DROP PRIMARY KEY;
+
+Table altered. 
+
+In above SQL statement you should notice for dropping PRIMARY KEY constraint in all primary key column(s). You can not drop individual column. It's this possible in following way, You should specify the constraint name and ALTER TABLE statement you can drop constraint name.
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE emp_info(
+ 	no NUMBER(3,0),
+ 	name VARCHAR(30),
+	address VARCHAR(70),
+	contact_no VARCHAR(12),
+	CONSTRAINT pk_no PRIMARY KEY(no)
+);
+
+Table created.
+
+SQL> ALTER TABLE emp_info DROP CONSTRAINT pk_no;
+
+Table altered. 

@@ -1,0 +1,7 @@
+SQL SELECT Database:-
+-----------------------------------
+In MySQL database, you need to select a database first before executing any query on table, view etc. To do so, we use following query:
+
+    USE DATABASE database_name;  
+
+In oracle, you don't need to select database.

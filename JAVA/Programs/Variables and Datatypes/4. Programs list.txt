@@ -1,0 +1,3 @@
+/* Write a Java Program to Assign two Integer values to variables and print it */
+/* Write a Java Program to Assign two Character values to variables and print it */
+/* Write a Java Program to Assign two Float values to variables and print it */

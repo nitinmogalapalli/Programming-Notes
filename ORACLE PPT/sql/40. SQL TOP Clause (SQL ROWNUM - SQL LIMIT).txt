@@ -1,0 +1,50 @@
+SQL TOP Clause (SQL ROWNUM - SQL LIMIT)
+------------------------------------------------------------------
+SQL TOP clause fetching only top Nth number of record or Nth percentage record result set return. But 10g onward TOP clause no longer supported replace with ROWNUM clause.
+
+Nth number/percentage of record user define, user to specified number/percentage of records return.
+
+SQL TOP clause use always with SELECT statement. When you SELECT statement to select records, but you need only first 3 records you just use TOP clause to return only first 3 records.
+
+Syntax :
+------------
+Considering following syntax that help you to understanding TOP clause,
+
+SELECT [ TOP number | percentage ]
+	column_name1, column_name2, ...
+	FROM table_name;
+
+Example Table :
+----------------------
+We have following employee_hour table that store weekday hours for each employee:
+
+SQL> SELECT * FROM employee_hour;
+
+Example Statement :
+-----------------------------
+SQL> SELECT TOP 3 * 
+	FROM employee_hour 
+	ORDER BY hours DESC;
+
+SQL ROWNUM Clause (10g onward)
+----------------------------------------------------
+Syntax :
+------------
+Considering following syntax that help you to understanding ROWNUM clause,
+
+SELECT
+	column_name1, column_name2, ...
+	FROM table_name
+	WHERE ROWNUM operator condition;
+
+Example Statement :
+----------------------------
+SQL> SELECT * 
+	FROM employee_hour 
+	WHERE ROWNUM <= 3;
+
+Example Statement :
+-----------------------------
+SQL> SELECT * 
+	FROM ( SELECT * FROM employee_hour ORDER BY hours DESC)
+	WHERE ROWNUM <= 3;

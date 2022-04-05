@@ -1,0 +1,167 @@
+PL/SQL Conditional Control:-
+---------------------------------------
+PL/SQL IF THEN ELSE conditional control statements. 
+
+PL/SQL Conditional Control two type: IF THEN ELSE statement and CASE statement,
+
+PL/SQL IF statement check condition and transfer the execution flow on that matched block depending on a condition. IF statement execute or skip a sequence of one or more statements. 
+
+PL/SQL IF statement four different type,
+
+1. IF THEN Statement
+2. IF THEN ELSE Statement
+3. IF THEN ELSIF Statement
+4. Nested IF THEN ELSE Statement
+
+1. IF THEN Statement:-
+---------------------------------
+IF THEN Statement write in following syntax format:
+
+IF ( condition ) THEN
+	statement
+END IF;
+
+Example:-
+--------------
+We declare one number with initialize 14 value is equal of condition value, Comparing 2 values by using IF THEN statement,
+
+DECLARE
+   no INTEGER(2) := 14;
+BEGIN
+   IF ( no = 14 ) THEN
+      DBMS_OUTPUT.PUT_LINE('condition true');   
+   END IF;
+END;
+/
+
+Result:-
+-----------
+condition true
+
+IF THEN ELSE Statement:-
+--------------------------------------
+IF THEN ELSE Statement write in following syntax format:
+
+IF ( condition ) THEN
+	statement;
+ELSE
+	statement;	
+END IF;
+
+Example:-
+--------------
+Same as above example if condition not true then else part will execute.
+
+DECLARE
+   no INTEGER(2) := 14;
+BEGIN
+   IF ( no = 11 ) THEN
+      DBMS_OUTPUT.PUT_LINE(no || ' is same');   
+   ELSE
+      DBMS_OUTPUT.PUT_LINE(no || ' is not same');
+   END IF;
+END;
+/
+
+Result:-
+-----------
+14 is not same
+
+IF THEN ELSIF Statement:
+--------------------------------------
+IF THEN ELSIF Statement write in following syntax format:
+
+IF ( condition-1 ) THEN
+	statement-1;
+ELSIF ( condition-2 ) THEN
+	statement-2;
+ELSIF ( condition-3 ) THEN
+	statement-3;	
+ELSE
+	statement;
+END IF;
+
+Above syntax same as below syntax both are logically same
+
+IF ( condition-1 ) THEN
+	statement-1;
+ELSE
+	IF ( condition-2 ) THEN
+		statement-2;
+	ELSE
+    	IF ( condition-3 ) THEN
+      		statements-3;
+    	END IF;
+    END IF;
+END IF;
+
+Example
+------------
+Here one student result example for archiving grade.
+
+DECLARE
+   result CHAR(20) := 'second';
+BEGIN
+   IF ( result = 'distinction' ) THEN
+      DBMS_OUTPUT.PUT_LINE('First Class with Distinction');   
+   ELSIF ( result = 'first' ) THEN
+      DBMS_OUTPUT.PUT_LINE('First Class');  
+   ELSIF ( result = 'second' ) THEN
+      DBMS_OUTPUT.PUT_LINE('Second Class');  
+   ELSIF ( result = 'third' ) THEN
+      DBMS_OUTPUT.PUT_LINE('Third Class');        
+   ELSE
+      DBMS_OUTPUT.PUT_LINE('Fail');
+   END IF;
+END;
+/
+
+Result:-
+-----------
+Second Class
+
+Nested IF THEN ELSE Statement:-
+------------------------------------------------
+Logically IF THEN ELSIF Statement and Nested IF THEN ELSE Statement both are same. Nested IF THEN ELSE Statement write in following syntax format:
+
+IF ( condition-1 ) THEN
+	statement-1;
+ELSE
+	IF ( condition-2 ) THEN
+		statement-2;
+	ELSE
+    	IF ( condition-3 ) THEN
+      		statements-3;
+    	END IF;
+    END IF;
+END IF;
+
+Example:-
+--------------
+Here check condition students gender male, if not male then finding the result using nested IF THEN ELSE statement.
+
+DECLARE
+	gender CHAR(20) := 'female';
+    result CHAR(20) := 'second';
+BEGIN
+   IF ( gender = 'male' ) THEN
+      DBMS_OUTPUT.PUT_LINE('Gender Male Record Skip!');  
+   ELSE 
+	   IF ( result = 'distinction' ) THEN
+	      DBMS_OUTPUT.PUT_LINE('First Class with Distinction');   
+	   ELSIF ( result = 'first' ) THEN
+	      DBMS_OUTPUT.PUT_LINE('First Class');  
+	   ELSIF ( result = 'second' ) THEN
+	      DBMS_OUTPUT.PUT_LINE('Second Class');  
+	   ELSIF ( result = 'third' ) THEN
+	      DBMS_OUTPUT.PUT_LINE('Third Class');        
+	   ELSE
+	      DBMS_OUTPUT.PUT_LINE('Fail');
+	   END IF;
+	END IF;
+END;
+/
+
+Result:-
+-----------
+Second Class

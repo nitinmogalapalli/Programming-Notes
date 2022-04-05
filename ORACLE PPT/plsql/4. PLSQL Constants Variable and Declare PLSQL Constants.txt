@@ -1,0 +1,73 @@
+PL/SQL Constants Variable | Declare PL/SQL Constants
+------------------------------------------------------------------------------
+You can declare PL/SQL constants along with the value and can not change them throughout the program block. The constants declaration functionality is available in almost all programming languages.
+
+PL/SQL Constant Declaration Syntax:-
+-----------------------------------------------------
+The general syntax for declaring a constant variable is:
+
+Constant_name CONSTANT Datatype[Size] := Value; 
+
+Explanation:
+-----------------
+Constant_name is a predefined name of the constant (similar to a variable name).
+
+CONSTANT is a reserved keyword.
+
+Data type is a valid PL/SQL data type.
+
+Size is an optional specification of data type. It holds maximum capacity value for the particular variable.
+
+Value must be assigned to a constant when it is declared. You can not assign or change it later.
+
+Each constant declaration is terminated by a semicolon.
+
+Constant Example:-
+----------------------------
+In this example, we will store the employee number which is NOT NULL (compulsory), employee Name and employee department which is constant,
+
+Example Code :
+----------------------
+DECLARE
+	eno number(5) NOT NULL := 2
+	ename varchar2(15) := 'Branson Devs';
+	edept CONSTANT varchar2(15) := 'Web Developer';
+BEGIN
+	dbms_output.put_line('Declared Value:');
+	dbms_output.put_line(' Employee number: ' || eno || ' Employee Name: ' || ename);
+	dbms_output.put_line('Constant Declared:');
+	dbms_output.put_line(' Employee Department: ' || edept);	
+END;
+/
+
+Backward slash '/' is indicated to execute the above PL/SQL Block Program.
+
+Example Result :
+-----------------------
+Declared Value:
+Employee number: 2 Employee Name: Branson Devs
+Constant Declared:
+Employee Department: Web Developer
+
+PL/SQL procedure successfully operation.
+
+Variable/Constant Declarations Example:-
+---------------------------------------------------------
+In this example, we will store the pi which is constant real number, radius and area which are real number,
+
+Example Code :
+----------------------
+DECLARE
+	pi CONSTANT REAL := 3.14159;
+  	radius REAL := 3;
+  	area REAL := (pi * radius**2);
+BEGIN
+	dbms_output.put_line(' PI: ' || pi || ' Radius: ' || radius);
+	dbms_output.put_line(' Area: ' || area);	
+END;
+/
+
+Example Result :
+-----------------------
+PI: 3.14159 Radius: 1
+Area: 28.27431

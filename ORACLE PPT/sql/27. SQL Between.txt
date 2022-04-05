@@ -1,0 +1,35 @@
+SQL BETWEEN Clause Statement:-
+--------------------------------------------------
+SQL BETWEEN clause used for fetching within range data. SQL BETWEEN is simply a shorthand way of expressing an inclusive range comparison.
+
+SQL Between clause support only range type value like number, dates, character. But not supporting boolean, string value range.
+
+Syntax:-
+-----------
+Considering following syntax that help you to understanding BETWEEN clause,
+
+SELECT * FROM table_name
+    WHERE column_name 
+    BETWEEN lower_bound_value AND upper_bound_value;
+
+When SQL query with BETWEEN clause parse into SQL Buffer, it will automatically expand out into separate comparison clauses.
+
+SELECT * FROM table_name
+    WHERE column_name <= lower_bound_value 
+    AND column_name >= upper_bound_value;
+
+Example:-
+--------------
+In this example select all users_info table rows with range between no column value 1 to 5.
+
+Ex:-
+------
+SELECT * FROM users_info WHERE no BETWEEN 1 AND 5;
+
+SQL BETWEEN WITH NOT IN Example:-
+----------------------------------------------------------
+In this example select all users_info table rows with range NOT IN between no column value 1 to 5. Use only NOT keyword instead of NOT IN.
+
+Ex:-
+-----
+SELECT * FROM users_info WHERE no NOT BETWEEN 6 AND 10;

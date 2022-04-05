@@ -1,0 +1,35 @@
+SQL UPDATE Statement:-
+------------------------------------
+SQL UPDATE statement to update table records with in database. You can update all table row or update data only matching conditionally WHERE clause.
+
+SQL UPDATE All Rows:-
+----------------------------------
+Syntax :-
+------------
+UPDATE table_name 
+	SET column_name1 = value1, column_name2 = value2, ...;
+
+Example Statement :
+----------------------------
+UPDATE demo1 SET contact_no = 444;
+
+10 rows updated.
+
+UPDATE Conditionally use WHERE Clause:-
+--------------------------------------------------------------
+UPDATE table data only where WHERE Clause condition match. Use can optionally use LIMIT number to update only limited record starting from first.
+
+Syntax :
+-----------
+UPDATE table_name 
+	SET column_name1 = value1, column_name2 = value2, ...
+	[ WHERE condition ]
+	[ LIMIT number]; 
+
+
+Example Statement :
+-----------------------------
+UPDATE demo1 SET ADDRESS = '10 Texo Court.' WHERE NO = 10;
+
+1 row updated.
+

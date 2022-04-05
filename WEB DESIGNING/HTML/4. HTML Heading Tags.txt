@@ -1,0 +1,21 @@
+HTML Heading:-
+-----------------------
+A HTML heading or HTML h tag can be defined as a title or a subtitle which you want to display on the webpage. When you place the text within the heading tags <h1>.........</h1>, it is displayed on the browser in the bold format and size of the text depends on the number of heading.
+
+There are six different HTML headings which are defined with the <h1> to <h6> tags.
+
+h1 is the largest heading tag and h6 is the smallest one. So h1 is used for most important heading and h6 is used for least important.
+
+See this example:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Heading no. 1</h1>  
+<h2>Heading no. 2</h2>  
+<h3>Heading no. 3</h3>  
+<h4>Heading no. 4</h4>  
+<h5>Heading no. 5</h5>  
+<h6>Heading no. 6</h6>  
+</body>
+</html>

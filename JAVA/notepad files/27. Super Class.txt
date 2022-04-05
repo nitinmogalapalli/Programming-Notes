@@ -1,0 +1,46 @@
+Super Keyword:-
+-----------------------
+The 'this' reference variable always refers to the current class and the 'super' reference variable always refers to the immediate super class. The 'super' keyword can be applied in 3 categories.
+
+1. To refer to the variables of the super class.
+2. To refer to the methods of the super class.
+3. To call a super class constructor from the sub class constructors.
+
+Function Overriding:-
+------------------------------
+It is the concept of polymorphism. whenever a function of super class also defined in the sub class, then the function is known as overridden. In the below example display() is also defined in child class.
+
+Example : Demo of function overloading:-
+---------------------------------------------------------
+class A
+{
+int X;
+void display()
+{
+System.out.println("X value of class A is:"+x);
+}
+}
+class B extends A
+{
+int x;
+void accept (int a,int b)
+{
+super.x=a;
+this.x=b;
+}
+void display()
+{
+super.display();
+System.out.println("X value of class B is :"+x);
+}
+}
+class Inherit
+{
+public static void main(String args[])
+{
+B b=new B();
+b.accept(10,20);
+b.display();
+}
+}
+

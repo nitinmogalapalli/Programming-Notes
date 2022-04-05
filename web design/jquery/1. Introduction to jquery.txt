@@ -1,0 +1,41 @@
+What is jQuery?
+-----------------------
+jQuery is a small, light-weight and fast JavaScript library. It is cross-platform and supports different types of browsers. It is also referred as ?write less do more? because it takes a lot of common tasks that requires many lines of JavaScript code to accomplish, and binds them into methods that can be called with a single line of code whenever needed. It is also very useful to simplify a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+jQuery is a small, fast and lightweight JavaScript library.
+jQuery is platform-independent.
+jQuery means "write less do more".
+jQuery simplifies AJAX call and DOM manipulation.
+
+jQuery Features:-
+------------------------
+Following are the important features of jQuery.
+
+HTML manipulation
+DOM manipulation
+DOM element selection
+CSS manipulation
+Effects and Animations
+Utilities
+AJAX
+HTML event methods
+JSON Parsing
+Extensibility through plug-ins
+
+Why jQuery is required:-
+----------------------------------
+Sometimes, a question can arise that what is the need of jQuery or what difference it makes on bringing jQuery instead of AJAX/ JavaScript? If jQuery is the replacement of AJAX and JavaScript? For all these questions, you can state the following answers.
+
+It is very fast and extensible.
+It facilitates the users to write UI related function codes in minimum possible lines.
+It improves the performance of an application.
+Browser's compatible web applications can be developed.
+It uses mostly new features of new browsers.
+So, you can say that out of the lot of JavaScript frameworks, jQuery is the most popular and the most extendable. Many of the biggest companies on the web use jQuery.
+
+Some of these companies are:
+
+Microsoft
+Google
+IBM
+Netflix

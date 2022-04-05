@@ -1,0 +1,4 @@
+Classes and Objects:-
+-----------------------------
+Class is a blue print or specification of a real time entity. Description of common properties of objects i.e., Collection of objects with common characteristics. A class does not exist in the memory of computer during program execution.
+

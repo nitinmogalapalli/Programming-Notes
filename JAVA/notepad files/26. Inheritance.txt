@@ -1,0 +1,138 @@
+Inheritance:-
+-----------------
+Inheritance is the process of creating new classes from existing classes to achieve reusability. The class which is being inherited is known as 'super class' and the class which inherits the other class is known as 'sub class'. To inherit a class into another class, the key word 'extends' should be used. it is one of the important feature of OOPS.
+
+Types of Inheritance:-
+------------------------------
+1. Single Inheritance
+2. Multiple Inheritance
+3. Hierarchial Inheritance
+4. Multi-level Inheritance
+5. Hybrid Inheritance
+
+1. Single inheritance:-
+--------------------------------
+Here only one super class
+
+2. Multiple Inheritance:-
+--------------------------------
+Here many super classes
+
+3. Hierarchial Inheritance:-
+------------------------------------
+Here one super class and many sub classes.
+
+4. Multi-level Inheritance:-
+-----------------------------------
+Here class derived from a derived class.
+
+5. Hybrid Inheritance:-
+-------------------------------
+Here more than two types of forms.
+
+Example 1:-
+------------------
+Demo of single level inheritance:-
+---------------------------------------------
+class A
+{
+
+}
+class B extends A
+{
+
+}
+
+Here A is a super class.
+B is a sub class.
+
+Example 2:-
+----------------
+Demo of single level inheritance:-
+---------------------------------------------
+class Parent
+{
+int x;
+void readX(int a)
+{
+x=a;
+}
+}
+class Child extends Parent 
+{
+int y;
+void readY(int a)
+{
+y=a;
+}
+int getSum()
+{
+int sum=x+y;
+return sum;
+}
+public static void main(String args[])
+{
+child ch=new Child();
+ch.readX(12);
+ch.readY(13);
+int sum=ch.getSum();
+System.out.println("Sum="+sum);
+}
+}
+
+Example 3:-
+----------------
+Demo of hierarchial Inheritance:-
+---------------------------------------------
+class Common
+{
+int no;
+string name;
+}
+class student extends common
+{
+int tfee;
+void accept()
+{
+no=10;
+name="rahul";
+tfee=5000;
+}
+void display()
+{
+System.out.println("\n Student no. :"+no+"\n Student Name :"+name+"\n Total Fee"+tfee);
+}
+}
+class customer extends common
+{
+int qty;
+float price,totbill;
+string item;
+void accept()
+{
+no=101;
+name="raj";
+item="Samsung Key Board";
+qty=2;
+price=150;
+totbill=price*qty;
+}
+void display()
+{
+System.out.println("\n Customer no. : "+no+"\n Customer name :"+name+"\n Item  purchased :"+Item+"\n Quality :"+qty+"\n Price :"+price+"\n Total Bill :"+totbill);
+}
+} 
+class inhervar
+{
+public static void main(String args[])
+{
+student s=new Student();
+customer c=new Customer();
+s.accept();
+c.accept();
+s.display();
+c.display();
+}
+}
+
+

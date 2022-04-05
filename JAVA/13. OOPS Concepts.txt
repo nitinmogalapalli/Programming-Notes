@@ -1,0 +1,138 @@
+OOPS CONCEPTS:-
+----------------------------
+1. When we represent the data in object oriented programming language we get the security. 
+Examples  of  object  oriented  programming languages  are  LISP,  ADA,  ALGOL,  SMALLTALK, OBJECT  COBOL, OBJECT PASCAL, Cpp, JAVA, DOT NET, etc. 
+
+2. In order to say any language is an object oriented programming language it has to satisfy 8 principles of OOPs.
+
+OOPs Principles:   
+-----------------------
+ 1.    Class.          
+ 2.    Object.           
+ 3.    Data Abstraction.           
+ 4.    Data Encapsulation.           
+ 5.    Inheritance.           
+ 6.    Polymorphism.           
+ 7.    Dynamic Binding.           
+ 8.    Message Passing.  
+
+1.     CLASS: 
+------------------
+“A class is a way of binding the data and associated methods in a single unit".
+Any  JAVA program  if  we  want  to  develop  then  that  should  be  developed  with  respective class only i.e., without class there is no JAVA program. 
+In  object  oriented  programming’s, generally we write two types of methods. They are member methods and non - member methods.
+
+1. A member method is one which is comes under the scope of the class. In java we use only member methods.
+
+2. Non-member methods are those which are not comes under the scope of the class. Java does not allow non-member methods at all.
+
+Syntax for defining a Class:-
+------------------------------------
+Class <clsname>
+{
+	Variable Declaration;
+	Method Definition;
+};
+
+Here class is a keyword which is used for developing or creating user defined datatypes. Clsname represents a JAVA vaild variable name and it is treated as name of the class. Class names are used for creating Objects.
+
+Class contains two parts namely variable declaration and method definitions. Variable declaration represents what type of data members which we use as a part of a class. Method definition represents the type of methods which we used as the path of the class to perform an operation.
+
+By making use of the variables, which are declared inside the class? Every operation in JAVA must be defined with in the class only i.e., outside definition is not possible.
+
+Example:-
+-------------
+Class Student
+{
+	int stno;
+	String stname;
+	float marks;
+	String Cname;
+	int getnohoursstudy()
+	{
+	-----------
+	-----------
+	}
+	String getgrade()
+	{
+	----------
+	----------
+	}
+};
+
+Whenever we define a class there is no memory space for data members of the class. Memory space will be created for the data members of the class when we create object.
+
+Note:-
+--------
+1. In Java memory space for the data members will be creating on heap memory (Dynamic memory).
+2. Memory space for methods will be creating on stack memory (that too when we call the methods).
+3. All constants of any JAVA program is available in associative memory (retrieving data from associative memory is negligible).
+4. The class definition exists only one time but whose objects can exists many number of times i.e, a class is acting as a formula form.
+
+2. Object:-
+-------------
+In order to store the data for the data members of the class, we must create an object. 
+1. Instance (Instance is a mechanism of allocating sufficient amout of memory space for data members of a class) of a class is known as an object.
+2. Class variable is known as an object.
+3. Grouped item (grouped item is a variable which allows us to store more than one value) is known as an object.
+4. Value form of a class is known as an object.
+5. Blue print of a class is known as an object.
+6. Logical runtime entity is known as an object.
+7. Real world entities are called as Objects.
+
+Note:-
+--------
+1. Java always follows dynamic memory allocation but not static memory allocation.
+2. In order to create a memory space in Java we must use an operator called new. This new operator is known as dynamic memory allocation operator.
+
+Syntax - 1 for defining an Object:-
+----------------------------------------
+<Clsname> objname = new <Clsname ()>
+
+Clsname represents name of the class. Objname represents JAVA vaild variable name treated as object. New is called dynamic memory allocation operator. Clsname() represents constructor. The new operator will perform two standard actions. they are
+
+1. it allocates sufficient amount of memory space for the data members of the class.
+2. it takes an address of the class and stored in the left hand side variable of Syntax 1.
+
+Example:- 
+-------------
+Student so = new Student();
+
+Syntax - 2 for Defining an Object :-
+--------------------------------------------
+<Clsname> objname; //object declaration//
+Objname=new <Clsname()>; //object referencing//
+
+When an object is declared where value is null. Since, there is no memory space for data members of the class. When the object is referenced the value of the object is not null. Since, memory space is created for the data members of the class.
+
+Example:-
+-------------
+Student So; // Student object declaration//
+So = new Student(); // Student object referencing //
+
+The Difference Between Class and Object:-
+--------------------------------------------------------
+Class:-
+---------
+1. A Class is a way of binding the data and associated methods in a single unit.
+2. Whenever we start executing a JAVA program, the class will be loaded into main memory with the help of class loader subsystem ( a part of JVM) only once.
+3. When the class id defined there is no memory space for data members of a class.
+
+Object:-
+----------
+1. Class variable is known as an Object.
+2. After loading the class into main memory, objects can be created in n number.
+3. When an object is created we get the memory space for data members of the class.
+
+3. Data Abstraction:-
+---------------------------
+Data Abstraction is a mechanism of retrieving the essential details without dealing with background details".
+
+4. Data Encapsulation:-
+------------------------------
+Data Encapsulation is the process of wrapping up on data and associated methods in a single unit.
+1. Data encapsulation is basically
+
+
+
+

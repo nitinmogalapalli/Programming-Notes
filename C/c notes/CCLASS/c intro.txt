@@ -1,0 +1,53 @@
+>Instruction:
+	It is a collection/set of Commands written in a particular computer language.
+  >Program:
+	It is a collection/set of Instructions that are used to perform a task.
+  >Software:
+	It is a set of integrated programs that are used to solve a problem.
+
+Types of software:
+	1. System
+	  >Operating System
+	  >Utilities
+	2. Application 
+	  >General Purpose
+	  >Computer Programmng Tools
+
+Basic computer language is:
+1. Low Level Languages
+	Binary language
+	> Alphabet (0's and 1's) Bits
+	Assembly Language
+	> Mneumonic Codes(AND,OR, ADD, MUL, DIV...)
+2. High Level Languages
+	These languages allows us to write instructions in natural languages like English, where they can be converted later.
+	Ada, Basic, COBAL, FORTRON, PASCAL, B, BCPL, C, C++, Java, SmallTalk, JAVA, C#, ASP, VB....
+
+Transulators:
+	These are used to convert instructions in one language to other.
+	1.Assembler
+		It is used to convert the instructions written in Assembly language to Binary language.
+	2.Compilers
+		C, C++
+	3.Interpreters
+		Java
+
+The C language:
+
+	It shook the computer world. It fundamentally changed the way programming was approached and thought about. The creation of C was a direct result of the need for a structured, efficient, high-level language that could replace assembly code when creating systems programs. 
+
+Prior to C, FORTRAN could be used to write fairly efficient programs for scientific applications, it was not very good for system code. While BASIC was easy to learn, it wasn’t very powerful, and its lack of structure made its usefulness questionable for large programs.
+
+Another compounding problem was that early computer languages such as BASIC, COBOL, and FORTRAN were not designed around structured principles. 
+
+Invention:
+	Invented and first implemented by Dennis Ritchie on a DEC PDP-11 running the UNIX operating system, C was the result of a development process that started with an older language called BCPL(Basic Combined Programming Language), developed by Martin Richards. BCPL influenced a language called B, invented by Ken Thompson, which led to the development of C in the early 1970s.
+
+"The C Programming Language" by Brian Kernighan and Dennis Ritchie
+(Prentice-Hall, 1978).
+
+C was formally standardized in December 1989, when the American
+National Standards Institute (ANSI) standard for C was adopted (C89).
+later it was again given standardization in 1999. It is called as C99.
+
+

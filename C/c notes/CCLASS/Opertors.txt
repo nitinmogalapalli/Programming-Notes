@@ -1,0 +1,144 @@
+C Program contains the statments which are of set of Expressions.
+The Expression comprises of two parts:
+	Data
+	Operations
+
+Expressions:
+	An Expression is evaluated for a value of the specific type.
+	The Expression which performs an operation consists of Operand (constant, variable) , or Operators.
+	
+Operators:
+	Operator is a symbol to perform an operation. the operator can be used in anywhere as it is applicable.
+There are three types of operators:
+	1. Unary Operators
+		The Operator used with only one operand.
+		Ex:
+			unary minus:
+				-a, -234
+	2. Binary Operators
+		The Operators can be used with at-least two operands.
+		Ex:
+			Binary Plus or Minus:
+				a + b, a - 2
+	3. Ternary Operator
+		This Operator require three operands to perform particular operation.
+
+Operators Categories based on Type of Operation:
+
+1. Arithmetic Operators
+	These are used to perfom Arithmetic operations like Addtion, subtraction, Multiplication, Division, Modular Division.
+	Symbol		Operation		Expression	value
+	----------		-------------		--------------	--------
+	    +		Addition		2 + 5 = 		7
+	    -		Subtraction	5 - 4 = 		1
+	    *		Multiplication	4 * 6 = 		24
+	     /		Division		7 / 3 =		2
+	    %		Modular Division	7 % 3 =(for reminder)1
+
+2. Relational Operators:
+	These operators are used to check the relation among the operands/expressions.
+	Expressions evaluated with these operators has only two values. they are  0 (zero) or any Non Zero( By default 1) which represent the false and true state of the expression. 
+
+	Symbol		Operation		Expression	value
+	----------		-------------		--------------	--------
+	   <		Less than		1 < 5 = 		1
+	   >		Greater than	2 > 5 = 		0
+	   ==		Equals to		2 == 7		0
+	   <=		Less than or 	2 <= 2		1
+			equals to		2 <= 4		1
+	   >=		greater than or	2 >= 2		
+			equals to		2 >= 4		0
+	   !=		Not equals to	4 != 5		1
+
+
+Logical Operators:
+	These are used to operate more than one condition ( relational Expression).
+	Symbol		Operation		Expression	value
+	----------		-------------		--------------	--------
+	    &&		Logical AND	(1>5) && (4<5)	    0
+	c1 c2  c1 && c2
+	--- ---   -----------
+	 1  1	1
+	 1  0 	0
+	 0  1	0
+	 0  0	0
+
+	    ||		Logical OR	(12>10) || (20<5)	1
+	c1 c2  c1 || c2
+	--- ---   -----------
+	 1  1	1
+	 1  0 	1
+	 0  1	1
+	 0  0	0
+
+	   !		Logical NOT	!(3 > 7)		1
+
+Assignment Operators:
+	The Assignment operator (=) is used to assign a value of an expression to its right to the variable of its left.
+
+	Ex:	a = 20;  Here value 20 is assigned to the variable 'a'.
+
+	Short Hand Assignment Operators:
+		These are a combination of Assignment operators with the Arithmetic. They are,
+
+	where a = 20;
+	Symbol		Meaning		Expression	value
+	----------		-------------		--------------	--------
+	    +=		a = a + exp	a += 20;		40
+	    -=		a = a - exp	a -= 20;		0
+	    *=		a = a * exp	a *= 20;		400
+	    /=		a = a / exp	a /= 20;		1
+	    %=		a = a % exp	a %= 20;		0
+
+Bitwise Operators:
+	These operators dealt with the bits representaion of the data.
+
+	For ex: number 2 can be represented in bits as 0000 0010
+		number 3 can be as 0000 0011
+	Symbol		Meaning		Expression	value
+	----------		-------------		--------------	--------
+	   &		Bitwise AND	2 & 3 = 		2
+		2:  0000 0010
+		3:  0000 0011
+	    2 & 3:	     0000 0010
+
+	   |		Bitwise OR	2 | 3 =		3
+	   ~		Complement
+	   ^		Bitwise XOR
+	   <<		Left Shift		2 << 2 =		8
+		2: 0000 0010
+	        2 << 2: 0000 1000
+	   >>		Right Shift	2 >> 2 = 		
+
+Increment/Decrement Operators:
+	These operators used to increment or decrement a value by 1(one).
+There are two types:
+	Pre Increment/ Pre Decrement
+	Post Increment/ Post Decrement
+where a = 10;
+	Symbol		Meaning		Expression	value
+	----------		-------------		--------------	--------
+	   ++		Increment		a++( a= a +1)	11
+	   --		Decrement	a-- ( a = a -1)	9
+
+Conditional Operator  (?:) :
+	It is the Ternary Operator which require three operands in order to use it.
+Syntax:
+	(Expression 1) ? (Expression 2) : (Expression 3);
+
+	Here Exp1 will be a condition, that can be evaluated for a value, If it is true then the Exp2 will be executed otherwise Exp3 will be executed.
+
+	Example:
+	(a > b) ? printf("%d", a) : printf("%d", b);
+
+Speacial Operators:
+	These are speacial operators, that are used in different ways.
+
+	comma(,) : This is to specify the separation
+	sizeof() : This function is to find the memory size(in bytes) of the given variable/ type. It will return a number which specify the size of the variable/type.
+		ex:
+			sizeof(int); ---> 2
+	Pointer Operators:
+		& (Address of), * (Indirection)
+	Member Accessing Operators:
+		. (Dot), -> (Arrow)

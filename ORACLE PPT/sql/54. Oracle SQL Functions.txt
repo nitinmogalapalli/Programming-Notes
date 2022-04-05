@@ -1,0 +1,77 @@
+Oracle SQL Functions:-
+---------------------------------
+Oracle SQL provide buit-in SQL functions. SQL Functions take some values as a arguments, perform some function logic and returning some values. SQL inbuit function are so many that all are help us for no need to implementing your own logic.
+
+Oracle SQL built-in functions are following,
+
+1. SQL Numeric Functions
+2. SQL String Functions
+
+1. SQL Numeric Functions:-
+------------------------------------
+SQL numeric function take numeric value (maximum 38 digit) and return numeric value (maximum 38 digit). SQL numeric function return single row single column values. Following are some SQL numeric function.
+
+Function		Function Parameter		Description
+------------		---------------------------		---------------
+ABS		ABS(n)			Function return absolute value of n values.
+
+AVG		AVG(expression)		Function return average value of expression.
+
+CEIL		CEIL(n)			Function return smallest integer round value that is greater 						then or equal to a parameter value (n).
+
+COUNT		COUNT(*)
+		COUNT(expression)		Function return the number of rows in a SELECT statement.
+
+FLOOR		FLOOR(n)			Function return largest integer round value that is equal to or 						less then to a parameter value (n).
+
+Example :
+--------------
+following example return absolute value of the -15 value,
+
+SQL> SELECT ABS(-15) FROM DUAL;
+
+  ABS(-15)
+
+SQL String Functions:-
+--------------------------------
+SQL String function take some value and return string value. Function return data type VARCHAR2 if parameter argument CHAR or VARCHAR2 data type. Following are some SQL String function.
+
+Function		Function Parameter		Description
+------------		---------------------------		----------------
+ASCII		ASCII( character )		Function return the ASCII values of given argument.
+
+CHR		CHR( number )		Function return the ASCII value of the given argument value.
+
+CONCAT		CONCAT( string1, string2 )	Function concatenated string1 with string2 and return to a 						concatenated string.
+
+INITCAP		INITCAP( char/string )	Function return capitalize string/char (capitalize first letter of 					each word).
+
+LENGTH		LENGTH( string )		Function return the length of string.
+
+LOWER		LOWER( char/string )	Function return lowercase character in every word.
+
+LTRIM		LTRIM( string, trim_char )	Function remove all specified trim char from left side of the 					string.
+
+NCHR		NCHR( ascii_number )	Function return the ASCII value of the given argument value.
+
+Example :
+--------------
+Considering following example SQL ASCII function.
+
+SQL> SELECT ASCII('J') FROM DUAL;
+
+ASCII('J')
+----------
+        74
+
+SQL> SELECT ASCII('E') FROM DUAL;
+
+ASCII('E')
+----------
+        69
+
+SQL> SELECT ASCII('M') FROM DUAL;
+
+ASCII('M')
+----------
+        77

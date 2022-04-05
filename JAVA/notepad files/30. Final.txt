@@ -1,0 +1,44 @@
+Final:-
+---------
+The 'Final' keyword can be specified for the variables, methods and classes.
+
+For the variables:-
+-------------------------
+whenever a variable is specified as final, such variable becomes a constant.
+
+Ex:-
+------
+final int MAX=100;
+            MAX=50;   // Error, can't modify the value.
+
+For the Method:-
+-----------------------
+A final method can't be overridden.
+
+Example 6 : Demo of final method:-
+------------------------------------------------
+class A
+{
+   final void f1()
+   {
+   }
+}
+class B extends A
+{
+   void f1()        // Error can't override final method.
+   {
+   }
+}
+
+For the classes:-
+-----------------------
+A final class can't be extended means it can't have child and we can create object.
+
+Example 7: Demo of final class:-
+--------------------------------------------
+final class A
+{
+}
+class B extends A  // Error can't extend final class
+{
+} 

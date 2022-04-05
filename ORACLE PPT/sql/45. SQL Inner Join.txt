@@ -1,0 +1,31 @@
+SQL Inner Join
+---------------------
+SQL Inner join check join condition (including other comparison operator such as <, > etc) and create record set result that are combining columns value from the tables (two or more table).
+
+SQL Inner join compare each row of Table A with each row of Table B which are satisfied the join predicate and return record set rows.
+
+SQL Inner join write two different way:
+
+1. Explicit inner join 
+2. Implicit inner join
+
+1. Explicit inner join:-
+-----------------------------
+Explicit inner join use INNER JOIN keyword to specify the table to join. And ON keyword to specify join predicates condition. Consider following SQL inner join example that help you understanding,
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+	FROM product INNER JOIN category
+	ON product.category_id = category.category_id;
+
+2. Implicit Inner Join:-
+-----------------------------
+Implicit inner join list of table join using FROM and WHERE clause keyword that are specify the tables and specify join predicates condition. Consider following SQL inner join example that help you understanding,
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+	FROM product, category
+	WHERE product.category_id = category.category_id;
+

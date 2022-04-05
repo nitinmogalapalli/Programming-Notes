@@ -1,0 +1,25 @@
+What is Multimedia?
+
+Multimedia comes in many different formats. It can be almost anything you can hear or see.
+
+Examples: Pictures, music, sound, videos, records, films, animations, and more.
+
+Web pages often contain multimedia elements of different types and formats.
+
+In this chapter you will learn about the different multimedia formats.
+
+The first web browsers had support for text only, limited to a single font in a single color.
+
+Later came browsers with support for colors and fonts, and even support for pictures!
+
+The support for sounds, animations, and videos is handled differently by various browsers. Different types and formats are supported, and some formats require extra helper programs (plug-ins) to work.
+
+Hopefully this will become history. HTML5 multimedia promises an easier future for multimedia.
+
+Multimedia Formats:-
+----------------------------
+Multimedia elements (like sounds or videos) are stored in media files.
+
+The most common way to discover the type of a file, is to look at the file extension. When a browser sees the file extension .htm or .html, it will treat the file as an HTML file. The .xml extension indicates an XML file, and the .css extension indicates a style sheet file. Pictures are recognized by extensions like .gif, .png and .jpg.
+
+Multimedia files also have their own formats and different extensions like: .swf, .wav, .mp3, .mp4, .mpg, .wmv, and .avi.

@@ -1,0 +1,25 @@
+PHP Delete File:
+-----------------------
+In PHP, we can delete any file using unlink() function. The unlink() function accepts one argument only: file name. It is similar to UNIX C unlink() function.
+
+PHP unlink() generates E_WARNING level error if file is not deleted. It returns TRUE if file is deleted successfully otherwise FALSE.
+
+Syntax:
+-----------
+    bool unlink ( string $filename [, resource $context ] )  
+
+$filename represents the name of the file to be deleted.
+
+PHP Delete File Example:
+-----------------------------------
+    <?php      
+    $status=unlink('data.txt');    
+    if($status)
+    {  
+    echo "File deleted successfully";    
+    }
+    else
+    {  
+    echo "Sorry!";    
+    }  
+    ?>  

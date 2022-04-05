@@ -1,0 +1,63 @@
+Unions:-
+-----------
+	Similar to a structure a union also consists of data members but only one data member is active at a time. Union use keyword union for declaration. The union is used when memory of computer is small.
+
+Syntax:- 
+----------- 
+Union union identifier
+{
+Type data member1; 
+Type data member2;
+=======
+=======
+};
+
+Here  type is a valid data type in c.
+
+Data members:-
+--------------------
+These are variables.
+
+Union identifier:-
+---------------------
+Represent the name of union.
+
+Example:- 
+--------------
+union abc
+{
+int a;
+float b;
+char c;
+};
+
+Size of union:-
+-------------------
+	     The size of union is equal to the number of bytes occupied in ram by the largest data member in the union. Consider the following example . 
+
+union student
+{
+int rollno;
+char name[20];
+};
+
+The size of union is equal to 20bytes because the largest data member name occupies 20 bytes in ram.
+
+Example:- 
+-------------
+W.A.P to find the size of the union. 
+
+union student
+{
+int rollno;
+char name[20];
+};
+Void main( )
+{
+Union student x;
+Printf(“size of union =%d”,sizeof(x));
+Getch( );
+}
+
+Output :-
+            	The size of union is = 20

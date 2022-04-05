@@ -1,0 +1,1477 @@
+Language:-
+---------------
+To way to Communicate.
+
+Def:-
+-------
+The set of statements is called Language.
+
+Types of  Language:-
+---------------------------
+1. Low Level Language
+2. High Level Language
+
+1. Low Level Language:-
+-------------------------------
+	Low Level Language is also called as machine language. it is in form of 0's and 1's.
+
+2. High Level Language:-
+----------------------------------
+	High Level Language is also Called as Human Language. it is in form of english. 
+
+Language Translators:-
+------------------------------
+1. Assembler
+2. Compiler
+3. Interpreter
+
+1. Assembler:-
+------------------
+	Assembler is a language translator which translates assemble language instructions into machinery language.
+
+2. Compiler:-
+-----------------
+	It is a language translator which can translate high level language into low level language.
+Compiler executes the program at “Single Stroke”.
+
+3. Interpreter:-
+------------------
+	It is also a language translator and it translates high level language into low level language.
+It executes the program in “Step by Step”.
+
+Introduction to C Language:-    
+-------------------------------------
+	 C is a popular programming language and is commonly used by Scientists and Engineers to write programs for any specific applications. C is also a widely accepted programming language in the software industries.
+
+ The C language is one of the powerful programming languages used to write the programs for variety of applications. It was developed by Dennis Ritchie at Bell Laboratories during the 1972.
+
+Features of C Language:-
+--------------------------------
+1. Simple
+2. Middle Level Language
+3. Very less number of keywords only 32 in      number
+4. Block Structured
+5. Pointers – a special highlight
+6. Structures – First User Defined Data     Types
+
+Characteristics of C Language:-
+----------------------------------------
+1. Strictly case sensitive
+2. Every program statement shall end with a     (Semi Colon) ; - called the line terminator
+3. Every compound statement shall be given    with in the (flower braces) { } – called the      de-limiters
+4. Functions shall be followed by     (parenthesis) ()
+
+Procedure to Learn a Language:-
+-----------------------------------------
+English:-
+------------
+Alphabet -> Words -> Sentences -> Paragraphs -> Letters etc....
+
+C:-
+----
+Tokens -> Statement -> Function -> Program.
+
+Tokens:-
+-----------
+1. Each symbol or word or any other     indivisible part of a program is said to be        a token.
+2. Tokens for a programmatic language are –      what parts of speech to a human langage         are.
+	C provides the following tokens
+
+1. Keywords
+2. Operators
+3. Comments
+4. Identifiers
+5. Literals
+
+1. Keywords:-
+------------------
+	Keyword is a reserved word of a programmatic language, which is used to perform a particular task.
+C has only 32 keywords, and they are…
+
+auto	break	case	char
+const	continue	default	do
+double	else	enum	extern
+float	for	goto	if
+int	long	register	return
+short	signed	sizeof	static
+struct	switch	typedef	union
+unsigned	void	volatile	while
+
+2. Operators:-
+-----------------
+1. Operator is a special symbol used to      indicate a particular task.
+2. Symbols like 
+    + for addition,
+    - for substraction 
+    * for multiplication ..etc are a few      examples
+
+3. Comments:-
+------------------
+	Comment is a special non-instructional text. It is given in between the actual programmatic statements to provide necessary explanation.
+
+The comment is of two types
+
+1. Single line
+2. Multi line
+
+Single line comment starts with //
+
+Multi line comment starts with /* and ends with */
+
+Examples:-
+--------------
+//this is a single line comment
+
+/* this is a multi line comment, and is more than one line */
+	
+4. Identifier:-
+-----------------
+	A user given name to variable, function, structure, union or enumeration ..etc, is called an identifier.
+
+Identifiers shall follow the below rules:-
+---------------------------------------------------
+1. It can be alpha numeric, but should not     start with a number
+2. It should not match with any keyword.
+3. It shall not contain spaces.
+4. It shall not contain any special characters     like . , - ^ @ # $ ..etc but _ (underscore) is     allowed
+5. It can be of any length.
+6. It can be in upper or lower or mixed case.
+
+Identifier Examples:-
+---------------------------
+Valid Identifiers:-
+-----------------------
+Length
+Student_name
+Car_number
+Marks1
+a
+
+In Valid Identifiers:-
+--------------------------
+Roll no	contains space
+Sl.no	contains special symbol . (perios)
+Sur-name	contains special symbol (hyphen)
+2b	starts with a number 2
+A 5	contains space
+Char	is a keyword
+
+5. Literal:-
+-------------
+	Any constant value embeded in a program is called a literal.
+
+Literals are classified as below:-
+----------------------------------------
+1. Numeric :-
+-----------------
+Integer
+	Decimal System
+	Octal System
+	Hexadecimal System
+Float
+
+2. Non Numeric:-
+----------------------
+Character
+String
+
+Integer Literals:-
+---------------------
+	Any non fractional real number is a integer
+
+C can identify integers in 3 different number --------------------------------------------------------
+systems:-
+-----------
+
+1. Decimal System :-
+--------------------------
+	digits {0,1,2,3,4,5,6,7,8,9} 
+
+2. Octal System:-
+---------------------- 
+	digits {0,1,2,3,4,5,6,7} 
+
+3. Hexadecimal System:-
+--------------------------------
+       digits {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F} 
+
+->  Decimal System Integers are directly               written with out any special symbols to           identify. Eg: 10,15,42,91 ..etc.,
+->  Octal System Integers should always       precede with 0. Eg: 014, 01,05,021
+->  Hexadecimal Integers always precede       with 0x. Eg: 0x12,0xA1,0x5D ..etc
+
+Most usally decimal system is only used.
+
+Float Literals:-
+-------------------
+1. Any fractional value is called a float.
+2. The . (period) is used to separate the real     part and fractional part in the float value
+
+Eg:-
+-----
+12.0
+9.08
+9.00008 ..etc
+
+	Remember that 12.0 and 12 may be equal in magnitude , but 12 is an integer and 12.0 is a float, thus computer differentiates between them.
+
+Character Literals:-
+------------------------
+
+1. Any single keyboard symbol is a character
+2. A character should always be placed with     in single quotes ‘  ’
+
+Examples:-
+---------------
+‘a’	‘1’	‘0’	‘#’	‘@’	‘A’	‘z’ …etc
+
+	Remember the following are not the same 
+‘8’		is a character
+8		is a integer
+8.0		is a float
+
+String Literals:-
+--------------------
+1. Collection of characters is called a string
+2. String are always enclosed between “ “     (double quotes)
+
+Examples:-
+--------------
+“a”
+“apple”
+“this is a sentence” …etc
+
+Structure of “C” Program:-
+----------------------------------
+Documentation                       (Optional)
+Header Files	             (Optional)
+Global Declaration                 (Optional)  
+void main ( )
+{
+Local declaration ;
+Statements ;
+}
+
+Documentation:-
+---------------------
+	It is like a comment and it represents our program title.
+
+Ex:- /*  …………………….. */
+Ex:- /*  Printing my name */
+
+Header Files:-
+------------------
+It consists of some functions which are already define to compiler.
+Some of Header Files :-
+	stdio.h
+	conio.h
+	string.h
+	math.h
+	graphics.h
+
+Here we write header files with # include.
+# include is a pre – processor directives
+Ex:- 
+       # include <stdio.h>
+       # include <conio.h>
+
+Global Declaration:-
+--------------------------
+	These variables which are defined the outside the main function.
+
+Main Function:-
+---------------------
+	Every “C” program must have atleast one function that is main.
+
+Local Declaration:-
+-------------------------
+	These variables which are define in inside the main function
+
+Statements:-
+----------------
+	Statements is of two types 
+1. Input Statement.
+2. Output Statement.
+
+Rules of C Program:-
+---------------------------
+1. One main () function is used in every C     program.
+2. All the statements are written in lower     case letter.
+3. Every statement are closed by a semicolon.
+4. Built in or predefine words are not define     the user define word.
+5. Every small and capital words are     different. 
+
+Example :- 
+--------------
+	sum and SUM are two different keywords.
+
+Execution steps of c program:-
+---------------------------------------
+Source code (.c) -> Computer code (.obj) -> Run (.exe)
+
+How to open C Editor:-
+-----------------------------
+Click on start
+click run (win + r)
+Type c:\tc\tc.exe
+Press enter
+
+Some Keys used in Editor:-
+-----------------------------------
+1. F3  - to open a file (new or existing)
+2. Alt+F3 to close a file
+3. Alt+F9 to compile a program
+4. Ctrl+F9 to execute (run) a program
+5. F1 for help
+6. F5 to resize the program window
+7. Alt+X to quit
+
+Example :- 
+--------------
+/* Write a program in C to print your name */
+
+#include<stdio.h>
+void main()
+{                                    
+printf(“Abhi”);
+}
+
+Output :-
+------------
+Abhi
+
+Clrscr():-
+------------
+The function clrscr from conio.h file is used to clear the output screen.
+
+Getch():-
+-----------
+The function getch from conio.h is used to pause the output screen for a while.
+
+Escape Sequences:-
+-------------------------
+1. Escape Sequences are used to format the     output from a printf function.
+2. The escape sequences are character literals     or character constants.
+3. Every escape sequence character starts     with a \ (backward slash)
+4. Though it is a combination of \ and     another letter (two characters), it is treated     as a single character.
+
+Character	 Name	   Use
+------------	 -------	   -----
+\n	 New Line	   Moves the cursor to the new line.
+\t	 Tab space  Inserts a single tab space.
+Example:-
+-------------
+/* Write a program to print your home address */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{                 
+clrscr();                   
+printf(“Aptech Computer Education\n”);
+printf("Main Road\n");
+printf("Anakapalli");
+getch();
+}
+
+Output:-
+-----------
+Aptech Computer Education
+Main Road
+Anakapalli
+
+Variables:-
+--------------
+	Variable is defined to be  named memory location.
+
+1. A single variable can hold a single data     value only.
+2. If the variable already having a value is     given again a new value, the older is     replaced with the new value.
+3. Variable name is chosen by the     programmer, and should obey the         identifier rules.
+
+Variables are to be declared before they are used.
+Syntax:-
+-----------		
+data_type varaible1,varaible2,….;
+
+Example:-
+-------------
+int a,b,c;
+
+Here a, b, c are three variable of integer type.
+
+Data Type:-
+---------------
+                 The store the value of variable and constant is known as data type.
+
+Example:- 
+                 int X=10;
+
+Here above example the X is a variable and 10 are a constant and the X and 10 both are store in int. So the int is a data type.
+
+Types of Data Types:-
+--------------------------
+	They are two types of data types.
+1. Predefined Datatypes.
+2. User defined Datatypes.
+  
+Predefined Datatypes:-
+---------------------------
+	The basic data types are called the Built in data type. These data type include integer, Float, Character and double.
+
+Additional Data Types:-
+-----------------------------
+	The Data types int is used to store only the positive or negative integers.
+	There are four qualifiers of int data type. They are
+i)  short int (nothing but an ordinary int)
+ii) long int
+iii)signed int
+iv)unsigned int
+
+	@ Long int is used to store more than the usual range (limitation) of int.
+	@ Signed int is used to store both positive and negative numbers.
+	@ unsigned int is used to store only positive numbers and this is declared for the variables that stores only positive numbers.
+
+Char:-
+--------
+	The data types char is used to  store any single character. It has two different qualifiers namely
+i) signed
+ii)unsigned
+
+Float:-
+-------
+	The Data type float is used to store single decimal (real) numbers.
+
+Double:-
+-----------
+	The data type double is used to store a double floating point number.
+
+Basic Data Type:-
+---------------------
+	These data types are mostly used in c and c++.
+
+Data Type	Keyword	Byte  	Occupy by RamRange  	Format String
+Character	Char	1 Byte	-128 to 127		“%c”
+Integer	Int	2 Byte	-32768to 32767		“%d”
+Float	Float	4 Byte	3.4e-38 to 3.4e+38		“%f”
+Double	Double	8 Byte	1.7e-308 to 1.7e+308	                   “%lf”
+
+Example of Character: -   ‘a’, ‘b’,’k’ etc.      
+Example of Integer: -     1,2,78,-35,-9 etc.
+Example of Float: -          5.67, 6.89 etc.
+Example of double: -       5.670000000, 6.789800000 etc.     
+
+Printf( ) :-
+-----------
+The printf( ) function is an output statement used to print out any message on screen or on a paper. The printf( ) stands for "Print function" or "Print Formatted".
+	The General form of printf( ) function is
+
+printf("Message with escape sequences");
+printf("message control variables",variables);
+
+Ex:-
+-----
+printf("Aptech Computer Education\n");
+printf("The addition of 2 numbers is %d",sum);
+
+Example:-
+-------------
+/* Write a program to assign a integer value into a variable and print it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a;
+clrscr();
+a=456;
+printf("inserted number is:%d",a);
+getch();
+}
+
+Output:-
+-----------
+inserted number is: 456
+
+/* Write a program to assign a Character value into a variable and print it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char a;
+clrscr();
+a='s';
+printf("inserted alphabet is:%c",a);
+getch();
+}
+
+Output:-
+-----------
+inserted alphabet is s
+
+/* Write a program to assign a floating value into a variable and print it */
+
+Operators in C:-
+--------------------
+	Operators are those symbols that perform mathematical and logical calculations. The different types of operators are
+1. Binary Operators
+2. Unary  Operators
+3. Ternary Operators
+4. Bitwise Operators
+
+1. Binary Operators:-
+-------------------------
+	Binary Operators are those that need 2 operands to operate.
+
+2. Unary Operators:-
+-------------------------
+	Unary Operators are those that need only one operand to operate.
+
+3. Ternary Operators:-
+---------------------------
+	Ternary pair needs three operands to operate.
+
+4. Bitwise Operators:-
+--------------------------
+	Bitwise operators are those that can perform bit level manipulations on data items
+
+1. Binary Operators:-
+---------------------------
+	They are different operators in binary operators.
+1. Arithmetic Operators.
+2. Assignment Operators.
+3. Relational Operators.
+4. Logical Operators.
+
+1. Arithmetic Operators:-
+------------------------------
+	These operators are used for arithmetic manipulations like
+
+Operator	     Operation        Result
+		 
++ (plus)	     Addition          Sum
+- (minus)	     Subtraction      Difference
+* (astrik)	     Multiplication  Product
+/ (Back Slash) Division          Quotient
+% (Modulus)  Division          Reminder
+
+Example:-
+-------------
+/* Write a program in c and assign two integer values into two variables and print sum of it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,sum;
+clrscr();
+a=20;
+b=10;
+sum=a+b;
+printf("The addition of two numbers is %d ",sum);
+getch();
+}
+
+output:-
+---------
+The addition of two numbers is 30 
+
+/* Write a program in c and assign two floating values in two variables and print its product of it */
+
+/* Write a Program in c and assign two integer values in two variables and print its remainder of it */
+
+/* Write a Program in c and assign two integer values in two variables and apply all arithmetic operators and print it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c;
+clrscr();
+a=10;
+b=5;
+c=a+b;
+printf("The Sum of two numbers is %d\n",c);
+c=a-b;
+printf("The difference of two numbers is %d\n",c);
+c=a*b;
+printf("The product of two numbers is %d\n",c);
+c=a/b;
+printf("The quotient of two numbers is %d\n",c);
+c=a%b;
+printf("The reminder of two numbers is %d\n",c);
+getch();
+}
+
+output:-
+---------
+The Sum of two numbers is 15
+The difference of two numbers is 5
+The product of two numbers 50
+The quotient of two numbers is 2
+The Remenider of two numbers is 0
+
+
+Scanf():-
+-----------
+The Scanf() is input statement and it is used to accept a value through the keyboard at the time of execution of a program. Scanf() means scan function or scan formatted.
+	The General form of scanf() function is 
+
+Scanf("Format String",Address of a Variable);
+
+Ex:-
+-----
+scanf("%d%d",&a,&b);
+scanf("%d%f%c",&a,&b,&c);
+
+Note:-
+-------
+Here & is refer to address of a variable.
+ 
+Example:-
+------------
+/* Write a program in c and accept two values in two variables and print the sum of it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,sum;
+clrscr();
+printf("Enter a and b values\n");
+scanf("%d%d",&a,&b);
+sum=a+b;
+printf("The Sum of two numbers is %d",sum);
+getch();
+}
+
+output:-
+----------
+Enter a and b values
+20
+10
+The sum of two numbers is 30.
+
+/* Write a program in c and accept two floating values in two variables and print its product of it */
+
+/* Write a Program in c and accept two integer values in two variables and print its remainder of it */
+
+/* Write a Program in c and accept two integer values in two variables and apply all arithmetic operators and print it */
+
+/* Write a program in c and accept one integer value in one variable and print its square of it */
+
+/* Write a Program in c and accept no. of books, cost and calculate bill of it */
+
+/* Write a Program in c and accept  no. of days and calculate no. of months and no. of remaining days */
+
+/* Write a program in c and accept five subjects marks and calculate total and average */
+
+2. Assignment Operators:-
+-------------------------------
+	These operators are used to assign (store) a value into a variable. Always the RHS value is stored into the LHS variable. Thus RHS can be a value or a variable or an expression but LHS is always a variable.
+
+Examples:-
+--------------
+/* Write a Program in c and accept two values and swap it using three variables */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c;
+clrscr();
+printf("enter two values\n");
+scanf("%d%d",&a,&b);
+printf("before swap a:%d\tb:%d\n",a,b);
+c=a;
+a=b;
+b=c;
+printf("after swap a:%d\tb:%d",a,b);
+getch();
+}
+
+Output:-
+-----------
+Enter two values
+10
+20
+before swap a:10  b:20
+after swap a:20 b:10
+
+/* Write a Program in c and accept two values and swap it using two variables 
+*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b;
+clrscr();
+printf("enter two values\n");
+scanf("%d%d",&a,&b);
+printf("before swap a:%d\tb:%d\n",a,b);
+a=a+b;
+b=a-b;
+a=a-b;
+printf("after swap a:%d\tb:%d",a,b);
+getch();
+}
+
+Output:-
+-----------
+Enter two values
+10
+20
+before swap a:10  b:20
+after swap a:20 b:10
+
+Math Functions:-
+----------------------
+	Some math functions are used in c language are pow, sqrt etc... and this functions are executed in math.h header files only
+pow():-
+---------
+This function is used to calculate power of given values.
+
+Ex:-
+-----
+/* Write a program in c and calculate the power of given values */
+
+#include<math.h>
+main()
+{
+int p,a,b;
+clrscr();
+printf("enter two numbers\n");
+scanf("%d%d",&a,&b);
+p=pow(a,b);
+printf("power of two no.s is:%d",p);
+getch();
+}
+
+sqrt():-
+---------
+This function is used to calculate square root of given number.
+
+Ex:-
+-----
+/* Write a program in c and calculate the square root of given number */
+
+#include<math.h>
+main()
+{
+int a;
+float s;
+clrscr();
+printf("enter a value\n");
+scanf("%d",&a);
+s=sqrt(a);
+printf("square root of given no. is:%f",s);
+getch();
+}
+
+3. Relational Operators:-
+------------------------------
+	These operators are used to compare two operands. If comparison is true then 1 is returned else 0 is returned to indicate false
+Relation expressions are also called simple conditions.
+
+Operator	Operation
+
+= = 	is equal to
+<	less than
+>	greater than
+< =	less than or equal to
+> = 	greater than or equal to
+! = 	not equal to
+
+Control Structures:-
+------------------------
+                            All statement written in a program are executed from top to bottom one by one. Control statements are used to transfer the control from one part to another depending on a condition.
+	Control structures are divided into three types.
+
+1. Decision Making
+2. Looping
+3. Non Conditional
+
+1. Decision Making Statements:-
+-----------------------------------------
+	Decision Making Statements are divided into two types.
+
+1. If statement
+2. Switch statement
+
+1. If statement:-
+--------------------
+	If statement is used to check a condition and execute the respective statements only.
+
+The if has been classified as 
+1. Simple if
+2. If .. Else
+3. If Ladder
+4. Nested If
+
+1. Simple if:-
+-----------------
+Syntax:-
+-----------
+if (cond)
+{
+statements;
+}
+	This statement checks the given condition.
+1. if condition is true the statements are executed and remaining program continues. 
+2. or else if the condition is false, the statements are not executed but remaining program will continues.
+
+Ex:-
+-----
+/* W.A.P to read the number and check is even then print it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n;
+clrscr();
+printf(“Enter a number=”);
+scanf(“%d”,&n);
+if(n%2==0)
+{
+printf(“Number is even”);
+}
+getch();                                    
+}
+
+Output:-
+----------
+                Enter a number=10
+                Number is even.
+
+Solution:-
+------------
+              Even numbers are those numbers which are dividing by 2 and remainder is zero. So when the number 10 is dividing by 2 and then we get remainder is zero. So the condition is true. Then print the number is even.
+
+2. if else:-
+-------------
+	In this statement when the condition is the true then the control goes to the true block statement and if the condition is false then than the control goes to the false block statement.
+
+Syntax:-
+----------
+	if (cond )
+	{
+		statements-1;
+	}
+	else
+	{
+		statements-2;
+	}
+
+Ex:-
+-----
+/* W.A.P to enter two numbers and find which is greater */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b;
+clrscr();
+printf(“Enter the value of a and b=”);
+scanf(“%d%d”,&a,&b);
+if(a>b)
+{
+printf(“a is greater =%d”,a);
+}
+else
+{
+printf(“b is greater=%d”,b);
+}
+getch();
+}
+
+Output:-
+----------
+Enter the value of a and b= 
+15
+70
+b is greater=70
+
+Solution:-
+------------
+             In this example first we check the condition is a greater then b than the condition is false so the control goto the false block statement. So the false block is executed.
+
+Examples Programs:-
+--------------------------
+/* W.A.P to enter two numbers and find which is Small */
+
+/* W.A.P to enter two numbers and Check whether it is equal or not */
+
+/* W.A.P to enter a number and Check whether it is Positive or Negative */
+
+/* W.A.P to enter a number and Check whether it is Even or Odd */
+
+/* W.A.P to enter a number and Check whether it is Leap year or not */
+
+/* W.A.P to accept Purchase amount, and if purchase amount is >=5000 then give discount of 1% otherwise no discount and print the bill and discount */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+float pa,dis,bill;
+clrscr();
+printf("enter purchase amount\n");
+scanf("%f",&pa);
+if(pa>=5000)
+{
+dis=pa*0.01;
+bill=pa-dis;
+printf("discount is Rs:%f\nbill is Rs:%f\n",dis,bill);
+}
+else
+{
+printf("no discount\nbill is Rs:%f",pa);
+}
+getch();
+}
+
+/* W.A.P to accept Basic salary and experience,  if experience is >=3 then give Bonus as Rs 2500 otherwise no bonus and print the Net salary */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int exp;
+float bs,ns;
+clrscr();
+printf("Enter Employee Basic salary and Experience\n");
+scanf("%f%d",&bs,&exp);
+if(exp>=3)
+{
+   ns=bs+2500;
+   printf("net salary is Rs:%f\n",ns);
+}
+else
+{
+   printf("no bonus\nnet salary is Rs:%f",bs);
+}
+getch();
+}
+
+3. If Ladder:-
+----------------
+	In This will check if cond1 is true or not
+If cond1 is true then statements1 will be executed
+Else cond2 is checked If cond2 is true statements 2 are executed Else cond3 …. To any number of conditions If no condition is true the else statements are executed.
+
+Syntax:-
+----------
+ if(cond-1)
+ {
+  statements-1;
+ }
+ else if (cond-2)
+ {
+  statements-2;
+ }
+ .…
+ ….
+else
+{
+ Statements;
+}
+
+Example:-
+-------------
+/*W.A.P to accept time and print it according to timings */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int time;
+clrscr();
+printf("enter the time\n");
+scanf("%d",&time);
+if(time<4)
+{
+printf("MID NIGHT");
+}
+else if(time<7)
+{
+printf("EARLY MORNING");
+}
+else if(time<12)
+{
+printf("MORNING");
+}
+else if(time<16)
+{
+printf("AFTERNOON");
+}
+else if(time<20)
+{
+printf("EVENING");
+}
+else if(time<=24)
+{
+printf("NIGHT");
+}
+else
+{
+printf("INVALID TIME");
+}
+getch();
+}
+
+Example Programs:-
+-------------------------
+/* W.A.P to accept age and print it according to age group */
+
+/* W.A.P to accept day and print it according to day wise */
+
+4. Nested if:-
+-----------------
+	Writing an if inside another if is called the nested if
+Unless the first cond is true the next condition is not checked.
+C allows 32 levels of nesting at maximum.
+
+Syntax:
+----------
+	if(cond1)
+	{
+		if(cond2)
+		{
+			….
+		}
+	}
+
+Example:-
+-------------
+/* Write a program in c and to accept a basic salary and gross salary and if basic salary >=5000 and gross salary above 10000 then calculate tax 5% otherwise no tax.
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int bs,gs,tax;
+clrscr();
+printf("Enter the Basic salary and Gross salary\n");
+scanf("%d%d",&bs,&gs);
+if(bs>=5000)
+{
+	if (gs>=10000)
+	{
+	tax=bs*0.5;
+	printf("The Tax is %d",tax);
+	}
+else
+{
+printf("No Tax");
+}
+}
+getch();
+}
+
+4. Logical Operators:-
+--------------------------
+	These operators are used to combine two simple conditions. Logical expressions are also called compound conditions
+
+Operator	Operation
+
+&&	And: combines two simple cond’s into a 	compound cond., such that the 			compound  cond., is true only when 		both the simple cond’s are true.
+
+||	Or : combines two simple cond’s into a 		compound cond., such that the 			compound cond., is true when at least 		one of the simple cond’s is true.
+
+!	Not: is used to not a simple cond.
+
+Example:-
+-------------
+/* write a program in c and accept five subject marks and check it is pass or not with && operator*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int tel,hin,eng,mat,sci,soc;
+clrscr();
+printf("Enter five subject marks\n");
+scanf("%d%d%d%d%d",&tel,&hin,&eng,&mat,&sci,&soc);
+if(tel>=35&&hin>=25&&eng>=35&&mat>=35&&sci>=35&&soc>=35)
+{
+printf("Pass");
+}
+else
+{
+printf("Fail");
+}
+getch();
+}
+
+/* write a program in c and accept five subject marks and check it is pass or not with || operator*/
+
+2. Switch statement:-
+--------------------------
+1. Works similar to if..ladder
+2. Will compare the variable value with the case values for equity only.
+3. When ever a match is found the respective code is executed.
+4. If no match found, default code is executed
+5. Can compare only integer and character values.
+
+Syntax:-
+----------
+
+switch (var)
+{
+ case val1 : 
+ code-1; 
+ break;
+ case val2 : 
+ code-2; 
+ break;
+ …
+ …
+default : 
+code-d;
+}
+
+Example:-
+-------------
+/* W.A.P to accept a no and print according day of week */
+
+main()
+{
+int d;
+clrscr();
+printf("enter a no.\n");
+scanf("%d",&d);
+switch(d)
+{
+case 1:
+	printf("MONDAY");
+	break;
+case 2:
+	printf("TUESDAY");
+	break;
+case 3:
+	printf("WEDNESDAY");
+	break;
+case 4:
+	printf("THURSDAY");
+	break;
+case 5:
+	printf("FRIDAY");
+	break;
+case 6:
+	printf("SATURDAY");
+	break;
+case 7:
+	printf("SUNDAY");
+	break;
+default:
+	printf("INVALID NUMBER");
+
+}
+getch();
+}
+
+Examples:-
+--------------
+/* W.A.P to accept a no and print according month of year */
+
+/* W.A.P to accept a Character and print Vowel or consonant */
+
+main()
+{
+char ch;
+clrscr();
+printf("enter a character\n");
+scanf("%c",&ch);
+switch(ch)
+{
+       case 'a':
+       case 'e':
+       case 'i':
+       case 'o':
+       case 'u':
+       printf("it is vowel");
+       break;
+default:
+	printf("it is consonant");
+}
+getch();
+}
+
+/* W.A.P to accept a no and print according to table codes.
+Caste Code   	City
+
+1		SC
+2		ST
+3		OBC
+Morethan 4	Others */
+
+2. Looping:-
+----------------
+	Loop is defined as repetition. Loop is used when a certain set of statement are to be executed again an again in a program. 
+
+	So, loop program contains two segments.
+1.Body of the Loop.
+2.Control statement. 
+
+	Depending on the position of the control statements 
+loop are of two types.
+1.Entry control 
+2.Exit control
+
+1.Entry control:-
+-------------------
+                    Entry control is called as pre-test. In this control first of all condition check so it is called entry control or pre-test. 
+
+Examples – For Loop & While Loop.
+
+2.Exit control:-   
+-------------------
+                     In this control the condition is checked at last so it is called exit control or past-test.  
+
+C language has three types of loop.
+
+1.While.
+2.Do - While		
+3.For Loop
+     
+Every loop has divide in three parts.
+
+First part:- is called initialization. In this part the value of variable is initialized.
+
+Second part:- is called condition. In this part decides how many time loop will be executed.
+
+Third part:- is increment or decrement is depend on the condition.
+
+NOTE   :-         The three parts are separate by semicolon (;).
+                           
+2. Unary Operators:-
+-------------------------
+	Unary Operators are those that need only one operand to operate.
+
+Types of Unary operators:-
+----------------------------------
+1. Increment operator (++)
+2. Decrement operator (--)
+
+While Loop:-
+----------------
+                               While Loop is used when a set of statement are to executed again and again. 
+
+Syntax:-
+-----------
+                  
+Initialization;
+While (test condition)
+{
+==Body of Loop;
+=====;
+Increment and decrement operator
+}
+
+Ex:-
+-----
+/* W.A.P. to print first ten natural number. 
+ Hints:-12345-------------10 */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a;
+clrscr();
+a=1;
+while(a<=10)
+{
+printf(“%d”,a);
+a++;
+}
+getch();
+}
+
+Output:-
+1 2 3 4 5 -----------------------10
+
+Examples:-
+--------------
+/* W.A.P. to print 10 to 1 numbers */
+
+/* W.A.P. to print the even numbers from 2 to 100 */
+
+/* W.A.P. to print the odd numbers from 1 to 99 */
+
+/* W.A.P. to print the even numbers from 100 to 2 */
+
+/* W.A.P. to print the odd numbers from 99 to 1 */
+
+Do While:-
+--------------
+                 Do-While Loop is also used to execute a block of statement repeat depending on a condition. It has following syntax.
+
+Syntax :-  
+	initialization
+	do
+	{
+	=====
+	=====block of statement;
+	=====
+	increment or decrement operator ;
+	}
+	while(test condition);
+
+Ex:-
+-----
+/* W.A.P. to print the first ten natural number */
+
+#include<stdio.h>  
+#include<conio.h>  
+main()
+{	
+int a;
+a=1;              	   
+do
+{
+printf(“”%d”,a);	
+a++;                                  
+}
+While(a<=10);                                        
+getch();
+}
+
+Output :-
+                       1 2 3 4 5 6 7 8 9 10
+
+
+Difference Between While and Do While Loop:-
+----------------------------------------------------------
+
+Do-While Loop:-
+---------------------
+	              In Do-While loop body of the loop execute once if the condition is wrong for first time. Because in this loop first of all statement are execute and then condition check.
+
+
+While Loop:- 
+----------------
+	         But in this loop the statement block will not be execute when the value of the condition is flash.
+
+For Loop:-
+-------------
+	  For loop is also use to execute a block of statement repeat depending on a condition. 
+It has following syntax. 
+
+Syntax:- 
+-----------
+for ( init; test condition; Increment and decrement )
+{
+==== Block of statement
+====
+}
+
+Ex:-
+-----
+/* W.A.P. to print the first ten natural number */
+
+#include<stdio.h>  
+#include<conio.h>  
+main()
+{	
+int a;
+clrscr();
+for(i=1;i<=10;1++)
+{
+printf("%d",a);
+}
+getch();
+}
+
+Nested Loop :-
+------------------
+	The loop can be nested according to programming requirement. In nested loop we have taken more than one loop is used. 
+
+Nested For Loop:-
+----------------------
+	When a for loop is defined with in another for loop then it is called as nested for loop. Outer loop will be execute first of all ,then inner loop will be execute desired number of times, as maintained on condition of inner for loop.
+
+Syntax:-    
+----------
+For( init; test condition-1; increment / decrement)
+{	Outer loop starting block.
+For( init; test condition-2; increment / decrement)
+{                Inner loop starting block. 
+==============          block of statement  
+==============
+}	close inner loop block.
+}	close outer loop.
+
+Ex:-
+-----
+/* W.A.P. to print the pattern. 
+1
+12
+123
+1234	
+12345 */
+
+#include<stdio.h>  
+#include<conio.h>  
+main()
+{
+int r,c;
+for(r=1;r<=5;r++)
+{
+for(c=1;c<=r;c++)
+{
+printf(“%d”,c);
+}
+Printf(“\n”);
+}
+getch();
+}
+
+Output :-
+	1
+	12	
+	123
+	1234
+	12345
+
+Examples:-
+--------------
+/* W.A.P in c and print pattern 
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5 */
+
+/* W.A.P in c and print pattern
+5 4 3 2 1
+5 4 3 2 1
+5 4 3 2 1
+5 4 3 2 1
+5 4 3 2 1 */
+
+/* W.A.P in c and print pattern 
+5 4 3 2 1
+5 4 3 2
+5 4 3
+5 4
+5            */
+
+Arrays:-
+-----------
+if you require number of variables to store number of values(each one for
+one value) C language has a better way to organize your data.
+
+	Here is a simple concept that makes you store and retrieve the
+different values using a single variable.
+That is Array concept.
+
+what is array?
+	It is a collection/set of elements of the same data type.
+
+How many types of arrays?
+1D(one Dimensional), 
+2D(two dimensional),
+3D(Three Dimensional), etc.
+

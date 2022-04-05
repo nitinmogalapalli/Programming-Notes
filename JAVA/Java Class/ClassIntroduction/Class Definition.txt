@@ -1,0 +1,62 @@
+Class:
+	a class is a template for an object, and an object 
+is an instance of a class. 
+
+The General Form of a Class:
+
+class classname 
+{
+	type instance-variable1;
+	type instance-variable2;
+
+	// ...
+	type instance-variableN;
+	type methodname1(parameter-list) 
+	{
+	// body of method
+	}
+	type methodname2(parameter-list) 
+	{
+	// body of method
+	}
+	// ...
+	type methodnameN(parameter-list) 
+	{
+	// body of method
+	}
+}
+
+A class is declared by use of the class keyword. The data, or variables, defined within a class are called instance variables. The code is contained within methods. Collectively, the methods and variables defined within a class are
+called members of the class.
+
+A Simple Class:
+
+Here is a class called Box that defines three instance variables: width, height, and depth.
+
+class Box 
+{
+double width;
+double height;
+double depth;
+}
+
+a class defines a new type of data, the new data type is called Box. You will use this name to declare objects of type Box. 
+
+To actually create a Box object, you will use a statement like the following:
+Box mybox = new Box(); // create a Box object called mybox
+
+this statement executes, mybox will be an instance of Box. every Box
+object will contain its own copies of the instance variables width, height, and depth. To access Members(these variables) of the class, you will use the dot (.) operator. The dot operator links the name of the object with the name of an instance variable.
+
+for eg:
+mybox.width = 100;
+
+Class Declaration Rules(Conventions):
+
+1. Class name starts with Capital Letter/underscore(_)/a dollor symbol($) and the remaining words should be capitalised.
+	class rectanglarbox ----> class RectanglarBox
+Java is a case sensitive language(means A and a are two different characters).
+2. Variable names may starts with the small letter word and the remaining words can be capitalised.
+	int boxwidth ---> int boxWidth;
+3. Method names can be written as variable name but they differ with the brackets().
+	nextInt();

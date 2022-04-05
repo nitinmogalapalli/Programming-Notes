@@ -1,0 +1,13 @@
+SQL DROP TABLE Statement:-
+-------------------------------------------
+SQL DROP TABLE statement to delete the table structure, table data, defined constraints or index.
+
+Syntax
+---------
+DROP TABLE table_name;
+
+Example
+------------
+SQL> DROP TABLE users_info;
+
+Table dropped.

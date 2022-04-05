@@ -1,0 +1,55 @@
+PHP String :-
+-------------------
+A PHP string is a sequence of characters i.e. used to store and manipulate text. There are 4 ways to specify string in PHP.
+
+    single quoted
+    double quoted
+    heredoc syntax
+    newdoc syntax (since PHP 5.3)
+
+Single Quoted PHP String :
+--------------------------------------
+We can create a string in PHP by enclosing text in a single quote. It is the easiest way to specify string in PHP.
+
+    <?php  
+    $str='Hello text within single quote';  
+    echo $str;  
+    ?>  
+
+We can store multiple line text, special characters and escape sequences in a single quoted PHP string.
+
+    <?php  
+    $str1='Hello text   
+    multiple line  
+    text within single quoted string';  
+    $str2='Using double "quote" directly inside single quoted string';  
+    $str3='Using escape sequences \n in single quoted string';  
+    echo "$str1 <br/> $str2 <br/> $str3";  
+    ?>  
+
+Double Quoted PHP String :
+----------------------------------------
+In PHP, we can specify string through enclosing text within double quote also. But escape sequences and variables will be interpreted using double quote PHP strings.
+
+    <?php  
+    $str="Hello text within double quote";  
+    echo $str;  
+    ?>  
+
+Now, you can't use double quote directly inside double quoted string.
+
+    <?php  
+    $str1="Using double "quote" directly inside double quoted string";  
+    echo $str1;  
+    ?>  
+
+We can store multiple line text, special characters and escape sequences in a double quoted PHP string.
+
+    <?php  
+    $str1="Hello text   
+    multiple line  
+    text within double quoted string";  
+    $str2="Using double \"quote\" with backslash inside double quoted string";  
+    $str3="Using escape sequences \n in double quoted string";  
+    echo "$str1 <br/> $str2 <br/> $str3";  
+    ?>  

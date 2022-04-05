@@ -1,0 +1,25 @@
+MySQL AND Condition:-
+----------------------------------
+The MySQL AND condition is used with SELECT, INSERT, UPDATE or DELETE statements to test two or more conditions in an individual query.
+
+Syntax:
+-----------
+WHERE condition1  
+AND condition2  
+...  
+AND condition_n;  
+
+Parameter explanation:-
+--------------------------------
+condition1, condition2, ... condition_n: Specifies all conditions that must be fulfilled for the records to be selected.
+
+MySQL AND Example:-
+--------------------------------
+The following example specifies how to use the AND condition in MySQL with SELECT statement.
+
+Consider a table "cus_tbl", having the following data:
+
+SELECT *  
+FROM cus_tbl  
+WHERE cus_firstname = 'Ajeet'  
+AND cus_id > 3; 

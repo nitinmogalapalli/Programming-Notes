@@ -1,0 +1,50 @@
+retrun_type MethodName(Parameters_list)
+{
+	method body
+
+}
+
+class ClassName
+{
+	Data Members
+
+	Member Functions1()
+	{
+		data members
+		
+	}
+	Meber Fuction2()
+	{
+		data members
+	}
+}
+
+
+class Box
+{
+	double length,width, height;
+	double area()
+	{
+		return length*width;
+	}
+	double volume()
+	{
+		retrun (length*width*height);
+	}
+}
+
+// Constructors
+
+class Box
+{
+	double length,width, height;
+	double area()
+	{
+		return length*width;
+	}
+	double volume()
+	{
+		retrun (length*width*height);
+	}
+}
+

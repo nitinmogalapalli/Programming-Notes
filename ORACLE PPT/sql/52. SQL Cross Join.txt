@@ -1,0 +1,20 @@
+SQL Cross Join:-
+------------------------
+SQL Cross Join joining tables rows and return Cartesian product(each row from Table A with each row of Table B) record set result.
+
+SQL Cross join write two different way:
+
+1. Explicit cross join 
+2. Implicit cross join
+
+Explicit Example Statement :
+---------------------------------------
+SQL> SELECT * 
+	FROM product 
+	CROSS JOIN category;
+
+Implicit Example Statement :
+---------------------------------------
+SQL> SELECT *
+    FROM product, category;
+

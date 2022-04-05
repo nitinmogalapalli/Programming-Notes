@@ -1,0 +1,9 @@
+class Variable
+{
+public static void main(String args[])
+{
+double a;
+a=1.25;
+System.out.println("The Value of a is"+a);
+}
+}

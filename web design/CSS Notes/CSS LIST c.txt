@@ -1,0 +1,130 @@
+List:-
+-------
+In HTML, there are two types of lists:
+
+    unordered lists - the list items are marked with bullets
+    ordered lists - the list items are marked with numbers or letters
+
+With CSS, lists can be styled further, and images can be used as the list item marker.
+
+Different List Item Markers:-
+--------------------------------------
+The type of list item marker is specified with the list-style-type property:
+
+<html>
+<head>
+<style>
+ul.a 
+{
+    list-style-type: circle;
+}
+
+ul.b 
+{
+    list-style-type: square;
+}
+
+ol.c 
+{
+    list-style-type: upper-roman;
+}
+
+ol.d 
+{
+    list-style-type: lower-alpha;
+}
+</style>
+</head>
+<body>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+</body>
+</html>
+
+An Image as The List Item Marker:-
+-----------------------------------------------
+To specify an image as the list item marker, use the list-style-image property:
+
+<html>
+<head>
+<style>
+ul 
+{
+    list-style-image: url('sqpurple.gif');
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+The example above does not display equally in all browsers. IE and Opera will display the image-marker a little bit higher than Firefox, Chrome, and Safari.
+
+If you want the image-marker to be placed equally in all browsers, a crossbrowser solution is explained below.
+Crossbrowser Solution
+
+The following example displays the image-marker equally in all browsers:-
+
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    background-image: url(sqpurple.gif);
+    background-repeat: no-repeat;
+    background-position: 0px center; 
+    padding-left: 15px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
+
+

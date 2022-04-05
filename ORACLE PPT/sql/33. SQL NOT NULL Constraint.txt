@@ -1,0 +1,62 @@
+SQL NOT NULL Constraint:-
+----------------------------------------
+SQL NOT NULL constraint enforces to a column is always contain a value. This means thats you can not insert NULL (blank) value in this field.
+
+NOT NULL constraint applied only at column level. You should manually define NOT NULL constraint because table column set NULL value.
+
+SQL NOT NULL Constraint Rules:-
+------------------------------------------------
+A NULL values is different from a blank or zero.
+A NULL value can be inserted into the columns of any Datatype.
+
+NOT NULL Defined only at Column level:-
+---------------------------------------------------------
+Define NOT NULL constraint at column level with other column attributes,
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] NOT NULL,
+	column_name datatype[(size)] NOT NULL,
+	....
+);
+
+Example Statement :
+-----------------------------
+ SQL> CREATE TABLE emp_info(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	name VARCHAR(30) NOT NULL,
+	address VARCHAR(70)
+);
+
+Table created.
+
+ADD NOT NULL constraint (ALTER TABLE)
+-------------------------------------------------------------
+ALTER TABLE statement to add NOT NULL constraint in existing table column.
+
+Syntax :
+------------
+ALTER TABLE table_name
+	MODIFY column_name datatype[(size)] NOT NULL;
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE emp_info MODIFY address VARCHAR2(70) NOT NULL;
+
+Table altered.
+
+DROP NOT NULL constraint (ALTER TABLE):-
+-----------------------------------------------------------------
+ALTER TABLE statement to drop NOT NULL constraint in existing table column.
+
+Syntax :
+------------
+ALTER TABLE table_name
+	MODIFY column_name datatype[(size)] NULL;
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE emp_info MODIFY address VARCHAR2(70) NULL;
+
+Table altered.

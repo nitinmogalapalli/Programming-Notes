@@ -1,0 +1,44 @@
+
+Data Reading:
+	In Java we can read data in three ways.
+	a. Through Command line arguments
+	b. Using Scanner Class(>=1.5)
+	c. I/O Streams
+
+Any data you entered from the console treated as string by default. We need to convert the data to the specific format using some convertion mechanism.
+
+	Java Provides some classes called Wrapper Classes where the objects of one type of class can be wrapped with another.
+
+	Using the methods in Wrapper Classes we convert the data in string format to any type of data. For this we have a method called parseXXXX(String);
+Here XXXX is the respective Wrapper class which represents the type to which you want to convert the string.
+
+int	---	Integer
+char	---	Character
+double	---	Double
+byte	---	Byte
+boolean	---	Boolean
+float	---	Float
+long	---	Long
+short	---	Short
+
+using these classes we can convert the string to the respective type by calling the method parseXXX() with the class name.
+
+a. Using Command line we can enter data at runtime. That data is treated as String Type so we need to convert that in to the desired type using wrapper classes.
+
+b. Using Scanner Class
+	In Order to use the scanner class we need import it from the pacakge "java.util.*".
+so in that package if we need to use the scanner methods we need to declare the object of its type.
+	syntax:
+	Scanner s_obj = new Scanner(System.in);
+
+	When you declare an object to this class you can access the members of it using a dot operator.
+	s_obj.nextXXX();
+
+c. Input / Output Streams
+	Java has provided you the facility to access the devices using streams whcih can be of input and output streams.
+
+	Data input/output using stream can be done in two ways :
+	1. Byte Streams
+	2. Character Streams
+	
+Inorder to use the Stream classes you need to import the package which contain the input and output streams that is "java.io.*" package.

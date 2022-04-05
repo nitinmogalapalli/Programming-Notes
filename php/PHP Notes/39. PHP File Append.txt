@@ -1,0 +1,24 @@
+PHP Append to File:
+-----------------------------
+You can append data into file by using a or a+ mode in fopen() function. Let's see a simple example that appends data into data.txt file.
+
+Let's see the data of file first.
+
+data.txt
+
+welcome to php file write
+
+PHP Append to File - fwrite():
+-----------------------------------------
+The PHP fwrite() function is used to write and append data into file.
+
+Example:
+-------------
+    <?php  
+    $fp = fopen('data.txt', 'a');//opens file in append mode  
+    fwrite($fp, ' this is additional text ');  
+    fwrite($fp, 'appending data');  
+    fclose($fp);  
+      
+    echo "File appended successfully";  
+    ?>  

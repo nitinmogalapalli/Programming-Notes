@@ -1,0 +1,126 @@
+How to Create a company in Tally?
+Method 1:-
+--------------
+1. Click on Company info option in right hand side button pane.
+2. Then it appears company info menu.
+3. Click on Create company option in the company menu screen.
+4. Then appears a Company registration form.
+
+Method 2:-
+--------------
+1. Press Alt + F3 from the keyboard to open Company info menu screen.
+2. Press C key from the keyboard to open company registration form.
+
+Company Registration Form:-
+--------------------------------------
+1. Directory -> It is the location of company storing area in the computer memory.
+2. Name -> We must enter the company name.
+3. Mailing Name -> Mailing name is by default tally software takes company name only. it is used to print name of the company in reports.
+4. Address -> We must enter the company address according to company registration form.
+5. Country -> Here we have to select a country according to our registration.
+When we select india as country then it appears State and pincode options.
+6. State -> Here we have to select a state according to company registration form.
+7. Pincode -> We must enter the company area pincode.
+8. Telephone no -> We must enter the company land phone number only. (it is optional)
+9. Mobile no:- We must enter the company mobile number only (It is optional)
+10. Fax no, Email, Website -> iT is optional and if possible enter the company related details only.
+11. Financial Year from -> By default tally software take for this year details only.
+12. Books beginning from -> We must enter company accounts starting date.
+Remaining Details is optional and Finally it ask you to Accept -> YES Or NO
+When we choice Yes -> Company will be created (or) if we choice no -> Company will not be created.
+
+How to select a company?
+Method 1:-
+--------------
+1. Click on Company info option in right hand side button pane.
+2. Then it appears company info menu.
+3. Click on Select company option in the company menu screen.
+4. Then appears a Companies list.
+5. Select your company Press Enter key.
+
+Method 2:-
+--------------
+1. Press Alt + F3 from the keyboard to open Company info menu screen.
+2. Press S key from the keyboard to open Companies list.
+3. Select your company Press Enter key.
+
+How to Shut a company?
+Method 1:-
+--------------
+1. Click on Company info option in right hand side button pane.
+2. Then it appears company info menu.
+3. Click on Shut company option in the company menu screen.
+4. Then appears a Companies list.
+5. Select your company Press Enter key.
+
+Method 2:-
+--------------
+1. Press Alt + F3 from the keyboard to open Company info menu screen.
+2. Press H key from the keyboard to open Companies list.
+3. Select your company Press Enter key.
+
+How to Alter a Company?
+Method 1:-
+--------------
+1. Click on Company info option in right hand side button pane.
+2. Then it appears company info menu.
+3. Click on Alter company option in the company menu screen.
+4. Then appears a Companies list.
+5. Select your company Press Enter key.
+
+Method 2:-
+--------------
+1. Press Alt + F3 from the keyboard to open Company info menu screen.
+2. Press A key from the keyboard to open Companies list.
+3. Select your company Press Enter key.
+
+How to Delete a Company?
+Method 1:-
+--------------
+1. Click on Company info option in right hand side button pane.
+2. Then it appears company info menu.
+3. Click on Alter company option in the company menu screen.
+4. Then appears a Companies list.
+5. Select your company Press Enter key.
+6. Press Alt + D to delete your company it ask yes / no 
+7. Click on Yes and after click on yes it shows are you sure.
+8. Click on yes.
+
+Method 2:-
+--------------
+1. Press Alt + F3 from the keyboard to open Company info menu screen.
+2. Press A key from the keyboard to open Companies list.
+3. Select your company Press Enter key.
+4. Press Alt + D to delete your company it ask yes / no 
+5. Click on Yes and after click on yes it shows are you sure.
+6. Click on yes.
+
+How to create a Group company?
+Method 1:-
+--------------
+1. Click on Company info option in right hand side button pane.
+2. Then it appears company info menu.
+3. Click on select company option and select your companies.
+4. Click on Create Group company option
+5.Then appears Group company creation form.
+
+Directory -> Location of the company data storing area.
+
+Name -> Enter a Group company name
+
+Mailing name -> is default name of Group company name
+
+Address -> Enter your company address
+
+Country -> Choose country name
+
+State ->  Choose a State name
+
+pincode -> Enter pincode
+
+Telephone, Mobile, email,fax and website is optional -> you can enter any information if you know.
+
+Members -> Select your companies in one by one process.
+
+Accept -> Yes.
+

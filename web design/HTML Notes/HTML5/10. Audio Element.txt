@@ -1,0 +1,35 @@
+HTML5 Audio:-
+-------------------
+HTML5 provides a standard for playing audio files.
+
+Before HTML5, there was no standard for playing audio files on a web page.
+
+Before HTML5, audio files could only be played with a plug-in (like flash).
+
+The HTML5 <audio> element specifies a standard way to embed audio in a web page.
+
+The HTML <audio> Element:-
+--------------------------------------
+To play an audio file in HTML, use the <audio> element:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
+
+HTML Audio - How It Works:-
+---------------------------------------
+The controls attribute adds audio controls, like play, pause, and volume.
+
+Text between the <audio> and </audio> tags will display in browsers that do not support the <audio> element.
+
+Multiple <source> elements can link to different audio files. The browser will use the first recognized format.
+

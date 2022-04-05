@@ -1,0 +1,63 @@
+Software:-
+-------------
+A set of programs is called a Software (or) A collection of inter related programs is called software.
+
+Program:-
+-------------
+A set of instructions is called a program.
+
+Types of softwares:-
+---------------------------
+1. Application software.
+2. System software.
+
+1. Application software:-
+-------------------------------
+it is used to perform our regular task.
+
+Application software is of two types:-
+
+1. Packages
+2. Languages
+
+1. Packages:-
+------------------
+it is a predefined software and we cant change that software.
+
+Package is of two types
+1. Standard package.
+2. Customized package.
+
+1. Standard package are the universal software like ms office,tally and autocad etc....
+2. Customized package are the user defined software like banking,railway,insurance etc....
+
+2. Language:-
+------------------
+we can create and modify any type of software using programming languages.
+Ex:-
+-----
+c,c++,java etc.....
+
+2. System software:-
+---------------------------
+It is a one type of software to run a system.
+Ex:-
+-----
+Operating system
+Language Transaltor
+utilities
+
+Language:-
+-------------
+To way to communicate
+
+Types of Language:-
+--------------------------
+1. High level language or Human language
+2. Low level language or machine language
+
+Generation of Languages:-
+----------------------------------
+1. First Generation -> pure binary coding 
+2. Second Generation -> Half binary and half human code it means short mneonic words.
+3. Third Generation -> it is purely human or programmer readable format.

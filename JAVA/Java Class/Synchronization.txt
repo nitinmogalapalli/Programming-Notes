@@ -1,0 +1,51 @@
+Sybchronization:
+	When two or more threads need access to a shared resource, they need some way to ensure that the resource will be used by only one thread at a time. The process by which this is achieved is called synchronization.
+
+Key to synchronization is the concept of the monitor (also called a semaphore). Amonitor is an object that is used as a mutually exclusive lock, or mutex. Only one thread can own a monitor at a given time. When a thread acquires a lock, it is said to have entered the monitor. All other threads attempting to enter the locked monitor will be suspended until the first thread exits the monitor. These other threads are said to be waiting for the monitor. 
+
+Using Synchronized Methods:
+
+	Synchronization is easy in Java, because all objects have their own implicit monitor associated with them. To enter an object’s monitor, just call a method that has been modified with the synchronized keyword. While a thread is inside a synchronized method, all other threads that try to call it (or any other synchronized method) on the same instance have to wait. To exit the monitor and relinquish control of the object to the next waiting thread, the owner of
+the monitor simply returns from the synchronized method.
+
+The synchronized Statement:
+
+	While creating synchronized methods within classes that you create is an easy and effective means of achieving synchronization, it will not work in all cases. To understand why, consider the following. Imagine that you want to synchronize access to objects of a class that was not designed for multithreaded access. That is, the class does not use synchronized methods. 
+
+Further, this class was not created by you, but by a third party, and you do not have access to the source code. Thus, you can’t add synchronized to the appropriate methods within the class. How can access to an object of this class be synchronized? Fortunately, the solution to this problem is quite easy: 
+
+You simply put calls to the methods defined by this class inside a synchronized block.
+This is the general form of the synchronized statement:
+
+	synchronized(object) 
+	{
+		// statements to be synchronized
+	}
+
+	Here, object is a reference to the object being synchronized. Asynchronized block ensures that a call to a method that is a member of object occurs only after the current thread has successfully entered object’s monitor.
+
+Interthread Communication"
+
+	The preceding examples unconditionally blocked other threads from asynchronous access to certain methods. This use of the implicit monitors in Java objects is powerful, but you can achieve a more subtle level of control through interprocess communication.
+
+	Java includes an elegant interprocess communication mechanism via the wait( ), notify( ), and notifyAll( ) methods. These methods are implemented as final methods in Object, so all classes have them. All three methods can be called only from within a synchronized context. 
+
+the rules for using these methods are actually quite simple:
+• wait( ) tells the calling thread to give up the monitor and go to sleep until some other thread enters the same monitor and calls notify( ).
+• notify( ) wakes up a thread that called wait( ) on the same object. 
+• notifyAll( ) wakes up all the threads that called wait( ) on the same object. One of the threads will be granted access.
+
+These methods are declared within Object, as shown here:
+
+final void wait( ) throws InterruptedException
+final void notify( )
+final void notifyAll( )
+
+Deadlock:
+
+	A special type of error that you need to avoid that relates specifically to multitasking is deadlock, which occurs when two threads have a circular dependency on a pair of synchronized objects.
+
+Deadlock is a difficult error to debug for two reasons:
+
+• In general, it occurs only rarely, when the two threads time-slice in just the right way.
+• It may involve more than two threads and two synchronized objects. 

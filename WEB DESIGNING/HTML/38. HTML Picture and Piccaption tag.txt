@@ -1,0 +1,44 @@
+HTML figure tag
+
+HTML <figure> tag is used to mark up a photo in the document on a web page.
+
+As we know image tag is already available in HTML to display the pictures on web pages. But HTML 5 <figure> tag is used to handle the group of diagrams, photos, code listing etc. with some embedded content. You can also add a caption for the photo with the help of <figcaption> tag.
+
+HTML figure is new a new tag introduced in HTML5.
+
+HTML figure tag example:-
+------------------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<p>The Taj Mahal is widely recognized as "the jewel of Muslim art in India and   
+one of the universally admired masterpieces of the world's heritage". It is regarded  
+ by many as the finest example of Mughal architecture, a style that combines elements  
+ from Islamic, Persian, Ottoman, Turkish and Indian architectural styles.</p>  
+<figure>  
+  <img src="/htmlpages/images/tajmahal.jpg" alt="Taj Mahal"/>  
+</figure>  
+</body>
+</html>  
+
+HTML figcaption tag:-
+------------------------------
+The <figcaption> element is used to provide a caption to an image.
+
+It is an optional tag and can appear before or after the content within the <figure> tag.
+
+Only one <figcaption> element can be nested within a <figure> tag although the <figure> element itself may contain multiple other elements like <img> or <code>.
+
+The <figcaption> element is used with <figure> element and it can be placed as the first or last child of the <figure> element.
+
+HTML figure tag example:-
+------------------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<figure>  
+  <img src="/htmlpages/images/tajmahal.jpg" alt="Taj Mahal"/>  
+<figcaption>Fig.1.1 - A front view of the great Taj Mahal in Agra.</figcaption>  
+</figure>  
+</body>
+</html>  

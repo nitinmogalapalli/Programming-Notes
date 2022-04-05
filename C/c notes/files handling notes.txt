@@ -1,0 +1,134 @@
+0File Handling:-
+-------------------
+	Files let you store data on secondary storage such as a hard disk so that your programs can later retrieve that data again. 
+There are 2 types of files which are 
+1. Text files  
+2. Data files. 
+
+1.Text files:-
+-----------------
+	Text files are used for storing character strings in a file. To create a text file you must first declare a file pointer.
+
+Ex:-
+------
+#include<stdio.h>
+int main()
+{
+FILE *f;
+getch(); 
+} 
+
+	You must then open the file using the fopen function. fopen takes 2 parameters which are the file name and the open mode. fopen returns a file pointer which we will assign to the file pointer called f.
+
+Ex:-
+------
+#include<stdio.h>
+int main()
+{
+FILE *f;
+f = fopen("test.txt","w");
+getch(); 
+} 
+
+The above example will create a file called test.txt. The "w" means that the file is being opened for writing and if the file does not exist then it will be created. 
+
+Here are some other open modes:
+r 	Open for reading
+r+ 	Open for reading and writing
+w 	Open for writing and create the 		file if it does not exist. If the file 			exists then make it blank.
+w+ 	Open for reading and writing and 		create the file if it does not exist. 			If the file exists then make it 	blank.
+a 	Open for appending(writing at the 	end of file) and create the file if it 		does not exist.
+a+ 	Open for reading and appending 		and create the file if it does not 		exist.
+
+To write a string to the file you must use the fprintf command. fprintf is just like printf except that you must use the file pointer as the first parameter.
+
+Ex:-
+------
+#include<stdio.h>
+int main()
+{
+      FILE *f;
+      f = fopen("test.txt","w");
+      fprintf(f,"Hello");
+      return 0; 
+} 
+
+When you are finished using a file you must always close it. If you do not close a file then some of the data might not be written to it. Use the fclose commmand to close a file.
+
+Ex:-
+-----
+#include<stdio.h>
+
+int main()
+{
+     FILE *f;
+      f = fopen("test.txt","w");
+      fprintf(f,"Hello");
+      fclose(f);
+      return 0; 
+} 
+
+The fgets command is used when reading from a text file. You must first declare a character array as a buffer to store the string that is read from the file. The 3 parameters for fgets are the buffer variable, the size of the buffer and the file pointer.
+
+Ex:-
+------
+#include<stdio.h>
+
+int main()
+{
+      FILE *f;
+      char buf[100];
+      f = fopen("test.txt","r");
+      fgets(buf,sizeof(buf),f);
+      fclose(f);
+      printf("%s\n",buf);
+      return 0; 
+} 
+
+2. Data files:-
+------------------
+	A data file is used to store types of data such as integers. When you open a data file you must add the letter b to the open mode parameter of fopen.
+
+Ex:-
+-----
+#include<stdio.h>
+int main()
+{
+      FILE *f;
+      f = fopen("test.dat","wb");
+      fclose(f);
+      return 0; 
+} 
+
+fwrite is used to write to a file. The first parameter of fwrite is a pointer to the variable that you want to write to the file. The second parameter is the size of the variable that must e written. The third parameter is the number of variables to be written. The fourth parameter is the file pointer of the file you want to write to.
+
+Ex:-
+------
+#include<stdio.h>
+int main()
+{
+      FILE *f;
+      int buf;
+      f = fopen("test.dat","wb");
+      buf = 100;
+      fwrite(&buf,sizeof(buf),1,f);
+      fclose(f);
+      return 0; 
+} 
+
+fread is used to read from a file and is the same as fwrite except that the data is read into the variable instead of writing from it. You must remember to change the file mode to read.
+
+Ex:-
+------
+#include<stdio.h>
+int main()
+{
+      FILE *f;
+      int buf;
+      f = fopen("test.dat","rb");
+      fread(&buf,sizeof(buf),1,f);
+      printf("%d\n",buf);
+      fclose(f);
+      return 0; 
+} 
+

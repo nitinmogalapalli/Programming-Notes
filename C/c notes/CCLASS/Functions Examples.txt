@@ -1,0 +1,8 @@
+/* function to find max among three */
+/* function to find factorial of a given number */
+/* function to perform convertion degree centi to F */
+/* function to find the given number is prime or not */
+/* function to perfom swapping */
+/* function to find the max in the list of values */
+/* function to print the fibonacci series */
+/* function to sort the array of elements*/

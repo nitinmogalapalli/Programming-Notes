@@ -1,0 +1,432 @@
+Array:-
+---------
+	    An array is a group of same data type element when able we need you store many data in a same time in different position.
+
+Types of Array:-
+---------------------
+	                  Array is of two types-
+1.Single or one dimensional array.
+2.Two or multi dimensional array.
+
+Single dimensional array:-
+---------------------------------
+	          An array that have one variable and one subscript then that array is known as one or single dimensional array.
+
+Syntax:-
+-----------
+	Data type variable name [size];
+
+Data type: -
+----------------
+ 	Any data type is used in c language.
+
+Variable name (v1):-
+---------------------------  
+	Any name of the variable.
+[size]:-
+---------
+	It represent the size of array.
+
+Declaration of Array:- 
+---------------------------
+Example :-
+	Int  n[5]
+
+Int :- 
+-------
+int is data type in c language.
+n:-
+-----
+ n is the variable.  
+[5]:-
+------
+The size of the array is 5 block.
+
+Here n is collection of 5 integer elements first element is n[0], second element is n[1], third element is n[2], forth element is n[3] and last or 5th  element is n[4]
+
+Note:-
+--------
+	The index of an array has always started from zero. If an array has n elements then first element will be zero elements and last element will be n-1.In an integer array each element will consume 2 byte of memory so the above array is consuming 10 byte.
+
+In a float array each element will consume 4 byte of memory.
+
+Initialization of an array :- 
+---------------------------------			An array can be initialized in two types.   
+
+1. Compile time Initialization.
+2. Run time Initialization.
+
+Compile time Initialization:-
+------------------------------------
+Syntax:-
+----------
+Data type variable name[size]={list of elements}
+
+Example:-
+-------------
+int n[5] ={1,2,3,4,5};
+
+Example:-
+-------------
+1. W.A.P. to print the ten value .     
+
+#include<stdio.h>  
+#include<conio.h>  
+main()
+{
+int n[ ]={1,2,5,8,10,15,7,18,19,50};
+int i;
+clrscr();
+for(i=0;i<=9;i++)	 
+{
+Printf("The value of array %d",n[i]);
+}	 
+getch();
+}
+
+Output :-
+------------
+	The value of an array 1,2,5,8,10,15,7,18,19,50. 
+
+2.  W.A.P. to add any two tables .     
+	x[ ]	y[ ]	t[ ]
+	10	1	11
+	5	2	7
+	2	3	5
+	7	4	11
+                      
+#include<stdio.h>  
+#include<conio.h>  
+main()
+{
+int x[ ]={10,5,2,7};
+int y[ ]={1,2,3,4};
+int t[4],k;
+clrscr();
+for(k=0;k<4;k++)	 
+{
+t[k]=x[k]+y[k]
+Printf(" %d\n",t[k]);
+}	 
+getch();
+}
+
+Output :-
+------------
+                  11
+                   7
+                   5
+                  11
+
+Run time Initialization:-
+-------------------------------  
+	In this Initialization the value are through keyboard at the run time. 
+
+Syntax:-
+-----------
+type a1[s1]variable name[size]…………an[sn]
+
+type:-
+------- 
+Represent any valid data type such as int, float, char etc.
+
+a1 a2 a3……………. an: - 
+----------------------------------
+These represent any name of array.
+
+s1 s2 s3……………. sn: - 
+---------------------------------
+These represent the size of array.
+
+Example:-
+-------------
+1.  W.A.P. to enter 10 number and display them.     
+
+#include<stdio.h>  
+#include<conio.h>  
+main()
+{
+int n[10],i;
+clrscr();
+printf("enter 10 numbers")
+for(i=0;i<9;i++)	 
+{
+Scanf("%d",&n[i]);
+}
+Printf(" output array");
+for(i=0;i<9;i++)	 
+{
+printf("%d",n[i]);
+}	 
+getch();
+}
+
+Output :-
+------------
+        3
+	6
+	7
+	8
+	9
+	15
+	5
+	7
+	8
+	2
+
+Output array =3,6,7,8,9,15,5,7,8,2.
+
+Solution :-
+--------------
+       In this above example the first loop is used to enter the value and second loop is used to show the given value.
+
+2. W.A.P. to enter 5 numbers and print its sum.  
+   
+#include<stdio.h>  
+#include<conio.h>  
+main()
+{
+int n[5],i,sum=0;
+clrscr();
+for(i=0;i<=4;i++)	 
+{
+printf("enter  values")
+Scanf("%d",&n[i]);
+}
+printf(" elements of  array=");
+for(i=0;i<=4;i++)	 
+{
+sum=sum+n[i];
+printf("%d",n[i]);
+}	 
+printf("the sum of array is =%d",sum)
+getch();
+}
+
+Output :-
+------------
+              Enter the value =	3
+              Enter the value =	6
+              Enter the value =	7
+              Enter the value =	8
+              Enter the value =	12
+   Element of array =3, 6, 7,8,12.
+             The sum of array is = 36
+
+Two Dimensional Array:-
+---------------------------------
+	Two Dimensional Array is also called the matrix. In Two Dimensional Array have two sub subscripts. It is indicated by two indexes. First index or subscript is represent the number of rows and second subscript represents the number of column.   
+
+Declaration of Two Dimensional Array:- 
+---------------------------------------------------
+Syntax:-
+-----------
+type arr1[rd1][cd1],arr2[rd2][cd2]…………………..arrn[rdn][cdn]
+
+	Where type represent any valid data type in c such as int, float, char etc.
+
+arr1,arr2……..arrn:-
+-----------------------------     
+These are represent the name of an array. 
+
+rd1,rd2…….rdn:-
+-----------------------
+Represent the size of row.
+	
+cd1cd2……..cdn:-
+------------------------      
+Represent the size of column. 
+
+Example:-
+-------------
+	Int x[5][6]
+	X is the name of the array whose size of row is 5 and size of column is 6. 
+
+Initialization of an array :-
+--------------------------------- 
+     An array has initialized in two types.   
+
+1. Compile Time Initialization
+2. Run time Initialization.
+
+Compile time Initialization:-
+------------------------------------
+
+Int x[2][3]={{5,6,7},{2,4,3}};
+
+	Initialized the element of first row to 5,6,7 and second row to 2,4,3 these value are store in computer memory.
+
+	Here x is a collection of 6 integer value. First value is x[0][0]=5, second value is x[0][1]=6, third value is x[0][2]=7, forth value is x[1][0]=2, fifth value is x[1][1]=4, and sixth value is x[1][2]=3.
+
+X[0][0] - represent the first row and first column.
+X[0][1] - represent the first row and second column.
+X[0][2] - represent the first row and third column.
+X[1][0] - represent the second row and first column.
+X[1][1] - represent the second row and second column.
+X[1][2] - represent the second row and third column.
+
+Example:-
+-------------
+1. W.A.P. to print a 2*3 matrix.   
+5	6	7
+2	4	3
+
+main()
+{
+int x[2][3]={5,6,7,2,4,3};
+int r,c;
+printf("Output array is\n");
+for(r=0;r<2;r++)	 
+{
+for(c=0;c<3;c++)	
+{
+Printf(" %d \t",x[r][c]);
+}	 
+Printf("\n");
+}
+getch();
+}
+
+Output :-
+------------
+Output matrix :-      
+5 6 7 
+2 4 3
+
+Run  time Initialization:-
+--------------------------------
+				In this Initialization the value are enter through the key board at run time. 
+
+Syntax:-
+-----------
+Type arr1[r][c],arr2[r][c]…………………..arrn[r][c]
+
+	Where type represent any valid data type in c such as int, float, char etc.
+	
+arr1,arr2……..arrn:-
+-------------------------    	 
+These are represent the name of an array. 
+
+[r]:-
+----
+represent the size of row.
+	
+[c]:-
+-----
+represent the size of column. 
+
+Example:-
+-------------
+1. W.A.P. to print a matrix which 2 rows and 3 column and display them.
+	
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a[2][3],r,c;
+printf("enter values\n");
+for(r=0;r<2;r++)
+{
+for(c=0;c<3;c++)
+{
+scanf("%d",&a[r][c]);
+}
+}
+printf("printing the a matrix\n");
+for(r=0;r<2;r++)
+{
+for(c=0;c<3;c++)
+{
+printf("%d\t",a[r][c]);
+}
+printf("\n");
+}
+getch();
+}
+
+Output :-
+            	Enter value = 4
+	Enter value = 5
+	Enter value = 6
+	Enter value = 3
+	Enter value = 7
+	Enter value = 12
+	
+	4	5	6
+	3	7	12
+
+2.  W.A.P. to find the sum of two 2*2 matrix.
+	
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a[2][2],b[2][2],d[2][2],r,c;
+\* input value in first matrix *\
+printf("enter the value of matrix\n");
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+printf("enter value of a=");
+scanf("%d",&a[r][c]);
+}
+}
+\* input value in second matrix *\
+printf("enter the value of sec matrix\n");
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+printf("enter value of b=");
+scanf("%d",&b[r][c]);
+}
+}
+\* printing of first matrix *\
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+printf("%d",a[r][c]);
+}
+printf("\n");
+}
+\* printing of second matrix *\
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+printf("%d",b[r][c]);
+}
+\* a addition of two matrix in third matrix and display result *\
+printf("result after addition of two matrix=\n");
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+d[r][c]=a[r][c]+b[r][c];
+printf("%d\t",d[r][c]);
+}
+printf("\n");
+}
+
+getch();
+}
+
+Output :-
+------------
+            	Enter value in first matrix
+	Enter value of a = 4
+	Enter value of a = 5
+	Enter value of a = 6
+	Enter value of a = 8
+	Enter value in second matrix
+	Enter value of a = 5
+	Enter value of a = 3
+	Enter value of a = 7
+	Enter value of a = 8
+
+Result after addition of two matrix.
+	9	8
+	13	16
+

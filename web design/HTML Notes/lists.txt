@@ -1,0 +1,110 @@
+Lists:-
+-------
+	Html offers authors several mechanisms for specifying lists of information. All lists must contain one or more list elements. lists may contain :
+1. Unordered information
+2. Ordered information
+3. Definitions.
+
+1. Unordered lists:-
+-------------------------
+	An unordered list is a list of items. The list items are marked with bullets (typically small black circles).
+
+	An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+
+
+Syntax:-
+----------
+
+	<ul>
+	<li> -------- </li>	
+	<li> -------- </li>	
+	<li> -------- </li>	
+	</ul>
+
+Ex:-
+-----
+<html>
+<head>
+<title> Unordered list </title>
+</head>
+<body>
+<ul>
+<li> Coffee </li>
+
+<li> Tea </li>
+
+<li> Milk </li>
+
+</ul>	
+</body>
+</html>
+
+2. Ordered list:-
+-------------------
+	An ordered list is also a list of items. The list items are marked with numbers.
+	An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+Syntax:-
+----------
+
+	<ol>
+	<li> -------- </li>	
+	<li> -------- </li>	
+	<li> -------- </li>	
+	</ol>
+
+Ex:-
+-----
+<html>
+<head>
+<title> ordered list </title>
+</head>
+<body>
+<ol>
+<li> Coffee </li>
+
+<li> Tea </li>
+
+<li> Milk </li>
+
+</ol>	
+</body>
+</html>
+
+	Inside a list item you can put paragraphs, line breaks, images, links and other lists etc...
+
+3. Definition List:-
+----------------------
+	A definition list is not a list of single items. it is a list of items (terms), with a description of each item (term).
+
+	A definition list starts with a <dl> tag (definition list)
+	Each term starts with a <dt> tag (definition term).
+	Each description starts with a <dd> tag (definition description).
+
+Syntax:-
+----------
+
+	<dl>
+	<dt> -------- </dt>	
+	<dd> -------- </dd>	
+	<dt> -------- </dt>	
+	<dd> -------- </dd>
+	</dl>
+
+Ex:-
+-----
+<html>
+<head>
+<title> definition list </title>
+</head>
+<body>
+<dl>
+<dt> Coffee </dt>
+
+<dd> Black hot drink </dd>
+<dt> Tea </dt>
+
+<dd> white cold drink </dd>
+</dl>	
+</body>
+</html>
+

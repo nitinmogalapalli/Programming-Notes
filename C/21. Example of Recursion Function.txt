@@ -1,0 +1,24 @@
+#include<stdio.h> 
+#include<conio.h> 
+void main()
+ { 
+int fact(int); 
+int f,num; 
+clrscr(); 
+printf("Enter any number: "); 
+scanf("%d",&num); 
+f=fact(num); 
+printf("Factorial: %d",f); 
+getch(); 
+}
+ int fact(int num) 
+{ 
+if(num<0) 
+return(-1); 
+if(num==0) 
+return(1); 
+else 
+{ 
+return(num*fact(num-1)); 
+} 
+}

@@ -1,0 +1,22 @@
+HTML Label Tag:-
+------------------------
+The <label> tag is used to specify a label for an <input> element. It adds a label to a form control such as text, email, password, textarea etc.
+
+HTML Label Tag Example:-
+-------------------------------------
+Let's see the example of HTML label tag
+
+<!DOCTYPE>
+<html>  
+<body>  
+<label for="email">EMAIL-ID:<br /> 
+<input type="email" value="" name="emailid" size="30"   
+placeholder="Enter a valid email address"><br /><br />  
+<label for="phone">PHONE NO:<br /> 
+<input type="text" value="" name="phno" size="30"   
+maxlength="10" placeholder="Enter a valid phone number" pattern="[0-9]{10}"><br /><br />  
+</body>
+</html>  
+
+
+

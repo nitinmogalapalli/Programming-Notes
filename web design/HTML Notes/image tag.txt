@@ -1,0 +1,42 @@
+Image Tag:-
+-----------------
+	In HTML, images are defined with the <img> tag.
+The <img> tag is empty, which means that it contains attributes only and it has no closing tag.
+
+To display an image on a page, you need to use the src attribute. Src stands for "source". The value of the src attribute is the URL of the image you want to display on your page.
+
+Syntax:-
+----------
+<img src="url">
+
+Ex:-
+-----
+<html>
+<head>
+<title> Image Tag </title>
+</head>
+<body>
+<h1 align="center"> Image Tag </h1>
+<img src="123.jpg">
+</body>
+</html>
+
+Height and Width Attributes:-
+------------------------------------
+	The height and Width attributes are used to define height and width for an image.
+
+Syntax:-
+----------
+<img src="url" height="value" width="value">
+
+Ex:-
+----
+<html>
+<head>
+<title> Image Tag </title>
+</head>
+<body>
+<h1 align="center"> Image Tag </h1>
+<img src="123.jpg" width="150" height="150">
+</body>
+</html>

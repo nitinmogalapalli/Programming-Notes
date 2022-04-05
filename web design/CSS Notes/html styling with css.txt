@@ -1,0 +1,253 @@
+Styling HTML with CSS:-
+---------------------------------
+CSS stands for Cascading Style Sheets
+
+Styling can be added to HTML elements in 3 ways:
+
+    Inline - using a style attribute in HTML elements
+    Internal - using a <style> element in the HTML <head> section
+    External - using one or more external CSS files
+
+CSS Syntax:-
+------------------
+CSS styling has the following syntax:
+
+element { property:value ; property:value }
+
+The element is an HTML element name. The property is a CSS property. The value is a CSS value.
+
+Multiple styles are separated with semicolon.
+
+Inline Styling (Inline CSS):-
+-------------------------------------
+Inline styling is useful for applying a unique style to a single HTML element:
+
+Inline styling uses the style attribute.
+
+This inline styling changes the text color of a single heading:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue">This is a Blue Heading</h1>
+
+</body>
+</html>
+
+Internal Styling (Internal CSS):-
+------------------------------------------
+An internal style sheet can be used to define a common style for all HTML elements on a page.
+
+Internal styling is defined in the <head> section of an HTML page, using a <style> element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+External Styling (External CSS):-
+--------------------------------------------
+External style sheet are ideal when the style is applied to many pages.
+
+With external style sheets, you can change the look of an entire site by changing one file.
+
+External styles are defined in the <head> section of an HTML page, in the <link> element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+CSS Fonts:-
+-----------------
+The CSS property color defines the text color to be used for an HTML element.
+
+The CSS property font-family defines the font to be used for an HTML element.
+
+The CSS property font-size defines the text size to be used for an HTML element.
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+h1 
+{
+    color:blue;
+    font-family:verdana;
+    font-size:300%;
+}
+p  
+{
+    color:red;
+    font-family:courier;
+    font-size:160%;
+}
+</style>
+</head>
+
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+
+</html>
+
+The CSS Box Model:-
+-----------------------------
+Every visible HTML element has a box around it, even if you cannot see it.
+
+The CSS border property defines a visible border around an HTML element:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+p {
+    border:1px solid grey;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+The CSS padding property defines a padding (space) inside the border:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+p {
+    border:1px solid grey;
+    padding:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+The CSS margin property defines a margin (space) outside the border:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+p {
+    border:1px solid grey;
+    padding:10px;
+    margin:30px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+The id Attribute:-
+-----------------------
+All the examples above use CSS to style HTML elements in a general way.
+
+The CSS styles define an equal style for all equal elements.
+
+To define a special style for a special element, first add an id attribute to the element:
+
+Example:-
+--------------
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+#p1 
+{
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p id="p1">I am different.</p>
+
+</body>
+</html>
+
+The class Attribute:-
+----------------------------
+To define a style for a special type (class) of elements, add a class attribute to the element:
+
+Example:-
+-------------
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+.error 
+{
+    color:red;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p class="error">I am different.</p>
+<p>This is a paragraph.</p>
+<p class="error">I am different too.</p>
+
+</body>
+</html>

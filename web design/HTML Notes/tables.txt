@@ -1,0 +1,187 @@
+Html Tables:-
+----------------
+	Tables are defined with the <table> tag. A table is divided into rows (with the <tr> tag), and each row is divided into data cells (with the <td> tag). The letters td stands for "Table data", which is the content of a data cell. A data cell can contain text, images, lists, paragraphs, forms, horizontal rules, tables etc.
+
+Syntax:-
+----------
+<table>
+----------
+</table>
+
+Ex:-
+-----
+<html>
+<head>
+<title> Tables </title>
+</head>
+<body>
+<table>
+<tr>
+<td> row 1, cell 1</td>
+<td> row 1, cell 2</td>
+</tr>
+<tr>
+<td> row 2, cell 1</td>
+<td> row 2, cell 2</td>
+</tr>
+</table>
+</body>
+</html>
+
+Tables and the Border Attribute:-
+----------------------------------------
+	if you do not specify a border attribute the table will be displayed without any borders. sometimes this can be useful, but most of the time, you want the borders to show.
+
+Syntax:-
+----------
+<table border="value">
+----------------------------
+</table>
+
+Ex:-
+-----
+<html>
+<head>
+<title> Tables with borders </title>
+</head>
+<body>
+<table border="1">
+<tr>
+<td> row 1, cell 1</td>
+<td> row 1, cell 2</td>
+</tr>
+<tr>
+<td> row 2, cell 1</td>
+<td> row 2, cell 2</td>
+</tr>
+</table>
+</body>
+</html>
+
+Headings in a Table:-
+--------------------------
+	Headings in a table are defined with the <th> tag.
+Ex:-
+-----
+<html>
+<head>
+<title> Tables with Headings</title>
+</head>
+<body>
+<table>
+<tr>
+<th> Heading </th>
+<th> another heading </th>
+</tr>
+<tr>
+<td> row 1, cell 1</td>
+<td> row 1, cell 2</td>
+</tr>
+<tr>
+<td> row 2, cell 1</td>
+<td> row 2, cell 2</td>
+</tr>
+</table>
+</body>
+</html>
+
+Table Attributes:-
+---------------------
+1. Cell Padding:-
+--------------------
+	Cell padding defines the space, between the cell contents and the cell borders.
+
+Sytnax:-
+----------
+<table cellpadding=value">
+---------------------------------
+</table>
+
+Ex:-
+-----
+<html>
+<head>
+<title> Tables Attributes </title>
+</head>
+<body>
+<table border="2" cellpadding="8">
+<tr>
+<td> row 1, cell 1</td>
+<td> row 1, cell 2</td>
+</tr>
+<tr>
+<td> row 2, cell 1</td>
+<td> row 2, cell 2</td>
+</tr>
+</table>
+</body>
+</html>
+
+2. Cell Spacing:-
+--------------------
+	Cell spacing defines the space between the cells (the width of the cell border).
+
+Syntax:-
+----------
+<Table cellspacing="value">
+----------------------------------
+</table>
+
+Ex:-
+-----
+<html>
+<head>
+<title> Tables Attributes </title>
+</head>
+<body>
+<table border="2" cellspacing="8">
+<tr>
+<td> row 1, cell 1</td>
+<td> row 1, cell 2</td>
+</tr>
+<tr>
+<td> row 2, cell 1</td>
+<td> row 2, cell 2</td>
+</tr>
+</table>
+</body>
+</html>
+
+The Colspan and Rowspan Attributes to TD and TH:-
+-----------------------------------------------------------------------
+	In tables you want a cell to drop down to the next cell below it or perhaps stretch across into the next row then use colspan and rowspan.
+
+Ex:-
+-----
+<HTML>
+<HEAD>
+<TITLE> TABLES WITH COLSPAN AND ROWSPAN </TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN="CENTER"> THE BATMOBILE </H1>
+<TABLE BORDER="3" CELLPADDING="7" ALIGN="CENTER">
+<TR ALIGN="CENTER">
+<TD> SPECIAL EQIPMENT </TD>
+<TD COLSPAN="2"> SPECIFICATION/PERFORMANCE DATA </TD>
+</TR>
+<TR>
+<TD> RETRACTIVE PROJECTIVE ARMOR </TD>
+<TD ALIGN=CENTER> ENGINE TYPE </TD>
+<TD ALIGN=CENTER> JET TURBINE </TD>
+</TR>
+<TR>
+<TD> WEAPONS SYSTEM </TD>
+<TD ALIGN=CENTER> THRUST </TD>
+<TD ALIGN=CENTER> 150bs@103%ROS </TD>
+</TR>
+<TR>
+<TD ROWSPAN="2">
+</TR>
+<TR>
+<TD> INSTRUMENTS </TD>
+<TD ALIGN=CENTER> TORQUE </TD>
+<TD ALIGN=CENTER> 1750lbs/ft@98.7%ROS </TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

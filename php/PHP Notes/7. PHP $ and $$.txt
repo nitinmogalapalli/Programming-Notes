@@ -1,0 +1,53 @@
+PHP $ and $$ Variables:
+----------------------------------
+The $var (single dollar) is a normal variable with the name var that stores any value like string, integer, float, etc.
+
+The $$var (double dollar) is a reference variable that stores the value of the $variable inside it.
+
+To understand the difference better, let's see some examples.
+
+Example 1:
+---------------
+    <?php  
+    $x = "abc";  
+    $$x = 200;  
+    echo $x."<br/>";  
+    echo $$x."<br/>";  
+    echo $abc;  
+    ?>  
+
+In the above example, we have assigned a value to the variable x as abc. Value of reference variable $$x is assigned as 200.
+
+Now we have printed the values $x, $$x and $abc.
+
+Example2:
+--------------
+
+    <?php  
+     $x="U.P";  
+    $$x="Lucknow";  
+    echo $x. "<br>";  
+    echo $$x. "<br>";  
+    echo "Capital of $x is " . $$x;  
+    ?>  
+
+In the above example, we have assigned a value to the variable x as U.P. Value of reference variable $$x is assigned as Lucknow.
+
+Now we have printed the values $x, $$x and a string.
+
+Example3:
+---------------
+    <?php  
+    $name="Cat";  
+    ${$name}="Dog";  
+    ${${$name}}="Monkey";  
+    echo $name. "<br>";  
+    echo ${$name}. "<br>";  
+    echo $Cat. "<br>";  
+    echo ${${$name}}. "<br>";  
+    echo $Dog. "<br>";  
+    ?>  
+
+In the above example, we have assigned a value to the variable name Cat. Value of reference variable ${$name} is assigned as Dog and ${${$name}} as Monkey.
+
+Now we have printed the values as $name, ${$name}, $Cat, ${${$name}} and $Dog.

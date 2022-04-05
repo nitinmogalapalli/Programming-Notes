@@ -1,0 +1,60 @@
+SQL DEFAULT Constraint:-
+-------------------------------------
+SQL DEFAULT constraint assign default value if none of the value specified of given field.
+
+When you inserting data does not provide any specific value automatically assign default value only if you specified DEFAULT constraint.
+
+DEFAULT constraint specified only at column level.
+
+DEFAULT CONSTRAINT defined only at Column level
+---------------------------------------------------------------------------
+Specify DEFAULT constraint at column level with other column attributes,
+
+Syntax :
+-----------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ] DEFAULT default_value,
+	column_name datatype[(size)] [ NULL | NOT NULL ] DEFAULT default_value,
+	....
+);
+
+Example Statement :
+------------------------------
+ SQL> CREATE TABLE stu_info(
+ 	no NUMBER(3,0) PRIMARY KEY,
+ 	name VARCHAR(30) NOT NULL,
+	std VARCHAR(18) DEFAULT 'M.Sc.(CS)',
+	fees_pay NUMBER(5) DEFAULT 2000
+);
+
+Table created.
+
+ADD DEFAULT constraint (ALTER TABLE)
+-----------------------------------------------------------
+ALTER TABLE statement to add DEFAULT constraint in existing table column.
+
+Syntax :
+-----------
+ALTER TABLE table_name
+	MODIFY column_name datatype[(size)] [ NOT NULL ] DEFAULT default_value;
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE stu_info MODIFY std VARCHAR(18) DEFAULT 'M.Sc.(CS)';
+
+Table altered. 
+
+DROP DEFAULT constraint (ALTER TABLE)
+-------------------------------------------------------------
+ALTER TABLE statement to drop DEFAULT constraint in existing table column. you need to just redefine (or modify) column attribute.
+
+Syntax :
+----------
+ALTER TABLE table_name
+	MODIFY column_name datatype[(size)];
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE emp_info MODIFY std VARCHAR2(18);
+
+Table altered.

@@ -1,0 +1,54 @@
+Tally:-
+--------
+Tally means It is an Accounting package.
+
+Accounting:-
+------------------
+Accounting is an art. here are record the transactions, classify the transactions, and summerizing the transactions in the terms of money.
+
+Package:-
+--------------
+it is a predefined software and we cant change that software.
+
+Accounts can be written into two ways:
+
+1. Manual Accounts
+2. Computerized Accounts
+
+1. Manual Accounts:-
+------------------------------
+Accounting cycle:-
+-------------------------
+1. Transaction
+2. Journal
+3. Ledger
+4. Trial Balance
+5. Final Accounts
+a. Trading a/c
+b. Profit and loss a/c
+c. Balance sheet.
+
+2. Computerized Accounts:-
+---------------------------------------
+Here Computer will prepare all accounts of a particular company by according to user instructions.
+
+Introduction to Tally:-
+----------------------------
+1. Tally software is designed and maintained by Tally soultions company.
+2. There are different versions in tally software.
+	Tally versions
+a. Tally 4.5
+b. Tally 5.4
+c. Tally 6.3
+d. Tally 7.2
+e. Tally 8.1
+f.  Tally 9.0
+
+Now The latest version is Tally ERP9.
+
+3. Features of Tally Software:-
+
+a. Accounting Features
+b. Inventory Features
+c. Taxation Features
+d. ADD on Features.

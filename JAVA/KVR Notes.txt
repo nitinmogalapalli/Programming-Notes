@@ -1,0 +1,49 @@
+Introduction of Java:-
+----------------------------
+It is one of the programming language or technology used for developing web applications. Using this technology you can develop distributed application. Java language developed at SUN Micro Systems in the year 1995 under the guidance of James Gosling and there team. In other word It is a programming language suitable to the development of web applications.
+
+Born:-
+--------
+This language was developed at SUN Microsystems in the year 1995 under the guidance of James Gosling and there team.
+
+Overview of Java:-
+-------------------------
+Java is one of the programming language or technology used for developing web applications. Java language developed at SUN Micro Systems in the year 1995 under the guidance of James Gosling and there team. Originally SUN Micro Systems is one of the Academic university (Standford University Network)
+
+Whatever the software developed in the year 1990, SUN Micro Systems has released on the name of oak, which is original name of java (scientifically oak is one of the tree name). The OAK has taken 18 months to develop.
+
+The oak is unable to fulfill all requirements of the industry. So James Gosling again reviews this oak and released with the name of java in the year 1995. Scientifically java is one of the coffee seed name.
+
+Java divided into three categories, they are
+
+J2SE (Java 2 Standard Edition)
+J2EE (Java 2 Enterprise Edition)
+J2ME (Java 2 Micro or Mobile Edition)
+
+J2SE:-
+---------
+J2SE is used for developing client side applications.
+
+J2EE:-
+---------
+J2EE is used for developing server side applications.
+
+J2ME:-
+----------
+J2ME is used for developing mobile or wireless application by making use of a predefined protocol called WAP(wireless Access / Application protocol).
+
+Java Version History:-
+------------------------------
+There are many java versions that has been released. Current stable release of Java is Java SE 8.
+
+1.JDK Alpha and Beta (1995)
+2.JDK 1.0 (23rd Jan, 1996)
+3.JDK 1.1 (19th Feb, 1997)
+4.J2SE 1.2 (8th Dec, 1998)
+5.J2SE 1.3 (8th May, 2000)
+6.J2SE 1.4 (6th Feb, 2002)
+7.J2SE 5.0 (30th Sep, 2004)
+8.Java SE 6 (11th Dec, 2006)
+9.Java SE 7 (28th July, 2011)
+10.Java SE 8 (18th March, 2014)
+

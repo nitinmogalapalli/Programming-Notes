@@ -1,0 +1,22 @@
+Python Pass:-
+-------------------
+When you do not want any code to execute, pass Statement is used. It is same as the name refers to. It just makes the control to pass by without executing any code. If we want to bypass any code pass statement can be used.
+
+Syntax:
+-----------
+    pass  
+
+eg:
+----
+    for i in [1,2,3,4,5]:  
+        if i==3:  
+            pass  
+            print "Pass when value is",i  
+        print i,  
+
+Output:
+-----------
+    >>>   
+    1 2 Pass when value is 3  
+    3 4 5  
+    >>>  

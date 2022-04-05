@@ -1,0 +1,19 @@
+HTML5 <aside> Element:-
+----------------------------------
+The <aside> element defines some content aside from the content it is placed in (like a sidebar).
+
+The aside content should be related to the surrounding content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>My family and I visited The Epcot center this summer.</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+</aside>
+
+</body>
+</html>

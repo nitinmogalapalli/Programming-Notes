@@ -1,0 +1,10 @@
+Package:
+
+	Classes with same names can not be put into the same folder.
+	To overcome Class name conflicts Packages were introduced.
+
+	"package" we use this keyword to define a file/class belongs to that package.
+
+	Package classes can be used in the classes that belongs to other folders using "import" statement.
+
+	

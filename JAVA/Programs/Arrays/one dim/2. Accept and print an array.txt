@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Array
+{
+public static void main(String args[])
+{
+int a[],i;
+a = new int[5];
+Scanner obj=new Scanner(System.in);
+System.out.println("Enter values in A array");
+for(i=0;i<=4;i++)
+{
+a[i] = obj.nextInt();
+}
+System.out.println("Print values in A array");
+for(i=0;i<=4;i++)
+{
+System.out.println(" "+a[i]);
+}
+}
+}

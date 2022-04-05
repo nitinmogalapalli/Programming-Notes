@@ -1,0 +1,160 @@
+CSS Dimension:-
+---------------
+The CSS dimension properties allow you to control the height and width of an element.
+
+Set the height of the element:-
+-------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img.normal 
+{
+    height: auto;
+}
+
+img.big 
+{
+    height: 120px;
+}
+
+p.ex 
+{
+    height: 100px;
+    width: 100px;
+}
+</style>
+</head>
+<body>
+
+<img class="normal" src="smiley.gif"><br>
+<img class="big" src="smiley.gif">
+<p class="ex">The height and width of this paragraph is 100px.</p>
+<p>This is a paragraph with no height and width specified.</p>
+<p>This is also a paragraph with no height and width specified.</p>
+
+</body>
+</html>
+
+Set the height of an image using percent:-
+-------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body {
+    height: 100%;
+}
+
+img.normal {
+    height: auto;
+}
+
+img.big {
+    height: 10%;
+}
+</style>
+</head>
+<body>
+
+<img class="normal" src="smiley.gif" width="32" height="32"><br>
+<img class="big" src="smiley.gif" width="32" height="32">
+
+</body>
+</html>
+
+Set the width of an element using a pixel value:-
+-------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    width: 200px;
+}
+</style>
+</head>
+<body>
+
+<img src="smiley.gif" width="32" height="32">
+
+</body>
+</html>
+
+Set the maximum height of an element:-
+---------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    max-height: 50px;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px.</p>
+
+</body>
+</html>
+
+Set the maximum width of an element using percent:-
+---------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    max-width: 20%;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.</p>
+
+</body>
+</html>
+
+Set the minimum height of an element:-
+--------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    min-height: 100px;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>The minimum height of this paragraph is set to 100px.</p>
+
+</body>
+</html>
+
+Set the minimum width of an element using a pixel value:-
+---------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    min-width: 150px;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>The minimum width of this paragraph is set to 150px.</p>
+
+</body>
+</html>

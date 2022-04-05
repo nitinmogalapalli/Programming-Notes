@@ -1,0 +1,3 @@
+/* Write a Java Program to Print your Favourite Color Names */
+/* Write a Java Program to Print Days of a week */
+/* Write a Java Program to Print Months of a year */

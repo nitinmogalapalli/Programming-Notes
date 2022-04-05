@@ -1,0 +1,67 @@
+PHP Variables:
+---------------------
+A variable in PHP is a name of memory location that holds data. A variable is a temporary storage that is used to store data temporarily.
+
+In PHP, a variable is declared using $ sign followed by variable name.
+
+Syntax of declaring a variable in PHP is given below:
+
+    $variablename=value;  
+
+PHP Variable: Declaring string, integer and float:
+------------------------------------------------------------------
+Let's see the example to store string, integer and float values in PHP variables.
+
+File: variable1.php
+
+    <?php  
+    $str="hello string";  
+    $x=200;  
+    $y=44.6;  
+    echo "string is: $str <br/>";  
+    echo "integer is: $x <br/>";  
+    echo "float is: $y <br/>";  
+    ?>  
+
+PHP Variable: Sum of two variables:
+-------------------------------------------------
+File: variable2.php
+
+    <?php  
+    $x=5;  
+    $y=6;  
+    $z=$x+$y;  
+    echo $z;  
+    ?>  
+
+PHP Variable: case sensitive:
+----------------------------------------
+In PHP, variable names are case sensitive. So variable name "color" is different from Color, COLOR, COLor etc.
+
+File: variable3.php
+
+    <?php  
+    $color="red";  
+    echo "My car is " . $color . "<br>";  
+    echo "My house is " . $COLOR . "<br>";  
+    echo "My boat is " . $coLOR . "<br>";  
+    ?>  
+
+PHP Variable: Rules
+----------------------------
+PHP variables must start with letter or underscore only.
+
+PHP variable can't be start with numbers and special symbols.
+
+File: variablevalid.php
+
+    <?php  
+    $a="hello";	//letter (valid)  
+    $_b="hello";	//underscore (valid)  
+      
+    echo "$a <br/> $_b";  
+    ?>  
+
+PHP: Loosely typed language:
+------------------------------------------
+PHP is a loosely typed language, it means PHP automatically converts the variable to its correct data type. 

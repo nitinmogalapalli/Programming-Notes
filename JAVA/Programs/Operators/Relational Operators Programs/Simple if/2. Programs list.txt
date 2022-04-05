@@ -1,0 +1,2 @@
+/* w.a.p to accept a no and print the postive no */
+/* w.a.p to accept a two nos and print the greatest no */

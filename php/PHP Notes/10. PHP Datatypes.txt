@@ -1,0 +1,30 @@
+PHP Data Types :
+-------------------------
+PHP data types are used to hold different types of data or values. PHP supports 8 primitive data types that can be categorized further in 3 types:
+
+    Scalar Types
+    Compound Types
+    Special Types
+
+PHP Data Types: Scalar Types
+-------------------------------------------
+There are 4 scalar data types in PHP.
+
+    boolean
+    integer
+    float
+    string
+
+PHP Data Types: Compound Types
+-------------------------------------------------
+There are 2 compound data types in PHP.
+
+    array
+    object
+
+PHP Data Types: Special Types
+-------------------------------------------
+There are 2 special data types in PHP.
+
+    resource
+    NULL

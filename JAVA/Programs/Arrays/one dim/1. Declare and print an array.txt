@@ -1,0 +1,13 @@
+class Array
+{
+public static void main(String args[])
+{
+int a[]={5,10,15,20,25};
+int i;
+System.out.println("Values in Array a is");
+for(i=0;i<=4;i++)
+{
+System.out.println(" "+a[i]);
+}
+}
+}

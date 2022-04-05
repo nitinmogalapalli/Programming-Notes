@@ -1,0 +1,17 @@
+SQL Left Outer Join - SQL Left Join
+-------------------------------------------------
+SQL Left Join (Left Outer Join) always contains all records of left table (Table A) even of join condition does not find any matching record in right table (Table B).
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+    FROM product LEFT OUTER JOIN category
+    ON product.category_id = category.category_id;
+
+Following is alternative syntax result produce same as above,
+
+Example Statement :
+-----------------------------
+SQL> SELECT *
+    FROM product, category
+    WHERE product.category_id = category.category_id(+);

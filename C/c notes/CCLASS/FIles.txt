@@ -1,0 +1,89 @@
+ I/O:
+	In C We can write programs that do input and output operations using console I/O and File I/O.
+In console I/O we deal with the programs that are given and put the data from and to the console(which is a user screen).
+
+File I/O:
+	Here we do input and output operations using files.
+
+File:
+	It is a named package of information of particular format stored on the computer.
+C File:
+	we need these things inorder to work with the files in c language.
+	File Name/Path,
+	Data Structure of the file,
+	Mode of operaton on File.
+File Name:
+	It is a name given to identify it by the computer Uniquily.
+File name can divided into two parts.
+	filename.filetype
+Eg:
+	text.data
+	hai.sys
+	this
+	New.c
+
+Data Structure:
+	Every c file has to be of the type FILE Structure, to have pointed by the program.
+Inorder to have the stream for the program to the file we need to point the file to the FILE Structure.
+
+Eg:
+	FILE *fp;
+Mode of the file:
+	there are two types of files that we can create using c. they are text files and binary files.
+	For normal Text files,
+		w - this is to indicate that the file can be created, and opens it in write mode.
+		r - this is for opening a file in reading mode.
+		a - to indicate a file opening in append mode by inserting data at the end of the file.
+	and we may have other modes like w+,a+,r+;
+
+	For Binary files:
+		wb,rb,ab,wb+,rb+,ab+;
+File Operations:
+	1. File Creation
+	2. Inputing data into file
+	3. getting data from the file
+	4. closing file 
+1. FIle creation
+	here we use a function that opens a file with a specified name, which return the address of the file with the given file name.
+	Syntax:
+		fopen("filename.filetype","mode")
+	Eg:
+		FILE *fp;
+		fp = fopen("new.txt","w");
+2. Inputing data to the file
+	a. Character by character(putc)
+		using putc with the file pointer can insert a character to the file.
+	Syntax:
+		putc(character,filepointer);
+	Eg:
+		putc('y',fp);
+
+	b. Integers (putw)
+	Syntax:
+		putw(int,filepointer);
+	c. Formated data
+		we use fprintf function to read a formatted data into the list of variables.
+
+	Syntax:
+		fprintf(inputpointer,"control String",list);
+	Eg:
+		fprintf(fp,"%d%d",var1,var2);
+	
+3. Reading data from the file
+	a. getc
+		by using this function we can read a character from the file pointer we specified to it.
+	Syntax:
+		getc(filepointer);
+	b. getw
+		we use this to read an integer from the file.
+	Syntax:
+		getw(filepointer);
+	c. fscanf
+		Used to read the data from the file with the formatted data values.
+	Syntax:
+		fscanf(outputpointer,"control string",list);
+
+4. Closing a file
+	we use a fclose to close the file with the specified pointer.
+	Syntax:
+		fclose(filepointer);

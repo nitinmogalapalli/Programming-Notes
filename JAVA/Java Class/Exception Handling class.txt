@@ -1,0 +1,143 @@
+Excetption Handling:
+
+The Exceptions are caused by user error, others by programmer error, and others by physical resources that have failed in some manner.
+
+Exception handling is an important aspect of Java programming because the Java language defines checked exceptions. 
+
+Checked Exception:
+
+	A checked exception is an exception that fits under the Handle or Declare Rule, meaning that it must be either handled by a method using a try/catch block or declared using the throws keyword.
+
+Runtime exceptions:
+
+	A runtime exception is an exception that occurs that probably could have been avoided by the programmer. Runtime exceptions can be ignored (and should be, in most cases). You should let a runtime exception crash your program, then find the problem and change your code so that the exception does not arise again.
+
+Errors:
+	Actually, these are not exceptions at all, but problems that arise beyond the control of the user or the programmer.
+
+
+The three types of exceptions share a common parent: the java.lang.Throwable class. Only objects of type Throwable can be thrown by the JVM. The Throwable class has two child classes: Exception and Error.
+
+The inheritance hierarchy of exceptions is based on the three categories. The Error class is the parent class of all Java errors; the Exception class is the parent class of all exceptions, both run time and checked.
+
+Runtime exceptions and checked exceptions are further distinguished by where they fit in the inheritance hierarchy. If a class is a child of RuntimeException, this child class represents a runtime exception. If a class is a child of Exception but not a child of RuntimeException, this class is a checked exception.
+
+Methods of the Throwable Class:
+
+	Exceptions are Java objects of type Throwable. When you catch an exception,
+you catch a reference to a Java object. Each exception class is different and has its own set of useful methods, but because all exceptions extend from Throwable, you can also invoke the methods of the Throwable class on any caught exception.
+
+ > public String getMessage(). Returns a detailed message about the exception that has occurred. This message is initialized in the Throwable constructor.
+
+ > public Throwable getCause(). Returns the cause of the exception as represented by a Throwable object. This cause is initialized using either one of the Throwable constructors or the initCause() method.
+
+ > public String toString(). Returns the name of the class concatenated with the result of getMessage().
+
+ > public void printStackTrace(). Prints the result of toString() along with the stack trace to System.err, the error output stream. (System.err is the command prompt for your Java programs running on Windows.) This method is overloaded for sending the stack trace to an output stream that you specify.
+
+Exception handling:	
+	1. It is a concept of handling the abnormal termination of the program.
+	2. Exception handling can be done Using 
+		try, catch, finally, throw, throws
+
+	try:
+	      This is a block of statements which may cause/ which are going to throw Exceptions.
+
+	Syntax:
+		try
+		{
+		
+			// Block of statements which cause Exception
+
+		}
+
+	catch:
+	     This also a block of statements which handles the exception thrown by the try block statements by catching the appropriate exception object.
+
+	Syntax:
+		catch(ExceptionType ObjRef)
+		{
+			// Instructions that shows information about the 	Exception catched here.
+		}
+
+	finally:
+	    This is also a block of statements which are executed after all try and catch blocks were executed.
+
+	Syntax:
+		finally
+		{
+			// The statements that are executed after all try and catch blocks were completed.
+		}
+
+	throw:
+	    This is a keyword, used to throw your own ( user defined ) exceptions.
+
+	Syntax:
+		throw new ExceptionTypeClass();
+
+	throws:
+	    This keyword is used to specify the method which causes the	exception without having the handling mechanism.
+	
+	Syntax:
+		throws ExceptionName1,EXceptionName2,.....
+
+Points to remember:
+
+ > If you say you want to catch an Exception, then you will catch every exception that might arise. Remember, all exceptions are child classes of Exception.
+
+ > A try block can be followed by multiple catch blocks.
+
+ > With multiple catch blocks, the order in which the catch blocks are listed is the order they are checked when an exception occurs.( When an exception occurs, the catch blocks are checked in the order in which they appear. Because of polymorphism, it is possible to write a catch block that can not be reached.)
+
+Declaring Exceptions:
+
+	If a method does not handle a checked exception, the method must declare it using the throws keyword. The throws keyword appears at the end of a method’s signature. 
+
+A method can declare that it throws more than one exception, in which case the exceptions are declared in a list separated by commas.
+
+ > The throws keyword is used for declaring an exception, and it is used only in method signatures.
+
+Throwing Exceptions:
+
+	You can throw an exception, either a newly instantiated one or an exception
+that you just caught, by using the throw keyword. A throw statement causes the current method to immediately stop executing, much like a return statement, and the exception is thrown to the previous method on the call stack.
+
+	Ex:
+		throw new ArrayIndexOutOfBoundsException(5);
+
+ > You can throw only objects of type java.lang.Throwable. In almost all situations, you will throw an object that is a child of java.lang.Exception.
+
+ > The throw keyword is for throwing an exception, and it can be used anywhere you want to throw an exception.
+
+The finally Keyword:
+
+	The finally keyword is used to create a block of code that follows a try block. A finally block of code always executes, whether or not an exception has occurred. 
+	Using a finally block allows you to run any cleanup-type statements that you want to execute, no matter what happens in the protected code. A finally block appears at the end of the catch blocks.
+
+ > You can write a try block that does not have any corresponding catch blocks, only a finally block.
+	
+	try
+	{
+		//Protected code
+	}
+	finally
+	{
+		//The finally block always executes.
+	}
+
+ > A finally block is like any block of code, and can perform any operations.It may contain another try/catch block which may throw some exception.
+
+User-Defined Exceptions:
+
+	You can create your own exceptions in Java. In fact, because of the way Java is designed, you are encouraged to write your own exceptions to represent problems that can arise in your classes. Keep the following points in mind when writing your own exception classes:
+
+ > All exceptions must be a child of Throwable.
+ > If you want to write a checked exception that is automatically enforced by the Handle or Declare Rule, you need to extend the Exception class.
+ > If you want to write a runtime exception, you need to extend the RuntimeException class.
+
+ > You will never write a class that directly extends Throwable because then it will be neither a checked nor a runtime exception. 
+
+ > Most user defined exception classes are designed to be checked exceptions and therefore will extend the Exception class. 
+
+ > If you want to write an exception that you don’t want users to have to handle or declare, make it a runtime exception by extending the RuntimeException class.
+

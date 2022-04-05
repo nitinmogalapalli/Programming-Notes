@@ -1,0 +1,36 @@
+Composition of Objects:-
+----------------------------------
+This is other alternative for inheritance and in object composition, objects declared as member variables is called object Composition.
+
+Example:-
+--------------
+class DateBirth
+{
+int m;
+int d;
+int y;
+}
+class Student
+{
+int sno;
+string sname;
+DateBirth dob= new DateBirth();
+void display()
+{
+System.out.println("Sno=" +sno + "\t sname=" + sname);
+System.out.println("DOB ="+dob.m+ " - " +dob.d + " - " +dob.y);
+}
+student(int a,string b,int i,int j, int k)
+{
+sno=a;
+sname=b;
+dob.m=i;
+dob.d=j;
+dob.y=k;
+}
+public static void main(String args[])
+{
+student s2=new student(29,"Siva",2,5,1980);
+s2.display();
+}
+}

@@ -1,0 +1,752 @@
+Data type modifiers in C:-
+----------------------------------
+In c language Data Type Modifiers are keywords used to change the properties of current properties of data type. Data type modifiers are classified into following types.
+1. long
+2. short
+3. unsigned
+4. signed
+
+Modifiers are prefixed with basic data types to modify (either increase or decrease) the amount of storage space allocated to a variable.
+
+1. Long:-
+------------
+This can be used to increased size of the current data type to 2 more bytes, which can be applied on int or double data types. 
+
+For example int occupy 2 byte of memory if we use long with integer variable then it occupy 4 byte of memory.
+
+2. Short:-
+-------------
+In general int data type occupies different memory spaces for a different operating system; to allocate fixed memory space short keyword can be used.
+
+3. Signed:-
+---------------
+This keyword accepts both negative or positive value and this is default properties or data type modifiers for every data type.
+
+4. unsigned:-
+------------------
+This keyword can be used to make the accepting values of a data type is positive data type.
+
+Printf( ) :-
+-----------
+The printf( ) function is an output statement used to print out any message on screen or on a paper. The printf( ) stands for "Print function" or "Print Formatted".
+	The General form of printf( ) function is
+
+printf("Message with escape sequences");
+printf("message control variables",variables);
+
+Ex:-
+-----
+printf("Aptech Computer Education\n");
+printf("The addition of 2 numbers is %d",sum);
+
+Example:-
+-------------
+/* Write a program to assign a integer value into a variable and print it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a;
+clrscr();
+a=456;
+printf("inserted number is:%d",a);
+getch();
+}
+
+Output:-
+-----------
+inserted number is: 456
+
+Scanf():-
+-----------
+The Scanf() is input statement and it is used to accept a value through the keyboard at the time of execution of a program. Scanf() means scan function or scan formatted.
+	The General form of scanf() function is 
+
+Scanf("Format String",Address of a Variable);
+
+Ex:-
+-----
+scanf("%d%d",&a,&b);
+scanf("%d%f%c",&a,&b,&c);
+
+Note:-
+-------
+Here & is refer to address of a variable.
+
+Example:-
+-------------
+/* Write a program to read a integer value into a variable and print it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a;
+clrscr();
+printf("Enter a value\n");
+scanf("%d",&a);
+printf("inserted number is:%d",a);
+getch();
+}
+
+Output:-
+-----------
+Enter a value
+456
+inserted number is: 456
+
+Read and Write characters in C:-
+----------------------------------------------
+We can read and write a character on screen using printf() and scanf() function but this is not applicable in all situations. In C programming language some function are available which is directly read a character or number of character from keyboard.
+
+getchar:-
+------------
+This is a predefined function in C language which is available in stdio.h header file. Using this function we can read a single character from keyboard and store in character variable. When we want to read a number of character from keyboard the store all the data in a character array.
+Example
+	char ch; 
+	ch=getchar();
+
+putchar:-
+------------
+putchar function is a same as getchar but is function is used for display a character value of screen or console. This function must be take one parameters.
+Example
+	char ch='A'; 
+	putchar (ch);
+
+gets:-
+--------
+This is a predefined function in C language which is available in stdio.h header file. This function is used to read a single string from keyboard.
+Example
+	gets(string);
+
+puts:-
+--------
+puts is same as gets function but this is used to display a string on screen or console. This function takes single arguments.
+Example
+	puts(str);
+
+Operators in C:-
+--------------------
+	Operators are those symbols that perform mathematical and logical calculations. The different types of operators are
+1. Binary Operators
+2. Unary  Operators
+3. Ternary Operators
+4. Bitwise Operators
+
+1. Binary Operators:-
+-------------------------
+	Binary Operators are those that need 2 operands to operate.
+
+2. Unary Operators:-
+-------------------------
+	Unary Operators are those that need only one operand to operate.
+
+3. Ternary Operators:-
+---------------------------
+	Ternary pair needs three operands to operate.
+
+4. Bitwise Operators:-
+--------------------------
+	Bitwise operators are those that can perform bit level manipulations on data items
+
+1. Binary Operators:-
+---------------------------
+	They are different operators in binary operators.
+1. Arithmetic Operators.
+2. Assignment Operators.
+3. Relational Operators.
+4. Logical Operators.
+
+1. Arithmetic Operators:-
+------------------------------
+	These operators are used for arithmetic manipulations like
+
+Operator	     Operation        Result
+		 
++ (plus)	     Addition          Sum
+- (minus)	     Subtraction      Difference
+* (astrik)	     Multiplication  Product
+/ (Back Slash) Division          Quotient
+% (Modulus)  Division          Reminder
+
+Example:-
+------------
+/* Write a program in c and accept two values in two variables and print the sum of it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,sum;
+clrscr();
+printf("Enter a and b values\n");
+scanf("%d%d",&a,&b);
+sum=a+b;
+printf("The Sum of two numbers is %d",sum);
+getch();
+}
+
+output:-
+----------
+Enter a and b values
+20
+10
+The sum of two numbers is 30.
+
+/* Write a program in c and accept two floating values in two variables and print its product of it */
+
+/* Write a Program in c and accept two integer values in two variables and print its remainder of it */
+
+/* Write a Program in c and accept two integer values in two variables and apply all arithmetic operators and print it */
+
+/* Write a program in c and accept one integer value in one variable and print its square of it */
+
+/* Write a Program in c and accept no. of books, cost and calculate bill of it */
+
+/* Write a Program in c and accept  no. of days and calculate no. of months and no. of remaining days */
+
+/* Write a program in c and accept five subjects marks and calculate total and average */
+
+2. Assignment Operators:-
+-------------------------------
+	These operators are used to assign (store) a value into a variable. Always the RHS value is stored into the LHS variable. Thus RHS can be a value or a variable or an expression but LHS is always a variable.
+
+Examples:-
+--------------
+/* Write a Program in c and accept two values and swap it using three variables */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c;
+clrscr();
+printf("enter two values\n");
+scanf("%d%d",&a,&b);
+printf("before swap a:%d\tb:%d\n",a,b);
+c=a;
+a=b;
+b=c;
+printf("after swap a:%d\tb:%d",a,b);
+getch();
+}
+
+Output:-
+-----------
+Enter two values
+10
+20
+before swap a:10  b:20
+after swap a:20 b:10
+
+/* Write a Program in c and accept two values and swap it using two variables 
+*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b;
+clrscr();
+printf("enter two values\n");
+scanf("%d%d",&a,&b);
+printf("before swap a:%d\tb:%d\n",a,b);
+a=a+b;
+b=a-b;
+a=a-b;
+printf("after swap a:%d\tb:%d",a,b);
+getch();
+}
+
+Output:-
+-----------
+Enter two values
+10
+20
+before swap a:10  b:20
+after swap a:20 b:10
+
+Math Functions:-
+----------------------
+	Some math functions are used in c language are pow, sqrt etc... and this functions are executed in math.h header files only
+pow():-
+---------
+This function is used to calculate power of given values.
+
+Ex:-
+-----
+/* Write a program in c and calculate the power of given values */
+
+#include<math.h>
+main()
+{
+int p,a,b;
+clrscr();
+printf("enter two numbers\n");
+scanf("%d%d",&a,&b);
+p=pow(a,b);
+printf("power of two no.s is:%d",p);
+getch();
+}
+
+sqrt():-
+---------
+This function is used to calculate square root of given number.
+
+Ex:-
+-----
+/* Write a program in c and calculate the square root of given number */
+
+#include<math.h>
+main()
+{
+int a;
+float s;
+clrscr();
+printf("enter a value\n");
+scanf("%d",&a);
+s=sqrt(a);
+printf("square root of given no. is:%f",s);
+getch();
+}
+
+3. Relational Operators:-
+------------------------------
+	These operators are used to compare two operands. If comparison is true then 1 is returned else 0 is returned to indicate false
+Relation expressions are also called simple conditions.
+
+Operator	Operation
+
+= = 	is equal to
+<	less than
+>	greater than
+< =	less than or equal to
+> = 	greater than or equal to
+! = 	not equal to
+
+Control Structures:-
+------------------------
+                            All statement written in a program are executed from top to bottom one by one. Control statements are used to transfer the control from one part to another depending on a condition.
+	Control structures are divided into three types.
+
+1. Decision Making
+2. Looping
+3. Non Conditional
+
+1. Decision Making Statements:-
+-----------------------------------------
+	Decision Making Statements are divided into two types.
+
+1. If statement
+2. Switch statement
+
+1. If statement:-
+--------------------
+	If statement is used to check a condition and execute the respective statements only.
+
+The if has been classified as 
+1. Simple if
+2. If .. Else
+3. If Ladder
+4. Nested If
+
+1. Simple if:-
+-----------------
+Syntax:-
+-----------
+if (cond)
+{
+statements;
+}
+	This statement checks the given condition.
+1. if condition is true the statements are executed and remaining program continues. 
+2. or else if the condition is false, the statements are not executed but remaining program will continues.
+
+Ex:-
+-----
+/* W.A.P to read the number and check is even then print it */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n;
+clrscr();
+printf(“Enter a number=”);
+scanf(“%d”,&n);
+if(n%2==0)
+{
+printf(“Number is even”);
+}
+getch();                                    
+}
+
+Output:-
+----------
+                Enter a number=10
+                Number is even.
+
+Solution:-
+------------
+              Even numbers are those numbers which are dividing by 2 and remainder is zero. So when the number 10 is dividing by 2 and then we get remainder is zero. So the condition is true. Then print the number is even.
+
+2. if else:-
+-------------
+	In this statement when the condition is the true then the control goes to the true block statement and if the condition is false then than the control goes to the false block statement.
+
+Syntax:-
+----------
+	if (cond )
+	{
+		statements-1;
+	}
+	else
+	{
+		statements-2;
+	}
+
+Ex:-
+-----
+/* W.A.P to enter two numbers and find which is greater */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b;
+clrscr();
+printf(“Enter the value of a and b=”);
+scanf(“%d%d”,&a,&b);
+if(a>b)
+{
+printf(“a is greater =%d”,a);
+}
+else
+{
+printf(“b is greater=%d”,b);
+}
+getch();
+}
+
+Output:-
+----------
+Enter the value of a and b= 
+15
+70
+b is greater=70
+
+Solution:-
+------------
+             In this example first we check the condition is a greater then b than the condition is false so the control goto the false block statement. So the false block is executed.
+
+Examples Programs:-
+--------------------------
+/* W.A.P to enter two numbers and find which is Small */
+
+/* W.A.P to enter two numbers and Check whether it is equal or not */
+
+/* W.A.P to enter a number and Check whether it is Positive or Negative */
+
+/* W.A.P to enter a number and Check whether it is Even or Odd */
+
+/* W.A.P to enter a number and Check whether it is Leap year or not */
+
+/* W.A.P to accept Purchase amount, and if purchase amount is >=5000 then give discount of 1% otherwise no discount and print the bill and discount */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+float pa,dis,bill;
+clrscr();
+printf("enter purchase amount\n");
+scanf("%f",&pa);
+if(pa>=5000)
+{
+dis=pa*0.01;
+bill=pa-dis;
+printf("discount is Rs:%f\nbill is Rs:%f\n",dis,bill);
+}
+else
+{
+printf("no discount\nbill is Rs:%f",pa);
+}
+getch();
+}
+
+/* W.A.P to accept Basic salary and experience,  if experience is >=3 then give Bonus as Rs 2500 otherwise no bonus and print the Net salary */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int exp;
+float bs,ns;
+clrscr();
+printf("Enter Employee Basic salary and Experience\n");
+scanf("%f%d",&bs,&exp);
+if(exp>=3)
+{
+   ns=bs+2500;
+   printf("net salary is Rs:%f\n",ns);
+}
+else
+{
+   printf("no bonus\nnet salary is Rs:%f",bs);
+}
+getch();
+}
+
+3. If Ladder:-
+----------------
+	In This will check if cond1 is true or not
+If cond1 is true then statements1 will be executed
+Else cond2 is checked If cond2 is true statements 2 are executed Else cond3 …. To any number of conditions If no condition is true the else statements are executed.
+
+Syntax:-
+----------
+ if(cond-1)
+ {
+  statements-1;
+ }
+ else if (cond-2)
+ {
+  statements-2;
+ }
+ .…
+ ….
+else
+{
+ Statements;
+}
+
+Example:-
+-------------
+/*W.A.P to accept time and print it according to timings */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int time;
+clrscr();
+printf("enter the time\n");
+scanf("%d",&time);
+if(time<4)
+{
+printf("MID NIGHT");
+}
+else if(time<7)
+{
+printf("EARLY MORNING");
+}
+else if(time<12)
+{
+printf("MORNING");
+}
+else if(time<16)
+{
+printf("AFTERNOON");
+}
+else if(time<20)
+{
+printf("EVENING");
+}
+else if(time<=24)
+{
+printf("NIGHT");
+}
+else
+{
+printf("INVALID TIME");
+}
+getch();
+}
+
+Example Programs:-
+-------------------------
+/* W.A.P to accept age and print it according to age group */
+
+/* W.A.P to accept day and print it according to day wise */
+
+4. Nested if:-
+-----------------
+	Writing an if inside another if is called the nested if
+Unless the first cond is true the next condition is not checked.
+C allows 32 levels of nesting at maximum.
+
+Syntax:
+----------
+	if(cond1)
+	{
+		if(cond2)
+		{
+			….
+		}
+	}
+
+Example:-
+-------------
+/* Write a program in c and to accept a basic salary and gross salary and if basic salary >=5000 and gross salary above 10000 then calculate tax 5% otherwise no tax.
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int bs,gs,tax;
+clrscr();
+printf("Enter the Basic salary and Gross salary\n");
+scanf("%d%d",&bs,&gs);
+if(bs>=5000)
+{
+	if (gs>=10000)
+	{
+	tax=bs*0.5;
+	printf("The Tax is %d",tax);
+	}
+else
+{
+printf("No Tax");
+}
+}
+getch();
+}
+
+4. Logical Operators:-
+--------------------------
+	These operators are used to combine two simple conditions. Logical expressions are also called compound conditions
+
+Operator	Operation
+
+&&	And: combines two simple cond’s into a 	compound cond., such that the 			compound  cond., is true only when 		both the simple cond’s are true.
+
+||	Or : combines two simple cond’s into a 		compound cond., such that the 			compound cond., is true when at least 		one of the simple cond’s is true.
+
+!	Not: is used to not a simple cond.
+
+Example:-
+-------------
+/* write a program in c and accept five subject marks and check it is pass or not with && operator*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int tel,hin,eng,mat,sci,soc;
+clrscr();
+printf("Enter five subject marks\n");
+scanf("%d%d%d%d%d",&tel,&hin,&eng,&mat,&sci,&soc);
+if(tel>=35&&hin>=25&&eng>=35&&mat>=35&&sci>=35&&soc>=35)
+{
+printf("Pass");
+}
+else
+{
+printf("Fail");
+}
+getch();
+}
+
+/* write a program in c and accept five subject marks and check it is pass or not with || operator*/
+
+2. Switch statement:-
+--------------------------
+1. Works similar to if..ladder
+2. Will compare the variable value with the case values for equity only.
+3. When ever a match is found the respective code is executed.
+4. If no match found, default code is executed
+5. Can compare only integer and character values.
+
+Syntax:-
+----------
+
+switch (var)
+{
+ case val1 : 
+ code-1; 
+ break;
+ case val2 : 
+ code-2; 
+ break;
+ …
+ …
+default : 
+code-d;
+}
+
+Example:-
+-------------
+/* W.A.P to accept a no and print according day of week */
+
+main()
+{
+int d;
+clrscr();
+printf("enter a no.\n");
+scanf("%d",&d);
+switch(d)
+{
+case 1:
+	printf("MONDAY");
+	break;
+case 2:
+	printf("TUESDAY");
+	break;
+case 3:
+	printf("WEDNESDAY");
+	break;
+case 4:
+	printf("THURSDAY");
+	break;
+case 5:
+	printf("FRIDAY");
+	break;
+case 6:
+	printf("SATURDAY");
+	break;
+case 7:
+	printf("SUNDAY");
+	break;
+default:
+	printf("INVALID NUMBER");
+
+}
+getch();
+}
+
+Examples:-
+--------------
+/* W.A.P to accept a no and print according month of year */
+
+/* W.A.P to accept a Character and print Vowel or consonant */
+
+main()
+{
+char ch;
+clrscr();
+printf("enter a character\n");
+scanf("%c",&ch);
+switch(ch)
+{
+       case 'a':
+       case 'e':
+       case 'i':
+       case 'o':
+       case 'u':
+       printf("it is vowel");
+       break;
+default:
+	printf("it is consonant");
+}
+getch();
+}
+
+/* W.A.P to accept a no and print according to table codes.
+Caste Code   	City
+
+1		SC
+2		ST
+3		OBC
+Morethan 4	Others */
+
+

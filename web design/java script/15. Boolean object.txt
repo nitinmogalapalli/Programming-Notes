@@ -1,0 +1,17 @@
+JavaScript Boolean:-
+-----------------------------
+JavaScript Boolean is an object that represents value in two states: true or false. You can create the JavaScript Boolean object by Boolean() constructor as given below.
+
+Boolean b=new Boolean(value);  
+
+The default value of JavaScript Boolean object is false.
+
+JavaScript Boolean Example:-
+-----------------------------------------
+<script>  
+document.write(10<20);	//true  
+document.write(10<5);	//false  
+</script>  
+
+
+

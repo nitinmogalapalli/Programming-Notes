@@ -1,0 +1,18 @@
+Precedence:
+
+	The operators have a set order of precedence during evaluation. Items encapsulated in parenthesis are evaluated first and have the highest precedence. The following chart shows the order of precedence with the items at the top having highest precedence. 
+
+Operator 	Name
+! 		Logical NOT. Bang.
+++ -- 		Increment and decrement operators.
+* / % 		Multiplicative operators.
++ - 		Additive operators.
+<< >> 		Shift operators.
+< > <= >= 	Inequality comparators.
+== != 		Equality comparators
+& 		Bitwise AND.
+^ 		Bitwise XOR.
+| 		Bitwise OR.
+&& 		Logical AND.|| Logical OR.
+?: 		Conditional.
+= op= 		Assignment.

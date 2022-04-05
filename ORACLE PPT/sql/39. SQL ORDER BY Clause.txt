@@ -1,0 +1,34 @@
+SQL ORDER BY Clause:-
+------------------------------------
+SQL ORDER BY clause used to sorting SQL result set either ascending or descending order.
+
+SQL ORDER BY clause default record set sorting ascending order. Using DESC keyword to result set sorting in descending order.
+
+SQL ORDER BY Clause Syntax
+--------------------------------------------
+Considering following syntax that help you to understanding ORDER BY clause,
+
+SELECT 
+	column_name1, column_name2, ...
+	FROM table_name
+    [ WHERE condition ]
+    ORDER BY column_name1, column_name2 [ ASC | DESC ];
+
+SQL ORDER BY Clause Example Statement
+--------------------------------------------------------------
+We have following employee_hour table that store weekday hours for each employee:
+
+SQL> SELECT * FROM employee_hour;
+
+Example Statement :
+-----------------------------
+SQL> SELECT * 
+	FROM employee_hour 
+	ORDER BY hours;
+
+Example Statement :
+-----------------------------
+SQL> SELECT * 
+	FROM employee_hour 
+	ORDER BY hours DESC;
+

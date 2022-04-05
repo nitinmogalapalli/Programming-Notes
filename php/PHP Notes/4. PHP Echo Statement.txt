@@ -1,0 +1,46 @@
+PHP Echo:
+---------------
+PHP echo is a language construct not a function, so you don't need to use parenthesis with it. But if you want to use more than one parameters, it is required to use parenthesis.
+
+The syntax of PHP echo is given below:
+
+    void echo ( string $arg1 [, string $... ] )  
+
+PHP echo statement can be used to print string, multi line strings, escaping characters, variable, array etc.
+
+PHP echo: printing string
+----------------------------------
+File: echo1.php
+
+    <?php  
+    echo "Hello by PHP echo";  
+    ?>  
+
+PHP echo: printing multi line string
+-----------------------------------------------
+File: echo2.php
+
+    <?php  
+    echo "Hello by PHP echo  
+    this is multi line  
+    text printed by   
+    PHP echo statement  
+    ";  
+    ?>  
+
+PHP echo: printing escaping characters:
+-------------------------------------------------------
+File: echo3.php
+
+    <?php  
+    echo "Hello escape \"sequence\" characters";  
+    ?>  
+
+PHP echo: printing variable value:
+----------------------------------------------
+File: echo4.php
+
+    <?php  
+    $msg="Hello JavaTpoint PHP";  
+    echo "Message is: $msg";    
+    ?>  

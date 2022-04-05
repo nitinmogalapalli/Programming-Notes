@@ -1,0 +1,51 @@
+MySQL ORDER BY Clause:-
+----------------------------------------
+The MYSQL ORDER BY Clause is used to sort the records in ascending or descending order.
+
+Syntax:
+-----------
+SELECT expressions  
+FROM tables  
+[WHERE conditions]  
+ORDER BY expression [ ASC | DESC ];  
+
+Parameters:-
+------------------
+expressions: It specifies the columns that you want to retrieve.
+
+tables: It specifies the tables, from where you want to retrieve records. There must be at least one table listed in the FROM clause.
+
+WHERE conditions: It is optional. It specifies conditions that must be fulfilled for the records to be selected.
+
+ASC: It is optional. It sorts the result set in ascending order by expression (default, if no modifier is provider).
+
+DESC: It is also optional. It sorts the result set in descending order by expression.
+
+MySQL ORDER BY: without using ASC/DESC attribute:-
+------------------------------------------------------------------------------
+If you use MySQL ORDER BY clause without specifying the ASC and DESC modifier then by default you will get the result in ascending order.
+
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE address = 'Lucknow'  
+ORDER BY officer_name;  
+
+MySQL ORDER BY: with ASC attribute:-
+--------------------------------------------------------
+Let's take an example to retrieve the data in ascending order.
+
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE address = 'Lucknow'  
+ORDER BY officer_name ASC; 
+
+MySQL ORDER BY: with DESC attribute:-
+----------------------------------------------------------
+SELECT *  
+FROM officers  
+WHERE address = 'Lucknow'  
+ORDER BY officer_name DESC;   

@@ -1,0 +1,18 @@
+Python If Statements:-
+-------------------------------
+The if statement in python is same as c language which is used test a condition. If condition is true, statement of if block is executed otherwise it is skipped.
+
+Syntax of python if statement:
+----------------------------------------
+    if(condition):  
+       statements  
+
+Example of if statement in python:
+-----------------------------------------------
+    a=10  
+    if a==10:  
+            print  "Hello User"  
+
+Output:
+----------
+Hello User

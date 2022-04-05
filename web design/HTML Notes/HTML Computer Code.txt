@@ -1,0 +1,98 @@
+HTML Computer Code Formatting:-
+-------------------------------------------------
+Normally, HTML uses variable letter size, and variable letter spacing.
+
+This is not wanted when displaying examples of computer code.
+
+The <kbd>, <samp>, and <code> elements all support fixed letter size and spacing.
+
+HTML Keyboard Formatting:-
+-----------------------------------------
+The HTML <kbd> element defines keyboard input:
+
+Ex:-
+------
+<!DOCTYPE html>
+<html>
+<body style="font-size:16px">
+
+<p>The kbd element represents keyboard input:</p>
+
+<p><kbd>File | Open...</kbd></p>
+
+</body>
+</html>
+
+HTML Sample Formatting:-
+-------------------------------------
+The HTML <samp> element defines a computer output:
+
+<!DOCTYPE html>
+<html>
+<body style="font-size:16px">
+
+<p>The samp element represents a computer output sample:</p>
+
+<samp>
+demo.example.com login: Apr 12 09:10:17
+Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+</samp>
+
+</body>
+</html>
+
+HTML Code Formatting:-
+----------------------------------
+The HTML <code> element defines programming code:
+
+<!DOCTYPE html>
+<html>
+<body style="font-size:16px">
+
+<p>Programming code example:</p>
+
+<code>
+var person = {firstName:"John", lastName:"Doe", age:50}
+</code>
+
+</body>
+</html>
+Preformatting Tag:-
+--------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The code element does not preserve whitespace and line-breaks.</p>
+<p>To fix this, you can wrap the code in a pre element:</p>
+
+<code>
+<pre>
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+}
+</pre>
+</code>
+
+</body>
+</html>
+
+
+HTML Variable Formatting:-
+--------------------------------------
+The HTML <var> element defines a mathematical variable:
+
+<!DOCTYPE html>
+<html>
+<body style="font-size:16px">
+
+<p>Einstein wrote:</p>
+
+<p><var>E</var> = <var>m</var> <var>c</var><sup>2</sup></p>
+
+</body>
+</html>

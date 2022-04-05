@@ -1,0 +1,12 @@
+SQL DROP Database:-
+--------------------------------
+SQL DROP statement is used to delete or remove indexes from a table in the database.
+
+If you want to delete or drop an existing database in a SQL schema, you can use SQL DROP DATABASE
+
+Let's see the syntax of SQL DROP DATABASE:
+-----------------------------------------------------------------
+    DROP DATABASE database_name;  
+
+
+If you delete or drop the database, all the tables and views will also be deleted. So be careful while using this command.

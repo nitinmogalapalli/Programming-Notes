@@ -1,0 +1,60 @@
+PHP If Else :
+------------------
+PHP if else statement is used to test condition. There are various ways to use if statement in PHP.
+
+    if
+    if-else
+    if-else-if
+    nested if
+
+PHP If Statement :
+--------------------------
+PHP if statement is executed if condition is true.
+
+Syntax :
+-----------
+    if(condition)
+    {  
+    //code to be executed  
+    }
+
+Example :
+--------------
+    <?php  
+    $num=12;  
+    if($num<100)
+    {  
+    echo "$num is less than 100";  
+    }  
+    ?>
+
+PHP If-else Statement :
+---------------------------------
+PHP if-else statement is executed whether condition is true or false.
+
+Syntax:
+----------
+    if(condition)
+    {  
+    //code to be executed if true  
+    }
+   else
+   {  
+    //code to be executed if false  
+    }
+
+Example :
+---------------
+    <?php  
+    $num=12;  
+    if($num%2==0)
+    {  
+    echo "$num is even number";  
+    }
+    else
+    {  
+    echo "$num is odd number";  
+    }  
+    ?>
+
+        

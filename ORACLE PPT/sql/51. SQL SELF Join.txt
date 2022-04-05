@@ -1,0 +1,49 @@
+SQL SELF Join:-
+------------------------
+SQL Self join joining same table to itself. SQL Self join possible only when table stored records are in hierarchical relationship between them.
+
+You must use table alias name otherwise you can't distinguish columns name (referenced of which table's).
+
+Logically assume that same table have two different copies but not actually different copies.
+
+Example Table
+---------------------
+Considering following orders table is our example table.
+
+SQL> CREATE TABLE orders(
+  order_id number(3),
+  product_name VARCHAR(25),
+  customer_name VARCHAR(25),
+  order_amount number(5)
+);
+
+INSERT INTO orders VALUES (1,'Nokia Mobile', 'Opal Kole', 290);
+
+INSERT INTO orders VALUES (2,'Flip Cover', 'Max Miller', 15);
+
+INSERT INTO orders VALUES (3,'Handsfree', 'Beccaa Moss', 7);
+
+INSERT INTO orders VALUES (4,'Canon Camera', 'Paul Singh', 2200);
+
+INSERT INTO orders VALUES (5,'Playstation', 'Max Miller', 70);
+
+INSERT INTO orders VALUES (6,'Sandwich Maker', 'Beccaa Moss', 28);
+
+INSERT INTO orders VALUES (7,'Pen Drive 16GB', 'Opal Kole', 12);
+
+INSERT INTO orders VALUES (8,'Headphone', 'Reed Koch', 38);
+
+INSERT INTO orders VALUES (9,'HP Laptop i5', 'Reed Koch', 1300);
+
+INSERT INTO orders VALUES (10,'Titanic Bluray Disk', 'Beccaa Moss', 78); 
+
+SELECT * FROM orders;
+
+SQL self join example statement :
+-----------------------------------------------
+SQL> SELECT A.order_id, A.product_name, 
+             B.order_id, B.product_name, B.customer_name
+    FROM orders A 
+    INNER JOIN orders B
+    ON A.customer_name = B.customer_name
+    WHERE A.order_id < B.order_id;

@@ -1,0 +1,34 @@
+Method Overloading:
+	It is concept of java that makes the programmer to write methods with the same name, whenever the arguments type is differ.
+
+	Method overloading is a process of writing methods of the same class having same name, with different arguments type declaration.
+
+example:
+	class Box
+	{
+		void myMethod()
+		{
+		  ... some statements...
+		}
+		void myMethod(int i)
+		{
+		  ... some statements...
+		}
+	}
+
+
+Constructor overloading:
+	Constructor overloading is a process of writing Constructor s of the class having same name, with different arguments type declaration.
+
+for example:
+	class Box
+	{
+		Box()
+		{
+		  ... some statements...
+		}
+		Box(int i)
+		{
+		  ... some statements...
+		}
+	}

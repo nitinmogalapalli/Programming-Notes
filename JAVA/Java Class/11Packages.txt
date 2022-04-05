@@ -1,0 +1,98 @@
+Packages:
+
+Java allows you to group classes in a  collection called a package. Packages are convenient for organizing your work.
+
+The standard Java library is distributed over a number of packages, including  java.lang, java.util, java.net, and so on. The standard Java packages are examples of hierarchical packages. Just as you have nested subdirectories on your hard disk, you can organize packages by using levels of nesting. All standard Java packages are inside the java and javax package hierarchies. 
+
+The main reason for using packages is to guarantee the uniqueness of class names.
+
+
+Defining a Package:
+
+To create a package is quite easy: simply include a package command as the first statement in a Java source file. Any classes declared within that file will belong to the specified package.
+
+For Ex:
+	package mypackage;
+
+	public class YourClassName
+	{
+	}
+
+If you don't put a package statement in the source file, then the classes in that source file belong to the default package. The default package has no package name. Up to now, all our example classes were located in the default package.
+
+package MyPackage;
+
+Java uses file system directories to store packages. For example, the .class files for any classes you declare to be part of MyPackage must be stored in a directory called MyPackage.
+Remember that case is significant, and the directory name must match the package name exactly.
+
+More than one source file can include the same package statement. The package statement simply specifies to which package the classes defined in a file belong.
+
+You can create a hierarchy of packages. To do so, simply separate each package name from the one above it by use of a period(.). The general form of a multileveled package statement is shown here:
+
+package pkg1[.pkg2[.pkg3]];
+
+The compiler does not check directories when it compiles source files. 
+For example, suppose you have a source file that starts with a directive: 
+package mypackage.mycompany; 
+
+
+Finding Packages and CLASSPATH:
+
+As just explained, packages are mirrored by directories. This raises an important question:
+How does the Java run-time system know where to look for packages that you create? 
+
+The answer has three parts. 
+
+>First, by default, the Java run-time system uses the current working directory as its starting point. Thus, if your package is in a subdirectory of the current directory, it will be found (automatically). 
+
+>Second, you can specify a directory path or paths by setting the CLASSPATH environmental variable. 
+
+>Third, you can use the -classpath option with java and javac to specify the path to your classes.
+
+
+
+For Example,  consider the following package specification:
+
+package MyPackage;
+
+In order for a program to find MyPackage, one of three things must be true. Either the program can be executed from a directory immediately above MyPackage,
+
+or the CLASSPATH must be set to include the path to MyPackage, 
+
+or the -classpath option must specify the path to MyPackage
+when the program is run via java.
+
+When the second two options are used, the class path must not include MyPackage, itself.
+It must simply specify the path to MyPackage. For example, in a Windows environment, if the path to MyPack is
+C:\MyPrograms\MyPackage
+Then the class path to MyPackage is
+C:\MyPrograms
+
+The easiest way to try programs is to simply create the package
+directories below your current development directory, put the .class files into the appropriate directories, and then execute the programs from the development directory.
+
+PackageExample.java(in MyPackage) and Pack.java(in Package Example)
+
+Using Packages:
+
+Classes and packages are both means of encapsulating and containing the name space and scope of variables and methods. Packages act as containers for classes and other subordinate packages. 
+
+Classes act as containers for data and code. The class is Java’s
+smallest unit of abstraction. Because of the interplay between classes and packages, Java addresses four categories of visibility for class members:
+
+• Subclasses in the same package
+• Non-subclasses in the same package
+• Subclasses in different packages
+• Classes that are neither in the same package nor subclasses
+
+The three access specifiers, private, public, and protected, provide a variety of ways to produce the many levels of access required by these categories.
+
+• Anything declared public can be accessed from anywhere.
+• Anything declared private cannot be seen outside of its class. 
+
+Protection.java(in P1 package) 
+
+• When a member does not have an explicit access specification, it is visible to subclasses as well as to other classes in the same package. This is the default access. 
+• If you want to allow an element to be seen outside your current package, but only to classes that subclass your class directly, then declare that element protected.
+
+Protection2.java(in P2 package) and see P1 package Protection.java file

@@ -1,0 +1,85 @@
+Padding:-
+---------
+The padding clears an area around the content (inside the border) of an element. The padding is affected by the background color of the element.
+
+The top, right, bottom, and left padding can be changed independently using separate properties. A shorthand padding property can also be used, to change all paddings at once.
+
+Possible Values
+
+length	Defines a fixed padding (in pixels, pt, em, etc.)
+%	Defines a padding in % of the containing element
+
+Padding - Individual sides:-
+----------------------------
+In CSS, it is possible to specify different padding for different sides:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    background-color: yellow;
+}
+
+p.padding {
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph with no specified padding.</p>
+<p class="padding">This is a paragraph with specified paddings.</p>
+
+</body>
+</html>
+
+Padding - Shorthand property:-
+------------------------------
+To shorten the code, it is possible to specify all the padding properties in one property. This is called a shorthand property.
+
+The shorthand property for all the padding properties is "padding":
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    background-color: yellow;
+}
+
+p.padding {
+    padding: 25px 50px;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph with no specified padding.</p>
+<p class="padding">This is a paragraph with specified paddings.</p>
+
+</body>
+</html>
+
+The padding property can have from one to four values.
+
+padding: 25px 50px 75px 100px;
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
+
+padding: 25px 50px 75px;
+top padding is 25px
+right and left paddings are 50px
+bottom padding is 75px
+
+padding: 25px 50px;
+top and bottom paddings are 25px
+right and left paddings are 50px
+
+padding: 25px;
+all four paddings are 25px

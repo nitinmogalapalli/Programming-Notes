@@ -1,0 +1,4 @@
+<http>
+<applet code="DrawingLines" width="200" height="300">
+</applet>
+</http>

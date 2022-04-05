@@ -1,0 +1,25 @@
+HTML Title:-
+-----------------
+HTML title tag is used to provide a title name for your webpage. It is necessary for Search Engine Optimization (SEO).
+
+The HTML title tag must be used inside the <head> tag.
+
+The title of the page is displayed on the title bar of the browser.
+
+Let's see the example of HTML title tag.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>First web page.</title>  
+</head>  
+<body>  
+    <p>Welcome to my first web page.</p>  
+</body>  
+</html>  
+
+Here you see that we are using two elements, the head tag and the title tag. The whole title element is within the head tag.
+
+The head element which appears before body element just contains the information about the page but it doesn't display on the browser window. So, to display a title name on the web page, title element is used.
+
+If you look at the above example, you will see that "First web page" will be displayed on the tab/ title bar of the browser. Content(text) between <title>.............</title> is shown on the title bar.

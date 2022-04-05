@@ -1,0 +1,83 @@
+Java is a strictly type language.
+	Java will not allow the automatic convertion of the data type.
+	for example: 
+		In C the following statement is valid,
+		int a = 4.5;		
+But it is not allowed in java, if you use the statement like this will cause an exception/error.
+
+Data Types:
+	There are some inbulit data types.
+byte	---	1 byte
+char	---	2 bytes
+
+	ASCII - American Standard Code for Information Interchange
+	inorder to represent ASCII Character you may require 1 byte.
+	If you have to represent a character of a Language that is other than English, then you should require more than one byte.
+	So the code required to represent the characters of different language we use Uni Code.
+	If you are writing programs in english language JVM treats the character length as 1 byte.
+
+short	---	2 bytes
+int	---	4 bytes
+long	---	8 bytes
+
+floating Point Data types:
+
+float	---	4 bytes
+double	---	8 bytes
+
+Floating Point values
+
+In java Default Floating point data value is Double
+	
+	float f = 23.98;
+it generates an error. To overcome you should use the statement,
+	float f = 23.98f;
+
+boolean	---	false
+		true
+
+
+Variables & Identifiers
+
+variable is a name given to a memory location to store data on to the computer by using programs.
+
+Identifier: Name given to something to identify it uniquely.
+
+<DataType> Identifier/Variable name
+
+Naming Conventions for declaring a variable:
+
+1.Name can be of any number of characters
+2.Name should be defined with meaning
+3.spaces won't be allowed in the name
+4.names should start with either characters, underscore(_), or a dollor symbol($), should not insert any operators like +,-,*,&,^,%,#,@..
+
+Variable Names & Method names:
+1.Each word should be capitalized except first word.
+
+var1UsedToAdd
+example:
+
+variables---
+	add,sub,mul,addSecond,matrixOne
+Methods---
+	add(),matrixAddition(),additionOfTwoNumbers()
+
+class name:
+	Each word should be capitalized.
+	Ex: HelloWorld,Shape,Box,ShapeTriangle, MyFirstJavaProgram...
+
+
+Defining of a Variable:
+	Datatype variable_Name1[= value,[var_Name2 [=value2...]];
+	Ex: int varAdd1;
+	       int varAdd1 = 20;
+	       int varAdd1 = 20, varAdd2 ;
+
+Defining of a Method:
+	Access_Spec [static] Ret_Type [Abstract] methodName([Arguments Declaration])
+{
+	Local varaiable Declaration;
+
+	Instructions to perform some task;
+}

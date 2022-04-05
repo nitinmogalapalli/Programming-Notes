@@ -1,0 +1,28 @@
+SQL Table:-
+----------------
+Table is a collection of data, organized in terms of rows and columns. In DBMS term, table is known as relation and row as tuple.
+Note: A table has a specified number of columns, but can have any number of rows.
+
+Table is the simple form of data storage. A table is also considered as a convenient representation of relations.
+
+SQL TABLE Variable
+----------------------------
+The SQL Table variable is used to create, modify, rename, copy and delete tables. Table variable was introduced by Microsoft.
+
+It was introduced with SQL server 2000 to be an alternative of temporary tables.
+
+It is a variable where we temporary store records and results. This is same like temp table but in the case of temp table we need to explicitly drop it.
+
+Table variables are used to store a set of records. So declaration syntax generally looks like CREATE TABLE syntax.
+
+    create table "tablename"  
+    ("column1" "data type",  
+    "column2" "data type",  
+    ...  
+    "columnN" "data type");  
+
+When a transaction rolled back the data associated with table variable is not rolled back.
+
+A table variable generally uses lesser resources than a temporary variable.
+
+Table variable cannot be used as an input or an output parameter.

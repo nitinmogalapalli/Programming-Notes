@@ -1,0 +1,52 @@
+HTML Button Tag:-
+--------------------------
+The <button> tag is used to create a clickable button within HTML form on your webpage. You can put content like text or image within the <button>........</button> tag.
+
+You should always specify the type attribute for a <button> tag. Different browsers use different default type for the button element.
+
+HTML Button tag can be used inside and outside the form.
+
+If you use it inside the form, it works as the submit button. You can also use it as reset button.
+
+If you use it outside the form, you can call JavaScript function on it.
+
+HTML Button Tag Example:-
+---------------------------------------
+Let's see the code to display the button.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<form>  
+<button name="button" value="OK" type="button">Click Here</button>  
+</form>  
+</body>
+</html>  
+
+HTML Button Example: Submit Form:-
+-----------------------------------------------------
+Let's see the code to submit form on button click.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<form>  
+Enter Name:<input type="text" name="name"/><br/>  
+<button>Submit</button>  
+</form>   
+</body>
+</html>  
+
+HTML Button Example: Reset Form:-
+---------------------------------------------------
+Let's see the code to submit form on button click.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<form>  
+Enter Name:<input type="text" name="name"/><br/>  
+<button type="reset">reset</button>  
+</form> 
+</body>
+</html>  

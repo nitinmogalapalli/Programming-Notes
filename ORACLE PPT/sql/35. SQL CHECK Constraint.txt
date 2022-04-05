@@ -1,0 +1,129 @@
+SQL CHECK Constraint:-
+-----------------------------------
+SQL CHECK constraint check specified specific condition, which must evaluate to true for constraint to be satisfied.
+
+SQL CHECK constraint must be specified as a logical expression that evaluated specific condition either TRUE or FALSE.
+
+SQL CHECK constraint define at column level that allow only specified values for a column and Whereas define at table level that allow specified values as well as use other column value for checking specific condition.
+
+CHECK CONSTRAINT defined at Column level:-
+-------------------------------------------------------------------
+Define CHECK constraint at column level with other column attributes,
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ] CHECK (column_name condition),
+	column_name datatype[(size)] [ NULL | NOT NULL ] CHECK (column_name condition),
+	....
+);
+
+Example Statement :
+-----------------------------
+ SQL> CREATE TABLE student_info(
+ 	no NUMBER(3) PRIMARY KEY,
+ 	stu_code VARCHAR(10) CHECK (stu_code like 'j%'),
+ 	name VARCHAR(30) CHECK ( name = upper(name) ),
+	city VARCHAR(30) CHECK (city IN ('Houston','San Antonio','Boston','Miami'))
+	scholarship NUMBER(5) CHECK (scholarship BETWEEN 5000 AND 20000)
+);
+
+Table created.
+
+SQL> INSERT INTO student_info VALUES (1,'j001', 'JAMES KENON', 'Miami', 8900);
+
+1 row created.
+
+CHECK CONSTRAINT defined at Table level:-
+---------------------------------------------------------------
+CHECK constraint apply in table level. Table level you must specified separately.
+
+Syntax :
+------------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	...,
+	CHECK ( column_name condition),
+	CHECK ( column_name condition),
+	...
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE student_info(
+ 	no NUMBER(3) PRIMARY KEY,
+ 	stu_code VARCHAR(10),
+ 	name VARCHAR(30),
+	city VARCHAR(30),
+	scholarship NUMBER(5),
+	CHECK (stu_code like 'j%'),
+	CHECK (name = upper(name)), 
+	CHECK (city IN ('Houston','San Antonio','Boston','Miami')),
+	CHECK (scholarship BETWEEN 5000 AND 20000)
+);
+
+Table created.
+
+SQL> INSERT INTO student_info VALUES (1,'j001', 'JAMES KENON', 'Miami','8900');
+
+1 row created. 
+ 
+You can also specifies CONSTRAINT keyword to specify the constraint name. Specifies constraint name is recommended way for creating table with CHECK constraint.
+
+Syntax :
+-----------
+CREATE TABLE table_name(
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	column_name datatype[(size)] [ NULL | NOT NULL ],
+	...,
+	CONSTRAINT check_constraint_name CHECK ( column_name condition),
+	CONSTRAINT check_constraint_name CHECK ( column_name condition),
+	...
+);
+
+Example Statement :
+-----------------------------
+SQL> CREATE TABLE student_info(
+ 	no NUMBER(3) PRIMARY KEY,
+ 	stu_code VARCHAR(10),
+ 	name VARCHAR(30),
+	city VARCHAR(30),
+	scholarship NUMBER(5),
+	CONSTRAINT check_stucode CHECK (stu_code like 'j%'),
+	CONSTRAINT check_name CHECK (name = upper(name)), 
+	CONSTRAINT check_city CHECK (city IN ('Houston','San Antonio','Boston','Miami')),
+	CONSTRAINT check_scholarship CHECK (scholarship BETWEEN 5000 AND 20000)
+);
+
+Table created. 
+ 
+ADD CHECK constraint (ALTER TABLE)
+---------------------------------------------------------
+ALTER TABLE statement to add CHECK constraint in existing table column.
+
+Syntax :
+-----------
+ALTER TABLE table_name
+	ADD CONSTRAINT check_constraint_name CHECK (column_name condition);
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE student_info ADD CONSTRAINT check_name CHECK (name = upper(name));
+
+Table altered. 
+
+DROP CHECK constraint (ALTER TABLE)
+------------------------------------------------------------
+ALTER TABLE statement to drop CHECK constraint in existing table column.
+
+Syntax :
+------------
+ALTER TABLE table_name
+	DROP CONSTRAINT check_constraint_name;
+
+Example Statement :
+-----------------------------
+SQL> ALTER TABLE student_info DROP CONSTRAINT check_name;
+
+Table altered.

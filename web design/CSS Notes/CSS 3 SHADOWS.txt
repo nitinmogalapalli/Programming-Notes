@@ -1,0 +1,208 @@
+CSS3 Shadow Effects:-
+-------------------------------
+With CSS3 you can add shadow to text and to elements.
+
+In this chapter you will learn about the following properties:
+
+    text-shadow
+    box-shadow
+
+CSS3 Text Shadow:-
+---------------------------
+The CSS3 text-shadow property applies shadow to text.
+
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-shadow: 2px 2px;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+
+</body>
+</html>
+
+Next, add a color to the shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-shadow: 2px 2px red;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+
+</body>
+</html>
+
+Then, add a blur effect to the shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-shadow: 2px 2px 5px red;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+
+</body>
+</html>
+
+The following example shows a white text with black shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+
+</body>
+</html>
+
+Multiple Shadows:-
+-------------------------
+To add more than one shadow to the text, you can add a comma-separated list of shadows.
+
+The following example shows a red and blue neon glow shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+
+</body>
+</html>
+
+The following example shows a white text with black, blue, and darkblue shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+
+</body>
+</html>
+
+CSS3 box-shadow Property:-
+-------------------------------------
+The CSS3 box-shadow property applies shadow to elements.
+
+In its simplest use, you only specify the horizontal shadow and the vertical shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: yellow;
+    box-shadow: 10px 10px;
+}
+</style>
+</head>
+<body>
+
+<div>This is a div element with a box-shadow</div>
+
+</body>
+</html>
+
+Next, add a color to the shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: yellow;
+    box-shadow: 10px 10px grey;
+}
+</style>
+</head>
+<body>
+
+<div>This is a div element with a box-shadow</div>
+
+</body>
+</html>
+
+Next, add a blur effect to the shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px grey;
+}
+</style>
+</head>
+<body>
+
+<div>This is a div element with a box-shadow</div>
+
+</body>
+</html>

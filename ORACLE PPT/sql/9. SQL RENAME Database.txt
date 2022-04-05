@@ -1,0 +1,10 @@
+SQL RENAME Database:-
+-------------------------------------
+SQL RENAME DATABASE is used when you need to change the name of your database. Sometimes it is used because you think that the original name is not more relevant to the database or you want to give a temporary name to that database.
+
+Let's see how to rename MySql and SQL Server databases.
+Rename MySQL database
+
+To rename the mysql database, you need to follow the following syntax:
+------------------------------------------------------------------------------------------------
+    RENAME DATABASE old_db_name TO new_db_name;  

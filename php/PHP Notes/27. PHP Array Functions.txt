@@ -1,0 +1,148 @@
+PHP Array Functions:
+------------------------------
+PHP provides various array functions to access and manipulate the elements of array. The important PHP array functions are given below.
+
+1) PHP array() function:
+---------------------------------
+PHP array() function creates and returns an array. It allows you to create indexed, associative and multidimensional arrays.
+
+Syntax :
+-----------
+    array array ([ mixed $... ] )  
+
+Example :
+--------------
+    <?php    
+    $season=array("summer","winter","spring","autumn");    
+    echo "Season are: $season[0], $season[1], $season[2] and $season[3]";    
+    ?>    
+
+2) PHP array_change_key_case() function :
+------------------------------------------------------------
+PHP array_change_key_case() function changes the case of all key of an array.
+
+Note: It changes case of key only.
+
+Syntax :
+-----------
+    array array_change_key_case ( array $array [, int $case = CASE_LOWER ] )  
+
+Example :
+--------------
+    <?php    
+    $salary=array("Sonoo"=>"550000","Vimal"=>"250000","Ratan"=>"200000");    
+    print_r(array_change_key_case($salary,CASE_UPPER));   
+    ?>    
+
+Example :
+--------------
+    <?php    
+    $salary=array("Sonoo"=>"550000","Vimal"=>"250000","Ratan"=>"200000");    
+    print_r(array_change_key_case($salary,CASE_LOWER));   
+    ?>    
+
+3) PHP array_chunk() function :
+--------------------------------------------
+PHP array_chunk() function splits array into chunks. By using array_chunk() method, you can divide array into many parts.
+
+Syntax :
+-----------
+    array array_chunk ( array $array , int $size [, bool $preserve_keys = false ] )  
+
+Example :
+--------------
+    <?php    
+    $salary=array("Sonoo"=>"550000","Vimal"=>"250000","Ratan"=>"200000");    
+    print_r(array_chunk($salary,2));   
+    ?>    
+
+4) PHP count() function :
+----------------------------------
+PHP count() function counts all elements in an array.
+
+Syntax :
+-----------
+    int count ( mixed $array_or_countable [, int $mode = COUNT_NORMAL ] )  
+
+Example :
+--------------
+    <?php    
+    $season=array("summer","winter","spring","autumn");    
+    echo count($season);    
+    ?>    
+
+5) PHP sort() function :
+--------------------------------
+PHP sort() function sorts all the elements in an array.
+
+Syntax :
+-----------
+    bool sort ( array &$array [, int $sort_flags = SORT_REGULAR ] )  
+
+Example :
+--------------
+    <?php    
+    $season=array("summer","winter","spring","autumn");    
+    sort($season);  
+    foreach( $season as $s )    
+    {    
+      echo "$s<br />";    
+    }    
+    ?> 
+
+6) PHP array_reverse() function :
+---------------------------------------------
+PHP array_reverse() function returns an array containing elements in reversed order.
+
+Syntax :
+-----------
+    array array_reverse ( array $array [, bool $preserve_keys = false ] )  
+
+Example :
+--------------
+    <?php    
+    $season=array("summer","winter","spring","autumn");    
+    $reverseseason=array_reverse($season);  
+    foreach( $reverseseason as $s )    
+    {    
+      echo "$s<br />";    
+    }    
+    ?> 
+
+7) PHP array_search() function :
+--------------------------------------------
+PHP array_search() function searches the specified value in an array. It returns key if search is successful.
+
+Syntax :
+-----------
+    mixed array_search ( mixed $needle , array $haystack [, bool $strict = false ] )  
+
+Example :
+--------------
+    <?php    
+    $season=array("summer","winter","spring","autumn");    
+    $key=array_search("spring",$season);  
+    echo $key;    
+    ?>       
+
+8) PHP array_intersect() function :
+----------------------------------------------
+PHP array_intersect() function returns the intersection of two array. In other words, it returns the matching elements of two array.
+
+Syntax :
+-----------
+    array array_intersect ( array $array1 , array $array2 [, array $... ] )  
+
+Example :
+--------------
+    <?php    
+    $name1=array("sonoo","john","vivek","smith");    
+    $name2=array("umesh","sonoo","kartik","smith");    
+    $name3=array_intersect($name1,$name2);  
+    foreach( $name3 as $n )    
+    {    
+      echo "$n<br />";    
+    }    
+    ?> 
+
+      

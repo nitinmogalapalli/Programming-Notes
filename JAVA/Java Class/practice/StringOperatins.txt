@@ -1,0 +1,24 @@
+// program to find the string on the some operations
+class StringOperatins
+{
+public static void main(String[] args)
+{
+string strvar=RajeshKumar;
+system.out.println("Declare to string varible is:"+strvar);
+string substr1=strvar1.substring(0,6);
+string substr2=strvar2.substring(6);
+system.out.println("The two substrings are main string is:"+substr1+"and"+substr2);
+int str length=strvar.length();
+system.out.println("The string length is:"+str lenth);
+char ch=strvar.charAt(6);
+system.out.println("The charAt position 5 of main string:"+strvar+"is:"+ch);
+if(substr1.equals(substr2))
+system.out.println("The two sub strings are equal");
+else
+system.out.println("the two sub strings are equal");
+strvar=strvar.upper case();
+system.out.println("The main string in upper case is:"+strvar);
+strvar=strvar.lower case();
+system.out.println("The main string in lower case is:"+strvar);
+}
+} 

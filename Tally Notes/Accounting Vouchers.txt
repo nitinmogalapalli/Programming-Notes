@@ -1,0 +1,201 @@
+Accounting Vouchers:-
+--------------------------------
+Accounting Vouchers is used to record day by day transactions of a company in tally.
+
+Types of Accounting Vouchers:-
+----------------------------------------------
+1. Receipt Voucher
+2. Payment Voucher
+3. Contra Voucher
+4. Journal Voucher
+5. Purchase Voucher
+6. Sales Voucher
+
+1. Receipt Voucher:-
+-----------------------------
+This Voucher is used to record cash and bank receipts transactions of a company.
+
+Receipt Voucher is of two types
+1. Cash Receipt Voucher
+2. Bank Receipt Voucher
+
+1. Cash Receipt Voucher:-
+-------------------------------------
+This voucher is used to record cash received transactions of a company.
+
+Click on Accounting Vouchers 
+Press F6 or Click on Receipt Voucher option.
+
+Ex:-
+------
+Model I:-
+------------
+1. Cash received from Zameer Capital account rs 2,50,000.
+2. Cash received from pavan capital account rs 2,50,000.
+3. Cash received from Ramesh capital account rs 1,00,000.
+4. Cash received from Srinu capital account rs 1,00,000.
+5. Cash received from Mohammed capital account rs 3,00,000.
+
+Model II:-
+-------------
+1. Cash Received from suresh & co rs 25,000 and receipt no:- 1/4.
+2. Cash received from Kavya stores rs 10,500 and receipt no:- 1/3.
+3. Cash received from Swathi Agencies rs 5400 and receipt no:- 4/2.
+4. cash received from Raju enterprises rs 2500 and receipt no:- 5/5.
+5. cash received from Nalini traders rs 6000 and receipt no:- 3/5.
+
+Bank Receipts:-
+----------------------
+1. Andhra Bank cheque received from chiru & co rs 25,000 and deposited into SBI and cheque no:- 225566.
+2. IOB cheque received from Balu traders rs 10,500 and deposited into SBH and cheque no:- 334455.
+3. SBI cheque received from Pavan enterprises rs 25,000 and deposited into Same bank and cheque no:- 339988.
+4. Andhra bank DD received from Suresh & co rs 5250 and deposited into same bank and DD no:-1245489
+5. IDBI DD received from Nalini & co rs 10,900 and deposited into Andhra bank and DD no:- 889955.
+
+
+Payment Voucher:-
+----------------------------
+This voucher is used to record payment transactions of a company. Payment is of two types
+1. Cash Payment
+2. Bank Payment.
+
+1. Cash Payment:-
+--------------------------
+Model I:-
+-------------
+1. cash paid to suresh & co rs 15,000 and receipt no:- 3/4.
+2. Cash paid to Kavya stores rs 5,500 and receipt no:- 9/3.
+3. Cash paid to Swathi Agencies rs 3200 and receipt no:- 4/9.
+4. cash paid to Raju enterprises rs 1500 and receipt no:- 2/5.
+5. cash paid to Nalini traders rs 2000 and receipt no:- 10/5.
+
+Model II :-
+---------------
+1. Rent paid rs 8000
+2. Interest paid rs 1050
+3. Commission paid rs 500
+4. Water bill paid rs 250
+5. Sales tax paid rs 3500
+6. Welfare tax paid rs 2500
+7. Salaries paid rs 50,000
+8. Postal charges rs 250
+9. Audit fee rs 2000
+10. Brokerage paid rs 500 
+
+
+Bank Payments:-
+----------------------
+1. Andhra Bank cheque issued to chiru & co rs 25,000 and cheque no:- 225566.
+2. IOB cheque  issued to Balu traders rs 10,500 and cheque no:- 334455.
+3. SBI cheque cheque issued to Pavan enterprises rs 25,000 and cheque no:- 339988.
+4. Andhra bank DD issued to Suresh & co rs 5250 and DD no:-1245489
+5. IDBI DD issued to Nalini & co rs 10,900 and DD no:- 889955.
+
+Contra Voucher:-
+-------------------------
+This voucher is used to record cash to bank, cash to cash and bank to bank transactions of a company and here parties are not allowed.
+
+Ex:-
+-----
+1. cash deposited into Andhra bank rs 1,00,000.
+2. cash deposited into SBI rs 48,000.
+3. cash deposited into IDBI rs 89,000.
+4. cash deposited into SBH rs 45,000.
+5. cash deposited into IOB rs 14,000.
+6. cash withdrawl from SBH rs 20,000.
+7. cash withdrawl from IDBI rs 45,000.
+8. cash withdrawl from SBI rs 24,000.
+9. cash withdrawl from Andhra bank rs 50,000.
+10. cash withdrawl from IOB rs 5,000.
+11. Transfer cash from SBI to Andhra bank rs 24,000
+12. Transfer cash from IOB to IDBI rs 9,000.
+13. Transfer cash from cash account to petty cash account rs 5000.
+
+Petty Payments:-
+------------------------
+1. Office Staff Refreshments rs 800
+2. Watch man OD rs 200
+3. Auto Charges rs 250
+4. Sweeper payment rs 900
+5. Water Boy payment rs 500.
+
+Purchase Voucher:-
+----------------------------
+Purchase Voucher is used to record the purchase transactions of a company. 
+
+Purchase is of three types:-
+
+1. Voucher purchase
+2. Invoice purchase
+3. Inventory with invoice purchase
+
+1. Voucher purchase:-
+--------------------------------
+Voucher purchase is used by un registrated dealers only.
+
+2. Invoice purchase:-
+------------------------------
+Invoice purchase is used by registrated dealers only.
+
+3. Inventory with invoice purchase:-
+--------------------------------------------------
+Inventory purchase also used by registrated dealers only. Here this purchase is dealing with stock.
+
+1. Voucher purchase:-
+--------------------------------
+Ex:-
+-----
+1. Books purchased from Vuppala brothers rs 250.
+2. Pens purchased from pens corner rs 300.
+3. A4 papers bundles purchased from Sundar xerox rs 600.
+4. Chairs purchased from kumar plastics rs 1000.
+5. T-Shirts purchased from Sonu exports rs 2500.
+
+2. Invoice Purchase:-
+------------------------------
+Ex:-
+----
+1. Books purchased from Vuppala brothers rs 250 and invoice no:- 5/1.
+2. Pens purchased from pens corner rs 300 and invoice no:- 2/25.
+3. A4 papers bundles purchased from Sundar xerox rs 600 and invoice no:- 3/45.
+4. Chairs purchased from kumar plastics rs 1000 and invoice no:- 1/12.
+5. T-Shirts purchased from Sonu exports rs 2500 and invoice no:- 1/24.
+
+Sales Voucher:-
+----------------------
+Sales Voucher is used to record sales transactions of a company.
+
+Sales Voucher is of three types:-
+
+1. Voucher Sale
+2. Invoice Sale
+3. Inventory with invoice sale
+
+1. Voucher sale:-
+------------------------
+Ex:-
+----
+1. Books sales to Friends Books stores rs 500.
+2. Pens sales to student needs rs 400.
+3. A4 paper bundles sales to New internet point rs 1500.
+4. T-Shirt sales to Alam cloth showroom rs 3500.
+5. Keyboard sales to Computer shoppee rs 1800.
+
+2. Invoice Sale:-
+----------------------
+Ex:-
+-----
+1. Books sales to Friends Books stores rs 500 and invoice no:-2/35.
+2. Pens sales to student needs rs 400 and invoice no:-1/89.
+3. A4 paper bundles sales to New internet point rs 1500 and invoice no:-3/32.
+4. T-Shirt sales to Alam cloth showroom rs 3500 and invoice no:-1/49.
+5. Keyboard sales to Computer shoppee rs 1800 and invoice no:-1/99.
+
+
+Inventory with Invoice Purchases:-
+---------------------------------------------
+Ex:-
+----
+1. Maaza Drinks purchased from SKML Cool Drinks quantity 100 bottles and rate at 10 rs each.
+2. Santoor soaps purchased from Sri laxmi Kirana stores quantity 50 pcs and rate at 24 rs each.
+3. Samsung cell phones purchased from patel mobiles quantity 25 pcs and rate at 1900 rs each.  

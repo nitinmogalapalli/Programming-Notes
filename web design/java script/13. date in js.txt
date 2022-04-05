@@ -1,0 +1,73 @@
+JavaScript Date Object:-
+----------------------------------
+The JavaScript date object can be used to get year, month and day. You can display a timer on the webpage by the help of JavaScript date object.
+
+You can use different Date constructors to create date object. It provides methods to get and set day, month, year, hour, minute and seconds.
+
+JavaScript Date Example
+-----------------------------------
+Let's see the simple example to print date object. It prints date and time both.
+
+<html>
+<body>
+Current Date and Time: <span id="txt"></span>  
+<script>  
+var today=new Date();  
+document.getElementById('txt').innerHTML=today;  
+</script>  
+</body>
+</html>
+
+JavaScript Current Time Example
+-----------------------------------------------
+Let's see the simple example to print current time of system.
+
+<html>
+<body>
+Current Time: <span id="txt"></span>
+<script>
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+</script>
+</body>
+</html>
+
+JavaScript Digital Clock Example
+----------------------------------------------
+Let's see the simple example to display digital clock using JavaScript date object.
+
+<html>
+<body>
+Current Time: <span id="txt"></span>  
+<script>  
+window.onload=function()
+{
+getTime();
+}
+function getTime()
+{  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+// add a zero in front of numbers<10  
+m=checkTime(m);  
+s=checkTime(s);  
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+setTimeout(function(){getTime()},1000);  
+}  
+//setInterval("getTime()",1000);//another way  
+function checkTime(i)
+{  
+if (i<10)
+{  
+  i="0" + i;  
+ }  
+return i;  
+}  
+</script>  
+</body>
+</html>

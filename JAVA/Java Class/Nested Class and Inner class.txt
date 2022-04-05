@@ -1,0 +1,17 @@
+
+Nested classes and inner Classes:
+
+	The classes declaring within another class are called as Nested classes. 
+	1. The Nested classes have the scope of the class in which it has been defined
+	2. These Nested classes can access the members of the outer class
+	3. The Outer classes can not access the Nested class members
+	4. These Nested classes can be used in any block of statements
+
+
+	Nested Classes can be defined as  Static and Non-Static.If you precede the class definition with static keyword that class can only access the static members of the class. Where if you want to access the members of the outer class you have to do it by declaring an object to the outer class.
+
+	A non-static Nested class is called as "inner class".
+
+	If you want to create an object to an outer class the nested classes are included as the members of the outer.
+	you can acces the inner members from some other class you must use the member accessing operator with the outer class like,
+	Outer.inner

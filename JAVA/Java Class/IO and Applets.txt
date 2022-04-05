@@ -1,0 +1,35 @@
+I/O and Applets
+
+The two Java’s most important packages are: io and applet
+
+Upto now we have not much used I/O in the example programs. In fact, aside from print( ) and println( ), none of the I/O methods have been used.
+
+The reason is simple: most real applications of Java are not text-based, console programs. Rather, they are graphically oriented programs that rely upon Java’s Abstract Window Toolkit (AWT) or Swing for interaction with the user. Although text-based programs are excellent as teaching examples, they do not constitute an important use for Java in the real world. 
+
+ Java does provide strong, flexible support for I/O as it relates to files and networks. In fact, once you understand its fundamentals, the rest of the I/O system is easy to master.
+
+Streams:
+
+Java programs perform I/O through streams. A stream is an abstraction that either produces or consumes information. A stream is linked to a physical device by the Java I/O system.
+
+The same I/O classes and methods can be applied to any type of device. This means that an input stream can abstract many different kinds of input: from a disk file, a keyboard, or a network socket. Likewise, an output stream may refer to the console, a disk file, or a network connection. 
+
+Byte Streams and Character Streams:
+
+Java defines two types of streams: byte and character. Byte streams provide a convenient means for handling input and output of bytes. Byte streams are used, for example, when reading or writing binary data. Character streams provide a convenient means for handling input and output of characters. They use Unicode and, therefore, can be internationalized.
+
+At the lowest level, all I/O is still byte-oriented. The character-based streams simply provide a convenient and efficient means for handling characters.
+
+The Byte Stream Classes:
+
+Byte streams are defined by using two class hierarchies. At the top are two abstract classes: InputStream and OutputStream. Each of these abstract classes has several concrete subclasses that handle the differences between various devices, such as disk files, network connections, and even memory buffers.
+
+To use the stream classes, you must import java.io.
+
+The abstract classes InputStream and OutputStream define several key methods that the other stream classes implement. Two of the most important are read( ) and write( ), which, respectively, read and write bytes of data. Both methods are declared as abstract inside InputStream and OutputStream. They are overridden by derived stream classes.
+
+The Character Stream Classes:
+
+Character streams are defined by using two class hierarchies. At the top are two abstract classes, Reader andWriter. These abstract classes handle Unicode character streams. Java has several concrete subclasses of each of these.
+
+The abstract classes Reader and Writer define several key methods that the other stream classes implement. Two of the most important methods are read( ) and write( ), which read and write characters of data, respectively. These methods are overridden by derived stream classes.

@@ -1,0 +1,119 @@
+Data Reading:
+	we can read/write information in two different ways. 
+	1. Using Console
+	2. Using File
+
+Console Input / Output:
+
+	Console is a User screen where you can enter data or you can read.
+If you want to perform Input / Output operations using Console we need to use some functions that are related to the Standard Input / Output.
+
+	Functions to perform Character Input / Output:
+	Input Functions:
+		a. getch()
+			It reads single character from the standard input device(keyboard) without echoing the character.
+		usage:
+			char a;
+			a = getch();
+
+		b. getchar()
+			It reads single character from the standard input device with echoing the character.
+		usage:
+			char a;
+			a = getchar();
+
+		c. gets(const* char)
+			It reads a single/sequence of characters as a string untill a new line character encounters.
+		usage:
+			char *a;
+			gets(a);
+
+	Output Functions:
+		a. putch(char)
+			It prints a character on to the standard output(Console).
+		usage:
+			char a;
+			a = getch();
+			putch(a);
+
+		b. putchar(char)
+			It prints a character on to the standard output.
+		usage:
+			char a;
+			a = getchar();
+			putchar(a);
+		
+		c. puts(char *string)
+			It prints a string to the standard output, with appending a new line to the end.
+		usage:
+			char *ch;
+			gets(ch);
+			puts("This is a string you entered...");
+			puts(ch);
+
+
+
+
+
+
+			
+	Formatted Input:
+		a. scanf()
+			It reads formatted input from the standard input(stdin) device by default keyboard.
+		syntax:
+			int scanf(format string, list of variables);
+
+		format string:
+			it is a string, which consists of sequence of characters / format specifiers.
+			format specifiers:
+				These indicate the format of specific type, which started with a percentage (%) symbol.
+
+				%c	character
+				%d	decimal ( integral )
+				%e	exponential ( float )
+				%f	float
+				%h	short (short int )
+				%i	integer ( decimal, octal, hexa )
+				%l	long
+				%o	octal
+				%s	string
+				%u	unsigned
+				%x	hexa decimal
+			List of Variables:
+				These are list of variables separated by commas, which specify the address of the variable in which the scanned formatted data can be stored.
+			These variables can be preceded by an address of (&) operator.
+			usage:
+				int a;
+				char c;
+				scanf("%d", &a);
+				scanf("%c", &c);
+	Formatted Output:
+		a. printf()
+			It prints the formatted output to the standard output (stdout) which is Console by default.
+		syntax:
+			int printf(format string, list of variables);
+
+		format string:
+			it is a string, which consists of sequence of characters / format specifiers.
+			format specifiers:
+				These indicate the format of specific type, which started with a percentage (%) symbol.
+
+				%c	character
+				%d	decimal ( integral )
+				%e	exponential ( float )
+				%f	float
+				%h	short (short int )
+				%i	integer ( decimal, octal, hexa )
+				%l	long
+				%o	octal
+				%s	string
+				%u	unsigned
+				%x	hexa decimal
+			List of Variables:
+				These are list of variables separated by commas from which the formatted data can be printed.
+			usage:
+				int a;
+				char c;
+				printf("%d", a);
+				printf("%c", c);
+	

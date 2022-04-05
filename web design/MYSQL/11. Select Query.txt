@@ -1,0 +1,40 @@
+MySQL SELECT Statement:-
+----------------------------------------
+The MySQL SELECT statement is used to fetch data from the one or more tables in MySQL. We can retrieve records of all fields or specified fields.
+
+Syntax for specified fields:
+------------------------------------
+SELECT expressions  
+FROM tables  
+[WHERE conditions];  
+
+Syntax for all fields:
+----------------------------
+SELECT * FROM tables [WHERE conditions];  
+
+MySQL SELECT Example 1: for specified fields
+----------------------------------------------------------------
+In such case, it is mandatory to specify field names.
+
+Example:
+-------------
+SELECT officer_name, address  
+FROM officers;
+
+MySQL SELECT Example 2: for all fields:-
+---------------------------------------------------------
+In such case, we can specify either all fields or * (asterisk) symbol.
+
+SELECT * FROM officers;
+
+MySQL SELECT Example 3: from multiple tables:-
+--------------------------------------------------------------------
+MySQL SELECT statement can also be used to retrieve records from multiple tables by using JOIN statement.
+
+Let's take two tables "students" and "officers", having the following data.
+
+SELECT officers.officer_id, students.student_name  
+FROM students  
+INNER JOIN officers  
+ON students.student_id = officers.officer_id  
+ORDER BY student_id;  

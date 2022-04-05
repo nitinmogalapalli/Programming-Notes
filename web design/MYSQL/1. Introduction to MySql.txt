@@ -1,0 +1,25 @@
+What is MySQL:-
+------------------------
+MySQL is a fast, easy to use relational database. It is currently the most popular open-source database. It is very commonly used in conjunction with PHP scripts to create powerful and dynamic server-side applications.
+
+MySQL is used for many small and big businesses. It is developed, marketed and supported by MySQL AB, a Swedish company. It is written in C and C++.
+
+Reasons of popularity:-
+---------------------------------
+MySQL is becoming so popular because of these following reasons:
+--------------------------------------------------------------------------------------------
+MySQL is an open-source database so you don't have to pay a single penny to use it.
+
+MySQL is a very powerful program so it can handle a large set of functionality of the most expensive and powerful database packages.
+
+MySQL is customizable because it is an open source database and the open-source GPL license facilitates programmers to modify the SQL software according to their own specific environment.
+
+MySQL is quicker than other databases so it can work well even with the large data set.
+
+MySQL supports many operating systems with many languages like PHP, PERL, C, C++, JAVA, etc.
+
+MySQL uses a standard form of the well-known SQL data language.
+
+MySQL is very friendly with PHP, the most popular language for web development.
+
+MySQL supports large databases, up to 50 million rows or more in a table. The default file size limit for a table is 4GB, but you can increase this (if your operating system can handle it) to a theoretical limit of 8 million terabytes (TB).

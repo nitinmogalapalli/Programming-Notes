@@ -1,0 +1,129 @@
+CSS Combinators:-
+-------------------------
+A combinator is something that explains the relationship between the selectors.
+
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+There are four different combinators in CSS3:
+
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+
+Descendant Selector:-
+-----------------------------
+The descendant selector matches all elements that are descendants of a specified element.
+
+The following example selects all <p> elements inside <div> elements: 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+Child Selector:-
+--------------------
+The child selector selects all elements that are the immediate children of a specified element.
+
+The following example selects all <p> elements that are immediate children of a <div> element:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div > p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+Adjacent Sibling Selector:-
+-----------------------------------
+
+The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+The following example selects all <p> elements that are placed immediately after <div> elements:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div + p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+</body>
+</html>
+
+General Sibling Selector:-
+---------------------------------
+The general sibling selector selects all elements that are siblings of a specified element.
+
+The following example selects all <p> elements that are siblings of <div> elements: 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div ~ p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+</body>
+</html>

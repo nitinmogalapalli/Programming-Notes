@@ -1,0 +1,72 @@
+SQL CREATE TABLE
+------------------------------
+SQL CREATE TABLE statement is used to create table in a database.
+
+If you want to create a table, you should name the table and define its column and each column's data type.
+
+Let's see the simple syntax to create the table.
+
+    create table "tablename"  
+    ("column1" "data type",  
+    "column2" "data type",  
+    "column3" "data type",  
+    ...  
+    "columnN" "data type");  
+
+The data type of the columns may vary from one database to another. For example, NUMBER is supported in Oracle database for integer value whereas INT is supported in MySQL.
+
+Let us take an example to create a STUDENTS table with ID as primary key and NOT NULL are the constraint showing that these fields cannot be NULL while creating records in the table.
+
+    SQL> CREATE TABLE STUDENTS (  
+    ID INT                           NOT NULL,  
+    NAME VARCHAR (20) NOT NULL,  
+    AGE INT                         NOT NULL,  
+    ADDRESS CHAR (25),  
+    PRIMARY KEY (ID)  
+    );  
+
+You can verify it, if you have created the table successfully by looking at the message displayed by the SQL Server, else you can use DESC command as follows:
+
+SQL> DESC STUDENTS;
+
+SQL CREATE TABLE Example in MySQL
+
+Let's see the command to create a table in MySQL database.
+
+    CREATE TABLE Employee  
+    (  
+    EmployeeID int,  
+    FirstName varchar(255),  
+    LastName varchar(255),  
+    Email varchar(255),  
+    AddressLine varchar(255),  
+    City varchar(255)  
+    );  
+
+SQL CREATE TABLE Example in Oracle
+
+Let's see the command to create a table in Oracle database.
+
+    CREATE TABLE Employee  
+    (  
+    EmployeeID number(10),  
+    FirstName varchar2(255),  
+    LastName varchar2(255),  
+    Email varchar2(255),  
+    AddressLine varchar2(255),  
+    City varchar2(255)  
+    );  
+
+SQL CREATE TABLE Example in Microsoft SQLServer
+
+Let's see the command to create a table in SQLServer database. It is same as MySQL and Oracle.
+
+    CREATE TABLE Employee  
+    (  
+    EmployeeID int,  
+    FirstName varchar(255),  
+    LastName varchar(255),  
+    Email varchar(255),  
+    AddressLine varchar(255),  
+    City varchar(255)  
+    );  

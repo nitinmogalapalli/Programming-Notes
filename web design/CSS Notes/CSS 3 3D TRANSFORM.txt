@@ -1,0 +1,123 @@
+CSS3 3D Transforms:-
+------------------------------
+CSS3 allows you to format your elements using 3D transformations.
+
+CSS3 3D Transforms:-
+------------------------------
+In this chapter you will learn about the following 3D transformation methods:
+
+    rotateX()
+    rotateY()
+    rotateZ()
+
+The rotateX() Method:-
+------------------------------
+The rotateX() method rotates an element around its X-axis at a given degree:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(150deg); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+The rotateX() method rotates an element around its X-axis at a given degree. This div element is rotated 150 degrees.
+</div>
+
+<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX() method.</p>
+
+</body>
+</html>
+
+The rotateY() Method:-
+-----------------------------
+The rotateY() method rotates an element around its Y-axis at a given degree:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    -webkit-transform: rotateY(150deg); /* Safari */
+    transform: rotateY(150deg); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+The rotateY() method rotates an element around its Y-axis at a given degree. This div element is rotated 150 degrees.
+</div>
+
+<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateY() method.</p>
+
+</body>
+</html>
+
+The rotateZ() Method:-
+------------------------------
+The rotateZ() method rotates an element around its Z-axis at a given degree:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+The rotateZ() method rotates an element around its Z-axis at a given degree. This div element 
+is rotated 90 degrees.
+</div>
+
+<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateZ() method.</p>
+
+</body>
+</html>

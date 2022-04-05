@@ -1,0 +1,22 @@
+HTML NoScript Tag:-
+-----------------------------
+HTML <noscript> tag is used to define an alternate content for the users who have disabled scripting from the browser and want to access the web page.
+
+The <noscript> element can be used within <head> and <body> tags.
+
+While using noscript tag inside <head> element, <noscript> must contain <link>, <style>, and <meta> tags.
+
+The text inside the <noscript> element will be displayed if the user's browser is not script supporting.
+
+The example of noscript tag is given below:
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+document.write("Welcome to Javascript")  
+</script>  
+<noscript>Sorry! Your browser does not support JavaScript.!</noscript>  
+</body>
+</html>
+

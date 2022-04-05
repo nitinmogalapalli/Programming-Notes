@@ -1,0 +1,16 @@
+Control statements:
+	These Satements are used by the programmer in order to control the flow of execution of the program.
+
+1. Selection
+	a. If
+	b. If-else
+	c. Switch 
+2. Iteration/Loops
+	a. while
+	b. do-while
+	c. for
+	d. for-each
+3. Jump
+	a. break
+	b. continue
+	c. return

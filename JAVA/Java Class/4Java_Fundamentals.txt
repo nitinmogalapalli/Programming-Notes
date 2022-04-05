@@ -1,0 +1,175 @@
+Java Fundamentals::
+
+It helps you to build your foundation for using the Java programming language.
+
+
+Java Keywords::
+	The keywords of a programming language are the words that define the language, have special meaning to the compiler, and cannot be used as identifiers.
+
+abstract	default	if		private		this
+boolean		do	implements 	protected 	throw
+break 		double 	import 		public 		throws
+byte 		else 	instanceof 	return 	       transient
+case 		extends int 		short 		try
+catch 		final 	interface 	static 		void
+char 		finally long 		strictfp 	volatile
+class 		float 	native 		super 		while
+const 		for 	new 		switch
+continue 	goto 	package 	synchronized
+
+The keywords const and goto cannot be used in Java. They were added to the list of keywords so they would generate compiler errors for developers who were converting C and C++ code over to Java.
+
+There are three more reserved words in Java: true, false, and null. Technically, they are literal values and not keywords.
+
+
+Java’s Eight Primitive Data Types::
+	Java has eight data types that are built into the language. These eight data types, often referred to as the primitive types, are the building blocks from which classes are written.
+
+Java Is a Strongly Typed Language:
+	It is important to state that Java is a strongly typed language. There are no automatic conversions of conflicting types as in some languages. The Java compiler checks all expressions and parameters to ensure that the types are compatible. Any type mismatches are errors that must be corrected before the compiler will finish compiling the class.
+
+For Example: int i = 4.9;
+	the above statement is valid in C language which is not strongly typed language. but it is nota valid statement in java, and generates an error at compile time.
+
+Integral Data Types:
+DATA 
+TYPE 	SIZE 	MIN VALUE 		MAX VALUE
+
+byte 	8 bits 	–128 			127
+short 	16 bits –32768 			32767 
+int 	32 bits –2147483648 		2147483647
+long 	64 bits –9223372036854775808 	9223372036854775807
+
+Floating point Types:
+DATA 
+TYPE 	SIZE 	MIN VALUE 		MAX VALUE
+
+float 	32 bits ±1.40239846E-45 	±3.40282347E+8
+double 	64 bits ±4.94065645841246544E 	±1.79769313486231570E
+		-324 			+308
+
+boolean	true or false
+
+char 	16 bits \u0000 			\uFFFF
+
+Unicode Characters:
+
+	char in Java is not the same as char in C or C++. In C/C++, char is 8 bits wide. This is not the case in Java. Instead, Java uses Unicode to represent characters. Unicode defines a fully international character set that can represent all of the characters found in all human languages.
+
+In Java char is a 16-bit type which is of 2bytes of size.
+In Char Data type we use some escape sequence characters:
+
+ESCAPE SEQUENCE 	DEFINITION
+	\t 		tab
+	\b 		backspace
+	\n 		newline
+	\r 		carriage return
+	\’ 		single quote
+	\” 		double quote
+	\\ 		backslash
+
+Strings::
+	A string is a sequence of characters. Keep in mind that strings are not primitive data types in Java, and therefore need to be represented by a class. Java has a class named String to represent string objects.
+
+For example:
+
+	String str = "this is a test";
+	System.out.println(str);
+
+Here, str is an object of type String. It is assigned the string “this is a test”. This string is displayed by the println( ) statement.
+
+In java by default 
+>the type of value is string
+>the flaoting point values are of the type double
+
+In java, flaot f = 10.5;
+	it generates an error. why because by default the floating point values are of the type double. In that case if you want to assign a flaoting point value to a flaot variable we need to specify that value as flaoting point value.
+
+	flaot f = 10.5f;
+
+	long l = 545465464646546L;
+
+Variables::
+	The variable is the basic unit of storage in a Java program. A variable is defined by the combination of an identifier, a type, and an optional initializer.
+
+Declaring a Variable:
+	In Java, all variables must be declared before they can be used. The basic form of a variable declaration is shown here:
+
+type identifier [ = value][, identifier [= value] ...] ;
+
+For example:
+	short x;
+	int age;
+	float salary;
+
+Java allows variables to be initialized dynamically, using any expression valid at the time the variable is declared. you can change the value of a variable.
+
+for example:
+	double c = Math.sqrt(a * a + b * b);
+
+
+Type Conversion and Casting::
+
+	It is fairly common to assign a value of one type to a variable of another type. If the two types are compatible,
+then Java will perform the conversion automatically. However not
+all type conversions are implicitly allowed.
+
+Java’s Automatic Conversions:
+	When one type of data is assigned to another type of variable, an automatic type conversion will take place if the following two conditions are met:
+
+• The two types are compatible.
+• The destination type is larger than the source type.
+
+Casting Incompatible Types:
+
+	what if you want to assign an int value to a byte variable? This conversion will not be performed automatically, because a byte is smaller than an int. This kind of conversion is sometimes called a narrowing conversion.
+
+	To create a conversion between two incompatible types, you must use a cast. A cast is simply an explicit type conversion. It has this general form:
+	(target-type) value
+
+For Example: 	int a;
+		byte b;
+		// ...
+		b = (byte) a;
+
+
+Java Operators::
+	The Operator is a symbol to represent an operation.
+Unary Operators:
+	The operators applied to only one operand
+Binary Operators:
+	The operator applied to two operands
+Ternary Operators:
+	Here the operator reqire three operands
+
+Java Operators and Precedence
+
+OPERATOR 			SYNTAX
+
+Pre- and post increment		++, --
+/decrement 
+
+Unary operators 		+, -, ~, !, (cast)
+
+Multiplication/			*, /, %
+division/modulus 
+
+Addition/subtraction/		+, -, +
+concatenation 
+
+Shift Operators 		<<, >>, >>>
+
+Comparison 			<, <=, >, >=, instanceof
+
+Equality 			= =, !=
+
+Bitwise 			AND, OR, XOR &, |, ^
+
+Conditional 			AND, OR &&, ||
+
+Ternary operator 		? :
+
+Assignment operator 		=
+
+Assignment with operation 	*=, /=, %=, +=, –=, 
+				<<=, >>=, >>>=, &=, ^=, |=

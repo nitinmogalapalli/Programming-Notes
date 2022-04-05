@@ -1,0 +1,329 @@
+Function:-
+-------------
+	Function is define as collection of statement which perform particular task. Function facilitates division of large problem in smaller problem.
+
+Use of function:-
+----------------------
+1. Functions facilitate handling of a complex task easily. 
+2. A lot of predefined function in c language provide facility of faster development of software. These function are defined in header file.
+3. Function make designing and maintain of program easily. 
+4. Functions are very much useful when a block of statement has to be written / executed again and again. 
+5. Function are also used to reduce the difficulties during debugging a program.
+
+Type of function:-
+-----------------------    
+There are main two type of function. 
+
+1. User define function.
+2 .Built in function or pre defined function.
+
+User define function:-
+----------------------------
+  	These function are define by the user according to programming requirement.
+
+Built in or library or pre define function:-
+---------------------------------------------------  
+  	These functions are already define in c language. Each built in function are already define in header file. 
+
+Example of built in function:- 
+--------------------------------------
+	Pow(), sqrt() and string related function such as strlen, strcmp etc.each function contain pair of round brackets ().
+
+Rules of built in function:-
+----------------------------------
+1.All the built in or library function must be used in small letter.
+2.Each library function must be used according to their syntax otherwise a syntax error will be appeared.
+3.Any keyword are built in function cannot be used as user define function or word. 
+
+Argument:-
+---------------     
+	Argument is used to pass information between function and main program these are also called parameters. 
+
+Return type:- 
+-----------------
+	   In this type function is want to return the answer to main program then we use return type. The example of return type such as int, float etc. 
+
+User define function:-
+------------------------------
+	These functions are declared by the user according to programming requirement.
+
+Elements of user define function:-
+-------------------------------------------
+Each user define function has divided in three parts.
+
+1. First part is called function declaration in this part we declare the name of       
+    function.
+
+2. Second part is called function calling. In this part we call the function. 
+
+3. Third part is called function definition. In this part we define the work are doing in function.
+
+Type of user defines function:- 
+---------------------------------------
+1. No argument & no return value.
+2. Some argument & no return value.
+3. No argument & some return value.
+4. Some argument & some return value.
+
+1. No argument & no return value:-
+---------------------------------------------
+                     In this type of function we cannot use of argument and return type.
+
+Syntax:-
+-----------
+Void function( );	Declaration 
+Function name( );	Calling
+Void function name( )	            Definition
+{
+=======
+=======	block of statement.
+}
+
+Note:-
+--------
+	If we want to call a function is more than one then the calling of function is more than one.
+
+Ex:-
+------
+Function name( );	  Calling
+Function name( );         Calling
+The process of declaration and definition is same. 
+
+Ex:-
+------
+	 
+W.A.P. to add of two values with using function.
+
+#include<stdio.h>
+#include<conio.h>
+void add();		Function Declaration
+void main()
+{
+add();		Function Calling
+getch();
+}
+void add()                  Function Definition
+{
+int a,b,c;
+printf("enter the value of a and b");
+scanf("%d%d",&a,&b);
+c=a+b;
+printf("the sum is %d",c);
+}
+
+Output :-
+enter the value of a and b .  =  15
+		             10
+The sum is   =  25.
+
+2. W.A.P. to calculate the simple interest no argument and no return value.
+
+#include<stdio.h>
+#include<conio.h>
+void simple();
+void main()
+{
+simple();
+getch();
+}
+void simple()
+{
+int p,r,t;
+float si;
+printf("enter the value of p r and t");
+scanf("%d%d%d",&p,&r,&t);
+si=(p*r*t)/100;
+printf("the simple interest is %f",si);
+}
+
+Output :-
+------------
+enter the value of p,r and t .  =  1000
+			10
+			  3
+The simple interest is   =  300.
+
+Types of argument:-
+--------------------------
+The arguments are of two types.
+
+	1. Actual Argument 
+	2. Formal Argument 
+
+Actual Argument:-
+------------------------
+   	The argument listed in the function calling statement is represented as actual argument. These values of actual argument are copied in formal argument.
+
+Ex:-
+          High(a,b);   \\ calling to function. 
+                              Here a and b are actual argument.
+
+Formal Argument:-
+-------------------------
+	The argument used in the function definition some are represent as formal argument.
+
+Example:-
+-------------
+void high (int x, int y)
+				x and y are formal argument.   
+	The value of x and y is equal to a and b. 
+
+2. Some argument & no return value:-
+------------------------------------------------   
+       	In this type of function we are used to argument and there is not give any return value.
+
+Ex:-
+------
+W.A.P. to add two numbers with the help of some argument and no return value.
+
+#include<stdio.h>
+#include<conio.h>
+void add(int,int);
+void main()
+{
+int a,b;
+printf("enter the value of a and b");
+scanf("%d%d",&a,&b);
+add(a,b);
+getch();
+}
+void add(int x,int y)
+{
+int c;
+c=x+y;
+printf("the sum is %d",c);
+}
+
+Output :-
+enter the value of a and b .  =  15
+		             10
+The sum is   =  25.
+
+Solution:-
+-------------
+	In the above example the function is called through body of main function ().the control will be transferred to body of add function. In body of add function first of all the value of variable a and b will be copied to the formal argument x and y. then both will be added over theses and result will be displayed in function.
+
+2. W.A.P. to calculate the area of square. 
+
+#include<stdio.h>
+#include<conio.h>
+void area(int);
+void main()
+{
+int a;
+printf("enter the value of a=");
+scanf("%d",&a);
+area(a);
+getch();
+}
+void area(int x)
+{
+int y;
+y=x*x;
+printf("the area of square %d",y);
+}
+
+Output:
+enter the value of a.  =  10
+the area of square is.  =   100
+
+3. No Argument & some return value:-
+-------------------------------------------------
+	In this type of function we cannot use of argument but use only return type. 
+
+Syntax:-
+-----------
+1.  Declaration 
+	type function ();
+	Variable type function name;
+
+	Ex:- .  int function name();
+
+ 2. Calling 	
+	var = funname ();
+
+Here var is the variable of type that is the return type of the function. 
+
+3. Definition 
+
+Int functionname()
+{ 
+---------------------Statements
+-----------------------
+}
+
+Ex:-
+W.A.P. to add of two values. 
+
+#include<stdio.h>
+#include<conio.h>
+int add();		function declaration return type	
+void main()
+{
+int c;
+c=add();		\\function calling 
+printf("the addition is %d",c);
+getch();
+}
+int add()		function definition 
+{
+int a,b,d;
+printf("enter the value of a and b=");
+scanf("%d%d",&a,&b);
+d=a+b;
+return(d);
+}
+
+Output :-
+enter the value of a and b .  = 15
+		            10
+The addition is   = 25
+
+Solution:- 
+-------------
+	In above example function returning variable d. Return statement is used to return variable to function from function is called. The value of d will be copied to c in main function. 
+
+4. Some Argument and some return value:-
+-------------------------------------------------------			
+		In this type of function we can use of some argument and some return value.
+
+Syntax:-
+-----------
+type function name (parameter list);
+
+Ex:-   Here type is represent to any data type which is used in c.
+           	Int add(int,int)
+Here int is a type and add () is a Functionname and (int,int) is argument or parameter.
+
+Ex:-
+------
+W.A.P. to add of two values with the help of some argument and some return value.
+
+#include<stdio.h>
+#include<conio.h>
+int add();
+void main()
+{
+int a,b,c;
+printf("enter the value of a and b=");
+scanf("%d%d",&a,&b);
+c=add(a,b);
+printf("the addition is %d",c);
+getch();
+}
+int add(int x,int y)
+{
+int d;
+d=x+y;
+return(d);
+}
+
+Output :-
+enter the value of a and b   =  15
+		            20
+The addition is   =  35
+
+Solution:-
+------------ 
+	In above example function returning variable d. Return statement is used to return variable to function from function is called. The value of d will be copied to c in main function.
+

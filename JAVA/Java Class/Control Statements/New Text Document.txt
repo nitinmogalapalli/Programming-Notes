@@ -1,0 +1,9 @@
+/* Looping Statements Syntaxs:
+	1. while
+		intitialization statements;
+		while(condition)
+		{
+			statements to be iterated;
+			increment/decrement;
+		}
+	2. do-while

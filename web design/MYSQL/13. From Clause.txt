@@ -1,0 +1,14 @@
+MySQL FROM Clause:-
+---------------------------------
+The MySQL FROM Clause is used to select some records from a table. It can also be used to retrieve records from multiple tables using JOIN condition.
+
+MySQL FROM Clause: Retrieve data from one table:-
+--------------------------------------------------------------------------
+The following query specifies how to retrieve data from a single table.
+
+Use the following Query:
+
+SELECT *  
+FROM officers  
+WHERE officer_id <= 3;  
+

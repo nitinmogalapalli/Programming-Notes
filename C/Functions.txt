@@ -1,0 +1,225 @@
+Argument, return value:-
+---------------------------------
+All C functions can be called either with arguments or without arguments in a C program. These functions may or may not return values to the calling function. Now, we will see simple example C programs for each one of the below.
+
+    C function without arguments (parameters) and without return value.
+    C function without arguments (parameters) and with return value.
+    C function with arguments (parameters) and without return value.
+    C function with arguments (parameters) and with return value.
+
+C function without arguments (parameters) and without return value:-
+---------------------------------------------------------------------------------------------
+In this method, We won’t pass any arguments to the function while defining, declaring or calling the function. This type of functions will not return any value when we call the function from main() or any sub function. When we are not expecting any return value but, we need some statements to be printed as output then, this type of functions are very useful.
+
+Example:-
+--------------
+#include<stdio.h>
+ 
+// Function Declaration
+void addition();        
+ 
+void main()
+{
+  printf("\n ............. \n");
+  
+  addition();                      
+}
+ 
+void addition()
+{
+  int sum, a = 10, b = 20;  
+  sum = a + b;
+  
+  printf("\n Sum of a = %d and b = %d is = %d", a, b, sum);
+}
+
+C function without arguments (parameters) and with return value:-
+-----------------------------------------------------------------------------------------
+In this method, We won’t pass any arguments to the function while defining, declaring or calling the function. This type of functions will return some value when we call the function from main() or any sub function. Data Type of the return value will depend upon the return type of function declaration. For instance, if the return type is int then return value will be int.
+
+Example:-
+--------------
+#include<stdio.h>
+ 
+int multiplication();        
+ 
+int main()
+{
+  int multi;
+ 
+  multi = multiplication();
+  printf("\n Multiplication of a and b is = %d \n", multi );        
+  return 0;        
+}
+ 
+int multiplication()
+{
+  int multi, a = 20, b = 40;  
+  
+  multi = a * b;
+ 
+  return multi;
+}
+
+C function with arguments (parameters) and without return value:-
+-----------------------------------------------------------------------------------------
+This method allows us to pass the arguments to the function while calling the function. But, This type of functions will not return any value when we call the function from main () or any sub function.
+
+If we want to allow our user to pass his own data to the function arguments but we are not expecting any return value then, this type of functions are very useful.
+
+Example:-
+--------------
+#include<stdio.h>
+ 
+void addition(int, int);        
+ 
+void main()
+{
+  int a, b;
+ 
+  printf("\n Please Enter two integer values \n");
+  scanf("%d %d",&a, &b);
+ 
+  //Calling the function with dynamic values
+  addition(a, b);
+}
+ 
+void addition(int a, int b)
+{
+  int sum;  
+  
+  sum = a + b;
+ 
+  printf("\n Additiontion of %d and %d is = %d \n", a, b, sum);
+}
+
+C function with arguments (parameters) and with return value:-
+-------------------------------------------------------------------------------------
+This method allows us to pass the arguments to the function while calling the function. This type of functions will return some value when we call the function from main () or any sub function. Data Type of the return value will depend upon the return type of function declaration. For instance, if the return type is int then return value will be int.
+
+Example:-
+--------------
+#include<stdio.h>
+ 
+int multiplication(int, int);        
+ 
+int main()
+{
+  int a, b, multi;
+ 
+  printf("\n Please Enter two integer values \n");
+  scanf("%d %d",&a, &b);
+ 
+  //Calling the function with dynamic values
+  multi = multiplication(a, b);
+ 
+  printf("\n Multiplication of %d and %d is = %d \n", a, b, multi);        
+  return 0;            
+}
+ 
+int multiplication(int a, int b)
+{
+  int multi;  
+ 
+  multi = a * b;
+ 
+  return multi;
+}
+
+
+How to call C functions in a program?
+
+There are two ways that a C function can be called from a program. They are,
+
+    Call by value
+    Call by reference
+
+1. Call by value:
+---------------------
+    In call by value method, the value of the variable is passed to the function as parameter.
+    The value of the actual parameter can not be modified by formal parameter.
+    Different Memory is allocated for both actual and formal parameters. Because, value of actual parameter is copied to formal parameter.
+
+Note:
+-------
+    Actual parameter – This is the argument which is used in function call.
+    Formal parameter – This is the argument which is used in function definition
+
+Example program for C function (using call by value):
+------------------------------------------------------------------------
+    In this program, the values of the variables “m” and “n” are passed to the function “swap”.
+    These values are copied to formal parameters “a” and “b” in swap function and used.
+
+
+#include<stdio.h>
+
+// function prototype, also called function declaration
+void swap(int a, int b);          
+
+void main()
+{
+    int m = 22, n = 44;
+    // calling swap function by value
+    printf(" values before swap  m = %d \nand n = %d", m, n);
+    swap(m, n);                         
+}
+
+void swap(int a, int b)
+{ 
+    int tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+    printf(" \nvalues after swap m = %d\n and n = %d", a, b);
+}
+
+Output:-
+------------
+values before swap m = 22
+and n = 44
+values after swap m = 44
+and n = 22
+
+Call by reference:
+------------------------
+    In call by reference method, the address of the variable is passed to the function as parameter.
+
+    The value of the actual parameter can be modified by formal parameter.
+    Same memory is used for both actual and formal parameters since only address is used by both parameters.
+
+Example program for C function (using call by reference):
+-----------------------------------------------------------------------------
+    In this program, the address of the variables “m” and “n” are passed to the function “swap”.
+
+    These values are not copied to formal parameters “a” and “b” in swap function.
+    Because, they are just holding the address of those variables.
+    This address is used to access and change the values of the variables.
+
+#include<stdio.h>
+
+// function prototype, also called function declaration
+void swap(int *a, int *b); 
+
+void main()
+{
+    int m = 22, n = 44;
+    //  calling swap function by reference
+    printf("values before swap m = %d \n and n = %d",m,n);
+    swap(&m, &n);         
+}
+
+void swap(int *a, int *b)
+{
+    int tmp;
+    tmp = *a;
+    *a = *b;
+    *b = tmp;
+    printf("\n values after swap a = %d \nand b = %d", *a, *b);
+}
+
+Output:-
+------------
+values before swap m = 22 
+and n = 44
+values after swap a = 44
+and b = 22

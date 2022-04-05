@@ -1,0 +1,60 @@
+PHP While Loop :
+------------------------
+PHP while loop can be used to traverse set of code like for loop.
+
+It should be used if number of iteration is not known.
+
+Syntax :
+-----------
+    while(condition)
+    {  
+    //code to be executed  
+    }  
+
+Alternative Syntax
+-------------------------
+    while(condition):  
+    //code to be executed  
+      
+    endwhile;
+
+PHP While Loop Example :
+--------------------------------------
+    <?php  
+    $n=1;  
+    while($n<=10)
+    {  
+    echo "$n<br/>";  
+    $n++;  
+    }  
+    ?> 
+
+Alternative Example :
+-----------------------------
+    <?php  
+    $n=1;  
+    while($n<=10):  
+    echo "$n<br/>";  
+    $n++;  
+    endwhile;  
+    ?>     
+
+PHP Nested While Loop :
+-----------------------------------
+We can use while loop inside another while loop in PHP, it is known as nested while loop.
+
+In case of inner or nested while loop, nested while loop is executed fully for one outer while loop. If outer while loop is to be executed for 3 times and nested while loop for 3 times, nested while loop will be executed 9 times (3 times for 1st outer loop, 3 times for 2nd outer loop and 3 times for 3rd outer loop).
+
+Example :
+--------------
+    <?php  
+    $i=1;  
+    while($i<=3){  
+    $j=1;  
+    while($j<=3){  
+    echo "$i   $j<br/>";  
+    $j++;  
+    }  
+    $i++;  
+    }  
+    ?>  

@@ -1,0 +1,47 @@
+MySQL Create Database:-
+-------------------------------------
+Now you are ready to create database.
+
+Syntax:
+-----------
+CREATE DATABASE database_name; 
+ 
+Example:
+-------------
+Let's take an example to create a database name "employees"
+
+CREATE DATABASE employees;  
+
+You can check the created database by the following query:
+
+SHOW DATABASES;  
+
+MySQL SELECT Database:
+----------------------------------------
+SELECT Database is used in MySQL to select a particular database to work with. This query is used when multiple databases are available with MySQL Server.
+
+You can use SQL command USE to select a particular database.
+
+Syntax:
+----------
+USE database_name;  
+
+Example:
+------------
+Let's take an example to use a database name "customers".
+
+USE customers;  
+
+MySQL Drop Database:-
+----------------------------------
+You can drop/delete/remove a MySQL database easily with the MySQL command. You should be careful while deleting any database because you will lose your all the data available in your database.
+
+Syntax:
+----------
+DROP DATABASE database_name;  
+
+Example:
+------------
+Let's take an example to drop a database name "employees"
+
+DROP DATABASE employees;  

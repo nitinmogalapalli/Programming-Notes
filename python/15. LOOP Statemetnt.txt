@@ -1,0 +1,87 @@
+For Loop:-
+---------------
+for Loop is used to iterate a variable over a sequence(i.e., list or string) in the order that they appear.
+
+Syntax:
+----------
+    for <variable> in <sequence>:  
+
+Program to display table of Number:
+-------------------------------------------------
+    num=2  
+    for a in range (1,6):  
+        print  num * a  
+
+Output:
+----------
+    2  
+      
+    4  
+      
+    6  
+      
+    8  
+      
+    10  
+
+Program to find sum of Natural numbers from 1 to 10.
+-------------------------------------------------------------------------
+    sum=0  
+    for n in range(1,11):  
+        sum+=n  
+    print sum  
+
+Output:
+----------
+    55  
+
+Nested Loops
+-------------------
+Loops defined within another Loop is called Nested Loop.
+
+When an outer loop contains an inner loop in its body it is called Nested Looping.
+
+Syntax:
+----------
+    for  <expression>:  
+            for <expression>:  
+                Body  
+
+eg:
+----
+    for i in range(1,6):  
+        for j in range (1,i+1):  
+            print i,  
+        print  
+
+Output:
+----------
+    >>>   
+    1  
+    2 2  
+    3 3 3  
+    4 4 4 4  
+    5 5 5 5 5  
+    >>>  
+
+Explanation:
+-----------------
+For each value of Outer loop the whole inner loop is executed.
+
+For each value of inner loop the Body is executed each time.
+
+Program to print Pyramid:
+-----------------------------------
+    for i in range (1,6):  
+        for j in range (5,i-1,-1):  
+            print "*",  
+        print  
+
+Output:
+
+    >>>   
+    * * * * *  
+    * * * *  
+    * * *  
+    * *  
+    *  

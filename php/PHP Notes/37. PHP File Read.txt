@@ -1,0 +1,66 @@
+PHP Read File
+---------------------
+PHP provides various functions to read data from file. There are different functions that allow you to read all file data, read data line by line and read data character by character.
+
+The available PHP file read functions are given below.
+
+    fread()
+    fgets()
+    fgetc()
+
+PHP Read File - fread()
+---------------------------------
+The PHP fread() function is used to read data of the file. It requires two arguments: file resource and file size.
+
+Syntax
+----------
+    string fread (resource $handle , int $length )  
+
+$handle represents file pointer that is created by fopen() function.
+
+$length represents length of byte to be read.
+
+Example
+------------
+    <?php    
+    $filename = "c:\\file1.txt";    
+    $fp = fopen($filename, "r");//open file in read mode    
+      
+    $contents = fread($fp, filesize($filename));//read file    
+      
+    echo "<pre>$contents</pre>";//printing data of file  
+    fclose($fp);//close file    
+    ?>
+
+PHP Read File - fgets():
+---------------------------------
+The PHP fgets() function is used to read single line from the file.
+Syntax
+
+    string fgets ( resource $handle [, int $length ] )  
+
+Example:
+-------------
+    <?php    
+    $fp = fopen("c:\\file1.txt", "r");//open file in read mode    
+    echo fgets($fp);  
+    fclose($fp);  
+    ?>        
+
+PHP Read File - fgetc():
+----------------------------------
+The PHP fgetc() function is used to read single character from the file. To get all data using fgetc() function, use !feof() function inside the while loop.
+
+Syntax:
+-----------
+    string fgetc ( resource $handle )  
+
+Example
+-------------
+    <?php    
+    $fp = fopen("c:\\file1.txt", "r");//open file in read mode    
+    while(!feof($fp)) {  
+      echo fgetc($fp);  
+    }  
+    fclose($fp);  
+    ?>  

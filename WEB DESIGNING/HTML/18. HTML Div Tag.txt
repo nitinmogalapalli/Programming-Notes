@@ -1,0 +1,68 @@
+HTML Div Tag:-
+---------------------
+The HTML <div> tag is used to group the large section of HTML elements together.
+
+We know that every tag has a specific purpose e.g. p tag is used to specify paragraph, <h1> to <h6> tag are used to specify headings but the <div> tag is just like a container unit which is used to encapsulate other page elements and divides the HTML documents into sections.
+
+The div tag is generally used by web developers to group HTML elements together and apply CSS styles to many elements at once. For example: If you wrap a set of paragraph elements into a div element so you can take the advantage of CSS styles and apply font style to all paragraphs at once instead of coding the same style for each paragraph element.
+
+<!DOCTYPE>
+<html>  
+<body>  
+<div style="border:1px solid pink;padding:20px;font-size:20px">  
+<p>Welcome to Javatpoint.com, Here you get tutorials on latest technologies.</p>  
+<p>This is second paragraph</p>  
+</div>  
+</body>
+</html>  
+
+Difference between HTML div tag and span tag:-
+------------------------------------------------------------------
+div tag			span tag
+
+HTML div is a block element.	HTML span is an inline element
+
+HTML div element is used 
+to wrap large sections of 
+elements.			HTML span element is used to wrap small 					portion of texts, image etc.
+
+<!DOCTYPE>
+<html>  
+<head>
+<style>
+.loginform{  
+    padding:10px;  
+    border:1px solid pink;  
+    border-radius:10px;  
+    width:300px;
+    margin-top:10px;  
+}  
+.formheading{  
+    background-color:red;  
+    color:white;  
+    padding:4px;  
+    text-align:center;  
+}  
+.sub{  
+background-color:red;  
+padding: 7px 40px 7px 40px;  
+color:white;  
+font-weight:bold;  
+margin-left:70px;  
+border-radius:5px;  
+}  
+</style>
+</head>
+<body>  
+<div class="loginform">  
+<h3 class="formheading">Please Login</h3>  
+<form action="LoginServlet" method="post">  
+<table>  
+<tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
+<tr><td>Password:</td><td><input type="password" name="password"/></td></tr>  
+<tr><td colspan="2" style="text-align:center"><input class="sub" type="submit" value="login"/></td></tr>  
+</table>  
+</form>  
+</div>  
+</body>
+</html>  

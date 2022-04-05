@@ -1,0 +1,22 @@
+MySQL GROUP BY Clause:-
+----------------------------------------
+The MYSQL GROUP BY Clause is used to collect data from multiple records and group the result by one or more column. It is generally used in a SELECT statement.
+
+You can also use some aggregate functions like COUNT, SUM, MIN, MAX, AVG etc. on the grouped column.
+
+Syntax:
+------------
+SELECT expression1, expression2, ... expression_n,   
+aggregate_function (expression)  
+FROM tables  
+[WHERE conditions]  
+GROUP BY expression1, expression2, ... expression_n;  
+
+Parameters:-
+------------------
+expression1, expression2, ... expression_n: It specifies the expressions that are not encapsulated within an aggregate function and must be included in the GROUP BY clause.
+
+aggregate_function: It specifies a function such as SUM, COUNT, MIN, MAX, or AVG etc. tables: It specifies the tables, from where you want to retrieve the records. There must be at least one table listed in the FROM clause.
+
+WHERE conditions: It is optional. It specifies the conditions that must be fulfilled for the records to be selected.
+

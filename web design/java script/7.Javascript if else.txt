@@ -1,0 +1,65 @@
+JavaScript If-else:-
+--------------------------
+The JavaScript if-else statement is used to execute the code whether condition is true or false. There are three forms of if statement in JavaScript.
+
+    If Statement
+    If else statement
+    if else if statement
+
+JavaScript If statement
+
+It evaluates the content only if expression is true. The signature of JavaScript if statement is given below.
+
+    if(expression)
+    {  
+    //content to be evaluated  
+    }  
+
+Ex:-
+-----
+<html>
+<body>
+<script>  
+var a=20;  
+if(a>10)
+{  
+document.write("value of a is greater than 10");  
+}  
+</script>  
+</body>
+</html>
+
+output:-
+-----------
+value of a is greater than 10 
+
+JavaScript If...else Statement:-
+-----------------------------------------
+It evaluates the content whether condition is true of false. The syntax of JavaScript if-else statement is given below.
+
+    if(expression)
+    {  
+    //content to be evaluated if condition is true  
+    }  
+    else
+    {  
+    //content to be evaluated if condition is false  
+    }  
+
+Ex:-
+------
+<html>
+<body>
+<script>  
+var a=20;  
+if(a%2==0)
+{  
+document.write("a is even number");  
+}  
+else
+{  
+document.write("a is odd number");  
+}  
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+HTML5 Tutorial:-
+-----------------------
+HTML5 tutorial provides details of all 40+ HTML tags including audio, video, header, footer, data, datalist, article etc. This HTML tutorial is designed for beginners and professionals.
+
+HTML5 is a next version of HTML. Here, you will get some brand new features which will make HTML much easier. These new introducing features make your website layout clearer to both website designers and users. There are some elements like <header>, <footer>, <nav> and <article> that define the layout of a website.
+
+Why use HTML5:-
+--------------------------
+It is enriched with advance features which makes it easy and interactive for designer/developer and users.
+
+It allows you to play a video and audio file.
+
+It allows you to draw on a canvas.
+
+It facilitate you to design better forms and build web applications that work offline.
+
+It provides you advance features for that you would normally have to write JavaScript to do.
+
+The most important reason to use HTML 5 is, we believe it is not going anywhere. It will be here to serve for a long time according to W3C recommendation.
+
+HTML 5 Example:-
+--------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<h1>Write Your First Heading</h1>  
+<p>Write Your First Paragraph.</p>  
+</body>  
+</html>  

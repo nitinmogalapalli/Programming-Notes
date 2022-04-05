@@ -1,0 +1,26 @@
+HTML Canvas Tag:-
+----------------------------
+The HTML canvas element provides HTML a bitmapped surface to work with. It is used to draw graphics on the web page.
+
+The HTML 5 <canvas> tag is used to draw graphics using scripting language like JavaScript.
+
+The <canvas> element is only a container for graphics, you must need a scripting language to draw the graphics. The <canvas> element allows for dynamic and scriptable rendering of 2D shapes and bitmap images.
+
+It is a low level, procedural model that updates a bitmap and does not have a built-in scene. There are several methods in canvas to draw paths, boxes, circles, text and add images.
+
+How to create a HTML canvas?
+
+A canvas is a rectangle like area on an HTML page. It is specified with canvas element. By default, the <canvas> element has no border and no content, it is like a container.
+
+    <canvas id = "mycanvas" width ="200" height ="100"> </canvas>  
+
+HTML 5 Canvas Tag Example:-
+-------------------------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<canvas id="myCanvas" width="300" height="200" style="border:2px solid;">  
+Your browser does not support the HTML5 canvas tag.  
+</canvas>   
+</body>
+</html>  

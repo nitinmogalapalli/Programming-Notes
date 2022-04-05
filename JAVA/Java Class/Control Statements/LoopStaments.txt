@@ -1,0 +1,38 @@
+/* Looping Statements Syntaxs:
+	1. while
+		intitialization statements;
+		while(condition)
+		{
+			statements to be iterated;
+			increment/decrement;
+		}
+	2. do-while
+		do
+		{
+			statements to be iterated;
+			increment/decrement;
+		}while(condition);
+	3. for
+		for(intialization; Condition; incre/decre)
+		{
+			statements;
+		}
+
+		a. for(;condition;incre/decre)
+		   {
+		   }
+		b. for(; ;increment/decrement)
+		   {
+			condition statements should be declared here;
+		   }
+		c. for(; ; ;)
+		   {
+			[initilization];
+			condition and/or incre/decre;
+		   }
+	4. for-each
+		for(var : collection)
+		{
+			statements;
+		}
+*/

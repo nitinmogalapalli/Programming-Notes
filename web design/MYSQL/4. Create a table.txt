@@ -1,0 +1,37 @@
+MySQL CREATE TABLE:-
+-----------------------------------
+The MySQL CREATE TABLE command is used to create a new table into the database. A table creation command requires three things:
+
+Name of the table
+Names of fields
+Definitions for each field
+
+Syntax:
+-----------
+Following is a generic syntax for creating a MySQL table in the database.
+
+CREATE TABLE table_name (column_name column_type...);   
+
+Example:
+-------------
+Here, we will create a table named "cus_tbl" in the database "customers".
+
+CREATE TABLE cus_tbl
+(  
+   cus_id INT NOT NULL AUTO_INCREMENT,  
+   cus_firstname VARCHAR(100) NOT NULL,  
+   cus_surname VARCHAR(100) NOT NULL,  
+   PRIMARY KEY ( cus_id )  
+);
+
+See the created table:
+-------------------------------
+Use the following command to see the table already created:
+
+SHOW tables;     
+
+See the table structure:
+--------------------------------
+Use the following command to see the table already created:
+
+DESCRIBE cus_tbl;  

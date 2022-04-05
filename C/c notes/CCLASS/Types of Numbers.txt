@@ -1,0 +1,30 @@
+Values :
+
+Number
+	Normal (Integral Numbers)
+		0-9
+	ex: 1, 33, 2468
+		integer type: int
+
+		Number System:
+			Decimal Number System:
+				alphabet: 0 - 9
+			ex: 2, 25, 158, 259
+			Octal Number System:
+				alphabet: 0 - 7
+			ex: 2, 55, 47, 56, 75,etc
+			Hexa Decimal System:
+				alphabet: 0 - 9, A, B, C, D, E, F.
+			ex:1, 34, 57, 89, 1A, 2D, 4FE, ABE, etc.
+	Real (Floating point)
+		0-9 with a decimal point
+	ex: 1.9, 0.008, 29.03
+		Floating Point Data Type:
+			Single Floating point
+			Double Floating Point
+	
+Characters:
+	Single character
+	Set of characters( Strings )
+
+	combinely we can use a char type to represent the characters in C programming Language.

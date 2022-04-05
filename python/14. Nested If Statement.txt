@@ -1,0 +1,29 @@
+Nested If Else Statement:
+-----------------------------------
+When we need to check for multiple conditions to be true then we use else if Statement.
+
+This statement is like executing a if statement inside a else statement.
+
+Syntax:
+-----------
+    If statement:  
+        Body  
+    else if statement:  
+        Body  
+    else:  
+        Body    
+
+Example:
+-------------
+    a=10  
+    if a>=20:  
+        print "Condition is True"  
+    else:  
+        if a>=15:  
+            print "Checking second value"  
+        else:  
+            print "All Conditions are false"  
+
+Output:
+----------
+All Conditions are false. 

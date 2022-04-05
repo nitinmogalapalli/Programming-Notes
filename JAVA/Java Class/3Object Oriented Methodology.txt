@@ -1,0 +1,18 @@
+Object Oriented Methodology(Approach):
+	We have used the procedure oriented programming approach in writing program using BASIC, PASCAL, C, etc. In this approach we give importance to the Functionality rather than concentrating on Data.
+
+	The procedural approach won't be applied to the programs that are related to the real world.
+
+	Object oriented Approach(Methodology) which deals with the objects.
+	Real world Object: It is a Real world entity, which exibit some properties and behaviours.
+	Software Object: It is a software/memory representation of a type.
+
+the properties of the object represents the state of the object. 
+
+the operations that perform on that object to change its state is the behaviour of the object.
+
+The objects exibit the similar behaviour(properties and Operations) fall on to same category.
+or
+The objects belongs to some category exibits similar behaviour.
+
+	class: The group/collection/category of objects that exibit similar behaviour belongs to some class.

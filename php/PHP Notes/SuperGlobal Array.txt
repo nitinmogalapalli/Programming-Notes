@@ -1,0 +1,197 @@
+What is SuperGlobals Array?
+
+	Several predefined variables in php are "Superglobals", which means that they are always accessible, regardless of scope and you can access them from any function, class or file without having to do anything special.
+
+List of SuperGlobals:-
+------------------------------
+1. $_server
+2. $_request
+3. $_get
+4. $_post
+5. $_files
+6. $_cookie
+7. $_session
+
+1. $_server:-
+------------------
+	$_server is a php super global variable which holds information about headers, paths and script locations. Like you see in many web application when you see in many web application when you open the site they display your ip address or your browser information or about near server from your location etc.
+
+Some methods to understand $_server:-
+--------------------------------------------------------
+a. $_server['http_host'];
+--------------------------------
+	To know host name.
+
+Ex:-
+------
+<?php
+echo $_server['http_host'];
+?>
+
+b. $_server['http_user_agent'];
+------------------------------------------
+	To know browser's details of user.
+
+Ex:-
+------
+<?php
+echo $_server['http_user_agent'];
+?>
+
+Note:-
+---------
+It will display the browser details.
+
+c. $_server['remote_addr'];
+-------------------------------------
+	Returns the IP address from where the user is viewing the current page.
+
+Ex:-
+-----
+<?php
+echo $_server['remote_addr'];
+?>
+
+Note:-
+---------
+If want to displays the address of the server.
+
+d. $_server['server_name'];
+-------------------------------------
+	Returns the name of the host server.
+
+Ex:-
+------
+<?php
+echo $_server['server_name'];
+?>
+
+Note:-
+---------
+it will displays the name of the server.
+
+2. Super global $_get and $_post method in PHP:-
+----------------------------------------------------------------------
+	There are two ways through which client (browser) can send information to the web server.
+
+a. $_get
+b. $_post
+
+a. $_get:-
+-------------
+1. The GET method sends the encoded user information appended to the page request. The page and the encoded information are separated by the '?' character.
+2. The get method is restricted to sendup to 1024 character only.
+3. GET method can't send binary data like images or ms word documents etc.
+4. Never use GET method if you have sensitive information like password.
+
+Ex:-
+-----
+<html>
+<head>
+<title>example of get method </title>
+</head>
+<body>
+
+< form action="userdata.php" method="get">
+<table border="1" align="center" width="60%">
+<tr>
+<td>name</td>
+<td><input type="text" place holder="enter ur name" name="name"></td>
+</tr>
+<tr>
+<td>adress </td>
+<td><textarea place holder="enter ur address" name="address">
+</textarea> </td>
+</tr>
+<tr>
+<td>gender</td>
+<td>male<input type="radio" name="gender"> female<input type="radio" name="gender">
+</tr><tr>
+<td colspan="2" align ="center">
+<input type="submit " value="submit">
+</td>
+</tr>
+<table></body></html>
+
+USERDATA.PHP:-
+
+<?php
+echo "your name is".$_get['name']".<br>";
+echo "your address is".$_get['address']."<br>";
+echo "your are gender is".$_get['gender']."<br>"; ?>
+
+$_POST:-
+
+1. it is also use to collect data in (as) array.
+
+2. different is that it's not show user data in url so it can be used for secure data sending like password.
+
+3. Here one difference is that in post there is no limit to send data.
+
+4. you can also send binary data like images, word documents,pdf etc.
+
+EX:-
+
+<html>
+<head>
+<title> example of post method </title>
+</head>
+<body> <form action="userdata.php" method="post">
+<table border="1" align="center" width="60%">
+<tr>
+<td>name</td>
+<td><input type="text" place holder="enter ur name" name="name"></td>
+</tr>
+<tr><td>address</td>
+<td><textarea place holder="enter ur address"></textarea></td>
+</tr>
+<tr><td>password</td>
+<td>male<input type="password" name="password"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit " value="submit"></td>
+</tr></table></body></html>
+
+USERDATA.PHP:-
+
+<?php 
+echo"your name is".$_post['name']."<br>";
+echo "your address is".$_post['address']."<br>";
+echo "your password is ".$_post['password']."<br>";
+?>
+
+$_REQUEST:-
+
+
+this request method is used with combination of get and request or post &request. The main theme of this method is to print the form information.
+
+ex:- same as form example as get or post.
+
+USERDATA.PHP:-
+
+<?php
+echo "your name is "$_request['name']."<br>";
+echo "your address is ".$_request['address']."<br>";
+echo"your password is".$_request['password']."<br>";
+?>
+
+$_FILES METHOD IN PHP:-
+
+CREATING FILES UPLOAD FORMS:-
+
+         As well as sending textual data to the server, web forms can be used to upload files to the server. if you've used a web based email service such as yahoo! mail or email, chances are you've sent email with attachments.
+to add an attachment you generally click the browser button in the webpage to select a file on your computer. then when you submit the form ur browser sends the files to the server along with the other form data.
+                               you've are already seen how to create a file select field in html, and if not then the basic syntax is given below.
+
+<input type="file" name="varname" value="you want to show">
+
+ACCESSING INFORMATION ON UPLOADED FILES:-
+
+                                      once the form data hits the server, the php engine recognizes that the form contains an uploaded file or files, and creates a super global array called $_files containing various pieces of information about the file or files. each file is described by an element in the $_files array keyed on the name of the field that was used to upload the file.
+
+for example, say your form contained a file select field call photo:
+
+<input type="file" name="photo" value="">    
+
+  

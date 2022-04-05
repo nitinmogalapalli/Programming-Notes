@@ -1,0 +1,34 @@
+HTML pre tag:-
+---------------------
+The HTML <pre> tag is used to specify pre formatted texts. Texts within <pre>.......</pre> tag is displayed in a fixed-width font. Usually it is displayed in Courier font. It maintains both space and line break.
+
+It is widely used to display language examples e.g. Java, C#, C, C++ etc because it displays the code as it is typed.
+
+HTML pre tag example:-
+---------------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<pre>
+This is a formatted text 
+by using the HTML pre tag. It maintains
+    both space and line break.
+</pre>
+</body>
+</html>  
+
+HTML pre tag example: Java code within pre:-
+---------------------------------------------------------------
+<!DOCTYPE>
+<html>  
+<body>  
+<pre>  
+package com.javatpoint;  
+public class FirstJava{  
+public static void main(String args[]){  
+System.out.println("hello java");  
+}  
+}  
+</pre>  
+</body>
+</html>  

@@ -1,0 +1,55 @@
+SQL SELECT Statement:-
+------------------------------------
+SQL SELECT Statement is used to viewing data from the table. This statement return list of table format table data.
+
+We use asterisk (*) sign to fetch all table columns instead of write all column name.
+
+SQL SELECT Statement is used this four type:
+
+    SELECT All Rows and All Columns
+    SELECT All Rows and Selected Columns
+    Only Selected Rows and All Columns
+    Selected Rows and Selected Columns
+
+
+SELECT All Rows and All Columns
+------------------------------------------------
+Syntax :
+-----------
+SELECT * FROM table_name;
+
+Example Statement :
+-----------------------------
+SELECT * FROM users_info;
+
+SELECT All Rows and Selected Columns
+--------------------------------------------------------
+Syntax :
+-----------
+SELECT column_name1, column_name2, ... FROM table_name;
+
+Example Statement :
+----------------------------
+SELECT no, name, address FROM users_info;
+
+Only Selected Rows and All Columns
+---------------------------------------------------
+Syntax :
+-----------
+SELECT * FROM table_name [ WHERE condition ];
+
+Example Statement :
+-----------------------------
+SELECT * FROM users_info WHERE no = 3;
+
+Selected Rows and Selected Columns:-
+------------------------------------------------------
+Syntax :
+-----------
+SELECT column_name1, column_name2, ... FROM table_name [ WHERE condition ];
+
+Example Statement :
+----------------------------
+SELECT no, name, address FROM users_info WHERE no = 3;
+
+

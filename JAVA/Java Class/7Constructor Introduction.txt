@@ -1,0 +1,26 @@
+Constructor:
+	It is a special method that initializes the Object at the time of its creation. 
+
+	We define constructor using the same name as class name without having a return type not even void. why because the constructor's return type defined by the class internally by the same class type.
+
+for eg:
+	class Box
+	{
+		//Variables definition..
+		//Constructor definition
+
+		Box()
+		{
+			Constructor body...
+		}
+	}
+
+Constructors with parameters:
+
+	The constructors that are accepting parameters can take values at the time of object creation, and uses the formal parameters in the constructor's body.
+
+	ClassName(Parameters List)
+	{
+		Constructor's Body...
+	}
+

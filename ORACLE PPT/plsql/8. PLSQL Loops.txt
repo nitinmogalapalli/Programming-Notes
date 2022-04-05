@@ -1,0 +1,94 @@
+PL/SQL Loop:-
+---------------------
+PL/SQL Loop Basic Loop, FOR Loop, WHILE Loop repeat a number of block statements in your PL/SQL program. Loop use when we have a block of statements for required to repeatedly certain number of times. 
+
+PL/SQL loop statements 3 different forms:
+
+Basic LOOP
+WHILE LOOP
+FOR LOOP
+
+Oracle recommended to write a label when use loop statement. It's benefit to improve readability. label is not compulsory for execute loop. compiler does not check to label defined or not. Define label before LOOP keyword and after END LOOP keyword.
+
+Basic LOOP:-
+-------------------
+Basic LOOP write in following syntax format:
+
+[ label_name ] LOOP 
+   statement(s);
+END LOOP [ label_name ];
+
+Example Code:-
+----------------------
+DECLARE
+   no NUMBER := 5;
+BEGIN
+	LOOP
+		DBMS_OUTPUT.PUT_LINE ('Inside value:  no = ' || no);
+    	no := no -1;
+    	IF no = 0 THEN
+      		EXIT;
+    	END IF;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE('Outside loop end');   
+END;
+/
+
+Example Result:-
+-----------------------
+Inside value: no = 5
+Inside value: no = 4
+Inside value: no = 3
+Inside value: no = 2
+Inside value: no = 1
+Outside loop end
+
+WHILE LOOP:-
+---------------------
+WHILE LOOP write in following syntax format:
+
+[ label_name ] WHILE condition LOOP 
+   statement(s);
+END LOOP [ label_name ];
+
+Example Code
+---------------------
+DECLARE
+   no NUMBER := 0;
+BEGIN
+	WHILE no < 10 LOOP
+    	no := no + 1;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE('Sum :' || no);   
+END;
+/
+
+Example Result
+----------------------
+Sum : 10
+
+FOR LOOP:-
+-------------------
+FOR LOOP write in following syntax format:
+
+[ label_name ] FOR current_value IN [ REVERSE ] lower_value..upper_value LOOP 
+   statement(s);
+END LOOP [ label_name ];
+
+Example Code:-
+----------------------
+BEGIN
+	FOR no IN 1 .. 5 LOOP
+    	DBMS_OUTPUT.PUT_LINE('Iteration : ' || no);
+  	END LOOP;
+END;
+/
+
+Example Result
+----------------------
+Iteration : 1
+Iteration : 2
+Iteration : 3
+Iteration : 4
+Iteration : 5
+

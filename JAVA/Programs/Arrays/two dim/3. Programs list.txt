@@ -1,0 +1,4 @@
+/* w.a.p to declare two arrays and print it*/
+/* w.a.p to declare two arrays and sum of it*/
+/* w.a.p to accept two arrays and print it*/
+/* w.a.p to accept two arrays and sum of it*/

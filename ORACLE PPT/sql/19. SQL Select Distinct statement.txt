@@ -1,0 +1,44 @@
+SQL SELECT DISTINCT Statement:-
+---------------------------------------------------
+SQL SELECT DISTINCT Statement is use for eliminate duplicates rows from selected column in table. You can add DISTINCT statement in multiple column.
+
+    SELECT with DISTINCT on all columns
+    SELECT with DISTINCT on two columns
+    SELECT with DISTINCT on one columns
+
+
+SELECT with DISTINCT on all columns
+------------------------------------------------------
+Now we are execute SELECT statement with DISTINCT on all columns. DISTINCT all column means same table row value eliminate duplicates rows.
+
+Syntax :
+-----------
+SELECT DISTINCT * FROM table_name;
+
+Example Statement :
+----------------------------
+SELECT * FROM userinfo;
+
+SELECT with DISTINCT on two columns
+--------------------------------------------------------
+Now we are execute SELECT statement with DISTINCT on two columns. DISTINCT two column means eliminate same value when both column have same value.
+
+Syntax :
+-----------
+SELECT DISTINCT column_name1, column_name2, ... FROM table_name;
+
+Example Statement :
+----------------------------
+SELECT DISTINCT name, address FROM userinfo;
+
+SELECT with DISTINCT on one columns
+--------------------------------------------------------
+Same as above example DISTINCT apply only one columns.
+
+Syntax :
+-----------
+SELECT DISTINCT column_name1, column_name2, ... FROM table_name;
+
+Example Statement :
+-----------------------------
+SELECT DISTINCT name FROM userinfo;

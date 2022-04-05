@@ -1,0 +1,117 @@
+HTML Quotation and Citation Elements:-
+-------------------------------------------------------
+HTML <q> for Short Quotations:-
+---------------------------------------------
+The HTML <q> element defines a short quotation.
+
+Browsers usually insert quotation marks around the <q> element.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Browsers usually insert quotation marks around the q element.</p>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+</body>
+</html>
+
+HTML <blockquote> for Long Quotations:-
+-----------------------------------------------------------
+The HTML <blockquote> element defines a quoted section.
+
+Browsers usually indent <blockquote> elements.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Browsers usually indent blockquote elements.</p>
+
+<blockquote>
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+</body>
+</html>
+
+HTML <abbr> for Abbreviations:-
+---------------------------------------------
+The HTML <abbr> element defines an abbreviation or an acronym.
+
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+
+</body>
+</html>
+
+HTML <address> for Contact Information:-
+---------------------------------------------------------
+The HTML <address> element defines contact information (author/owner) of a document or article.
+
+The <address> element is usually displayed in italic. Most browsers will add a line break before and after the element.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by Jon Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+</body>
+</html>
+
+HTML <cite> for Work Title:-
+---------------------------------------
+The HTML <cite> element defines the title of a work.
+
+Browsers usually display <cite> elements in italic.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+</body>
+</html>
+
+HTML <bdo> for Bi-Directional Override:-
+--------------------------------------------------------
+The HTML <bdo> element defines bi-directional override.
+
+The <bdo> element is used to override the current text direction:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+</body>
+</html>

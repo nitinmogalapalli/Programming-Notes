@@ -1,0 +1,28 @@
+swapping:
+	Interchanging the values
+
+inorder to interchange the values of two variables we use the swapping technique.
+
+suppose:
+	a = 5;
+	b = 7;
+After swapping
+	a = 7;
+	b = 5;
+
+wrong Process:
+	a = b; -----> a = 7;
+	b = a; ------> b = 7;
+
+Swapping using temporary variable:
+	int a, b, c;
+	a = 5;
+	b = 7;
+
+	c = a;
+	a = b;
+	b = c;
+Swapping without using temporary variable:
+	a = a + b;
+	b = a - b;
+	a = a - b;

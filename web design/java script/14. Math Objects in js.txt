@@ -1,0 +1,99 @@
+JavaScript Math Object:
+---------------------------------
+The JavaScript math object provides several constants and methods to perform mathematical operation. Unlike date object, it doesn't have constructors.
+
+Math.sqrt(n):-
+--------------------
+The JavaScript math.sqrt(n) method returns the square root of the given number.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Square Root of 17 is: <span id="p1"></span>    
+<script>    
+document.getElementById('p1').innerHTML=Math.sqrt(17);    
+</script>   
+
+</body>
+</html>
+
+Math.random():-
+----------------------
+The JavaScript math.random() method returns the random number between 0 to 1.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Random Number is: <span id="p2"></span>    
+<script>    
+document.getElementById('p2').innerHTML=Math.random();    
+</script>   
+
+</body>
+</html>
+
+Math.pow(m,n):-
+-----------------------
+The JavaScript math.pow(m,n) method returns the m to the power of n that is mn.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+3 to the power of 4 is: <span id="p3"></span>    
+<script>    
+document.getElementById('p3').innerHTML=Math.pow(3,4);    
+</script>    
+
+</body>
+</html>
+
+Math.floor(n):-
+--------------------
+The JavaScript math.floor(n) method returns the lowest integer for the given number. For example 3 for 3.7, 5 for 5.9 etc.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Floor of 4.6 is: <span id="p4"></span>    
+<script>    
+document.getElementById('p4').innerHTML=Math.floor(4.6);    
+</script>  
+
+</body>
+</html>
+
+Math.ceil(n):-
+-------------------
+The JavaScript math.ceil(n) method returns the largest integer for the given number. For example 4 for 3.7, 6 for 5.9 etc.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Ceil of 4.6 is: <span id="p5"></span>    
+<script>    
+document.getElementById('p5').innerHTML=Math.ceil(4.6);    
+</script>    
+
+</body>
+</html>
+
+Math.abs(n):-
+-------------------
+The JavaScript math.abs(n) method returns the absolute value for the given number. For example 4 for -4, 6.6 for -6.6 etc.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Absolute value of -4 is: <span id="p8"></span>      
+<script>      
+document.getElementById('p8').innerHTML=Math.abs(-4);      
+</script> 
+
+</body>
+</html>

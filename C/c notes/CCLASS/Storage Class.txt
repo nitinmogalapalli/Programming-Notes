@@ -1,0 +1,54 @@
+
+Storage classes:
+
+	Every variable in C actually has two attributes: its data type and its storage class. The storage class refers to the manner in which memory is allocated
+for the variable. The storage class also determines the scope of the variable, 
+that is, what parts of a program the variable’s name has meaning. In C, the 
+four possible Storage classes are
+
+– auto
+– extern
+– static
+– register
+
+- auto:
+
+• This is the default classification for all variables declared within a function 
+body [including main()] .
+• Automatic variables are truly local. 
+• They exist and their names have meaning only while the function is being 
+executed. 
+• They are unknown to other functions. 
+• When the function is exited, the values of automatic variables are not retained. 
+• They are normally implemented on a stack. 
+• They are recreated each time the function is called.
+
+- extern:
+
+ In contrast, extern variables are global.
+• If a variable is declared at the beginning of a program outside all functions 
+[including main()] it is classified as an external by default.
+• External variables can be accessed and changed by any function in the 
+program.
+• Their storage is in permanent memory, and thus never disappear or need to be 
+recreated.
+
+- static:
+
+• A static variable is a local variable that retains its latest value when a 
+function is recalled. Its scope is still local in that it will only be recognized in its own function. Basically, static variables are created and initialized once 
+during the first reference to the function.
+
+- register:
+
+• It takes to fetch a variable from memory and store its value in a register where 
+the CPU can perform some calculation with it. So for performance reasons, it 
+is sometimes advantageous to store variables directly in registers. This strategy 
+is most often used with loop counter variables, as shown below.
+
+register int i;
+for (i=0; i<n; ++i)
+...
+.
+.
+
